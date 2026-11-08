@@ -1,0 +1,406 @@
+{
+ "duerrflecken": {
+  "typ": "krankheit",
+  "suche": [
+   "Alternaria solani tomato leaf",
+   "Alternaria solani"
+  ]
+ },
+ "krautfaeule": {
+  "typ": "krankheit",
+  "suche": [
+   "Phytophthora infestans tomato",
+   "Phytophthora infestans leaf"
+  ]
+ },
+ "tuta": {
+  "typ": "krankheit",
+  "suche": [
+   "Tuta absoluta damage",
+   "Tuta absoluta"
+  ]
+ },
+ "weisse_fliege": {
+  "typ": "krankheit",
+  "suche": [
+   "Bemisia tabaci",
+   "Trialeurodes vaporariorum"
+  ]
+ },
+ "tylcv": {
+  "typ": "krankheit",
+  "suche": [
+   "Tomato yellow leaf curl virus",
+   "TYLCV tomato"
+  ]
+ },
+ "leveillula": {
+  "typ": "krankheit",
+  "suche": [
+   "Leveillula taurica",
+   "powdery mildew pepper leaf"
+  ]
+ },
+ "echter_mehltau": {
+  "typ": "krankheit",
+  "suche": [
+   "powdery mildew cucurbit leaf",
+   "Podosphaera xanthii",
+   "powdery mildew zucchini"
+  ]
+ },
+ "blattlaeuse": {
+  "typ": "krankheit",
+  "suche": [
+   "aphids colony leaf",
+   "Aphis gossypii",
+   "Myzus persicae"
+  ]
+ },
+ "spinnmilben": {
+  "typ": "krankheit",
+  "suche": [
+   "Tetranychus urticae damage",
+   "Tetranychus urticae"
+  ]
+ },
+ "thripse": {
+  "typ": "krankheit",
+  "suche": [
+   "thrips damage onion",
+   "Thrips tabaci"
+  ]
+ },
+ "bluetenendfaeule": {
+  "typ": "krankheit",
+  "suche": [
+   "blossom end rot tomato",
+   "blossom end rot"
+  ]
+ },
+ "fusarium": {
+  "typ": "krankheit",
+  "suche": [
+   "Fusarium wilt tomato",
+   "Fusarium oxysporum lycopersici"
+  ]
+ },
+ "grauschimmel": {
+  "typ": "krankheit",
+  "suche": [
+   "Botrytis cinerea strawberry",
+   "Botrytis cinerea tomato"
+  ]
+ },
+ "nematoden": {
+  "typ": "krankheit",
+  "suche": [
+   "root knot nematode galls",
+   "Meloidogyne root galls"
+  ]
+ },
+ "helicoverpa": {
+  "typ": "krankheit",
+  "suche": [
+   "Helicoverpa armigera tomato",
+   "Helicoverpa armigera larva"
+  ]
+ },
+ "erdraupen": {
+  "typ": "krankheit",
+  "suche": [
+   "Agrotis ipsilon larva",
+   "cutworm larva"
+  ]
+ },
+ "kartoffelmotte": {
+  "typ": "krankheit",
+  "suche": [
+   "Phthorimaea operculella",
+   "potato tuber moth damage"
+  ]
+ },
+ "schorf": {
+  "typ": "krankheit",
+  "suche": [
+   "common scab potato",
+   "Streptomyces scabies potato"
+  ]
+ },
+ "zw_falscher_mehltau": {
+  "typ": "krankheit",
+  "suche": [
+   "Peronospora destructor onion",
+   "onion downy mildew"
+  ]
+ },
+ "purpurflecken": {
+  "typ": "krankheit",
+  "suche": [
+   "Alternaria porri",
+   "purple blotch onion"
+  ]
+ },
+ "phytophthora_capsici": {
+  "typ": "krankheit",
+  "suche": [
+   "Phytophthora capsici",
+   "Phytophthora capsici pepper"
+  ]
+ },
+ "kuerbis_falscher_mehltau": {
+  "typ": "krankheit",
+  "suche": [
+   "Pseudoperonospora cubensis",
+   "cucurbit downy mildew"
+  ]
+ },
+ "mosaikvirus": {
+  "typ": "krankheit",
+  "suche": [
+   "Cucumber mosaic virus",
+   "zucchini yellow mosaic virus"
+  ]
+ },
+ "wurzelfaeule": {
+  "typ": "krankheit",
+  "suche": [
+   "root rot plant",
+   "Rhizoctonia root rot"
+  ]
+ },
+ "karotte_alternaria": {
+  "typ": "krankheit",
+  "suche": [
+   "Alternaria dauci",
+   "carrot leaf blight"
+  ]
+ },
+ "rost": {
+  "typ": "krankheit",
+  "suche": [
+   "Puccinia triticina wheat leaf rust",
+   "Uromyces viciae-fabae",
+   "Puccinia wheat rust"
+  ]
+ },
+ "septoria": {
+  "typ": "krankheit",
+  "suche": [
+   "Zymoseptoria tritici",
+   "Septoria tritici blotch"
+  ]
+ },
+ "netzflecken": {
+  "typ": "krankheit",
+  "suche": [
+   "Pyrenophora teres barley",
+   "net blotch barley"
+  ]
+ },
+ "getreide_mehltau": {
+  "typ": "krankheit",
+  "suche": [
+   "Blumeria graminis wheat",
+   "Blumeria graminis"
+  ]
+ },
+ "flugbrand": {
+  "typ": "krankheit",
+  "suche": [
+   "Ustilago tritici",
+   "loose smut wheat",
+   "Ustilago nuda"
+  ]
+ },
+ "hessenfliege": {
+  "typ": "krankheit",
+  "suche": [
+   "Mayetiola destructor",
+   "Hessian fly"
+  ]
+ },
+ "stengelbohrer": {
+  "typ": "krankheit",
+  "suche": [
+   "Sesamia nonagrioides",
+   "Ostrinia nubilalis larva maize"
+  ]
+ },
+ "ascochyta": {
+  "typ": "krankheit",
+  "suche": [
+   "Ascochyta rabiei chickpea",
+   "Ascochyta blight chickpea"
+  ]
+ },
+ "minierfliege": {
+  "typ": "krankheit",
+  "suche": [
+   "Liriomyza leaf mines",
+   "leaf miner damage leaf"
+  ]
+ },
+ "schokoflecken": {
+  "typ": "krankheit",
+  "suche": [
+   "Botrytis fabae",
+   "chocolate spot broad bean"
+  ]
+ },
+ "sommerwurz": {
+  "typ": "krankheit",
+  "suche": [
+   "Orobanche crenata",
+   "Phelipanche ramosa",
+   "Orobanche"
+  ]
+ },
+ "luzerneruessler": {
+  "typ": "krankheit",
+  "suche": [
+   "Hypera postica",
+   "alfalfa weevil larva"
+  ]
+ },
+ "seide": {
+  "typ": "krankheit",
+  "suche": [
+   "Cuscuta campestris",
+   "Cuscuta dodder"
+  ]
+ },
+ "eisenmangel": {
+  "typ": "krankheit",
+  "suche": [
+   "iron chlorosis leaves",
+   "iron deficiency chlorosis"
+  ]
+ },
+ "stickstoffmangel": {
+  "typ": "krankheit",
+  "suche": [
+   "nitrogen deficiency plant",
+   "nitrogen deficiency maize"
+  ]
+ },
+ "salzschaden": {
+  "typ": "krankheit",
+  "suche": [
+   "salt damage leaves",
+   "soil salinity crop"
+  ]
+ },
+ "wassermangel": {
+  "typ": "krankheit",
+  "suche": [
+   "wilting plant drought",
+   "drought stressed maize"
+  ]
+ },
+ "tomate": {
+  "typ": "kultur",
+  "suche": [
+   "tomato plant fruits",
+   "Solanum lycopersicum fruits"
+  ]
+ },
+ "kartoffel": {
+  "typ": "kultur",
+  "suche": [
+   "potato tubers",
+   "Solanum tuberosum tubers"
+  ]
+ },
+ "zwiebel": {
+  "typ": "kultur",
+  "suche": [
+   "onions harvest",
+   "Allium cepa bulbs"
+  ]
+ },
+ "paprika": {
+  "typ": "kultur",
+  "suche": [
+   "bell peppers plant",
+   "Capsicum annuum fruits"
+  ]
+ },
+ "zucchini": {
+  "typ": "kultur",
+  "suche": [
+   "zucchini plant fruit",
+   "courgette plant"
+  ]
+ },
+ "melone": {
+  "typ": "kultur",
+  "suche": [
+   "cantaloupe melon",
+   "Cucumis melo fruit"
+  ]
+ },
+ "wassermelone": {
+  "typ": "kultur",
+  "suche": [
+   "watermelon field",
+   "watermelon fruit"
+  ]
+ },
+ "erdbeere": {
+  "typ": "kultur",
+  "suche": [
+   "strawberry plant fruits",
+   "strawberries"
+  ]
+ },
+ "karotte": {
+  "typ": "kultur",
+  "suche": [
+   "carrots harvest",
+   "Daucus carota sativus roots"
+  ]
+ },
+ "hartweizen": {
+  "typ": "kultur",
+  "suche": [
+   "durum wheat ears",
+   "Triticum durum"
+  ]
+ },
+ "gerste": {
+  "typ": "kultur",
+  "suche": [
+   "barley ears field",
+   "Hordeum vulgare ears"
+  ]
+ },
+ "mais": {
+  "typ": "kultur",
+  "suche": [
+   "maize cob plant",
+   "Zea mays field"
+  ]
+ },
+ "kichererbse": {
+  "typ": "kultur",
+  "suche": [
+   "chickpea plant pods",
+   "Cicer arietinum"
+  ]
+ },
+ "ackerbohne": {
+  "typ": "kultur",
+  "suche": [
+   "broad bean plant pods",
+   "Vicia faba pods"
+  ]
+ },
+ "luzerne": {
+  "typ": "kultur",
+  "suche": [
+   "alfalfa field flowers",
+   "Medicago sativa"
+  ]
+ }
+}

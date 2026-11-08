@@ -1,0 +1,14 @@
+# Lernen – Fallahkalender
+
+- Kostenfragen (Server/KI) kamen früh: Ressourcen-Hinweis mit konkreten Preisen gleich im Lastenheft hat geholfen.
+- Nutzer antwortet sehr knapp („ja“, „ok“): offene Fragen nummeriert stellen, damit kurze Antworten eindeutig zuzuordnen sind.
+- MS1: Playwright-Klick auf versteckte Radio-Knöpfe scheitert an der festen Leiste unten → `check()` nutzen und `scroll-padding-bottom` setzen (hilft auch echten Nutzern bei Tastaturbedienung).
+- Netzwerk-Projektordner: Tests direkt dort ausführen funktioniert, Ordner `node --test tests/` aber nicht → Muster `tests/*.test.mjs` angeben.
+- Werte des Nutzers früh erfragen: „nur halal/zinsfrei, keine partizipativen Banken, kein Takaful“ kam erst bei der Förder-Recherche. Bei Finanz-/Versicherungsthemen künftig vorher fragen.
+- Förder- und Kontaktdaten: offizielle Seiten blockieren oft Abrufe (robots). Nur Angaben mit Quelle übernehmen, Rest als „bitte prüfen“ markieren statt raten.
+- MS2: Traditionelle Daten aus zwei Quellen gegeneinander gerechnet (Hespress-Ankerdatum für الصرفة passte exakt) – so ließ sich die stimmigere Variante begründen, statt zu raten.
+- MS3: Playwright-Locator `section:has(#id)` trifft auch äußere Abschnitte → engere Klasse wählen. Sprachwunsch (Arabisch/Französisch/Darija statt Deutsch) kam mitten im Meilenstein: Sprache und Zielgruppe künftig schon in der Idee-Phase fest abfragen.
+- Sprachen: Texte von Anfang an über Schlüssel (`t('…')`) statt fest im Code; das Nachrüsten kostete den größten Teil der Arbeit. Prüfwörter für „halal“ auf Arabisch nur als ganzes Wort suchen („مخمر“ = gut verrotteter Mist enthält „خمر“), eigene Namen ebenso prüfen („الكحولية“ klang nach Alkohol und wurde umbenannt).
+- RTL: Wert mit lateinischer Einheit („2,5 dS/m“) in arabischem Satz mit Unicode-Isolierung (U+2066…U+2069) einschließen, sonst dreht sich die Reihenfolge. Datei-Knopf des Browsers spricht Englisch → eigenen Knopf mit übersetztem Text bauen.
+- MS4: Speicherschlüssel von Anfang an je Feld anlegen; das Nachrüsten ging hier nur dank Neuladen beim Feldwechsel ohne Umbau. Service Worker funktioniert nur über HTTPS oder auf localhost/127.0.0.1 – fürs echte Handy braucht es Hosting. Druckansicht mit `emulateMedia({ media: 'print' })` im UI-Test prüfen; Datumsfeld im Druck durch Text ersetzen.
+- MS5: Im Container fehlte der Zugang zu Wikimedia und Hugging Face → Downloads und Modelltests über eine Sitzung auf dem Mac des Nutzers. Fotos nie blind übernehmen: Kontaktbögen (8 Themen × 4 Kandidaten) ansehen und auswählen, rund ein Viertel der Treffer war unbrauchbar (Karten, Moleküle, falsche Pflanze). Berber-Stimmen (MMS) lesen nur Lateinschrift → Tifinagh vorher umschreiben. Ältere Intel-Macs brauchen feste Versionen (`numpy<2`, `transformers<4.50`) zu torch 2.2.

@@ -1,0 +1,39 @@
+{
+  "_quelle": "Richtwerte aus allgemeiner Agrarliteratur (u. a. FAO Irrigation and Drainage Paper 29 und 33). Salz = Salzgehalt des Bewässerungswassers (EC in dS/m): bis 'salzOhneVerlust' kein Ertragsverlust, bei 'salzHalbErtrag' etwa halber Ertrag. Wasser = Bedarf in mm je Saison. Boden: 0 schlecht, 1 geht, 2 gut. Pflanzmonate je Zone.",
+  "familien": {
+    "nachtschatten": "Nachtschattengewächse", "zwiebel": "Zwiebelgewächse", "kuerbis": "Kürbisgewächse",
+    "rosen": "Rosengewächse", "doldenbluetler": "Doldenblütler", "gras": "Getreide", "huelsen": "Hülsenfrüchte"
+  },
+  "kulturen": [
+    {"id": "tomate", "name": "Tomate", "familie": "nachtschatten", "ph": [6.0, 7.5], "phGrenze": [5.5, 8.0], "salzOhneVerlust": 1.7, "salzHalbErtrag": 5.0, "wasser": 550, "tage": 140, "regenSaison": "sommer", "boden": {"sand": 1, "lehm": 2, "ton": 1}, "pause": 3, "nematoden": true, "welke": true, "kalk": false, "frost": true,
+     "pflanzen": {"gharb": [2, 3, 4, 8, 9], "saiss": [3, 4, 5], "atlas": [5], "souss": [8, 9, 10, 1, 2], "oase": [1, 2, 8, 9]}},
+    {"id": "kartoffel", "name": "Kartoffel", "familie": "nachtschatten", "ph": [5.2, 6.8], "phGrenze": [4.8, 7.8], "salzOhneVerlust": 1.1, "salzHalbErtrag": 3.9, "wasser": 500, "tage": 110, "regenSaison": "winter", "boden": {"sand": 2, "lehm": 2, "ton": 0}, "pause": 3, "nematoden": true, "welke": true, "kalk": true, "frost": true,
+     "pflanzen": {"gharb": [12, 1, 2, 9], "saiss": [1, 2, 3, 8, 9], "atlas": [3, 4], "souss": [11, 12, 1], "oase": [10, 11, 1]}},
+    {"id": "zwiebel", "name": "Zwiebel", "familie": "zwiebel", "ph": [6.0, 7.5], "phGrenze": [5.5, 8.2], "salzOhneVerlust": 0.8, "salzHalbErtrag": 2.9, "wasser": 450, "tage": 150, "regenSaison": "winter", "boden": {"sand": 1, "lehm": 2, "ton": 1}, "pause": 3, "nematoden": false, "welke": false, "kalk": false, "frost": false,
+     "pflanzen": {"gharb": [10, 11, 12, 1], "saiss": [10, 11, 12, 2], "atlas": [3, 4], "souss": [10, 11, 12], "oase": [10, 11, 12]}},
+    {"id": "paprika", "name": "Paprika / Chili", "familie": "nachtschatten", "ph": [6.0, 7.5], "phGrenze": [5.5, 8.0], "salzOhneVerlust": 1.0, "salzHalbErtrag": 3.4, "wasser": 600, "tage": 150, "regenSaison": "sommer", "boden": {"sand": 1, "lehm": 2, "ton": 1}, "pause": 3, "nematoden": true, "welke": true, "kalk": false, "frost": true,
+     "pflanzen": {"gharb": [3, 4, 5], "saiss": [4, 5], "atlas": [5, 6], "souss": [8, 9, 2, 3], "oase": [2, 3, 8]}},
+    {"id": "zucchini", "name": "Zucchini", "familie": "kuerbis", "ph": [6.0, 7.5], "phGrenze": [5.5, 8.0], "salzOhneVerlust": 3.1, "salzHalbErtrag": 6.7, "wasser": 400, "tage": 90, "regenSaison": "sommer", "boden": {"sand": 2, "lehm": 2, "ton": 1}, "pause": 2, "nematoden": true, "welke": true, "kalk": false, "frost": true,
+     "pflanzen": {"gharb": [2, 3, 4, 5, 8, 9], "saiss": [3, 4, 5, 6], "atlas": [5, 6], "souss": [9, 10, 11, 1, 2], "oase": [2, 3, 9, 10]}},
+    {"id": "melone", "name": "Melone", "familie": "kuerbis", "ph": [6.0, 7.5], "phGrenze": [5.5, 8.2], "salzOhneVerlust": 1.5, "salzHalbErtrag": 6.0, "wasser": 450, "tage": 110, "regenSaison": "sommer", "boden": {"sand": 2, "lehm": 2, "ton": 0}, "pause": 3, "nematoden": true, "welke": true, "kalk": false, "frost": true,
+     "pflanzen": {"gharb": [3, 4, 5], "saiss": [4, 5], "atlas": [5], "souss": [1, 2, 3], "oase": [1, 2]}},
+    {"id": "wassermelone", "name": "Wassermelone", "familie": "kuerbis", "ph": [5.5, 7.0], "phGrenze": [5.0, 8.0], "salzOhneVerlust": 1.5, "salzHalbErtrag": 5.0, "wasser": 450, "tage": 110, "regenSaison": "sommer", "boden": {"sand": 2, "lehm": 2, "ton": 0}, "pause": 3, "nematoden": true, "welke": true, "kalk": false, "frost": true,
+     "pflanzen": {"gharb": [3, 4, 5], "saiss": [4, 5], "atlas": [5], "souss": [1, 2, 3], "oase": [1, 2]}},
+    {"id": "erdbeere", "name": "Erdbeere", "familie": "rosen", "ph": [5.5, 6.8], "phGrenze": [5.0, 7.5], "salzOhneVerlust": 0.7, "salzHalbErtrag": 1.7, "wasser": 500, "tage": 210, "regenSaison": "winter", "boden": {"sand": 2, "lehm": 2, "ton": 0}, "pause": 3, "nematoden": true, "welke": true, "kalk": true, "frost": false,
+     "pflanzen": {"gharb": [10, 11], "saiss": [10, 11], "atlas": [3, 4, 9], "souss": [10, 11], "oase": [10, 11]}},
+    {"id": "karotte", "name": "Karotte", "familie": "doldenbluetler", "ph": [6.0, 7.0], "phGrenze": [5.5, 8.0], "salzOhneVerlust": 0.7, "salzHalbErtrag": 2.8, "wasser": 400, "tage": 110, "regenSaison": "winter", "boden": {"sand": 2, "lehm": 2, "ton": 0}, "pause": 3, "nematoden": true, "welke": false, "kalk": false, "frost": false,
+     "pflanzen": {"gharb": [9, 10, 11, 12, 1, 2], "saiss": [9, 10, 2, 3], "atlas": [3, 4, 5, 6], "souss": [9, 10, 11, 12], "oase": [10, 11, 12]}},
+    {"id": "hartweizen", "name": "Hartweizen", "familie": "gras", "ph": [6.0, 8.0], "phGrenze": [5.5, 8.5], "salzOhneVerlust": 4.0, "salzHalbErtrag": 8.7, "wasser": 450, "tage": 180, "regenSaison": "winter", "boden": {"sand": 1, "lehm": 2, "ton": 2}, "pause": 1, "nematoden": false, "welke": false, "kalk": false, "frost": false, "regenfeldbau": true,
+     "pflanzen": {"gharb": [11, 12], "saiss": [11, 12], "atlas": [10, 11], "souss": [11, 12], "oase": [11, 12]}},
+    {"id": "gerste", "name": "Gerste", "familie": "gras", "ph": [6.5, 8.0], "phGrenze": [6.0, 8.5], "salzOhneVerlust": 5.3, "salzHalbErtrag": 12.0, "wasser": 400, "tage": 160, "regenSaison": "winter", "boden": {"sand": 2, "lehm": 2, "ton": 1}, "pause": 1, "nematoden": false, "welke": false, "kalk": false, "frost": false, "regenfeldbau": true,
+     "pflanzen": {"gharb": [11, 12], "saiss": [11, 12], "atlas": [10, 11, 3], "souss": [11, 12], "oase": [11, 12]}},
+    {"id": "mais", "name": "Mais", "familie": "gras", "ph": [5.8, 7.5], "phGrenze": [5.5, 8.0], "salzOhneVerlust": 1.1, "salzHalbErtrag": 3.9, "wasser": 600, "tage": 120, "regenSaison": "sommer", "boden": {"sand": 1, "lehm": 2, "ton": 1}, "pause": 1, "nematoden": false, "welke": false, "kalk": false, "frost": true,
+     "pflanzen": {"gharb": [4, 5, 6], "saiss": [4, 5, 6], "atlas": [5, 6], "souss": [3, 4, 8], "oase": [3, 4, 7]}},
+    {"id": "kichererbse", "name": "Kichererbse", "familie": "huelsen", "ph": [6.0, 8.0], "phGrenze": [5.5, 8.5], "salzOhneVerlust": 0.7, "salzHalbErtrag": 2.5, "wasser": 300, "tage": 130, "regenSaison": "winter", "boden": {"sand": 1, "lehm": 2, "ton": 2}, "pause": 3, "nematoden": false, "welke": true, "kalk": false, "frost": false, "regenfeldbau": true,
+     "pflanzen": {"gharb": [12, 1, 2, 3], "saiss": [12, 1, 2, 3], "atlas": [3, 4], "souss": [12, 1], "oase": [11, 12]}},
+    {"id": "ackerbohne", "name": "Ackerbohne (Foul)", "familie": "huelsen", "ph": [6.5, 8.0], "phGrenze": [6.0, 8.5], "salzOhneVerlust": 1.1, "salzHalbErtrag": 4.5, "wasser": 350, "tage": 150, "regenSaison": "winter", "boden": {"sand": 1, "lehm": 2, "ton": 2}, "pause": 3, "nematoden": false, "welke": false, "kalk": false, "frost": false, "regenfeldbau": true,
+     "pflanzen": {"gharb": [10, 11, 12], "saiss": [10, 11, 12], "atlas": [10, 11, 3], "souss": [10, 11], "oase": [10, 11]}},
+    {"id": "luzerne", "name": "Luzerne (Futter)", "familie": "huelsen", "ph": [6.5, 7.8], "phGrenze": [6.2, 8.5], "salzOhneVerlust": 1.3, "salzHalbErtrag": 5.9, "wasser": 900, "tage": 365, "regenSaison": "jahr", "boden": {"sand": 1, "lehm": 2, "ton": 1}, "pause": 4, "nematoden": false, "welke": false, "kalk": false, "frost": false,
+     "pflanzen": {"gharb": [10, 11, 3], "saiss": [10, 3, 4], "atlas": [4, 5, 9], "souss": [10, 11, 2], "oase": [10, 11, 2]}}
+  ]
+}

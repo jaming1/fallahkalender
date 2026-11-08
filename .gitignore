@@ -1,0 +1,8 @@
+code/tests/screenshots/
+code/server/.venv/
+code/server/cache/
+code/werkzeuge/kandidaten/
+code/werkzeuge/stimmproben/
+__pycache__/
+.DS_Store
+_to_delete/

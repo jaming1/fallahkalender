@@ -1,0 +1,6 @@
+{
+  "_hinweis": "Kopie als stimmen.json speichern und Einträge mit aktiv:true einschalten. {ausgabe} = WAV-Datei, Text kommt über stdin.",
+  "dar": { "aktiv": false, "befehl": ["python3", "{basis}/stimme_mms.py", "MODELL-FUER-DARIJA", "{ausgabe}"], "zeit": 600 },
+  "zgh": { "aktiv": false, "befehl": ["python3", "{basis}/stimme_mms.py", "MODELL-FUER-TAMAZIGHT", "{ausgabe}"], "zeit": 600 },
+  "ar":  { "aktiv": false, "befehl": ["python3", "{basis}/stimme_mms.py", "facebook/mms-tts-ara", "{ausgabe}"], "zeit": 600 }
+}

@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data: blob:; style-src 'self'; script-src 'self'; connect-src 'self'; worker-src 'self'; manifest-src 'self'; media-src 'self' blob:; base-uri 'none'; form-action 'self'; object-src 'none'">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#2e5a35">
+  <meta name="description" content="تقويم الفلاح · Calendrier du fellah">
+  <title>تقويم الفلاح · Fallahkalender</title>
+  <link rel="stylesheet" href="app.css">
+  <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <script type="module" src="app.js"></script>
+</head>
+<body>
+  <header class="kopf">
+    <div class="kopf-innen">
+      <svg class="logo" viewBox="0 0 32 32" aria-hidden="true"><use href="assets/icon.svg#zeichen"></use></svg>
+      <div class="kopf-text">
+        <p class="app-name" data-t="app.name"></p>
+        <p class="feld-name" id="kopf-feld"></p>
+      </div>
+      <label class="sprache">
+        <span class="sr" data-t="sprache.wahl"></span>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18zM3 12h18M12 3c2.5 2.5 3.5 5.5 3.5 9s-1 6.5-3.5 9c-2.5-2.5-3.5-5.5-3.5-9s1-6.5 3.5-9z"/></svg>
+        <select id="sprache-wahl"></select>
+      </label>
+    </div>
+  </header>
+
+  <nav class="reiter" data-t-aria="nav.aria">
+    <button type="button" class="reiter-knopf" data-ansicht="feld" aria-controls="ansicht-feld">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 18h18M5 14h14M7 10h10M9 6h6"/></svg>
+      <span data-t="nav.feld"></span>
+    </button>
+    <button type="button" class="reiter-knopf" data-ansicht="empfehlung" aria-controls="ansicht-empfehlung">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21V10M12 10c0-4 3-6 7-6 0 4-3 6-7 6zm0 3c0-3-2-5-6-5 0 3 2 5 6 5z"/></svg>
+      <span data-t="nav.empfehlung"></span>
+    </button>
+    <button type="button" class="reiter-knopf" data-ansicht="kalender" aria-controls="ansicht-kalender">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16v14H4zM4 10h16M8 3v5M16 3v5"/></svg>
+      <span data-t="nav.kalender"></span>
+    </button>
+    <button type="button" class="reiter-knopf" data-ansicht="befall" aria-controls="ansicht-befall">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10.5 4a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13zM15.5 15.5L21 21M8 12.5c0-2.5 1.5-4 4.5-4.5-.3 3-2 4.5-4.5 4.5z"/></svg>
+      <span data-t="nav.befall"></span>
+    </button>
+    <button type="button" class="reiter-knopf" data-ansicht="hilfe" aria-controls="ansicht-hilfe">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l8 4v5c0 5-3.5 8-8 9-4.5-1-8-4-8-9V7z M9 12l2 2 4-4"/></svg>
+      <span data-t="nav.hilfe"></span>
+    </button>
+  </nav>
+
+  <main>
+    <noscript><p class="hinweis-box">المرجو تفعيل JavaScript. · Merci d’activer JavaScript.</p></noscript>
+
+    <section id="ansicht-feld" class="ansicht" aria-labelledby="t-feld">
+      <div class="titel-zeile"><h1 id="t-feld" data-t="feld.titel"></h1></div>
+      <p class="einleitung" data-t="feld.einleitung"></p>
+
+      <div class="karte felder-karte">
+        <label class="feld" for="feld-wahl"><span data-t="felder.wahl"></span></label>
+        <div class="felder-zeile">
+          <select id="feld-wahl"></select>
+          <button type="button" class="knopf-zweit" id="feld-neu" data-t="felder.neu"></button>
+        </div>
+        <button type="button" class="link-knopf" id="feld-loeschen" data-t="felder.loeschen"></button>
+      </div>
+
+      <form id="feld-form" novalidate>
+        <fieldset class="schritt">
+          <legend><span class="nr">1</span> <span data-t="feld.lage"></span></legend>
+          <label class="feld"><span data-t="feld.name"></span>
+            <input name="name" type="text" autocomplete="off" data-t-placeholder="feld.name.bsp">
+          </label>
+          <label class="feld"><span data-t="feld.region"></span>
+            <select name="zone" id="zone-wahl">
+              <option value="" data-t="bitte.waehlen"></option>
+            </select>
+          </label>
+          <div id="zone-bild" class="zone-bild"></div>
+          <div class="zeile-knopf">
+            <button type="button" class="knopf-zweit" id="gps-knopf" data-t="feld.gps"></button>
+            <span id="gps-status" class="status" role="status"></span>
+          </div>
+          <div class="zwei">
+            <label class="feld"><span data-t="feld.flaeche"></span>
+              <input name="flaeche" type="number" min="0" step="any" inputmode="decimal">
+            </label>
+            <label class="feld"><span data-t="einheit"></span>
+              <select name="flaecheEinheit">
+                <option value="ha" data-t="einheit.ha"></option>
+                <option value="m2" data-t="einheit.m2"></option>
+              </select>
+            </label>
+          </div>
+          <label class="feld"><span data-t="feld.start"></span>
+            <select name="startMonat" id="monat-wahl">
+              <option value="0" data-t="feld.start.offen"></option>
+            </select>
+          </label>
+        </fieldset>
+
+        <fieldset class="schritt">
+          <legend><span class="nr">2</span> <span data-t="feld.wasser"></span></legend>
+          <div class="feld" role="radiogroup" aria-labelledby="l-bew">
+            <span id="l-bew" class="feld-titel" data-t="feld.wasserArt"></span>
+            <div class="wahl bilder">
+              <label><input type="radio" name="wasserArt" value="tropf"><span class="chip"><svg class="bz" aria-hidden="true"><use href="assets/zeichen.svg#w-tropf"></use></svg><span class="ct" data-t="wasser.tropf"></span></span></label>
+              <label><input type="radio" name="wasserArt" value="beregnung"><span class="chip"><svg class="bz" aria-hidden="true"><use href="assets/zeichen.svg#w-beregnung"></use></svg><span class="ct" data-t="wasser.beregnung"></span></span></label>
+              <label><input type="radio" name="wasserArt" value="furche"><span class="chip"><svg class="bz" aria-hidden="true"><use href="assets/zeichen.svg#w-furche"></use></svg><span class="ct" data-t="wasser.furche"></span></span></label>
+              <label><input type="radio" name="wasserArt" value="regen"><span class="chip"><svg class="bz" aria-hidden="true"><use href="assets/zeichen.svg#w-regen"></use></svg><span class="ct" data-t="wasser.regen"></span></span></label>
+            </div>
+          </div>
+          <div class="nur-bewaessert">
+            <div class="zwei">
+              <label class="feld"><span data-t="feld.wasserMenge"></span>
+                <input name="wasserMenge" type="number" min="0" step="any" inputmode="decimal">
+              </label>
+              <label class="feld"><span data-t="einheit"></span>
+                <select name="mengeEinheit">
+                  <option value="m3tag" data-t="einheit.m3tag"></option>
+                  <option value="ls" data-t="einheit.ls"></option>
+                </select>
+              </label>
+            </div>
+            <div class="zwei">
+              <label class="feld"><span data-t="feld.wasserPh"></span>
+                <input name="wasserPh" type="number" min="3" max="11" step="0.1" inputmode="decimal">
+              </label>
+              <label class="feld"><span data-t="feld.wasserEc"></span>
+                <input name="wasserEc" type="number" min="0" max="20" step="0.1" inputmode="decimal">
+              </label>
+            </div>
+          </div>
+          <details class="erklaerung">
+            <summary data-t="wasErklaerung"></summary>
+            <p data-t="feld.erkl.menge"></p>
+            <p data-t="feld.erkl.ph"></p>
+            <p data-t="feld.erkl.ec"></p>
+          </details>
+        </fieldset>
+
+        <fieldset class="schritt">
+          <legend><span class="nr">3</span> <span data-t="feld.boden"></span></legend>
+          <div class="feld" role="radiogroup" aria-labelledby="l-art">
+            <span id="l-art" class="feld-titel" data-t="feld.bodenArt"></span>
+            <div class="wahl bilder">
+              <label><input type="radio" name="bodenArt" value="sand"><span class="chip"><svg class="bz" aria-hidden="true"><use href="assets/zeichen.svg#b-sand"></use></svg><span class="ct" data-t="boden.sand"></span></span></label>
+              <label><input type="radio" name="bodenArt" value="lehm"><span class="chip"><svg class="bz" aria-hidden="true"><use href="assets/zeichen.svg#b-lehm"></use></svg><span class="ct" data-t="boden.lehm"></span></span></label>
+              <label><input type="radio" name="bodenArt" value="ton"><span class="chip"><svg class="bz" aria-hidden="true"><use href="assets/zeichen.svg#b-ton"></use></svg><span class="ct" data-t="boden.ton"></span></span></label>
+            </div>
+          </div>
+          <div class="zwei">
+            <label class="feld"><span data-t="feld.bodenPh"></span>
+              <input name="bodenPh" type="number" min="3" max="11" step="0.1" inputmode="decimal">
+            </label>
+            <label class="feld"><span data-t="feld.humus"></span>
+              <input name="humus" type="number" min="0" max="30" step="0.1" inputmode="decimal">
+            </label>
+          </div>
+          <div class="drei">
+            <label class="feld"><span data-t="feld.n"></span>
+              <select name="n" class="stufe-wahl"></select>
+            </label>
+            <label class="feld"><span data-t="feld.p"></span>
+              <select name="p" class="stufe-wahl"></select>
+            </label>
+            <label class="feld"><span data-t="feld.k"></span>
+              <select name="k" class="stufe-wahl"></select>
+            </label>
+          </div>
+          <div class="zwei">
+            <label class="feld"><span data-t="feld.kalk"></span>
+              <select name="kalk" class="stufe-wahl"></select>
+            </label>
+            <label class="feld"><span data-t="feld.bodenSalz"></span>
+              <input name="bodenSalz" type="number" min="0" max="40" step="0.1" inputmode="decimal">
+            </label>
+          </div>
+          <details class="erklaerung">
+            <summary data-t="wasErklaerung"></summary>
+            <p data-t="feld.erkl.art"></p>
+            <p data-t="feld.erkl.npk"></p>
+            <p data-t="feld.erkl.humus"></p>
+          </details>
+        </fieldset>
+
+        <fieldset class="schritt">
+          <legend><span class="nr">4</span> <span data-t="feld.vorher"></span></legend>
+          <div class="drei">
+            <label class="feld"><span data-t="feld.vj0"></span><select name="vj0" class="vorjahr"></select></label>
+            <label class="feld"><span data-t="feld.vj1"></span><select name="vj1" class="vorjahr"></select></label>
+            <label class="feld"><span data-t="feld.vj2"></span><select name="vj2" class="vorjahr"></select></label>
+          </div>
+          <div class="feld">
+            <span class="feld-titel" data-t="feld.probleme"></span>
+            <div class="wahl wahl-mehr bilder">
+              <label><input type="checkbox" name="probleme" value="nematoden"><span class="chip"><svg class="bz" aria-hidden="true"><use href="assets/zeichen.svg#p-nematoden"></use></svg><span class="ct" data-t="problem.nematoden"></span></span></label>
+              <label><input type="checkbox" name="probleme" value="welke"><span class="chip"><svg class="bz" aria-hidden="true"><use href="assets/zeichen.svg#p-welke"></use></svg><span class="ct" data-t="problem.welke"></span></span></label>
+              <label><input type="checkbox" name="probleme" value="salz"><span class="chip"><svg class="bz" aria-hidden="true"><use href="assets/zeichen.svg#p-salz"></use></svg><span class="ct" data-t="problem.salz"></span></span></label>
+              <label><input type="checkbox" name="probleme" value="unkraut"><span class="chip"><svg class="bz" aria-hidden="true"><use href="assets/zeichen.svg#p-unkraut"></use></svg><span class="ct" data-t="problem.unkraut"></span></span></label>
+            </div>
+          </div>
+        </fieldset>
+
+        <div class="aktion">
+          <button type="submit" class="knopf-haupt" data-t="feld.zeigen"></button>
+          <span class="status" id="speicher-status" role="status"></span>
+        </div>
+      </form>
+
+      <section class="hilfe-teil extras nicht-drucken">
+        <div class="karte" id="app-karte" hidden>
+          <h2 id="h-app" data-t="app.installieren.titel"></h2>
+          <p data-t="app.installieren.text"></p>
+          <button type="button" class="knopf-zweit" id="app-installieren" data-t="app.installieren" hidden></button>
+          <p class="klein" id="app-ios" data-t="app.installieren.ios" hidden></p>
+        </div>
+        <div class="karte">
+          <h2 id="h-sicher" data-t="sicher.titel"></h2>
+          <p data-t="sicher.text"></p>
+          <div class="zeile-knopf">
+            <button type="button" class="knopf-zweit" id="sicher-export" data-t="sicher.export"></button>
+            <label class="knopf-zweit datei-knopf">
+              <input type="file" id="sicher-import" accept="application/json,.json" class="datei-versteckt">
+              <span data-t="sicher.import"></span>
+            </label>
+          </div>
+          <p class="status" id="sicher-status" role="status"></p>
+        </div>
+      </section>
+    </section>
+
+    <section id="ansicht-empfehlung" class="ansicht" aria-labelledby="t-empf" hidden>
+      <div class="titel-zeile"><h1 id="t-empf" data-t="empf.titel"></h1></div>
+      <div id="ergebnis" aria-live="polite"></div>
+    </section>
+
+    <section id="ansicht-kalender" class="ansicht" aria-labelledby="t-kal" hidden>
+      <div class="titel-zeile"><h1 id="t-kal" data-t="kal.titel"></h1></div>
+      <div id="kalender"></div>
+    </section>
+
+    <section id="ansicht-befall" class="ansicht" aria-labelledby="t-befall" hidden>
+      <div class="titel-zeile"><h1 id="t-befall" data-t="bef.titel"></h1></div>
+      <p class="einleitung" data-t="bef.einleitung"></p>
+      <form id="befall-form" novalidate>
+        <fieldset class="schritt">
+          <legend><span class="nr">1</span> <span data-t="bef.kultur"></span></legend>
+          <label class="feld"><span data-t="kultur"></span>
+            <select name="kultur" id="befall-kultur"><option value="" data-t="bitte.waehlen"></option></select>
+          </label>
+        </fieldset>
+        <fieldset class="schritt">
+          <legend><span class="nr">2</span> <span data-t="bef.sehen"></span></legend>
+          <p class="meta" data-t="bef.sehen.hinweis"></p>
+          <div id="symptom-wahl"></div>
+        </fieldset>
+        <fieldset class="schritt">
+          <legend><span class="nr">3</span> <span data-t="bef.beschreiben"></span></legend>
+          <label class="feld"><span data-t="bef.text"></span>
+            <textarea name="text" rows="3" data-t-placeholder="bef.text.bsp"></textarea>
+          </label>
+          <div class="feld" role="radiogroup" aria-labelledby="l-wetter">
+            <span id="l-wetter" class="feld-titel" data-t="bef.wetter"></span>
+            <div class="wahl bilder">
+              <label><input type="radio" name="wetter" value="feucht"><span class="chip"><svg class="bz" aria-hidden="true"><use href="assets/zeichen.svg#e-feucht"></use></svg><span class="ct" data-t="bef.wetter.feucht"></span></span></label>
+              <label><input type="radio" name="wetter" value="trocken"><span class="chip"><svg class="bz" aria-hidden="true"><use href="assets/zeichen.svg#e-trocken"></use></svg><span class="ct" data-t="bef.wetter.trocken"></span></span></label>
+              <label><input type="radio" name="wetter" value="" checked><span class="chip"><span class="ct" data-t="weissNicht"></span></span></label>
+            </div>
+          </div>
+          <div class="feld"><span class="feld-titel" id="foto-titel" data-t="bef.foto"></span>
+            <label class="foto-knopf">
+              <input type="file" name="foto" id="befall-foto" accept="image/*" class="datei-versteckt" aria-labelledby="foto-titel foto-text">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg>
+              <span id="foto-text" data-t="bef.foto.waehlen"></span>
+            </label>
+          </div>
+          <div id="foto-vorschau" class="foto-vorschau" hidden>
+            <img id="foto-bild" alt="" data-t-alt="bef.foto.alt">
+            <button type="button" class="link-knopf" id="foto-weg" data-t="bef.foto.weg"></button>
+          </div>
+          <p class="klein" data-t="bef.foto.hinweis"></p>
+        </fieldset>
+        <div class="aktion">
+          <button type="submit" class="knopf-haupt" data-t="bef.suchen"></button>
+          <span class="status" id="befall-status" role="status"></span>
+        </div>
+      </form>
+      <div id="befund" aria-live="polite"></div>
+    </section>
+
+    <section id="ansicht-hilfe" class="ansicht" aria-labelledby="t-hilfe" hidden>
+      <div class="titel-zeile"><h1 id="t-hilfe" data-t="hilfe.titel"></h1></div>
+      <div id="hilfe"></div>
+    </section>
+  </main>
+
+  <footer class="fuss">
+    <p data-t="fuss"></p>
+  </footer>
+</body>
+</html>

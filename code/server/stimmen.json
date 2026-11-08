@@ -1,0 +1,6 @@
+{
+  "_hinweis": "Getestet am 08.11.2026 auf dem Mac (Intel, torch 2.2.2). Alle Modelle: Lizenz CC BY-NC 4.0 (nur nicht-kommerziell). zgh: Tifinagh wird in stimme_mms.py automatisch in Lateinschrift umgeschrieben.",
+  "dar": { "aktiv": true, "befehl": ["{basis}/.venv/bin/python", "{basis}/stimme_mms.py", "jamelachahbar/vits-darija-v1", "{ausgabe}"], "zeit": 600 },
+  "zgh": { "aktiv": true, "befehl": ["{basis}/.venv/bin/python", "{basis}/stimme_mms.py", "facebook/mms-tts-shi", "{ausgabe}"], "zeit": 600 },
+  "ar":  { "aktiv": true, "befehl": ["{basis}/.venv/bin/python", "{basis}/stimme_mms.py", "facebook/mms-tts-ara", "{ausgabe}"], "zeit": 600 }
+}

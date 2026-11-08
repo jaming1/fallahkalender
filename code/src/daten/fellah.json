@@ -1,0 +1,249 @@
+{
+ "_hinweis": "Variante A: الشولة ab 16.11. fellahi (= 29.11.), je 13 Tage, الجبهة 14 Tage. Überlieferung, regional verschieden. Zur Prüfung durch den Nutzer.",
+ "variante": "A",
+ "quellen": {
+  "hespress": {
+   "name": "Hespress – التقويم الفلاحي",
+   "url": "https://www.hespress.com/%D9%87%D9%83%D8%B0%D8%A7-%D9%83%D8%A7%D9%86-%D8%A7%D9%84%D9%82%D8%AF%D9%85%D8%A7%D8%A1-%D9%8A%D8%A4%D8%B1%D8%AE%D9%88%D9%86-%D9%88%D9%8A%D9%82%D8%B3%D9%85%D9%88%D9%86-%D8%A7%D9%84%D8%B3%D9%86%D8%A9-137829.html"
+  },
+  "blog": {
+   "name": "المنازل الفلاحية في الموروث الثقافي المغربي",
+   "url": "http://youssefessabih.blogspot.com/2014/10/blog-post.html"
+  }
+ },
+ "monate": [
+  "يناير",
+  "فبراير",
+  "مارس",
+  "أبريل",
+  "ماي",
+  "يونيو",
+  "يوليوز",
+  "غشت",
+  "شتنبر",
+  "أكتوبر",
+  "نونبر",
+  "دجنبر"
+ ],
+ "anwa": [
+  {
+   "name": "الشولة",
+   "start": "11-29",
+   "tage": 13,
+   "bedeutung": "Spätherbst, die Bäume verlieren ihr Laub. Traditionell wird jetzt vor allem Gerste gesät.",
+   "quelleBedeutung": "blog"
+  },
+  {
+   "name": "النعائم",
+   "start": "12-12",
+   "tage": 13,
+   "bedeutung": "Kalter Winter mit Frost und langen Nächten.",
+   "quelleBedeutung": "blog"
+  },
+  {
+   "name": "البلدة",
+   "start": "12-25",
+   "tage": 13,
+   "bedeutung": "Viel Regen, Wind und Kälte; schwere Zeit für das Vieh.",
+   "quelleBedeutung": "blog"
+  },
+  {
+   "name": "سعد الذابح",
+   "start": "01-07",
+   "tage": 13,
+   "bedeutung": "Strenge Kälte und Regen.",
+   "quelleBedeutung": "blog"
+  },
+  {
+   "name": "سعد بلع",
+   "start": "01-20",
+   "tage": 13,
+   "bedeutung": "Tiefer Winter, Wasser im Boden kann gefrieren.",
+   "quelleBedeutung": "blog"
+  },
+  {
+   "name": "سعد السعود",
+   "start": "02-02",
+   "tage": 13,
+   "bedeutung": "Die Kälte lässt nach, die Pflanzen erwachen, Schädlinge kommen aus dem Winterversteck.",
+   "quelleBedeutung": "blog"
+  },
+  {
+   "name": "سعد الأخبية",
+   "start": "02-15",
+   "tage": 13,
+   "bedeutung": "Es wird wärmer, erste Blüten, Insekten und Nager werden aktiv.",
+   "quelleBedeutung": "blog"
+  },
+  {
+   "name": "الفرغ المقدم",
+   "start": "02-28",
+   "tage": 13,
+   "bedeutung": "Benannt nach starkem Regen; Zeit für fleißige Arbeit.",
+   "quelleBedeutung": "blog"
+  },
+  {
+   "name": "الفرغ المؤخر",
+   "start": "03-13",
+   "tage": 13,
+   "bedeutung": "Frühling beginnt.",
+   "quelleBedeutung": "blog"
+  },
+  {
+   "name": "بطن الحوت",
+   "start": "03-26",
+   "tage": 13,
+   "bedeutung": "Frühlingsregen, entscheidend für die Ernte.",
+   "quelleBedeutung": "blog"
+  },
+  {
+   "name": "النطح",
+   "start": "04-08",
+   "tage": 13,
+   "bedeutung": "Herz des Frühlings: die Kulturen wachsen schnell, das Vieh kommt zu Kräften.",
+   "quelleBedeutung": "blog"
+  },
+  {
+   "name": "البطين",
+   "start": "04-21",
+   "tage": 13,
+   "bedeutung": "Beginn der Wärme, wenig Regen.",
+   "quelleBedeutung": "blog"
+  },
+  {
+   "name": "الثريا",
+   "start": "05-04",
+   "tage": 13,
+   "bedeutung": "Beginn der Getreideernte.",
+   "quelleBedeutung": "blog"
+  },
+  {
+   "name": "الدبران",
+   "start": "05-17",
+   "tage": 13,
+   "bedeutung": "Frühsommer, das Getreide reift aus, Tümpel trocknen.",
+   "quelleBedeutung": "blog"
+  },
+  {
+   "name": "الهقعة",
+   "start": "05-30",
+   "tage": 13,
+   "bedeutung": "Große Hitze, Ähren werden brüchig; später Regen ist gefürchtet.",
+   "quelleBedeutung": "blog"
+  },
+  {
+   "name": "الهنعة",
+   "start": "06-12",
+   "tage": 13,
+   "bedeutung": "Ende der Ernte, Beginn des Dreschens, Hitze auf dem Höhepunkt.",
+   "quelleBedeutung": "blog"
+  },
+  {
+   "name": "الذراع",
+   "start": "06-25",
+   "tage": 13,
+   "bedeutung": null,
+   "quelleBedeutung": null
+  },
+  {
+   "name": "النثرة",
+   "start": "07-08",
+   "tage": 13,
+   "bedeutung": null,
+   "quelleBedeutung": null
+  },
+  {
+   "name": "الطرفة",
+   "start": "07-21",
+   "tage": 13,
+   "bedeutung": null,
+   "quelleBedeutung": null
+  },
+  {
+   "name": "الجبهة",
+   "start": "08-03",
+   "tage": 14,
+   "bedeutung": null,
+   "quelleBedeutung": null
+  },
+  {
+   "name": "الزبرة",
+   "start": "08-17",
+   "tage": 13,
+   "bedeutung": null,
+   "quelleBedeutung": null
+  },
+  {
+   "name": "الصرفة",
+   "start": "08-30",
+   "tage": 13,
+   "bedeutung": "Beginn des Herbstes im Bauernkalender.",
+   "quelleBedeutung": "hespress"
+  },
+  {
+   "name": "العواء",
+   "start": "09-12",
+   "tage": 13,
+   "bedeutung": null,
+   "quelleBedeutung": null
+  },
+  {
+   "name": "السماك",
+   "start": "09-25",
+   "tage": 13,
+   "bedeutung": null,
+   "quelleBedeutung": null
+  },
+  {
+   "name": "الغفر",
+   "start": "10-08",
+   "tage": 13,
+   "bedeutung": null,
+   "quelleBedeutung": null
+  },
+  {
+   "name": "الزبانا",
+   "start": "10-21",
+   "tage": 13,
+   "bedeutung": null,
+   "quelleBedeutung": null
+  },
+  {
+   "name": "الإكليل",
+   "start": "11-03",
+   "tage": 13,
+   "bedeutung": null,
+   "quelleBedeutung": null
+  },
+  {
+   "name": "القلب",
+   "start": "11-16",
+   "tage": 13,
+   "bedeutung": null,
+   "quelleBedeutung": null
+  }
+ ],
+ "abschnitte": [
+  {
+   "name": "الليالي",
+   "von": "12-25",
+   "bis": "02-02",
+   "text": "Die 40 kältesten Nächte des Jahres. Pflanzen wachsen kaum; Frostschutz für empfindliche Kulturen.",
+   "quelle": "hespress"
+  },
+  {
+   "name": "العنصرة",
+   "von": "07-07",
+   "bis": "07-07",
+   "text": "Mittsommertag im Bauernkalender.",
+   "quelle": "hespress"
+  },
+  {
+   "name": "السمايم",
+   "von": "07-25",
+   "bis": "09-02",
+   "text": "Die heißesten Tage mit dem heißen Ostwind (Chergui). Früh morgens oder abends bewässern, Pflanzen beschatten.",
+   "quelle": "hespress"
+  }
+ ]
+}

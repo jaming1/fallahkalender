@@ -1,0 +1,938 @@
+{
+ "duenger:harnstoff": {
+  "datei": "assets/bilder/duenger_harnstoff.jpg",
+  "autor": "LHcheM",
+  "lizenz": "CC BY-SA 3.0",
+  "seite": "https://commons.wikimedia.org/wiki/File:Sample_of_Urea.jpg",
+  "breite": 423,
+  "hoehe": 480
+ },
+ "duenger:kaliumsulfat": {
+  "datei": "assets/bilder/duenger_kaliumsulfat.jpg",
+  "autor": "Rasbak",
+  "lizenz": "CC BY-SA 3.0",
+  "seite": "https://commons.wikimedia.org/wiki/File:Patentkali_(Potassium_sulfate_with_magnesium).jpg",
+  "breite": 455,
+  "hoehe": 480
+ },
+ "duenger:map": {
+  "datei": "assets/bilder/duenger_map.jpg",
+  "autor": "Suyash Dwivedi",
+  "lizenz": "CC BY-SA 4.0",
+  "seite": "https://commons.wikimedia.org/wiki/File:DAP_(Diammonium_Phosphate)_Granules_(3).jpg",
+  "breite": 480,
+  "hoehe": 384
+ },
+ "duenger:mist": {
+  "datei": "assets/bilder/duenger_mist.jpg",
+  "autor": "Philip Halling",
+  "lizenz": "CC BY-SA 2.0",
+  "seite": "https://commons.wikimedia.org/wiki/File:Farmyard_manure_-_geograph.org.uk_-_6173977.jpg",
+  "breite": 480,
+  "hoehe": 360
+ },
+ "duenger:tsp": {
+  "datei": "assets/bilder/duenger_tsp.jpg",
+  "autor": "Rasbak",
+  "lizenz": "CC BY-SA 3.0",
+  "seite": "https://commons.wikimedia.org/wiki/File:Tripelsuperfosfaat_(triple_phosphate).jpg",
+  "breite": 419,
+  "hoehe": 480
+ },
+ "krankheit:ascochyta": {
+  "datei": "assets/bilder/krankheit_ascochyta.jpg",
+  "autor": "Dr. Weidong Chen Research Plant Pathologist",
+  "lizenz": "Public domain",
+  "seite": "https://commons.wikimedia.org/wiki/File:Didymella_rabiei_(Chickpea_ascochyta_blight_fungus).jpg",
+  "breite": 480,
+  "hoehe": 360
+ },
+ "krankheit:blattlaeuse": {
+  "datei": "assets/bilder/krankheit_blattlaeuse.jpg",
+  "autor": "Sanjay Acharya",
+  "lizenz": "CC BY-SA 4.0",
+  "seite": "https://commons.wikimedia.org/wiki/File:Aphids_on_Kale_leaf.jpg",
+  "breite": 480,
+  "hoehe": 321
+ },
+ "krankheit:bluetenendfaeule": {
+  "datei": "assets/bilder/krankheit_bluetenendfaeule.jpg",
+  "autor": "Fructibus",
+  "lizenz": "CC0",
+  "seite": "https://commons.wikimedia.org/wiki/File:Blossom_end_rot_tomato_2017_A.jpg",
+  "breite": 463,
+  "hoehe": 480
+ },
+ "krankheit:duerrflecken": {
+  "datei": "assets/bilder/krankheit_duerrflecken.jpg",
+  "autor": "Clemson University - USDA Cooperative Extension Slide Series",
+  "lizenz": "CC BY 3.0 us",
+  "seite": "https://commons.wikimedia.org/wiki/File:Alternaria_solani_-_leaf_lesions.jpg",
+  "breite": 480,
+  "hoehe": 480
+ },
+ "krankheit:echter_mehltau": {
+  "datei": "assets/bilder/krankheit_echter_mehltau.jpg",
+  "autor": "Ken Kneidel",
+  "lizenz": "CC0",
+  "seite": "https://commons.wikimedia.org/wiki/File:Podosphaera-xanthii-xanthium.jpg",
+  "breite": 455,
+  "hoehe": 480
+ },
+ "krankheit:eisenmangel": {
+  "datei": "assets/bilder/krankheit_eisenmangel.jpg",
+  "autor": "Natalka Ukraine",
+  "lizenz": "CC BY 4.0",
+  "seite": "https://commons.wikimedia.org/wiki/File:Iron_chlorosis_on_young_rose_leaves_in_a_garden,_by_baby-bear.org.jpg",
+  "breite": 360,
+  "hoehe": 480
+ },
+ "krankheit:erdraupen": {
+  "datei": "assets/bilder/krankheit_erdraupen.jpg",
+  "autor": "W.M. Hantsbarger, Bugwood.org",
+  "lizenz": "CC BY 3.0 us",
+  "seite": "https://commons.wikimedia.org/wiki/File:Agrotis_ipsilon_larva.jpg",
+  "breite": 480,
+  "hoehe": 365
+ },
+ "krankheit:fusarium": {
+  "datei": "assets/bilder/krankheit_fusarium.jpg",
+  "autor": "Victor M. Vicente Selvas",
+  "lizenz": "CC BY-SA 3.0",
+  "seite": "https://commons.wikimedia.org/wiki/File:Tomaquera_amb_Fusarium_HV.JPG",
+  "breite": 316,
+  "hoehe": 480
+ },
+ "krankheit:getreide_mehltau": {
+  "datei": "assets/bilder/krankheit_getreide_mehltau.jpg",
+  "autor": "Wikimedia Commons",
+  "lizenz": "CC BY 3.0 us",
+  "seite": "https://commons.wikimedia.org/wiki/File:Barleypowderymildew.jpg",
+  "breite": 480,
+  "hoehe": 320
+ },
+ "krankheit:grauschimmel": {
+  "datei": "assets/bilder/krankheit_grauschimmel.jpg",
+  "autor": "Rasbak",
+  "lizenz": "CC BY-SA 3.0",
+  "seite": "https://commons.wikimedia.org/wiki/File:Aardbei_Lambada_vruchtrot_Botrytis_cinerea.jpg",
+  "breite": 383,
+  "hoehe": 480
+ },
+ "krankheit:helicoverpa": {
+  "datei": "assets/bilder/krankheit_helicoverpa.jpg",
+  "autor": "Polish.Pav",
+  "lizenz": "CC0",
+  "seite": "https://commons.wikimedia.org/wiki/File:Helicoverpa_armigera_caterpillar_on_a_yellow_tomato_pedicel_01.jpg",
+  "breite": 360,
+  "hoehe": 480
+ },
+ "krankheit:hessenfliege": {
+  "datei": "assets/bilder/krankheit_hessenfliege.jpg",
+  "autor": "Wikimedia Commons",
+  "lizenz": "Public domain",
+  "seite": "https://commons.wikimedia.org/wiki/File:Hessian_Fly.jpg",
+  "breite": 480,
+  "hoehe": 326
+ },
+ "krankheit:kartoffelmotte": {
+  "datei": "assets/bilder/krankheit_kartoffelmotte.jpg",
+  "autor": "Caroline Harding, MAF",
+  "lizenz": "CC BY 3.0 au",
+  "seite": "https://commons.wikimedia.org/wiki/File:Phthorimaea_operculella_dorsal.jpg",
+  "breite": 480,
+  "hoehe": 360
+ },
+ "krankheit:krautfaeule": {
+  "datei": "assets/bilder/krankheit_krautfaeule.jpg",
+  "autor": "Downtowngal",
+  "lizenz": "CC BY-SA 3.0",
+  "seite": "https://commons.wikimedia.org/wiki/File:Tomato_with_Phytophthora_infestans_(late_blight).jpg",
+  "breite": 480,
+  "hoehe": 242
+ },
+ "krankheit:kuerbis_falscher_mehltau": {
+  "datei": "assets/bilder/krankheit_kuerbis_falscher_mehltau.jpg",
+  "autor": "blastcat",
+  "lizenz": "CC BY 4.0",
+  "seite": "https://commons.wikimedia.org/wiki/File:Pseudoperonospora_cubensis_147541352.jpg",
+  "breite": 480,
+  "hoehe": 270
+ },
+ "krankheit:leveillula": {
+  "datei": "assets/bilder/krankheit_leveillula.jpg",
+  "autor": "Alexoutside",
+  "lizenz": "CC BY 4.0",
+  "seite": "https://commons.wikimedia.org/wiki/File:Phyllactinia-taurica-alex.jpg",
+  "breite": 480,
+  "hoehe": 320
+ },
+ "krankheit:luzerneruessler": {
+  "datei": "assets/bilder/krankheit_luzerneruessler.jpg",
+  "autor": "AfroBrazilian",
+  "lizenz": "CC BY-SA 4.0",
+  "seite": "https://commons.wikimedia.org/wiki/File:Hypera_postica_03.JPG",
+  "breite": 480,
+  "hoehe": 360
+ },
+ "krankheit:minierfliege": {
+  "datei": "assets/bilder/krankheit_minierfliege.jpg",
+  "autor": "Even Dankowicz",
+  "lizenz": "CC BY 4.0",
+  "seite": "https://commons.wikimedia.org/wiki/File:Liriomyza_commelinae_leaf_mines.jpg",
+  "breite": 480,
+  "hoehe": 394
+ },
+ "krankheit:mosaikvirus": {
+  "datei": "assets/bilder/krankheit_mosaikvirus.jpg",
+  "autor": "Downtowngal",
+  "lizenz": "CC BY-SA 4.0",
+  "seite": "https://commons.wikimedia.org/wiki/File:Zucchini_yellow_mosaic_virus_leaf.jpg",
+  "breite": 471,
+  "hoehe": 480
+ },
+ "krankheit:nematoden": {
+  "datei": "assets/bilder/krankheit_nematoden.jpg",
+  "autor": "USDAgov",
+  "lizenz": "Public domain",
+  "seite": "https://commons.wikimedia.org/wiki/File:Guava_Root-Knot_Nematode_Research_(20180907-ARS-WR-0001).jpg",
+  "breite": 480,
+  "hoehe": 320
+ },
+ "krankheit:phytophthora_capsici": {
+  "datei": "assets/bilder/krankheit_phytophthora_capsici.jpg",
+  "autor": "Kerstin Mahler, Anbauberatung Gemüsebau sowie Heil- und Gewürzpflanzen, beim DLR…",
+  "lizenz": "CC BY-SA 4.0",
+  "seite": "https://commons.wikimedia.org/wiki/File:Zucchini_Phytophthora_capsici-Kerstin-Mahler-3.jpg",
+  "breite": 480,
+  "hoehe": 313
+ },
+ "krankheit:purpurflecken": {
+  "datei": "assets/bilder/krankheit_purpurflecken.jpg",
+  "autor": "New Zealand Fungal and Plant Disease Collection (PDD) - Landcare Research",
+  "lizenz": "CC BY 3.0",
+  "seite": "https://commons.wikimedia.org/wiki/File:Alternaria_porri.jpg",
+  "breite": 480,
+  "hoehe": 322
+ },
+ "krankheit:rost": {
+  "datei": "assets/bilder/krankheit_rost.jpg",
+  "autor": "Rasbak",
+  "lizenz": "CC BY-SA 3.0",
+  "seite": "https://commons.wikimedia.org/wiki/File:Puccinia_recondita_f.sp._tritici_on_Triticum_aestivum,_Bruine_roest_op_gewone_tarwe.jpg",
+  "breite": 480,
+  "hoehe": 347
+ },
+ "krankheit:schokoflecken": {
+  "datei": "assets/bilder/krankheit_schokoflecken.jpg",
+  "autor": "Rasbak",
+  "lizenz": "CC BY-SA 3.0",
+  "seite": "https://commons.wikimedia.org/wiki/File:Tuinboon_Chocoladevlekkenziekte.jpg",
+  "breite": 426,
+  "hoehe": 480
+ },
+ "krankheit:schorf": {
+  "datei": "assets/bilder/krankheit_schorf.jpg",
+  "autor": "JasonG1313",
+  "lizenz": "CC BY-SA 4.0",
+  "seite": "https://commons.wikimedia.org/wiki/File:Streptomyces_Scabies.jpg",
+  "breite": 472,
+  "hoehe": 480
+ },
+ "krankheit:seide": {
+  "datei": "assets/bilder/krankheit_seide.jpg",
+  "autor": "Bernard DUPONT from FRANCE",
+  "lizenz": "CC BY-SA 2.0",
+  "seite": "https://commons.wikimedia.org/wiki/File:Golden_Dodder_(Cuscuta_campestris)_(46618486901).jpg",
+  "breite": 480,
+  "hoehe": 244
+ },
+ "krankheit:septoria": {
+  "datei": "assets/bilder/krankheit_septoria.jpg",
+  "autor": "Maccheek",
+  "lizenz": "Public domain",
+  "seite": "https://commons.wikimedia.org/wiki/File:Septoria-tritici.jpg",
+  "breite": 480,
+  "hoehe": 348
+ },
+ "krankheit:sommerwurz": {
+  "datei": "assets/bilder/krankheit_sommerwurz.jpg",
+  "autor": "Luis Fernández García",
+  "lizenz": "CC BY-SA 4.0",
+  "seite": "https://commons.wikimedia.org/wiki/File:Orobanche_ramosa_20140416a.jpg",
+  "breite": 420,
+  "hoehe": 480
+ },
+ "krankheit:spinnmilben": {
+  "datei": "assets/bilder/krankheit_spinnmilben.jpg",
+  "autor": "Rasbak",
+  "lizenz": "CC BY-SA 3.0",
+  "seite": "https://commons.wikimedia.org/wiki/File:Tetranychus_urticae_on_sweet_pepper,_Bonenspintmijt_op_paprika.jpg",
+  "breite": 480,
+  "hoehe": 360
+ },
+ "krankheit:stengelbohrer": {
+  "datei": "assets/bilder/krankheit_stengelbohrer.jpg",
+  "autor": "gailhampshire from Cradley, Malvern, U.K",
+  "lizenz": "CC BY 2.0",
+  "seite": "https://commons.wikimedia.org/wiki/File:Sesamia_nonagrioides_-_Flickr_-_gailhampshire.jpg",
+  "breite": 480,
+  "hoehe": 414
+ },
+ "krankheit:stickstoffmangel": {
+  "datei": "assets/bilder/krankheit_stickstoffmangel.jpg",
+  "autor": "Rasbak",
+  "lizenz": "CC BY-SA 3.0",
+  "seite": "https://commons.wikimedia.org/wiki/File:Phaseolus_vulgaris_nitrogen_deficiency.jpg",
+  "breite": 360,
+  "hoehe": 480
+ },
+ "krankheit:thripse": {
+  "datei": "assets/bilder/krankheit_thripse.jpg",
+  "autor": "Alton N. Sparks, Jr., University of Georgia, Bugwood.org",
+  "lizenz": "CC BY 3.0 us",
+  "seite": "https://commons.wikimedia.org/wiki/File:Thrips_tabaci,_Frankliniella_occidentalis.jpg",
+  "breite": 320,
+  "hoehe": 480
+ },
+ "krankheit:tuta": {
+  "datei": "assets/bilder/krankheit_tuta.jpg",
+  "autor": "Metin GULESCI, Leaf Tobacco, Bugwood.org",
+  "lizenz": "CC BY 3.0 us",
+  "seite": "https://commons.wikimedia.org/wiki/File:Tuta_absoluta_Tomato_loss.jpg",
+  "breite": 480,
+  "hoehe": 360
+ },
+ "krankheit:tylcv": {
+  "datei": "assets/bilder/krankheit_tylcv.jpg",
+  "autor": "Kembangraps",
+  "lizenz": "CC0",
+  "seite": "https://commons.wikimedia.org/wiki/File:Yellow_curl_leaf_disease_Pj_IMG_3162.jpg",
+  "breite": 480,
+  "hoehe": 360
+ },
+ "krankheit:wassermangel": {
+  "datei": "assets/bilder/krankheit_wassermangel.jpg",
+  "autor": "Schlaghecken Josef",
+  "lizenz": "CC BY-SA 4.0",
+  "seite": "https://commons.wikimedia.org/wiki/File:Gurken_K%C3%A4lteschaden_bei_9%C2%B0C,_Josef_Schlaghecken.jpg",
+  "breite": 480,
+  "hoehe": 360
+ },
+ "krankheit:weisse_fliege": {
+  "datei": "assets/bilder/krankheit_weisse_fliege.jpg",
+  "autor": "Wikimedia Commons",
+  "lizenz": "Public domain",
+  "seite": "https://commons.wikimedia.org/wiki/File:Silverleaf_whitefly.jpg",
+  "breite": 480,
+  "hoehe": 354
+ },
+ "krankheit:zw_falscher_mehltau": {
+  "datei": "assets/bilder/krankheit_zw_falscher_mehltau.jpg",
+  "autor": "Jochen Kreiselmaier, Pflanzenschutzberater beim Dienstleistungszentrum Ländliche…",
+  "lizenz": "CC BY 4.0",
+  "seite": "https://commons.wikimedia.org/wiki/File:Falscher_Mehltau_2_(Peronospora_destructor)-DLR-NW-jk.jpg",
+  "breite": 480,
+  "hoehe": 360
+ },
+ "kultur:ackerbohne": {
+  "datei": "assets/bilder/kultur_ackerbohne.jpg",
+  "autor": "Schlaghecken Josef",
+  "lizenz": "CC BY-SA 4.0",
+  "seite": "https://commons.wikimedia.org/wiki/File:Dicke_Bohne_(Vicia_faba)_erntereife_H%C3%BClsen,_Josef_Schlaghecken.jpg",
+  "breite": 480,
+  "hoehe": 360
+ },
+ "kultur:erdbeere": {
+  "datei": "assets/bilder/kultur_erdbeere.jpg",
+  "autor": "Wikimedia Commons",
+  "lizenz": "CC BY-SA 2.0",
+  "seite": "https://commons.wikimedia.org/wiki/File:Strawberries.JPG",
+  "breite": 480,
+  "hoehe": 360
+ },
+ "kultur:gerste": {
+  "datei": "assets/bilder/kultur_gerste.jpg",
+  "autor": "Lucash",
+  "lizenz": "CC BY-SA 3.0",
+  "seite": "https://commons.wikimedia.org/wiki/File:Barley_in_Slovenia.jpg",
+  "breite": 331,
+  "hoehe": 480
+ },
+ "kultur:hartweizen": {
+  "datei": "assets/bilder/kultur_hartweizen.jpg",
+  "autor": "Behailu Mulugeta (SLU)",
+  "lizenz": "CC BY-SA 4.0",
+  "seite": "https://commons.wikimedia.org/wiki/File:Ethiopian_Durum_wheat_.jpg",
+  "breite": 480,
+  "hoehe": 360
+ },
+ "kultur:karotte": {
+  "datei": "assets/bilder/kultur_karotte.jpg",
+  "autor": "Chad Skeers",
+  "lizenz": "CC BY 2.0",
+  "seite": "https://commons.wikimedia.org/wiki/File:Carrot_harvest_with_subtle_rebellion_(5457912937).jpg",
+  "breite": 480,
+  "hoehe": 320
+ },
+ "kultur:kartoffel": {
+  "datei": "assets/bilder/kultur_kartoffel.jpg",
+  "autor": "Ruslan V. Albitsky aka pauk",
+  "lizenz": "CC BY-SA 3.0",
+  "seite": "https://commons.wikimedia.org/wiki/File:Potato_tubers_in_pail.jpg",
+  "breite": 480,
+  "hoehe": 360
+ },
+ "kultur:kichererbse": {
+  "datei": "assets/bilder/kultur_kichererbse.jpg",
+  "autor": "Carl Davies, CSIRO",
+  "lizenz": "CC BY 3.0",
+  "seite": "https://commons.wikimedia.org/wiki/File:CSIRO_ScienceImage_3600_Chickpeas_in_glasshouse.jpg",
+  "breite": 480,
+  "hoehe": 313
+ },
+ "kultur:luzerne": {
+  "datei": "assets/bilder/kultur_luzerne.jpg",
+  "autor": "jacilluch",
+  "lizenz": "CC BY-SA 2.0",
+  "seite": "https://commons.wikimedia.org/wiki/File:Alfalfa_-_Trebol_de_Espa%C3%B1a_(10247116944).jpg",
+  "breite": 480,
+  "hoehe": 360
+ },
+ "kultur:mais": {
+  "datei": "assets/bilder/kultur_mais.jpg",
+  "autor": "Suglo20",
+  "lizenz": "CC BY-SA 4.0",
+  "seite": "https://commons.wikimedia.org/wiki/File:Maize_Cob_Forming.jpg",
+  "breite": 360,
+  "hoehe": 480
+ },
+ "kultur:melone": {
+  "datei": "assets/bilder/kultur_melone.jpg",
+  "autor": "USDA photo by Scott Bauer. Image Number K7355-11.",
+  "lizenz": "Public domain",
+  "seite": "https://commons.wikimedia.org/wiki/File:Cucumis_melo_var._reticulatus_(photo_by_Scott_Bauer).jpg",
+  "breite": 480,
+  "hoehe": 322
+ },
+ "kultur:paprika": {
+  "datei": "assets/bilder/kultur_paprika.jpg",
+  "autor": "AntanO",
+  "lizenz": "CC BY-SA 4.0",
+  "seite": "https://commons.wikimedia.org/wiki/File:Red_bell_pepper.jpg",
+  "breite": 480,
+  "hoehe": 320
+ },
+ "kultur:tomate": {
+  "datei": "assets/bilder/kultur_tomate.jpg",
+  "autor": "Ramjchandran",
+  "lizenz": "CC BY-SA 4.0",
+  "seite": "https://commons.wikimedia.org/wiki/File:Tomato_fruits_green.JPG",
+  "breite": 480,
+  "hoehe": 360
+ },
+ "kultur:zucchini": {
+  "datei": "assets/bilder/kultur_zucchini.jpg",
+  "autor": "Diego Delso",
+  "lizenz": "CC BY-SA 3.0",
+  "seite": "https://commons.wikimedia.org/wiki/File:Calabac%C3%ADn,_M%C3%BAnich,_Alemania,_2013-03-30,_DD_01.JPG",
+  "breite": 480,
+  "hoehe": 324
+ },
+ "kultur:zwiebel": {
+  "datei": "assets/bilder/kultur_zwiebel.jpg",
+  "autor": "Pascal Kings",
+  "lizenz": "CC BY 4.0",
+  "seite": "https://commons.wikimedia.org/wiki/File:Harvested_vegetables(Onions).jpg",
+  "breite": 480,
+  "hoehe": 288
+ },
+ "massnahme:auswaschen": {
+  "datei": "assets/bilder/massnahme_auswaschen.jpg",
+  "autor": "Wikimedia Commons",
+  "lizenz": "Public domain",
+  "seite": "https://commons.wikimedia.org/wiki/File:LevelBasinFloodIrrigation.JPG",
+  "breite": 480,
+  "hoehe": 343
+ },
+ "massnahme:beete": {
+  "datei": "assets/bilder/massnahme_beete.jpg",
+  "autor": "David Hawgood",
+  "lizenz": "CC BY-SA 2.0",
+  "seite": "https://commons.wikimedia.org/wiki/File:Raised_vegetable_beds_for_disabled_access_-_geograph.org.uk_-_1411061.jpg",
+  "breite": 480,
+  "hoehe": 360
+ },
+ "massnahme:bewaesserung": {
+  "datei": "assets/bilder/massnahme_bewaesserung.jpg",
+  "autor": "Joanbanjo",
+  "lizenz": "CC BY-SA 4.0",
+  "seite": "https://commons.wikimedia.org/wiki/File:Camp_de_cols_joves_a_l%27entrador_de_l%27alqueria_de_Ferriol,_les_Cases_de_B%C3%A0rcena.jpg",
+  "breite": 480,
+  "hoehe": 320
+ },
+ "massnahme:bodenlockerung": {
+  "datei": "assets/bilder/massnahme_bodenlockerung.jpg",
+  "autor": "BulldozerD11",
+  "lizenz": "CC BY-SA 3.0",
+  "seite": "https://commons.wikimedia.org/wiki/File:Ford_FW_30_pulling_Subsoiler.jpg",
+  "breite": 480,
+  "hoehe": 320
+ },
+ "massnahme:brunnen": {
+  "datei": "assets/bilder/massnahme_brunnen.jpg",
+  "autor": "DatraxMada",
+  "lizenz": "CC BY-SA 4.0",
+  "seite": "https://commons.wikimedia.org/wiki/File:Well_Drilling_Rig_in_Haiti.jpg",
+  "breite": 360,
+  "hoehe": 480
+ },
+ "massnahme:daemme": {
+  "datei": "assets/bilder/massnahme_daemme.jpg",
+  "autor": "Val Vannet",
+  "lizenz": "CC BY-SA 2.0",
+  "seite": "https://commons.wikimedia.org/wiki/File:Ridges_and_Furrows_near_Brechin_-_geograph.org.uk_-_8395.jpg",
+  "breite": 480,
+  "hoehe": 360
+ },
+ "massnahme:drainage": {
+  "datei": "assets/bilder/massnahme_drainage.jpg",
+  "autor": "Ian Paterson",
+  "lizenz": "CC BY-SA 2.0",
+  "seite": "https://commons.wikimedia.org/wiki/File:Drainage_Ditch_Alongside_Field_-_geograph.org.uk_-_771493.jpg",
+  "breite": 480,
+  "hoehe": 321
+ },
+ "massnahme:folientunnel": {
+  "datei": "assets/bilder/massnahme_folientunnel.jpg",
+  "autor": "Keith Evans",
+  "lizenz": "CC BY-SA 2.0",
+  "seite": "https://commons.wikimedia.org/wiki/File:Polythene_Field_-_geograph.org.uk_-_367720.jpg",
+  "breite": 480,
+  "hoehe": 360
+ },
+ "massnahme:gewaechshaus": {
+  "datei": "assets/bilder/massnahme_gewaechshaus.jpg",
+  "autor": "Petro Stelte",
+  "lizenz": "CC BY-SA 4.0",
+  "seite": "https://commons.wikimedia.org/wiki/File:Cherry-Tomatoes-Greenhouse-Sitia-Crete-Greece-3.jpg",
+  "breite": 480,
+  "hoehe": 360
+ },
+ "massnahme:kalk": {
+  "datei": "assets/bilder/massnahme_kalk.jpg",
+  "autor": "Kenneth Allen",
+  "lizenz": "CC BY-SA 2.0",
+  "seite": "https://commons.wikimedia.org/wiki/File:Spreading_lime,_Beragh_-_geograph.org.uk_-_7285830.jpg",
+  "breite": 480,
+  "hoehe": 322
+ },
+ "massnahme:kompost": {
+  "datei": "assets/bilder/massnahme_kompost.jpg",
+  "autor": "Acabashi",
+  "lizenz": "CC BY-SA 4.0",
+  "seite": "https://commons.wikimedia.org/wiki/File:Compost_heap_Heyrons_High_Easter_Essex_02.jpg",
+  "breite": 480,
+  "hoehe": 300
+ },
+ "massnahme:mist": {
+  "datei": "assets/bilder/massnahme_mist.jpg",
+  "autor": "Rickjpelleg",
+  "lizenz": "CC BY-SA 4.0",
+  "seite": "https://commons.wikimedia.org/wiki/File:Horse_Manure_and_Hay_Detritus.jpg",
+  "breite": 480,
+  "hoehe": 327
+ },
+ "massnahme:mulch": {
+  "datei": "assets/bilder/massnahme_mulch.jpg",
+  "autor": "KATORISI",
+  "lizenz": "CC BY-SA 3.0",
+  "seite": "https://commons.wikimedia.org/wiki/File:Mulch,sweet_potato_field,katori-city,japan.JPG",
+  "breite": 480,
+  "hoehe": 360
+ },
+ "massnahme:schwefel": {
+  "datei": "assets/bilder/massnahme_schwefel.jpg",
+  "autor": "TimBomBom1",
+  "lizenz": "CC BY-SA 4.0",
+  "seite": "https://commons.wikimedia.org/wiki/File:Solid_Sulfur_Granules.jpg",
+  "breite": 480,
+  "hoehe": 270
+ },
+ "massnahme:solarisation": {
+  "datei": "assets/bilder/massnahme_solarisation.jpg",
+  "autor": "RAHUL143",
+  "lizenz": "CC BY-SA 4.0",
+  "seite": "https://commons.wikimedia.org/wiki/File:SOIL_SOLARIZATION.jpg",
+  "breite": 480,
+  "hoehe": 360
+ },
+ "massnahme:solarpumpe": {
+  "datei": "assets/bilder/massnahme_solarpumpe.jpg",
+  "autor": "SMMIMAGES",
+  "lizenz": "CC BY-SA 4.0",
+  "seite": "https://commons.wikimedia.org/wiki/File:SOLAR_POWER_IRRIGATION_RICE_FARMING.jpg",
+  "breite": 480,
+  "hoehe": 321
+ },
+ "massnahme:tropf": {
+  "datei": "assets/bilder/massnahme_tropf.jpg",
+  "autor": "Dwight Sipler from Stow, MA, USA",
+  "lizenz": "CC BY 2.0",
+  "seite": "https://commons.wikimedia.org/wiki/File:Drip_irrigation_(2552390830).jpg",
+  "breite": 320,
+  "hoehe": 480
+ },
+ "massnahme:veredelt": {
+  "datei": "assets/bilder/massnahme_veredelt.jpg",
+  "autor": "Judgefloro",
+  "lizenz": "CC BY-SA 4.0",
+  "seite": "https://commons.wikimedia.org/wiki/File:JfPlantsSRafaelGrafts668Bulacanfvf.JPG",
+  "breite": 480,
+  "hoehe": 360
+ },
+ "massnahme:wasserbecken": {
+  "datei": "assets/bilder/massnahme_wasserbecken.jpg",
+  "autor": "Richard Croft",
+  "lizenz": "CC BY-SA 2.0",
+  "seite": "https://commons.wikimedia.org/wiki/File:Irrigation_reservoir_-_geograph.org.uk_-_1425181.jpg",
+  "breite": 480,
+  "hoehe": 320
+ },
+ "problem:boden-ton": {
+  "datei": "assets/bilder/problem_boden-ton.jpg",
+  "autor": "Paul venter",
+  "lizenz": "CC BY-SA 3.0",
+  "seite": "https://commons.wikimedia.org/wiki/File:Soil_cracks00.jpg",
+  "breite": 320,
+  "hoehe": 480
+ },
+ "problem:nematoden": {
+  "datei": "assets/bilder/problem_nematoden.jpg",
+  "autor": "Jeffrey W. Lotz, Florida Department of Agriculture and Consumer Services, Bugwoo…",
+  "lizenz": "CC BY 3.0 us",
+  "seite": "https://commons.wikimedia.org/wiki/File:Root-knot_nematode_(Meloidogyne_enterolobii)_5384315.jpg",
+  "breite": 480,
+  "hoehe": 319
+ },
+ "problem:ph-hoch": {
+  "datei": "assets/bilder/problem_ph-hoch.jpg",
+  "autor": "PhysicsScotland",
+  "lizenz": "CC BY-SA 4.0",
+  "seite": "https://commons.wikimedia.org/wiki/File:Soil_Probe_-_Moisture,_Temperature_%26_Light.jpg",
+  "breite": 360,
+  "hoehe": 480
+ },
+ "problem:ph-niedrig": {
+  "datei": "assets/bilder/problem_ph-niedrig.jpg",
+  "autor": "Kenneth Allen",
+  "lizenz": "CC BY-SA 2.0",
+  "seite": "https://commons.wikimedia.org/wiki/File:Spreading_lime,_Beragh_-_geograph.org.uk_-_7285830.jpg",
+  "breite": 480,
+  "hoehe": 322
+ },
+ "problem:regen-fehlt": {
+  "datei": "assets/bilder/problem_regen-fehlt.jpg",
+  "autor": "Martin Dawes",
+  "lizenz": "CC BY-SA 2.0",
+  "seite": "https://commons.wikimedia.org/wiki/File:Wheat_field_footpath_in_drought_conditions_-_geograph.org.uk_-_5975600.jpg",
+  "breite": 360,
+  "hoehe": 480
+ },
+ "problem:wasser-knapp": {
+  "datei": "assets/bilder/problem_wasser-knapp.jpg",
+  "autor": "Atmospheric Research, CSIRO",
+  "lizenz": "CC BY 3.0",
+  "seite": "https://commons.wikimedia.org/wiki/File:CSIRO_ScienceImage_607_Effects_of_Drought_on_the_Soil.jpg",
+  "breite": 480,
+  "hoehe": 315
+ },
+ "problem:welke": {
+  "datei": "assets/bilder/problem_welke.jpg",
+  "autor": "Victor M. Vicente Selvas",
+  "lizenz": "CC BY-SA 3.0",
+  "seite": "https://commons.wikimedia.org/wiki/File:Tomaquera_amb_Fusarium_HV.JPG",
+  "breite": 316,
+  "hoehe": 480
+ },
+ "symptom:b-eckig": {
+  "datei": "assets/bilder/symptom_b-eckig.jpg",
+  "autor": "blastcat",
+  "lizenz": "CC BY 4.0",
+  "seite": "https://commons.wikimedia.org/wiki/File:Pseudoperonospora_cubensis_147541589.jpg",
+  "breite": 480,
+  "hoehe": 270
+ },
+ "symptom:b-gaenge": {
+  "datei": "assets/bilder/symptom_b-gaenge.jpg",
+  "autor": "Even Dankowicz",
+  "lizenz": "CC BY 4.0",
+  "seite": "https://commons.wikimedia.org/wiki/File:Liriomyza_commelinae_leaf_mines.jpg",
+  "breite": 480,
+  "hoehe": 394
+ },
+ "symptom:b-gelb-flecken": {
+  "datei": "assets/bilder/symptom_b-gelb-flecken.jpg",
+  "autor": "Dr. Parthasarathy Seethapathy, Amrita School of Agricultural Sciences, Bugwood.o…",
+  "lizenz": "CC BY 3.0",
+  "seite": "https://commons.wikimedia.org/wiki/File:5573619-PPT-powdery_mildew_(Leveillula_taurica).jpg",
+  "breite": 480,
+  "hoehe": 270
+ },
+ "symptom:b-gelb-jung": {
+  "datei": "assets/bilder/symptom_b-gelb-jung.jpg",
+  "autor": "Reznil",
+  "lizenz": "Public domain",
+  "seite": "https://commons.wikimedia.org/wiki/File:ChloroticBlueberryLeaf.JPG",
+  "breite": 480,
+  "hoehe": 360
+ },
+ "symptom:b-gelb-roll": {
+  "datei": "assets/bilder/symptom_b-gelb-roll.jpg",
+  "autor": "Kembangraps",
+  "lizenz": "CC0",
+  "seite": "https://commons.wikimedia.org/wiki/File:Yellow_curl_leaf_disease_Pj_IMG_3162.jpg",
+  "breite": 480,
+  "hoehe": 360
+ },
+ "symptom:b-gespinst": {
+  "datei": "assets/bilder/symptom_b-gespinst.jpg",
+  "autor": "Clemson University - USDA Cooperative Extension Slide Series , Bugwood.org",
+  "lizenz": "CC BY 3.0 us",
+  "seite": "https://commons.wikimedia.org/wiki/File:Solanum_lycopersicum_-_spider_mite_-Clemson_University_-_USDA.jpg",
+  "breite": 480,
+  "hoehe": 480
+ },
+ "symptom:b-kraus": {
+  "datei": "assets/bilder/symptom_b-kraus.jpg",
+  "autor": "Account for test",
+  "lizenz": "CC BY-SA 4.0",
+  "seite": "https://commons.wikimedia.org/wiki/File:American_elm_leaves_with_woolly_elm_aphid_infestation_.jpg",
+  "breite": 480,
+  "hoehe": 360
+ },
+ "symptom:b-mosaik": {
+  "datei": "assets/bilder/symptom_b-mosaik.jpg",
+  "autor": "Downtowngal",
+  "lizenz": "CC BY-SA 4.0",
+  "seite": "https://commons.wikimedia.org/wiki/File:Zucchini_yellow_mosaic_virus_leaf.jpg",
+  "breite": 471,
+  "hoehe": 480
+ },
+ "symptom:b-nass": {
+  "datei": "assets/bilder/symptom_b-nass.jpg",
+  "autor": "Scot Nelson from Honolulu, Hawaii, USA",
+  "lizenz": "CC0",
+  "seite": "https://commons.wikimedia.org/wiki/File:Tomato_late_blight_leaf_sporulating_lesions_1_(5816170621).jpg",
+  "breite": 480,
+  "hoehe": 320
+ },
+ "symptom:b-platzminen": {
+  "datei": "assets/bilder/symptom_b-platzminen.jpg",
+  "autor": "Flowersabc",
+  "lizenz": "CC BY-SA 2.0",
+  "seite": "https://commons.wikimedia.org/wiki/File:Agromyzidae_tomato_Leaf_miners_%D0%9C%D0%B8%D0%BD%D0%B8%D1%80%D1%83%D1%8E%D1%89%D0%B8%D0%B5_%D0%BC%D1%83%D1%85%D0%B8_DSCN3625.jpg",
+  "breite": 480,
+  "hoehe": 360
+ },
+ "symptom:b-ringe": {
+  "datei": "assets/bilder/symptom_b-ringe.jpg",
+  "autor": "Clemson University - USDA Cooperative Extension Slide Series",
+  "lizenz": "CC BY 3.0 us",
+  "seite": "https://commons.wikimedia.org/wiki/File:Alternaria_solani_-_leaf_lesions.jpg",
+  "breite": 480,
+  "hoehe": 480
+ },
+ "symptom:b-rost": {
+  "datei": "assets/bilder/symptom_b-rost.jpg",
+  "autor": "Rasbak",
+  "lizenz": "CC BY-SA 3.0",
+  "seite": "https://commons.wikimedia.org/wiki/File:Puccinia_recondita_f.sp._tritici_on_Triticum_aestivum,_Bruine_roest_op_gewone_tarwe.jpg",
+  "breite": 480,
+  "hoehe": 347
+ },
+ "symptom:b-schoko": {
+  "datei": "assets/bilder/symptom_b-schoko.jpg",
+  "autor": "Rasbak",
+  "lizenz": "CC BY-SA 3.0",
+  "seite": "https://commons.wikimedia.org/wiki/File:Tuinboon_Chocoladevlekkenziekte.jpg",
+  "breite": 426,
+  "hoehe": 480
+ },
+ "symptom:b-spitzen": {
+  "datei": "assets/bilder/symptom_b-spitzen.jpg",
+  "autor": "Jochen Kreiselmaier, Pflanzenschutzberater beim Dienstleistungszentren Ländliche…",
+  "lizenz": "CC BY-SA 4.0",
+  "seite": "https://commons.wikimedia.org/wiki/File:Zwiebel_Setophoma_terrestris_(Phoma)_2-DLR-NW-jk.jpg",
+  "breite": 480,
+  "hoehe": 360
+ },
+ "symptom:b-weiss-oben": {
+  "datei": "assets/bilder/symptom_b-weiss-oben.jpg",
+  "autor": "RoRo",
+  "lizenz": "CC0",
+  "seite": "https://commons.wikimedia.org/wiki/File:Cucurbita_pepo_%27Zucchini_Grey%27_(semiller%C3%ADa_Florensa)_-_first_signs_of_powdery_mildew_(oidio)_on_a_%22mottled_leaf%22.jpg",
+  "breite": 480,
+  "hoehe": 322
+ },
+ "symptom:f-braun": {
+  "datei": "assets/bilder/symptom_f-braun.jpg",
+  "autor": "Scot Nelson from Honolulu, Hawaii, USA",
+  "lizenz": "CC0",
+  "seite": "https://commons.wikimedia.org/wiki/File:Late_blight_of_tomato_caused_by_Phytophthora_infestans_(5815188381).jpg",
+  "breite": 480,
+  "hoehe": 359
+ },
+ "symptom:f-ende": {
+  "datei": "assets/bilder/symptom_f-ende.jpg",
+  "autor": "Fructibus",
+  "lizenz": "CC0",
+  "seite": "https://commons.wikimedia.org/wiki/File:Blossom_end_rot_tomato_2017_A.jpg",
+  "breite": 463,
+  "hoehe": 480
+ },
+ "symptom:f-grau": {
+  "datei": "assets/bilder/symptom_f-grau.jpg",
+  "autor": "Rasbak",
+  "lizenz": "CC BY-SA 3.0",
+  "seite": "https://commons.wikimedia.org/wiki/File:Aardbei_Lambada_vruchtrot_Botrytis_cinerea.jpg",
+  "breite": 383,
+  "hoehe": 480
+ },
+ "symptom:f-loecher": {
+  "datei": "assets/bilder/symptom_f-loecher.jpg",
+  "autor": "Quatar",
+  "lizenz": "CC BY-SA 3.0",
+  "seite": "https://commons.wikimedia.org/wiki/File:Caterpillar_in_tomato.jpg",
+  "breite": 480,
+  "hoehe": 419
+ },
+ "symptom:f-schorf": {
+  "datei": "assets/bilder/symptom_f-schorf.jpg",
+  "autor": "Rasbak",
+  "lizenz": "CC BY-SA 3.0",
+  "seite": "https://commons.wikimedia.org/wiki/File:Aardappelschurft_(Streptomyces_scabies_on_potato).jpg",
+  "breite": 480,
+  "hoehe": 369
+ },
+ "symptom:s-abgefressen": {
+  "datei": "assets/bilder/symptom_s-abgefressen.jpg",
+  "autor": "W.M. Hantsbarger, Bugwood.org",
+  "lizenz": "CC BY 3.0 us",
+  "seite": "https://commons.wikimedia.org/wiki/File:Agrotis_ipsilon_larva.jpg",
+  "breite": 480,
+  "hoehe": 365
+ },
+ "symptom:s-faeden": {
+  "datei": "assets/bilder/symptom_s-faeden.jpg",
+  "autor": "Robert Flogaus-Faust",
+  "lizenz": "CC BY 4.0",
+  "seite": "https://commons.wikimedia.org/wiki/File:Cuscuta_europaea_RF.jpg",
+  "breite": 450,
+  "hoehe": 480
+ },
+ "symptom:s-faul": {
+  "datei": "assets/bilder/symptom_s-faul.jpg",
+  "autor": "Ed Kurtz, Bugwood.org",
+  "lizenz": "CC BY 3.0",
+  "seite": "https://commons.wikimedia.org/wiki/File:Allium_sativum_-_Fusarium_wilts,_blights,_rots_and_damping-off_(Genus_Fusarium)_-_Ed_Kurtz,_Bugwood.org.jpg",
+  "breite": 480,
+  "hoehe": 320
+ },
+ "symptom:s-gallen": {
+  "datei": "assets/bilder/symptom_s-gallen.jpg",
+  "autor": "USDAgov",
+  "lizenz": "Public domain",
+  "seite": "https://commons.wikimedia.org/wiki/File:Guava_Root-Knot_Nematode_Research_(20180907-ARS-WR-0001).jpg",
+  "breite": 480,
+  "hoehe": 320
+ },
+ "symptom:s-gefaesse": {
+  "datei": "assets/bilder/symptom_s-gefaesse.jpg",
+  "autor": "Clemson University - USDA Cooperative Extension Slide Series",
+  "lizenz": "CC BY 3.0",
+  "seite": "https://commons.wikimedia.org/wiki/File:Ipomoea_batatas_Fusarium_wilt_(stem_rot)_(Fusarium_oxysporum_f.sp._batatas)_1234227-PPT-Clemson_University.jpg",
+  "breite": 480,
+  "hoehe": 480
+ },
+ "symptom:s-parasit": {
+  "datei": "assets/bilder/symptom_s-parasit.jpg",
+  "autor": "(Hans Hillewaert)",
+  "lizenz": "CC BY-SA 3.0",
+  "seite": "https://commons.wikimedia.org/wiki/File:Orobanche_crenata_1.jpg",
+  "breite": 360,
+  "hoehe": 480
+ },
+ "symptom:t-laeuse": {
+  "datei": "assets/bilder/symptom_t-laeuse.jpg",
+  "autor": "Sanjay Acharya",
+  "lizenz": "CC BY-SA 4.0",
+  "seite": "https://commons.wikimedia.org/wiki/File:Aphids_on_Kale_leaf.jpg",
+  "breite": 480,
+  "hoehe": 321
+ },
+ "symptom:t-larven": {
+  "datei": "assets/bilder/symptom_t-larven.jpg",
+  "autor": "Slimguy",
+  "lizenz": "CC BY 4.0",
+  "seite": "https://commons.wikimedia.org/wiki/File:2022_05_09_Hypera_postica1a.jpg",
+  "breite": 464,
+  "hoehe": 480
+ },
+ "symptom:t-raupen": {
+  "datei": "assets/bilder/symptom_t-raupen.jpg",
+  "autor": "Polish.Pav",
+  "lizenz": "CC0",
+  "seite": "https://commons.wikimedia.org/wiki/File:Helicoverpa_armigera_caterpillar_on_a_yellow_tomato_pedicel_01.jpg",
+  "breite": 360,
+  "hoehe": 480
+ },
+ "symptom:t-thripse": {
+  "datei": "assets/bilder/symptom_t-thripse.jpg",
+  "autor": "Frank Peairs, Colorado State University, Bugwood.org",
+  "lizenz": "CC BY 3.0",
+  "seite": "https://commons.wikimedia.org/wiki/File:Frankliniella_occidentalis_5364132-LGPT.jpg",
+  "breite": 480,
+  "hoehe": 289
+ },
+ "symptom:t-weisse-fliegen": {
+  "datei": "assets/bilder/symptom_t-weisse-fliegen.jpg",
+  "autor": "Schlaghecken Josef",
+  "lizenz": "CC BY-SA 4.0",
+  "seite": "https://commons.wikimedia.org/wiki/File:Gr%C3%BCnkohl_Kohlmottenschildlaus-Aleyrodes_proletella-JS-2.jpg",
+  "breite": 480,
+  "hoehe": 360
+ },
+ "zone:atlas": {
+  "datei": "assets/bilder/zone_atlas.jpg",
+  "autor": "Marek Ślusarczyk (Tupungato) Photo portfolio",
+  "lizenz": "CC BY 3.0",
+  "seite": "https://commons.wikimedia.org/wiki/File:Agricultural_terraces_in_Anti-Atlas_mountains_near_Tafraoute,_Morocco.jpg",
+  "breite": 480,
+  "hoehe": 320
+ },
+ "zone:gharb": {
+  "datei": "assets/bilder/zone_gharb.jpg",
+  "autor": "Lucyin",
+  "lizenz": "CC BY-SA 4.0",
+  "seite": "https://commons.wikimedia.org/wiki/File:Rharb_fiesse_Mouloud2.jpg",
+  "breite": 480,
+  "hoehe": 270
+ },
+ "zone:oase": {
+  "datei": "assets/bilder/zone_oase.jpg",
+  "autor": "AJFT",
+  "lizenz": "CC BY-SA 3.0",
+  "seite": "https://commons.wikimedia.org/wiki/File:Tafilalet_tinghreras_nord.jpg",
+  "breite": 480,
+  "hoehe": 360
+ },
+ "zone:souss": {
+  "datei": "assets/bilder/zone_souss.jpg",
+  "autor": "Roy Egloff",
+  "lizenz": "CC BY-SA 4.0",
+  "seite": "https://commons.wikimedia.org/wiki/File:MA.SS.Tlata_Uoanass_2018-08-15_228_16x9%2BR_5120x2880.jpg",
+  "breite": 480,
+  "hoehe": 270
+ }
+}

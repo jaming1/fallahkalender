@@ -1,0 +1,2822 @@
+{
+  "ui": {
+    "app.name": "Calendrier du fellah",
+    "app.titel": "Calendrier du fellah",
+    "sprache.wahl": "Langue",
+    "nav.aria": "Pages",
+    "nav.feld": "Ma parcelle",
+    "nav.empfehlung": "Quoi planter ?",
+    "nav.kalender": "Calendrier",
+    "nav.befall": "Ravageurs",
+    "nav.hilfe": "Aides",
+    "vorlesen": "Écouter",
+    "vorlesen.stopp": "Arrêter",
+    "vorlesen.keineStimme": "Aucune voix disponible sur cet appareil. Installez une voix dans les réglages du téléphone.",
+    "komma": ", ",
+    "datum.format": "{t} {m} {j}",
+    "datum.monatJahr": "{m} {j}",
+    "monat.1": "janvier",
+    "monat.2": "février",
+    "monat.3": "mars",
+    "monat.4": "avril",
+    "monat.5": "mai",
+    "monat.6": "juin",
+    "monat.7": "juillet",
+    "monat.8": "août",
+    "monat.9": "septembre",
+    "monat.10": "octobre",
+    "monat.11": "novembre",
+    "monat.12": "décembre",
+    "monat.k.1": "janv.",
+    "monat.k.2": "févr.",
+    "monat.k.3": "mars",
+    "monat.k.4": "avr.",
+    "monat.k.5": "mai",
+    "monat.k.6": "juin",
+    "monat.k.7": "juil.",
+    "monat.k.8": "août",
+    "monat.k.9": "sept.",
+    "monat.k.10": "oct.",
+    "monat.k.11": "nov.",
+    "monat.k.12": "déc.",
+    "bitte.waehlen": "Choisir",
+    "weissNicht": "Je ne sais pas",
+    "brache": "Rien (jachère)",
+    "andere": "Autre chose",
+    "kultur": "Culture",
+    "einheit": "Unité",
+    "einheit.ha": "hectare",
+    "einheit.m2": "m²",
+    "einheit.m3tag": "m³ par jour",
+    "einheit.ls": "litres par seconde",
+    "wasErklaerung": "Qu’est-ce que c’est ?",
+    "feld.titel": "Ma parcelle",
+    "feld.neu": "Nouvelle parcelle",
+    "feld.einleitung": "Indiquez ce que vous savez. Les cases vides ne sont simplement pas évaluées.",
+    "feld.lage": "Lieu et surface",
+    "feld.name": "Nom de la parcelle",
+    "feld.name.bsp": "ex. : parcelle près du puits",
+    "feld.region": "Région",
+    "feld.gps": "Me localiser",
+    "feld.flaeche": "Surface",
+    "feld.start": "Quand voulez-vous planter ?",
+    "feld.start.offen": "Pas encore décidé",
+    "feld.wasser": "Eau",
+    "feld.wasserArt": "Comment irriguez-vous ?",
+    "wasser.tropf": "Goutte-à-goutte",
+    "wasser.beregnung": "Aspersion",
+    "wasser.furche": "Gravitaire (seguias)",
+    "wasser.regen": "Pluie seulement (bour)",
+    "feld.wasserMenge": "Débit d’eau",
+    "feld.wasserPh": "pH de l’eau",
+    "feld.wasserEc": "Salinité de l’eau (CE, dS/m)",
+    "feld.erkl.menge": "Débit : ce que le puits ou le réseau fournit par jour. 1 litre par seconde fait environ 86 m³ par jour.",
+    "feld.erkl.ph": "pH : indique si l’eau est acide (moins de 7) ou calcaire (plus de 7). Figure dans l’analyse d’eau.",
+    "feld.erkl.ec": "CE : mesure le sel dans l’eau. Moins de 1 est bon, plus de 3 est salé. Figure dans l’analyse, parfois en mS/cm (même valeur).",
+    "feld.boden": "Sol",
+    "feld.bodenArt": "Type de sol",
+    "boden.sand": "Sableux",
+    "boden.lehm": "Limoneux",
+    "boden.ton": "Argileux",
+    "feld.bodenPh": "pH du sol",
+    "feld.humus": "Matière organique (%)",
+    "feld.n": "Azote (N)",
+    "feld.p": "Phosphore (P)",
+    "feld.k": "Potassium (K)",
+    "feld.kalk": "Calcaire",
+    "feld.bodenSalz": "Salinité du sol (CE, dS/m)",
+    "stufe.niedrig": "Faible",
+    "stufe.mittel": "Moyen",
+    "stufe.hoch": "Élevé",
+    "kalk.niedrig": "Peu",
+    "kalk.mittel": "Moyen",
+    "kalk.hoch": "Beaucoup",
+    "feld.erkl.art": "Type de sol sans laboratoire : frottez de la terre humide entre les doigts. Granuleuse et friable : sableuse. Se modèle et douce au toucher : limoneuse. Collante et brillante : argileuse.",
+    "feld.erkl.npk": "N, P, K : les trois éléments nutritifs principaux. L’analyse de sol indique souvent « faible, moyen, élevé ».",
+    "feld.erkl.humus": "Matière organique : la partie vivante et sombre du sol. Au Maroc souvent moins de 1,5 %.",
+    "feld.vorher": "Qu’y avait-il ici avant ?",
+    "feld.vj0": "L’an dernier",
+    "feld.vj1": "Il y a 2 ans",
+    "feld.vj2": "Il y a 3 ans",
+    "feld.probleme": "Quels problèmes y a-t-il eu ?",
+    "problem.nematoden": "Nématodes",
+    "problem.welke": "Plantes flétries",
+    "problem.salz": "Dégâts de sel",
+    "problem.unkraut": "Beaucoup de mauvaises herbes",
+    "feld.zeigen": "Voir ce qui convient",
+    "gespeichert": "Enregistré",
+    "speichern.nein": "Enregistrement impossible : le navigateur bloque le stockage (fenêtre privée ?).",
+    "gps.nein": "Votre appareil ne peut pas se localiser. Choisissez la région ci-dessus.",
+    "gps.sucht": "Recherche de la position …",
+    "gps.gefunden": "Près de {ort} : {zone}. Merci de vérifier.",
+    "gps.fehler": "Position indisponible. Autorisez l’accès ou choisissez la région ci-dessus.",
+    "empf.titel": "Qu’est-ce qui convient à votre parcelle ?",
+    "stufe.sehr-gut": "Très adapté",
+    "stufe.gut": "Adapté",
+    "stufe.eingeschraenkt": "Adapté avec réserves",
+    "stufe.ungeeignet": "Non adapté",
+    "zeichen.ok": "Convient :",
+    "zeichen.plus": "Avantage :",
+    "zeichen.warn": "Attention :",
+    "zeichen.bad": "Problème :",
+    "empf.warumNicht": "Pourquoi pas ? {text}",
+    "empf.keineBedenken": "Aucune réserve selon vos données.",
+    "empf.pflanzzeit": "Période de plantation dans votre région : {monate}.",
+    "empf.dauer": "Durée jusqu’à la récolte : environ {n} mois.",
+    "empf.wasserReicht": "Votre eau suffit pour environ {ha} ha.",
+    "empf.inKalender": "Mettre {kultur} au calendrier",
+    "empf.leer.titel": "Pas encore de données",
+    "empf.leer.text": "Indiquez d’abord dans « Ma parcelle » au moins la région, l’irrigation et le sol.",
+    "empf.leer.knopf": "Remplir la parcelle",
+    "empf.genauer": "Plus précis avec",
+    "empf.genauer.text": "{liste}. Sans ces données, ce point n’est pas vérifié.",
+    "empf.hinweise": "Remarques sur votre parcelle",
+    "fehlt.region": "région",
+    "fehlt.bodenPh": "pH du sol",
+    "fehlt.bodenArt": "type de sol",
+    "fehlt.wasserArt": "type d’irrigation",
+    "fehlt.wasserEc": "salinité de l’eau",
+    "fehlt.wasserMenge": "débit d’eau",
+    "fehlt.flaeche": "surface",
+    "e.ph.ideal": "pH du sol {ph} idéal ({a} à {b}).",
+    "e.ph.geht": "pH du sol {ph} acceptable, l’idéal serait {a} à {b}.",
+    "e.ph.nein": "pH du sol {ph} ne convient pas (supporte {ga} à {gb}).",
+    "e.boden.gut.sand": "Le sol sableux convient bien.",
+    "e.boden.gut.lehm": "Le sol limoneux convient bien.",
+    "e.boden.gut.ton": "Le sol argileux convient bien.",
+    "e.boden.geht.sand": "Le sol sableux est possible, mais demande plus souvent de l’eau et de l’engrais en petites doses.",
+    "e.boden.geht.lehm": "Le sol limoneux est possible.",
+    "e.boden.geht.ton": "Le sol argileux est possible.",
+    "e.boden.schlecht.sand": "Le sol sableux convient mal.",
+    "e.boden.schlecht.lehm": "Le sol limoneux convient mal.",
+    "e.boden.ton": "Sol argileux lourd : risque d’engorgement et de pourriture, les racines souffrent. Des billons ou planches surélevées aident.",
+    "e.boden.ton.knolle": "Sol argileux lourd : risque d’engorgement et de pourriture, tubercules et racines poussent mal. Des billons ou planches surélevées aident.",
+    "e.salz.ok.wasser": "Eau ({ec} dS/m) supportée sans perte de rendement.",
+    "e.salz.ok.boden": "Sol ({ec} dS/m) supporté sans perte de rendement.",
+    "e.salz.warn.wasser": "Eau un peu salée ({ec} dS/m) : environ {verlust} % de rendement en moins. Sans perte jusqu’à {ohne} dS/m.",
+    "e.salz.warn.boden": "Sol un peu salé ({ec} dS/m) : environ {verlust} % de rendement en moins. Sans perte jusqu’à {ohne} dS/m.",
+    "e.salz.bad.wasser": "Eau trop salée ({ec} dS/m) : le rendement baisse de plus de moitié. Supporte jusqu’à environ {ohne} dS/m.",
+    "e.salz.bad.boden": "Sol trop salé ({ec} dS/m) : le rendement baisse de plus de moitié. Supporte jusqu’à environ {ohne} dS/m.",
+    "e.regen.ok": "Possible sans irrigation (bour), le rendement dépend de l’année de pluie.",
+    "e.regen.riskant": "Risqué sans irrigation : la pluie ne couvre qu’environ la moitié des besoins dans votre région.",
+    "e.regen.nein": "Besoin d’irrigation : environ {bedarf} mm par saison, la pluie n’apporte qu’environ {regen} mm.",
+    "e.wasser.ok": "Votre eau suffit (besoin d’environ {bedarf} m³ pour la saison).",
+    "e.wasser.knapp": "L’eau devient juste : elle suffit pour environ {max} ha au lieu de {ha} ha.",
+    "e.wasser.nein": "Pas assez d’eau : elle ne suffit que pour environ {max} ha (besoin {bedarf} m³, vous avez {hast} m³).",
+    "e.saison.gut": "{monat} est une bonne période de plantation dans votre région.",
+    "e.saison.bald": "La période de plantation commence en {monat}.",
+    "e.saison.nein": "Pas la meilleure période. Plantation dans votre région : {monate}.",
+    "e.ff.luzerne": "La luzerne peut rester plusieurs années.",
+    "e.ff.wieder": "{kultur} était déjà ici l’an dernier : maladies et mauvaises herbes augmentent, mieux vaut changer.",
+    "e.ff.pause": "{kultur} était déjà ici l’an dernier. Conseillé : {n} ans de pause.",
+    "e.ff.letztesJahr": "l’an dernier",
+    "e.ff.vorJahren": "il y a {n} ans",
+    "e.ff.familie": "{vor} ({familie}) était ici {wann}. Pour {kultur}, {n} ans de pause sont préférables.",
+    "e.ff.huelsen": "Bon précédent : {vor} a laissé de l’azote dans le sol.",
+    "e.nematoden": "Sensible aux nématodes, déjà présents sur votre parcelle.",
+    "e.welke": "Sensible aux flétrissements du sol, déjà présents sur votre parcelle.",
+    "e.kalk.kartoffel": "Beaucoup de calcaire : la pomme de terre attrape facilement la gale.",
+    "e.kalk": "Beaucoup de calcaire : {kultur} jaunit facilement (carence en fer).",
+    "h.wasserPhHoch": "pH de l’eau élevé ({ph}) : les goutteurs peuvent s’entartrer. Un peu d’acide dans l’eau (acide phosphorique ou nitrique via l’engrais) aide.",
+    "h.wasserPhNiedrig": "pH de l’eau bas ({ph}) : vérifier la rouille de la pompe et des conduites.",
+    "h.salz": "Le sel est un enjeu : goutte-à-goutte, petites doses fréquentes et de temps en temps un arrosage abondant pour lessiver le sel vers le bas.",
+    "h.bodenPhHoch": "pH du sol très élevé ({ph}) : fer et zinc mal absorbés. Fumier, compost et engrais acidifiants aident.",
+    "h.humus": "Très peu de matière organique ({humus} %) : apporter chaque année du fumier ou du compost (environ 20 à 30 t/ha).",
+    "h.p": "Peu de phosphore : apporter une fumure de fond phosphatée avant la plantation.",
+    "h.k": "Peu de potassium : prévoir un engrais potassique, surtout pour les légumes et fruits.",
+    "h.unkraut": "Beaucoup de mauvaises herbes : paillage ou film et cultures couvrantes aident.",
+    "machbar.titel.doch": "Comment y arriver quand même",
+    "machbar.titel.besser": "Comment faire mieux",
+    "machbar.reihenfolge": "Du plus simple au plus difficile. Commencez en haut.",
+    "aufwand.1": "Facile",
+    "aufwand.2": "Moyen",
+    "aufwand.3": "Exigeant",
+    "aufwand.4": "Très exigeant",
+    "machbar.kosten": "Coût : {k}. Effet : {z}.",
+    "machbar.foerderung": "Subvention : {titel}",
+    "kal.titel": "Calendrier",
+    "kal.fellah": "Calendrier agricole :",
+    "kal.amazighJahr": "année amazighe {j}",
+    "kal.naw": "Naw’ :",
+    "kal.nawTag": "(jour {tag} sur {von}, jusqu’au {bis})",
+    "kal.ueberlieferung": "Savoir traditionnel, variable selon les régions. La planification se base sur le sol, l’eau et le climat.",
+    "kal.leer.titel": "Pas encore de plan de culture",
+    "kal.leer.text": "Ouvrez une culture dans « Quoi planter ? » et touchez « Mettre au calendrier ». Votre plan jusqu’à la récolte apparaîtra ici.",
+    "kal.leer.knopf": "Choisir une culture",
+    "kal.plan": "Plan de culture : {kultur}",
+    "kal.pflanztag": "Jour de plantation",
+    "kal.saattag": "Jour de semis",
+    "kal.stand": "{fertig} tâches faites sur {alle}. Récolte à partir du {ernte}.",
+    "kal.loeschen": "Supprimer le plan",
+    "kal.loeschen.frage": "Supprimer le plan {kultur} ? Les tâches cochées seront perdues.",
+    "kal.ueberfaellig": "En retard",
+    "kal.naechstes": "Prochaine tâche",
+    "kal.anleitung": "Comment cultiver",
+    "kal.abstand": "Écartement :",
+    "kal.tiefe": "Profondeur :",
+    "kal.wasser": "Eau :",
+    "kal.tipp": "Conseil :",
+    "kal.dp.wann": "Quand",
+    "kal.dp.jeHa": "Par ha",
+    "kal.dp.feld": "Pour votre parcelle ({ha} ha)",
+    "kal.dp.deinFeld": "Votre parcelle",
+    "kal.dp.titel": "Plan de fertilisation : {n} kg N, {p} kg P₂O₅, {k} kg K₂O par ha",
+    "kal.dp.mist": "Avec du fumier au lieu d’engrais minéral : {t} t/ha apportent la première année environ {n} kg N, {p} kg P₂O₅ et {k} kg K₂O. Compléter le reste.",
+    "kal.aufgaben": "Tâches jusqu’à la récolte",
+    "typ.boden": "Sol",
+    "typ.saat": "Semis et plantation",
+    "typ.duenger": "Engrais",
+    "typ.wasser": "Eau",
+    "typ.pflege": "Entretien",
+    "typ.kontrolle": "Contrôle",
+    "typ.ernte": "Récolte",
+    "typ.befall": "Ravageur",
+    "p.minusHuelsen": "30 kg N en moins, car une légumineuse était ici l’an dernier.",
+    "p.minusHumus": "20 kg N en moins grâce à une bonne matière organique.",
+    "p.ohneAnalyse": "Sans analyse de sol, ce sont des valeurs moyennes. Une analyse économise souvent de l’engrais (subventionnée à 50 %, gratuite chez Al Moutmir).",
+    "p.kalkig": "Votre sol est calcaire : sulfate d’ammonium au lieu d’urée, il acidifie légèrement.",
+    "p.grund": "Fumure de fond",
+    "p.n": "Apport d’azote",
+    "p.k": "Apport de potassium",
+    "p.nk": "Apport d’azote et de potassium",
+    "p.menge": "{kg} kg {name}",
+    "p.a.probe": "Prélever un échantillon de sol",
+    "p.a.probe.t": "Prendre de la terre à 10–15 endroits, 0–30 cm de profondeur, mélanger, envoyer 1 kg au laboratoire. Al Moutmir le fait gratuitement, les analyses sont subventionnées à 50 %.",
+    "p.a.jung": "Semer ou commander les plants",
+    "p.a.jung.t": "Pour {kultur} environ {wochen} semaines avant la plantation. Acheter des plants sains, greffés ou certifiés.",
+    "p.a.boden": "Préparer le sol",
+    "p.a.boden.t": "Labourer ou ameublir, enlever pierres et résidus. Incorporer maintenant le fumier ou le compost.",
+    "p.a.wasser": "Vérifier l’irrigation",
+    "p.a.wasser.t": "Rincer les conduites, vérifier que les goutteurs ne sont pas bouchés, pré-irriguer le sol.",
+    "p.a.duenger.t": "Par ha : {jeHa}. Pour votre parcelle ({ha} ha) : {feld}.",
+    "p.a.pflanzen": "Planter : {kultur}",
+    "p.a.saeen": "Semer : {kultur}",
+    "p.a.saat.t": "{abstand}. {tiefe}. Puis bien arroser.",
+    "p.a.kontrolle": "Contrôler la culture",
+    "p.a.kontrolle.t": "Regarder les feuilles dessus et dessous : taches, ravageurs, flétrissement ? Si oui, prendre une photo et aller dans « Ravageurs ».",
+    "p.a.ernte": "Début de la récolte",
+    "p.a.ernte.bis": "Récolte jusqu’au {datum} environ.",
+    "p.a.ernte.t": "Récolter à pleine maturité.",
+    "p.a.ernteEnde": "Fin de la récolte",
+    "p.a.ernteEnde.t": "Enlever ou enfouir les résidus, planifier la culture suivante.",
+    "bef.titel": "Reconnaître un ravageur ou une maladie",
+    "bef.einleitung": "Choisissez la culture, touchez ce que vous voyez et décrivez-le avec vos mots. L’application indique les causes possibles, quoi faire et quand contrôler à nouveau.",
+    "bef.kultur": "Quelle culture ?",
+    "bef.sehen": "Que voyez-vous ?",
+    "bef.sehen.hinweis": "Touchez tout ce qui correspond. Plusieurs choix possibles.",
+    "bef.beschreiben": "Description et photo",
+    "bef.text": "Avec vos mots (facultatif)",
+    "bef.text.bsp": "ex. : taches brunes avec des cercles sur les feuilles du bas",
+    "bef.wetter": "Météo des derniers jours",
+    "bef.wetter.feucht": "Humide, rosée ou pluie",
+    "bef.wetter.trocken": "Chaud et sec",
+    "bef.foto": "Photo (facultatif)",
+    "bef.foto.alt": "Votre photo des dégâts",
+    "bef.foto.weg": "Supprimer la photo",
+    "bef.foto.hinweis": "La photo reste sur votre appareil et vous aide à comparer lors des contrôles suivants. Si votre propre serveur est en marche, votre IA l’examine aussi.",
+    "bef.foto.fehler": "Impossible de lire la photo. Essayez-en une autre (JPG ou PNG).",
+    "bef.suchen": "Chercher la cause",
+    "bef.erstKultur": "Choisissez d’abord la culture ci-dessus.",
+    "bef.erstSymptom": "Touchez au moins un symptôme ou décrivez ce que vous voyez.",
+    "bef.ursachen": "Causes possibles : {kultur}",
+    "bef.keine": "Aucune cause correspondante trouvée. Touchez d’autres symptômes ou décrivez plus précisément.",
+    "bef.keine.onca": "Allez avec la photo et un échantillon dans un sac plastique chez le conseiller gratuit de l’ONCA.",
+    "bef.reihenfolge": "La cause la plus probable est en haut. Vérifiez la description avant d’agir.",
+    "sicherheit.hoch": "Correspond bien",
+    "sicherheit.mittel": "Possible",
+    "sicherheit.niedrig": "Peu probable",
+    "bef.franzoesisch": "En français (chez le conseiller ou le vendeur) :",
+    "bef.sofort": "Tout de suite",
+    "bef.bio": "Dans les jours suivants, d’abord en biologique",
+    "bef.chem": "Seulement si cela ne suffit pas : en chimique",
+    "bef.chem.wz": "{w} : délai avant récolte en général {n} jours.",
+    "bef.chem.letzt": "Selon votre plan, dernière application le {datum}.",
+    "bef.chem.zugelassen": "Produits homologués :",
+    "bef.chem.etikett": "Le délai inscrit sur l’étiquette fait foi.",
+    "bef.vorbeugend": "En prévention pour la prochaine saison",
+    "bef.inKalender": "Mettre les contrôles au calendrier",
+    "bef.termine": "Contrôles aux jours 3, 7 et 14, puis chaque semaine : {n} rendez-vous, le premier le {datum}.",
+    "bef.termine.ernte": "Contrôles aux jours 3, 7 et 14, puis chaque semaine jusqu’à la récolte : {n} rendez-vous, le premier le {datum}.",
+    "bef.unsicher": "Pas sûr ?",
+    "bef.unsicher.text": "Apportez la photo et une plante malade dans un sac plastique au centre de conseil agricole (ONCA) de votre commune. Le conseil est gratuit. Al Moutmir (OCP) propose aussi un conseil gratuit au champ.",
+    "bef.zurHilfe": "Vers Aides",
+    "bef.melden": "Signaler un ravageur",
+    "bef.kontrollen": "Contrôles après attaque",
+    "bef.abschliessen": "Clore le cas",
+    "bef.abschliessen.frage": "Clore {name} sur {kultur} ? Les dates de contrôle seront supprimées.",
+    "bef.fall": "{name} sur {kultur}",
+    "bef.fall.stand": "Constaté le {datum}. {fertig} contrôles faits sur {alle}.",
+    "bef.fall.foto": "Photo du {datum} : {name}",
+    "bef.fall.chem": "Produits chimiques uniquement selon l’étiquette. Avec le délai le plus long ({n} jours), dernière application le {datum}.",
+    "bef.kontrolle.tag": "Contrôle jour {n}",
+    "bef.kontrolle.erste": "Les mesures immédiates ont-elles agi ? Parties atteintes enlevées ? Comparer avec la photo.",
+    "bef.kontrolle.weitere": "Est-ce que ça s’étend ? Nouvelles taches ou insectes ? Si oui, appliquer la mesure suivante de la liste.",
+    "d.w.feucht": "Le temps humide favorise cela.",
+    "d.w.trocken": "La chaleur et la sécheresse favorisent cela.",
+    "d.w.kalk": "Votre sol est calcaire, ce qui rend la carence en fer probable.",
+    "d.w.salz": "Votre eau ou votre sol est salé pour cette culture.",
+    "d.w.nematoden": "Des nématodes étaient déjà présents sur votre parcelle.",
+    "d.w.welke": "Des plantes ont déjà flétri sur votre parcelle.",
+    "d.w.genannt": "Vous l’avez mentionné dans la description.",
+    "hilfe.titel": "Aides et subventions",
+    "hilfe.zinsfrei": "Uniquement des aides sans intérêt",
+    "hilfe.stand": "Données au {stand}. Taux et numéros changent : faites confirmer au guichet unique avant chaque demande.",
+    "hilfe.ansprechpartner": "Vos interlocuteurs",
+    "hilfe.region.text": "C’est ici que vous déposez les demandes de subvention et obtenez les attestations. Si votre parcelle est dans un grand périmètre irrigué, l’ORMVA est compétent, sinon la DPA de votre province.",
+    "hilfe.region.onca": "Conseil gratuit sur place : centre de conseil agricole de l’ONCA dans votre commune.",
+    "hilfe.region.waehlen": "Choisir la région dans « Ma parcelle »",
+    "hilfe.region.leer": "Choisissez votre région, je vous montrerai les services compétents.",
+    "hilfe.ablauf": "Comment obtenir une subvention",
+    "hilfe.unterlagen": "Documents nécessaires",
+    "hilfe.foerd": "Ce que l’État paie (FDA)",
+    "hilfe.foerd.text": "Subventions du Fonds de Développement Agricole. Elles ne sont pas remboursées.",
+    "hilfe.stellen": "Qui aide pour quoi",
+    "hilfe.web": "Site :",
+    "hilfe.pruefen": "Données à vérifier",
+    "hilfe.quelle": "Source :",
+    "hilfe.tel": "Numéros vérifiés",
+    "hilfe.tel.text": "Pour l’instant vérifiés seulement pour la région de l’Oriental. D’autres numéros seront ajoutés après vérification.",
+    "fuss": "Les recommandations sont indicatives et ne remplacent pas un conseil sur place (ex. ONCA). Vos données restent sur cet appareil.",
+    "einheit.kg": "kg",
+    "bef.foto.waehlen": "Choisir ou prendre une photo",
+    "felder.wahl": "Parcelle actuelle",
+    "felder.neu": "Nouvelle parcelle",
+    "felder.loeschen": "Supprimer cette parcelle",
+    "felder.loeschen.frage": "Supprimer la parcelle « {name} » et toutes ses données ? C’est définitif.",
+    "felder.ohneName": "Parcelle {n}",
+    "sicher.titel": "Sauvegarde",
+    "sicher.text": "Enregistrez toutes vos données dans un fichier pour les retrouver plus tard ou sur un autre téléphone.",
+    "sicher.export": "Enregistrer dans un fichier",
+    "sicher.import": "Restaurer depuis un fichier",
+    "sicher.import.frage": "Toutes les données actuelles seront remplacées par celles du fichier. Continuer ?",
+    "sicher.fehler": "Ce fichier n’est pas une sauvegarde du Calendrier du fellah.",
+    "app.installieren.titel": "L’application sur le téléphone",
+    "app.installieren.text": "Installez l’application sur votre téléphone : elle s’ouvre d’un geste et fonctionne sans internet.",
+    "app.installieren": "Installer l’application",
+    "app.installieren.ios": "Sur iPhone : touchez le bouton Partager puis « Sur l’écran d’accueil ».",
+    "tb.titel": "Carnet de parcelle",
+    "tb.text": "Ce que vous faites sur cette parcelle est noté ici automatiquement. Vous pouvez aussi ajouter vos notes.",
+    "tb.notiz": "Note",
+    "tb.notiz.bsp": "par ex. : arrosé 2 heures, acheté 5 sacs d’engrais",
+    "tb.hinzu": "Ajouter",
+    "tb.leer": "Rien de noté pour l’instant.",
+    "tb.weg": "Supprimer",
+    "tb.ernte": "Fin de la saison {kultur}",
+    "kal.drucken": "Imprimer le plan",
+    "kal.fertig": "Saison terminée",
+    "kal.fertig.frage": "La saison {kultur} est-elle terminée ? {kultur} sera notée comme culture de l’an dernier et le plan sera clôturé.",
+    "kal.druck.feld": "Parcelle : {name}",
+    "typ.notiz": "Note",
+    "vorlesen.laedt": "Préparation…",
+    "ki.pruefen": "L’IA examine la photo… cela peut prendre une minute.",
+    "ki.titel": "Ce que l’IA voit sur la photo",
+    "ki.gesehen": "Elle voit : {liste}",
+    "ki.nichts": "Aucun signe net de la liste.",
+    "ki.gesund": "La plante semble saine sur la photo.",
+    "ki.unklar": "Photo peu nette. Photographiez de près la feuille ou le fruit atteint, à la lumière du jour.",
+    "ki.vermutung": "Cause la plus probable d’après la photo : {name}",
+    "ki.fehler": "Impossible d’examiner la photo pour l’instant. Le résultat repose uniquement sur votre choix.",
+    "ki.hinweis": "La photo n’est envoyée qu’à votre propre serveur. L’IA peut se tromper : les signes qu’elle voit s’ajoutent à votre choix sans le remplacer.",
+    "hilfe.bilder": "Sources des photos"
+  },
+  "daten": {
+    "kulturen": {
+      "familien": {
+        "nachtschatten": "Solanacées",
+        "zwiebel": "Alliacées",
+        "kuerbis": "Cucurbitacées",
+        "rosen": "Rosacées",
+        "doldenbluetler": "Apiacées",
+        "huelsen": "Légumineuses",
+        "gras": "Céréales"
+      },
+      "kulturen": {
+        "tomate": {
+          "name": "Tomate"
+        },
+        "kartoffel": {
+          "name": "Pomme de terre"
+        },
+        "zwiebel": {
+          "name": "Oignon"
+        },
+        "paprika": {
+          "name": "Poivron / piment"
+        },
+        "zucchini": {
+          "name": "Courgette"
+        },
+        "melone": {
+          "name": "Melon"
+        },
+        "wassermelone": {
+          "name": "Pastèque"
+        },
+        "erdbeere": {
+          "name": "Fraise"
+        },
+        "karotte": {
+          "name": "Carotte"
+        },
+        "hartweizen": {
+          "name": "Blé dur"
+        },
+        "gerste": {
+          "name": "Orge"
+        },
+        "mais": {
+          "name": "Maïs"
+        },
+        "kichererbse": {
+          "name": "Pois chiche"
+        },
+        "ackerbohne": {
+          "name": "Fève"
+        },
+        "luzerne": {
+          "name": "Luzerne (fourrage)"
+        }
+      }
+    },
+    "zonen": {
+      "zonen": {
+        "gharb": {
+          "name": "Côte nord / Gharb"
+        },
+        "saiss": {
+          "name": "Saïss / Centre"
+        },
+        "atlas": {
+          "name": "Atlas et piémont"
+        },
+        "souss": {
+          "name": "Souss / Haouz / Sud"
+        },
+        "oase": {
+          "name": "Oasis / Présahara"
+        }
+      }
+    },
+    "fellah": {
+      "anwa": [
+        {
+          "bedeutung": "Fin de l’automne, les arbres perdent leurs feuilles. Traditionnellement on sème surtout l’orge."
+        },
+        {
+          "bedeutung": "Hiver froid avec gel et longues nuits."
+        },
+        {
+          "bedeutung": "Beaucoup de pluie, vent et froid ; période dure pour le bétail."
+        },
+        {
+          "bedeutung": "Froid intense et pluie."
+        },
+        {
+          "bedeutung": "Plein hiver, l’eau du sol peut geler."
+        },
+        {
+          "bedeutung": "Le froid recule, les plantes se réveillent, les ravageurs sortent de leur abri d’hiver."
+        },
+        {
+          "bedeutung": "Il fait plus doux, premières fleurs, insectes et rongeurs s’activent."
+        },
+        {
+          "bedeutung": "Nommé d’après les fortes pluies ; temps de travail assidu."
+        },
+        {
+          "bedeutung": "Début du printemps."
+        },
+        {
+          "bedeutung": "Pluies de printemps, décisives pour la récolte."
+        },
+        {
+          "bedeutung": "Cœur du printemps : les cultures poussent vite, le bétail reprend des forces."
+        },
+        {
+          "bedeutung": "Début de la chaleur, peu de pluie."
+        },
+        {
+          "bedeutung": "Début de la moisson des céréales."
+        },
+        {
+          "bedeutung": "Début de l’été, les céréales mûrissent, les mares s’assèchent."
+        },
+        {
+          "bedeutung": "Grande chaleur, les épis deviennent cassants ; une pluie tardive est redoutée."
+        },
+        {
+          "bedeutung": "Fin de la moisson, début du battage, chaleur à son comble."
+        },
+        {},
+        {},
+        {},
+        {},
+        {},
+        {
+          "bedeutung": "Début de l’automne dans le calendrier agricole."
+        },
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ],
+      "abschnitte": [
+        {
+          "text": "Les 40 nuits les plus froides de l’année. Les plantes poussent à peine ; protéger les cultures sensibles du gel."
+        },
+        {
+          "text": "Jour du milieu de l’été dans le calendrier agricole."
+        },
+        {
+          "text": "Les jours les plus chauds avec le chergui. Irriguer tôt le matin ou le soir, ombrer les plantes."
+        }
+      ]
+    },
+    "massnahmen": {
+      "probleme": {
+        "saison": {
+          "titel": "La période de plantation ne convient pas",
+          "massnahmen": [
+            {
+              "t": "Attendre la bonne période",
+              "d": "Gratuit et sûr. En attendant, semer une culture adaptée ou un engrais vert (ex. fève).",
+              "k": "aucun",
+              "z": "planifiable tout de suite"
+            },
+            {
+              "t": "Élever des plants à l’avance",
+              "d": "En pots sous abri, puis repiquer quand le temps le permet. Gagne 3 à 6 semaines.",
+              "k": "faible",
+              "z": "une saison"
+            },
+            {
+              "t": "Tunnel plastique ou voile",
+              "d": "Les petits tunnels protègent du froid et du vent et allongent la saison.",
+              "k": "moyen",
+              "z": "une saison"
+            },
+            {
+              "t": "Serre",
+              "d": "Possible toute l’année, mais coûteux et demande de l’expérience du climat et des maladies.",
+              "k": "élevé",
+              "z": "durable"
+            }
+          ]
+        },
+        "ph-hoch": {
+          "titel": "pH du sol trop élevé (calcaire)",
+          "massnahmen": [
+            {
+              "t": "Utiliser des engrais acidifiants",
+              "d": "Ex. sulfate d’ammonium ou phosphate monoammonique au lieu d’ammonitrate calcaire. Agit directement aux racines.",
+              "k": "sans surcoût",
+              "z": "immédiat"
+            },
+            {
+              "t": "Acidifier légèrement l’eau",
+              "d": "En goutte-à-goutte, un peu d’acide phosphorique ou nitrique dans le bac d’engrais. Baisse le pH aux racines et protège les goutteurs.",
+              "k": "faible",
+              "z": "immédiat"
+            },
+            {
+              "t": "Apporter fer et zinc chélatés",
+              "d": "Contre le jaunissement à pH élevé (ex. Fe-EDDHA).",
+              "k": "faible à moyen",
+              "z": "quelques jours"
+            },
+            {
+              "t": "Incorporer fumier ou compost",
+              "d": "20 à 30 t/ha. Tamponne le pH et améliore le sol.",
+              "k": "moyen",
+              "z": "1 à 3 ans"
+            },
+            {
+              "t": "Épandre du soufre élémentaire",
+              "d": "Baisse lentement le pH. Peu efficace et cher sur sols très calcaires. Faire mesurer le calcaire avant.",
+              "k": "moyen à élevé",
+              "z": "6 à 12 mois"
+            },
+            {
+              "t": "Cultiver hors-sol",
+              "d": "Pour les cultures sensibles comme la fraise : sacs ou gouttières avec substrat.",
+              "k": "élevé",
+              "z": "durable"
+            }
+          ]
+        },
+        "ph-niedrig": {
+          "titel": "pH du sol trop bas (acide)",
+          "massnahmen": [
+            {
+              "t": "Chauler",
+              "d": "Carbonate de calcium ou dolomie selon l’analyse, de préférence en automne.",
+              "k": "faible",
+              "z": "3 à 6 mois"
+            },
+            {
+              "t": "Incorporer fumier ou compost",
+              "d": "Tamponne le pH et apporte des éléments nutritifs.",
+              "k": "moyen",
+              "z": "1 à 3 ans"
+            }
+          ]
+        },
+        "salz-wasser": {
+          "titel": "L’eau est trop salée",
+          "massnahmen": [
+            {
+              "t": "Irriguer plus souvent et moins",
+              "d": "Le sol ne doit jamais sécher, sinon le sel monte aux racines. De petites doses chaque jour.",
+              "k": "aucun",
+              "z": "immédiat"
+            },
+            {
+              "t": "Pailler le sol",
+              "d": "Paille ou film freinent l’évaporation, moins de sel s’accumule.",
+              "k": "faible",
+              "z": "immédiat"
+            },
+            {
+              "t": "Lessiver le sel",
+              "d": "Apporter 10 à 20 % d’eau en plus des besoins, ou un arrosage abondant après la récolte. Seulement si le sol draine bien.",
+              "k": "faible (eau)",
+              "z": "une saison"
+            },
+            {
+              "t": "Passer au goutte-à-goutte",
+              "d": "Garde le sol humide de façon régulière aux racines et dilue le sel. L’État paie une grande partie.",
+              "k": "moyen (subventionné)",
+              "z": "dès l’installation"
+            },
+            {
+              "t": "Mélanger les eaux",
+              "d": "Mélanger l’eau salée du puits avec de l’eau de pluie d’un bassin ou une eau de meilleure qualité.",
+              "k": "moyen à élevé",
+              "z": "durable"
+            },
+            {
+              "t": "Variétés tolérantes au sel ou plants greffés",
+              "d": "Demander au vendeur des variétés tolérantes ; pour la tomate et le melon, les plants greffés aident.",
+              "k": "moyen",
+              "z": "prochaine plantation"
+            },
+            {
+              "t": "Dessaler l’eau",
+              "d": "Petite unité de dessalement. Très cher, demande de l’électricité et une solution pour la saumure.",
+              "k": "très élevé",
+              "z": "durable"
+            }
+          ]
+        },
+        "salz-boden": {
+          "titel": "Le sol est trop salé",
+          "massnahmen": [
+            {
+              "t": "Cultiver d’abord une culture tolérante",
+              "d": "L’orge ou la luzerne supportent beaucoup de sel et améliorent le sol.",
+              "k": "aucun",
+              "z": "une saison"
+            },
+            {
+              "t": "Lessiver le sel",
+              "d": "Irriguer abondamment avant la plantation pour faire descendre le sel.",
+              "k": "faible (eau)",
+              "z": "quelques semaines"
+            },
+            {
+              "t": "Épandre du gypse",
+              "d": "Utile si le sol contient beaucoup de sodium (analyse : ESP/SAR). Environ 2 à 5 t/ha selon l’analyse.",
+              "k": "moyen",
+              "z": "une saison"
+            },
+            {
+              "t": "Planter sur billons",
+              "d": "Le sel s’accumule au sommet du billon, la plante est sur le flanc.",
+              "k": "faible à moyen",
+              "z": "immédiat"
+            },
+            {
+              "t": "Poser un drainage",
+              "d": "Si l’eau ne s’évacue pas, seul un drainage enlève le sel durablement.",
+              "k": "élevé",
+              "z": "durable"
+            }
+          ]
+        },
+        "wasser-knapp": {
+          "titel": "Pas assez d’eau",
+          "massnahmen": [
+            {
+              "t": "Réduire la surface",
+              "d": "Ne cultiver que ce que l’eau permet. L’application indique la surface possible pour chaque culture.",
+              "k": "aucun",
+              "z": "immédiat"
+            },
+            {
+              "t": "Planter en saison fraîche",
+              "d": "En automne et en hiver, beaucoup moins d’eau s’évapore.",
+              "k": "aucun",
+              "z": "saison prochaine"
+            },
+            {
+              "t": "Irriguer le soir ou tôt le matin",
+              "d": "Moins d’évaporation qu’à midi.",
+              "k": "aucun",
+              "z": "immédiat"
+            },
+            {
+              "t": "Paillage ou film",
+              "d": "Économise environ 20 à 30 % d’eau et limite les mauvaises herbes.",
+              "k": "faible",
+              "z": "immédiat"
+            },
+            {
+              "t": "Passer au goutte-à-goutte",
+              "d": "Économise souvent 30 à 50 % d’eau par rapport au gravitaire. L’État paie une grande partie.",
+              "k": "moyen (subventionné)",
+              "z": "dès l’installation"
+            },
+            {
+              "t": "Construire un bassin",
+              "d": "Stocker l’eau la nuit ou à la pluie, l’utiliser le jour.",
+              "k": "moyen à élevé (subventionné)",
+              "z": "durable"
+            },
+            {
+              "t": "Pompe solaire",
+              "d": "Moins chère à l’usage que le gaz ou le diesel, permet de pomper plus longtemps.",
+              "k": "élevé (aide pilote)",
+              "z": "durable"
+            },
+            {
+              "t": "Forer un nouveau puits",
+              "d": "Uniquement avec autorisation de l’Agence du Bassin Hydraulique. Sans autorisation : sanctions et pas de subvention.",
+              "k": "très élevé",
+              "z": "des mois"
+            }
+          ]
+        },
+        "regen-fehlt": {
+          "titel": "La pluie ne suffit pas",
+          "massnahmen": [
+            {
+              "t": "Choisir une culture adaptée au bour",
+              "d": "Orge, blé dur, pois chiche et fève se contentent le mieux de la pluie.",
+              "k": "aucun",
+              "z": "immédiat"
+            },
+            {
+              "t": "Irrigation d’appoint",
+              "d": "Quelques apports aux stades critiques (floraison, remplissage du grain) doublent souvent le rendement.",
+              "k": "moyen (subventionné)",
+              "z": "saison prochaine"
+            },
+            {
+              "t": "Mettre en place l’irrigation",
+              "d": "Planifier source d’eau, bassin et goutte-à-goutte avec subvention.",
+              "k": "élevé (subventionné)",
+              "z": "durable"
+            }
+          ]
+        },
+        "boden-ton": {
+          "titel": "Sol argileux lourd",
+          "massnahmen": [
+            {
+              "t": "Planter sur billons ou planches",
+              "d": "L’eau s’écoule, racines et tubercules respirent.",
+              "k": "faible",
+              "z": "immédiat"
+            },
+            {
+              "t": "Travailler le sol au bon taux d’humidité",
+              "d": "L’argile mouillée se compacte, sèche elle devient dure comme la pierre.",
+              "k": "aucun",
+              "z": "immédiat"
+            },
+            {
+              "t": "Incorporer compost et fumier",
+              "d": "Rend le sol plus meuble au fil des ans.",
+              "k": "moyen",
+              "z": "1 à 3 ans"
+            },
+            {
+              "t": "Sous-solage ou drainage",
+              "d": "En cas d’engorgement, ameublir le sous-sol ou poser un drainage.",
+              "k": "élevé",
+              "z": "durable"
+            }
+          ]
+        },
+        "boden-sand": {
+          "titel": "Sol sableux léger",
+          "massnahmen": [
+            {
+              "t": "Engrais en petites doses via l’eau",
+              "d": "Le sable retient mal les éléments nutritifs, donc fertiliser peu et souvent.",
+              "k": "sans surcoût",
+              "z": "immédiat"
+            },
+            {
+              "t": "Incorporer compost et fumier",
+              "d": "Retient l’eau et les éléments nutritifs.",
+              "k": "moyen",
+              "z": "1 à 3 ans"
+            },
+            {
+              "t": "Goutte-à-goutte",
+              "d": "Évite que l’eau s’infiltre sans être utilisée.",
+              "k": "moyen (subventionné)",
+              "z": "dès l’installation"
+            }
+          ]
+        },
+        "fruchtfolge": {
+          "titel": "La même famille de plantes était ici trop récemment",
+          "massnahmen": [
+            {
+              "t": "Cultiver sur une autre parcelle",
+              "d": "Le plus simple : la culture se déplace, les maladies du sol restent.",
+              "k": "aucun",
+              "z": "immédiat"
+            },
+            {
+              "t": "Intercaler une autre famille",
+              "d": "Ex. céréales ou légumineuses, jusqu’à la fin de la pause.",
+              "k": "aucun",
+              "z": "1 à 3 ans"
+            },
+            {
+              "t": "Désinfecter le sol au soleil (solarisation)",
+              "d": "En été, couvrir le sol humide 4 à 6 semaines d’un film transparent. Tue beaucoup de champignons, nématodes et graines d’adventices.",
+              "k": "faible à moyen",
+              "z": "6 semaines en été"
+            },
+            {
+              "t": "Variétés résistantes ou plants greffés",
+              "d": "Demander les résistances au vendeur ; tomates et melons greffés résistent mieux aux maladies du sol.",
+              "k": "moyen",
+              "z": "prochaine plantation"
+            }
+          ]
+        },
+        "nematoden": {
+          "titel": "Nématodes dans le sol",
+          "massnahmen": [
+            {
+              "t": "Choisir une culture peu sensible",
+              "d": "Céréales, oignon et luzerne souffrent peu.",
+              "k": "aucun",
+              "z": "immédiat"
+            },
+            {
+              "t": "Solarisation en été",
+              "d": "Couvrir le sol humide 4 à 6 semaines d’un film transparent.",
+              "k": "faible à moyen",
+              "z": "6 semaines en été"
+            },
+            {
+              "t": "Beaucoup de matière organique",
+              "d": "Fumier, compost et engrais verts renforcent les ennemis naturels des nématodes.",
+              "k": "moyen",
+              "z": "1 à 2 ans"
+            },
+            {
+              "t": "Variétés résistantes ou plants greffés",
+              "d": "Pour la tomate, chercher la résistance aux nématodes à galles (code « N » ou gène Mi).",
+              "k": "moyen",
+              "z": "prochaine plantation"
+            }
+          ]
+        },
+        "welke": {
+          "titel": "Flétrissements d’origine tellurique",
+          "massnahmen": [
+            {
+              "t": "Pause plus longue pour les familles sensibles",
+              "d": "Écarter solanacées et cucurbitacées au moins 3 à 4 ans.",
+              "k": "aucun",
+              "z": "des années"
+            },
+            {
+              "t": "Solarisation en été",
+              "d": "Efficace contre de nombreux champignons du flétrissement.",
+              "k": "faible à moyen",
+              "z": "6 semaines en été"
+            },
+            {
+              "t": "Variétés résistantes ou plants greffés",
+              "d": "Chercher les codes de résistance « V » et « F » (Verticillium, Fusarium).",
+              "k": "moyen",
+              "z": "prochaine plantation"
+            }
+          ]
+        },
+        "kalk": {
+          "titel": "Beaucoup de calcaire dans le sol",
+          "massnahmen": [
+            {
+              "t": "Engrais acidifiants",
+              "d": "Sulfate d’ammonium ou MAP au lieu d’engrais calcaires.",
+              "k": "sans surcoût",
+              "z": "immédiat"
+            },
+            {
+              "t": "Apporter du fer chélaté",
+              "d": "Contre le jaunissement (Fe-EDDHA par goutte-à-goutte ou foliaire).",
+              "k": "faible à moyen",
+              "z": "quelques jours"
+            },
+            {
+              "t": "Pomme de terre : humidité régulière",
+              "d": "La gale apparaît surtout par sécheresse pendant la tubérisation ; choisir des variétés tolérantes.",
+              "k": "aucun",
+              "z": "immédiat"
+            }
+          ]
+        }
+      }
+    },
+    "hilfe": {
+      "grundsatz": "Uniquement des aides sans intérêt : subventions de l’État non remboursables, conseil et analyses gratuits, coopératives. Les banques (y compris participatives), crédits, microcrédits et assurances ne sont volontairement pas cités.",
+      "quellen": {
+        "mwn-odco": {
+          "name": "Morocco World News – ODCO et coopératives"
+        }
+      },
+      "foerderungen": {
+        "tropf": {
+          "titel": "Irrigation localisée (goutte-à-goutte)",
+          "saetze": [
+            "Petite exploitation ou projet collectif : jusqu’à 100 %, au plus 38 000 DH/ha",
+            "Exploitation de 5 à 20 ha : jusqu’à 75 %, au plus 28 500 DH/ha",
+            "Exploitation de plus de 20 ha : jusqu’à 60 %, au plus 23 000 DH/ha"
+          ],
+          "hinweis": "Selon l’arrêté 1323.22, jusqu’au 31.12.2027 ou jusqu’à 350 000 ha. Paiement sur coûts réels, non forfaitaire."
+        },
+        "becken": {
+          "titel": "Bassins de stockage d’eau",
+          "saetze": [
+            "Avec goutte-à-goutte : jusqu’à 12 000 DH/ha (petite exploitation), 9 000 DH (5–20 ha), 7 000 DH (plus de 20 ha)",
+            "Projets collectifs : 50 DH par m³"
+          ]
+        },
+        "complement": {
+          "titel": "Irrigation de complément",
+          "saetze": [
+            "Exploitation individuelle jusqu’à 20 ha : 75 %, au plus 21 000 DH/ha",
+            "Plus de 20 ha : 60 %, au plus 16 000 DH/ha",
+            "Projet collectif : 100 %, au plus 34 000 DH/ha"
+          ]
+        },
+        "solar": {
+          "titel": "Pompage solaire (programme pilote)",
+          "saetze": [
+            "Remplace les pompes au gaz butane en goutte-à-goutte",
+            "Une aide par exploitation",
+            "Condition : goutte-à-goutte en place et compteur d’eau avec carnet de consommation"
+          ],
+          "hinweis": "Taux et montant non indiqués dans la source : se renseigner au guichet unique."
+        },
+        "serre": {
+          "titel": "Serres et filets",
+          "saetze": [
+            "Serre : 25 %, ex. au plus 27 DH/m² en structure métallique",
+            "Filets insect-proof en serre : 35 %, au plus 12 000 DH/ha",
+            "Filets paragrêle sur arbres fruitiers : 40 %, au plus 50 000 DH/ha"
+          ]
+        },
+        "geraete": {
+          "titel": "Matériel agricole",
+          "saetze": [
+            "Tracteur : 30 % (ex. 52 000 DH pour 2 roues motrices de moins de 50 ch)",
+            "Semoir en ligne : 50 %, au plus 45 000 DH",
+            "Pulvérisateur traîné : 50 %, au plus 42 000 DH"
+          ]
+        },
+        "pflanzung": {
+          "titel": "Plantations",
+          "saetze": [
+            "Densification ou renouvellement du palmier dattier : 100 % des plants",
+            "Nouveau palmier dattier : 70 %, au plus 35 000 DH/ha",
+            "Olivier en goutte-à-goutte : jusqu’à 5 000 DH/ha",
+            "Arganier en bour : 80 %, au plus 6 000 DH/ha",
+            "Pommier 60 % (au plus 17 000 DH/ha), noyer jusqu’à 10 000 DH/ha"
+          ]
+        },
+        "saatgut": {
+          "titel": "Semences certifiées",
+          "saetze": [
+            "Vendues à prix réduit chez le revendeur, ex. 255 DH le quintal pour le blé tendre, 395 DH pour les lentilles"
+          ]
+        },
+        "analyse": {
+          "titel": "Analyses de laboratoire (sol, eau, plante)",
+          "saetze": [
+            "50 % du coût"
+          ],
+          "hinweis": "Des analyses de sol gratuites existent aussi chez Al Moutmir (voir plus bas)."
+        },
+        "bio": {
+          "titel": "Agriculture biologique",
+          "saetze": [
+            "70 à 90 % selon la surface, au plus 10 000 à 40 000 DH par an"
+          ]
+        },
+        "jugend": {
+          "titel": "Jeunes agriculteurs sur terres collectives",
+          "saetze": [
+            "Aide à l’investissement après melkisation ; demande dans les 12 mois"
+          ],
+          "hinweis": "Accompagnement des jeunes porteurs de projets aussi via l’ADA (voir services)."
+        },
+        "brunnen": {
+          "titel": "Puits et forages",
+          "saetze": [
+            "Pas de subvention pour le puits lui-même",
+            "Autorisation de l’Agence du Bassin Hydraulique obligatoire, condition aussi pour toute aide à l’irrigation"
+          ]
+        }
+      },
+      "ablauf": {
+        "schritte": [
+          {
+            "t": "Demander l’accord préalable",
+            "d": "Au guichet unique de votre DPA ou ORMVA, sur papier et en ligne. Important : ne rien acheter ni commencer avant, sinon pas de subvention. Garder le récépissé."
+          },
+          {
+            "t": "Réaliser comme approuvé",
+            "d": "Exécuter les travaux exactement selon le plan approuvé, factures détaillées par composant."
+          },
+          {
+            "t": "Demander la subvention",
+            "d": "Dans les 24 mois après l’accord (projets collectifs 30 mois) avec factures originales et preuves de paiement. Prolongation seulement si demandée avant l’échéance."
+          },
+          {
+            "t": "Versement",
+            "d": "La subvention arrive après la réalisation. L’argent doit être avancé soi-même, sans crédit, par ex. avec l’épargne ou en commun dans une coopérative."
+          }
+        ],
+        "unterlagen": [
+          "CIN (coopérative/société : statuts, extrait du registre, PV de la dernière assemblée)",
+          "Preuve de la terre ; en location, au moins 6 ans restants",
+          "Eau : autorisation du puits ou du prélèvement ; en périmètre irrigué, attestation de l’ORMVA",
+          "Étude technique : besoins en eau, plan, devis par composant",
+          "Matériel conforme à la norme NM 12.1.100-2007 avec rapports d’essai (moins de 2 ans)",
+          "Après réalisation : demande, factures originales, preuves de paiement"
+        ],
+        "online": {
+          "name": "Guichet électronique du FDA (GUE)",
+          "hinweis": "Déposer la demande en ligne ; la version papier est aussi exigée."
+        }
+      },
+      "stellen": {
+        "dpa": {
+          "aufgabe": "Guichet unique dans chaque province : demandes de subvention, attestations, information sur tous les programmes. Premier interlocuteur hors périmètres irrigués.",
+          "kosten": "gratuit"
+        },
+        "ormva": {
+          "aufgabe": "Compétent à la place de la DPA dans les grands périmètres irrigués : subventions, dotations en eau, attestations.",
+          "kosten": "gratuit"
+        },
+        "onca": {
+          "aufgabe": "Conseil gratuit par les conseillers agricoles des Centres de Conseil Agricole : cultures, fertilisation, protection des plantes, demandes de subvention.",
+          "kosten": "gratuit"
+        },
+        "onssa": {
+          "name": "ONSSA (sécurité sanitaire des produits alimentaires)",
+          "aufgabe": "Liste des produits phytosanitaires homologués (index phytosanitaire), contrôle des semences et plants, signalement des ravageurs.",
+          "kosten": "gratuit"
+        },
+        "abh": {
+          "aufgabe": "Autorisation des puits, forages et prélèvements d’eau. Sans autorisation, pas de subvention et sanctions possibles.",
+          "kosten": "frais possibles"
+        },
+        "inra": {
+          "name": "INRA Maroc (recherche agronomique)",
+          "aufgabe": "Variétés adaptées au Maroc, recherche, laboratoires d’analyse de sol et de plantes.",
+          "kosten": "analyses payantes (50 % subventionnées par le FDA)"
+        },
+        "ada": {
+          "aufgabe": "Programmes Génération Green, accompagnement des jeunes agriculteurs et porteurs de projets.",
+          "kosten": "gratuit"
+        },
+        "odco": {
+          "aufgabe": "Aide à créer et gérer une coopérative. Ensemble, on partage sans intérêt machines, bassins et commercialisation, et on demande des projets subventionnés plus importants (jusqu’à 100 %).",
+          "kosten": "gratuit"
+        },
+        "moutmir": {
+          "name": "Al Moutmir (programme du groupe OCP)",
+          "aufgabe": "Analyses de sol gratuites avec laboratoires mobiles en début de saison, surtout pour les petites exploitations ; parcelles de démonstration ; application de conseil « @tmar ».",
+          "kosten": "gratuit"
+        }
+      },
+      "regionen": {
+        "gharb": {
+          "stellen": [
+            "ORMVA du Gharb (Kénitra)",
+            "ORMVA du Loukkos (Ksar El Kébir)",
+            "ORMVA des Doukkala (El Jadida)",
+            "Sinon : DPA de votre province"
+          ]
+        },
+        "saiss": {
+          "stellen": [
+            "DPA de Meknès ou Fès (Saïss)",
+            "ORMVA du Tadla (Fquih Ben Salah)",
+            "ORMVA de la Moulouya (Berkane)"
+          ]
+        },
+        "atlas": {
+          "stellen": [
+            "DPA de votre province (ex. Ifrane, Khénifra, Midelt, Azilal)"
+          ]
+        },
+        "souss": {
+          "stellen": [
+            "ORMVA du Souss-Massa (Agadir)",
+            "ORMVA du Haouz (Marrakech)",
+            "Sinon : DPA de votre province"
+          ]
+        },
+        "oase": {
+          "stellen": [
+            "ORMVA de Ouarzazate",
+            "ORMVA du Tafilalet (Errachidia)",
+            "Sinon : DPA de votre province"
+          ]
+        }
+      }
+    },
+    "anbau": {
+      "duenger": {
+        "harnstoff": {
+          "name": "Urée (46 % N)"
+        },
+        "ammonsulfat": {
+          "name": "Sulfate d’ammonium (21 % N)"
+        },
+        "tsp": {
+          "name": "Superphosphate triple (45 % P₂O₅)"
+        },
+        "map": {
+          "name": "Phosphate monoammonique MAP (12 % N, 61 % P₂O₅)"
+        },
+        "kaliumsulfat": {
+          "name": "Sulfate de potassium (50 % K₂O)"
+        }
+      },
+      "kulturen": {
+        "tomate": {
+          "abstand": "Rangs 120–150 cm, 40–50 cm sur le rang",
+          "tiefe": "Planter jusqu’aux premières feuilles",
+          "wasser": "Humidité régulière, en goutte-à-goutte un court arrosage par jour. Les variations causent nécrose apicale et éclatement.",
+          "tipp": "Ne pas arroser le feuillage. Les plants greffés résistent mieux aux maladies du sol.",
+          "pflege": [
+            [
+              null,
+              "Vérifier la reprise",
+              "Remplacer les plants morts."
+            ],
+            [
+              null,
+              "Poser tuteurs ou ficelles",
+              "Attacher les plants pour que les fruits ne touchent pas le sol."
+            ],
+            [
+              null,
+              "Commencer l’ébourgeonnage",
+              "Enlever les gourmands chaque semaine ; une seule tige pour les tomates tuteurées."
+            ],
+            [
+              null,
+              "Désherber",
+              "Binage superficiel ou paillage."
+            ],
+            [
+              null,
+              "Enlever les feuilles du bas",
+              "Meilleure aération, moins de maladies."
+            ]
+          ]
+        },
+        "kartoffel": {
+          "abstand": "Rangs 75 cm, 30 cm sur le rang",
+          "tiefe": "Planter les tubercules à 8–10 cm",
+          "wasser": "Dès la tubérisation (vers le jour 40), ne jamais laisser sécher, sinon gale et petits tubercules.",
+          "tipp": "Utiliser uniquement des plants certifiés, ils protègent des virus.",
+          "pflege": [
+            [
+              null,
+              "Buttage",
+              "Ramener la terre au pied quand les plants font 15–20 cm."
+            ],
+            [
+              null,
+              "Second buttage",
+              "Éviter les tubercules verts."
+            ],
+            [
+              null,
+              "Désherber",
+              "Avant la fermeture des rangs."
+            ],
+            [
+              null,
+              "Défaner",
+              "10 à 14 jours avant la récolte pour durcir la peau."
+            ]
+          ]
+        },
+        "zwiebel": {
+          "abstand": "Rangs 25–30 cm, 8–10 cm sur le rang",
+          "tiefe": "Repiquer à 2–3 cm",
+          "wasser": "Régulièrement, mais arrêter 2–3 semaines avant la récolte pour la maturation.",
+          "tipp": "Après la récolte, laisser sécher quelques jours au champ.",
+          "pflege": [
+            [
+              null,
+              "Désherber",
+              "L’oignon supporte mal les adventices, biner tôt et souvent."
+            ],
+            [
+              null,
+              "Désherber",
+              "Deuxième passage."
+            ],
+            [
+              null,
+              "Arrêter l’irrigation",
+              "Quand le feuillage tombe."
+            ]
+          ]
+        },
+        "paprika": {
+          "abstand": "Rangs 100–120 cm, 35–40 cm sur le rang",
+          "tiefe": "Planter à la même profondeur qu’en pot",
+          "wasser": "Humidité régulière, sensible à la sécheresse à la floraison.",
+          "tipp": "Enlever la première fleur renforce la plante.",
+          "pflege": [
+            [
+              null,
+              "Vérifier la reprise",
+              "Remplacer les manquants."
+            ],
+            [
+              null,
+              "Poser des supports",
+              "Ficelles ou tuteurs contre la verse."
+            ],
+            [
+              null,
+              "Désherber",
+              "Binage superficiel ou paillage."
+            ]
+          ]
+        },
+        "zucchini": {
+          "abstand": "Rangs 120–150 cm, 80–100 cm sur le rang",
+          "tiefe": "2–3 graines par poquet, à 2–3 cm",
+          "wasser": "Arroser au pied, garder le feuillage sec (oïdium).",
+          "tipp": "Récolter tous les 2–3 jours quand les fruits font 15–20 cm.",
+          "pflege": [
+            [
+              null,
+              "Démarier",
+              "Garder la plante la plus forte par poquet."
+            ],
+            [
+              null,
+              "Désherber",
+              "Jusqu’à ce que les feuilles couvrent le sol."
+            ]
+          ]
+        },
+        "melone": {
+          "abstand": "Rangs 150–200 cm, 50–70 cm sur le rang",
+          "tiefe": "Planter peu profond",
+          "wasser": "Bien arroser jusqu’à la nouaison, moins à la maturité pour plus de sucre.",
+          "tipp": "Le paillage plastique réchauffe le sol et économise l’eau.",
+          "pflege": [
+            [
+              null,
+              "Désherber",
+              "Avant le coulage des tiges."
+            ],
+            [
+              null,
+              "Poser les fruits sur la paille",
+              "Contre la pourriture au sol."
+            ]
+          ]
+        },
+        "wassermelone": {
+          "abstand": "Rangs 200 cm, 60–80 cm sur le rang",
+          "tiefe": "Planter peu profond",
+          "wasser": "Bien arroser jusqu’à la nouaison, peu les 10 derniers jours.",
+          "tipp": "Mûre quand la vrille près du fruit sèche et que la tache au sol jaunit.",
+          "pflege": [
+            [
+              null,
+              "Désherber",
+              "Avant le coulage des tiges."
+            ],
+            [
+              null,
+              "Éclaircir les fruits",
+              "Garder 2–3 fruits par plante pour de plus grosses pastèques."
+            ]
+          ]
+        },
+        "erdbeere": {
+          "abstand": "Billons à 2 rangs, 30 cm sur le rang",
+          "tiefe": "Le cœur de la plante au niveau du sol",
+          "wasser": "Goutte-à-goutte sous film, régulier.",
+          "tipp": "Cueillir les fruits mûrs tous les 2–3 jours, le matin au frais.",
+          "pflege": [
+            [
+              null,
+              "Vérifier la reprise",
+              "Remplacer les manquants."
+            ],
+            [
+              null,
+              "Enlever les stolons",
+              "En continu pour que la force aille aux fruits."
+            ],
+            [
+              null,
+              "Enlever les vieilles feuilles",
+              "Contre la pourriture grise."
+            ]
+          ]
+        },
+        "karotte": {
+          "abstand": "Rangs 30 cm, 4–5 cm après éclaircissage",
+          "tiefe": "Semer à 1–2 cm",
+          "wasser": "Humide jusqu’à la levée, puis régulier.",
+          "tipp": "Éviter le fumier frais, sinon racines fourchues.",
+          "pflege": [
+            [
+              null,
+              "Éclaircir",
+              "À 4–5 cm."
+            ],
+            [
+              null,
+              "Désherber",
+              "La carotte pousse lentement, biner tôt."
+            ],
+            [
+              null,
+              "Butter",
+              "Éviter les collets verts."
+            ]
+          ]
+        },
+        "hartweizen": {
+          "abstand": "Rangs 15–20 cm, environ 150–180 kg de semence par ha",
+          "tiefe": "À 3–4 cm",
+          "wasser": "En irrigué : tallage, montaison et floraison sont les stades clés.",
+          "tipp": "La semence certifiée est subventionnée et assure le rendement.",
+          "pflege": [
+            [
+              null,
+              "Désherber",
+              "Mécaniquement ou selon le conseil."
+            ],
+            [
+              null,
+              "Contrôler la culture",
+              "Surveiller rouille et taches foliaires."
+            ]
+          ]
+        },
+        "gerste": {
+          "abstand": "Rangs 15–20 cm, environ 120–140 kg de semence par ha",
+          "tiefe": "À 3–4 cm",
+          "wasser": "Souvent sans irrigation ; en sécheresse un apport à la montaison.",
+          "tipp": "Supporte mieux le sel et la sécheresse que le blé.",
+          "pflege": [
+            [
+              null,
+              "Désherber",
+              "Mécaniquement ou selon le conseil."
+            ]
+          ]
+        },
+        "mais": {
+          "abstand": "Rangs 75 cm, 20–25 cm sur le rang",
+          "tiefe": "À 4–5 cm",
+          "wasser": "Ne jamais laisser sécher avant et pendant la floraison.",
+          "tipp": "Surveiller les trous de foreurs dans la tige.",
+          "pflege": [
+            [
+              null,
+              "Désherber",
+              "Garder propre jusqu’à hauteur de genou."
+            ],
+            [
+              null,
+              "Butter",
+              "Contre la verse."
+            ]
+          ]
+        },
+        "kichererbse": {
+          "abstand": "Rangs 35–45 cm, 8–10 cm sur le rang",
+          "tiefe": "À 5–7 cm",
+          "wasser": "Souvent sans irrigation ; éviter l’engorgement.",
+          "tipp": "Le semis d’hiver rend plus, mais demande des variétés tolérantes à l’anthracnose.",
+          "pflege": [
+            [
+              null,
+              "Désherber",
+              "Le pois chiche pousse lentement."
+            ],
+            [
+              null,
+              "Surveiller l’anthracnose",
+              "Ascochyta : taches brunes à cercles, surtout par temps humide."
+            ]
+          ]
+        },
+        "ackerbohne": {
+          "abstand": "Rangs 40–50 cm, 10–15 cm sur le rang",
+          "tiefe": "À 5–8 cm",
+          "wasser": "L’eau est importante à la floraison et à la formation des gousses.",
+          "tipp": "Laisse de l’azote pour la culture suivante.",
+          "pflege": [
+            [
+              null,
+              "Désherber",
+              "Avant la fermeture des rangs."
+            ],
+            [
+              null,
+              "Surveiller pucerons et orobanche",
+              "Arracher tôt l’orobanche."
+            ]
+          ]
+        },
+        "luzerne": {
+          "abstand": "À la volée ou rangs 15–20 cm, environ 25–30 kg de semence par ha",
+          "tiefe": "À 1–2 cm, puis rouler",
+          "wasser": "Irriguer abondamment après chaque coupe.",
+          "tipp": "Reste 3 à 4 ans et améliore le sol.",
+          "pflege": [
+            [
+              null,
+              "Contrôler les adventices",
+              "Important la première année."
+            ],
+            [
+              null,
+              "Première coupe",
+              "Couper en début de floraison, puis environ tous les 30–40 jours."
+            ]
+          ]
+        }
+      }
+    },
+    "krankheiten": {
+      "symptome": {
+        "b-ringe": {
+          "t": "Taches brunes avec des cercles (comme une cible)",
+          "kw": [
+            "cercles",
+            "anneaux",
+            "cible",
+            "taches brunes"
+          ]
+        },
+        "b-nass": {
+          "t": "Grandes taches vert-gris à brunes, d’aspect mouillé",
+          "kw": [
+            "mouillé",
+            "huileuse",
+            "grandes taches"
+          ]
+        },
+        "b-weiss-oben": {
+          "t": "Poudre blanche farineuse sur le dessus des feuilles",
+          "kw": [
+            "poudre blanche",
+            "farine",
+            "blanc"
+          ]
+        },
+        "b-flaum-unten": {
+          "t": "Duvet gris, violet ou blanc sous la feuille",
+          "kw": [
+            "duvet",
+            "feutrage",
+            "dessous"
+          ]
+        },
+        "b-gelb-flecken": {
+          "t": "Taches jaunes dessus, poudre claire dessous",
+          "kw": [
+            "taches jaunes"
+          ]
+        },
+        "b-eckig": {
+          "t": "Taches jaunes anguleuses entre les nervures",
+          "kw": [
+            "anguleuses",
+            "entre les nervures"
+          ]
+        },
+        "b-gelb-unten": {
+          "t": "Les vieilles feuilles du bas jaunissent",
+          "kw": [
+            "feuilles du bas",
+            "jaunissent",
+            "jaunes en bas"
+          ]
+        },
+        "b-gelb-jung": {
+          "t": "Jeunes feuilles jaunes, nervures restent vertes",
+          "kw": [
+            "jeunes feuilles jaunes",
+            "chlorose",
+            "nervures vertes"
+          ]
+        },
+        "b-gelb-roll": {
+          "t": "Feuilles petites, jaunes et enroulées vers le haut",
+          "kw": [
+            "enroulées",
+            "cuillère",
+            "enroulement"
+          ]
+        },
+        "b-mosaik": {
+          "t": "Mosaïque vert clair et vert foncé, feuilles déformées",
+          "kw": [
+            "mosaïque",
+            "marbrure",
+            "déformées"
+          ]
+        },
+        "b-kraus": {
+          "t": "Feuilles frisées, enroulées",
+          "kw": [
+            "frisées",
+            "crispées",
+            "recroquevillées"
+          ]
+        },
+        "b-platzminen": {
+          "t": "Plages transparentes dans la feuille avec petite chenille ou excréments",
+          "kw": [
+            "mines",
+            "galeries",
+            "transparent"
+          ]
+        },
+        "b-gaenge": {
+          "t": "Fines galeries sinueuses dans la feuille",
+          "kw": [
+            "galeries",
+            "sinueuses",
+            "serpentins"
+          ]
+        },
+        "b-silber": {
+          "t": "Plages argentées avec petits points noirs",
+          "kw": [
+            "argenté",
+            "argentées"
+          ]
+        },
+        "b-gespinst": {
+          "t": "Fines toiles, feuilles piquetées de jaune ou bronzées",
+          "kw": [
+            "toiles",
+            "toile",
+            "bronzé",
+            "piqûres"
+          ]
+        },
+        "b-rost": {
+          "t": "Petites pustules rouille, jaunes ou orange, qui laissent de la poudre",
+          "kw": [
+            "pustules",
+            "rouille",
+            "orange"
+          ]
+        },
+        "b-strichel": {
+          "t": "Taches brunes allongées ou en réseau (céréales)",
+          "kw": [
+            "stries",
+            "réseau",
+            "allongées"
+          ]
+        },
+        "b-punkte-dunkel": {
+          "t": "Petites taches sombres, souvent avec bord jaune ou points noirs",
+          "kw": [
+            "taches sombres",
+            "points noirs",
+            "petites taches"
+          ]
+        },
+        "b-schoko": {
+          "t": "Nombreux petits points brun chocolat",
+          "kw": [
+            "chocolat"
+          ]
+        },
+        "b-spitzen": {
+          "t": "Pointes des feuilles jaunes, fanées, cassées",
+          "kw": [
+            "pointes",
+            "bout des feuilles"
+          ]
+        },
+        "b-rand-braun": {
+          "t": "Bords des feuilles bruns et secs",
+          "kw": [
+            "bords bruns",
+            "brûlure",
+            "bords secs"
+          ]
+        },
+        "b-klebrig": {
+          "t": "Feuilles collantes, dépôt noir (fumagine)",
+          "kw": [
+            "collant",
+            "collantes",
+            "miellat",
+            "fumagine",
+            "noir"
+          ]
+        },
+        "b-frass": {
+          "t": "Trous ou morsures sur les feuilles",
+          "kw": [
+            "trous",
+            "mangées",
+            "morsures"
+          ]
+        },
+        "f-loecher": {
+          "t": "Trous ou galeries dans les fruits, gousses ou tubercules",
+          "kw": [
+            "trous dans",
+            "fruits troués",
+            "galeries"
+          ]
+        },
+        "f-ende": {
+          "t": "Tache sombre enfoncée au bout du fruit",
+          "kw": [
+            "bout du fruit",
+            "cul noir",
+            "pourriture apicale"
+          ]
+        },
+        "f-grau": {
+          "t": "Moisissure grise poudreuse sur fruits ou fleurs",
+          "kw": [
+            "moisissure grise",
+            "gris",
+            "moisi"
+          ]
+        },
+        "f-braun": {
+          "t": "Taches brunes, dures ou pourries sur fruits ou tubercules",
+          "kw": [
+            "taches brunes",
+            "pourri",
+            "pourriture"
+          ]
+        },
+        "f-schorf": {
+          "t": "Croûte rugueuse et liégeuse sur tubercules ou racines",
+          "kw": [
+            "gale",
+            "croûte",
+            "liégeux"
+          ]
+        },
+        "f-aehre": {
+          "t": "Épis noirs et poudreux au lieu de grains",
+          "kw": [
+            "épis noirs",
+            "charbon",
+            "poudre noire"
+          ]
+        },
+        "s-welke": {
+          "t": "La plante fane, d’abord à midi, puis complètement",
+          "kw": [
+            "fane",
+            "flétrit",
+            "flétrissement",
+            "fanée"
+          ]
+        },
+        "s-gefaesse": {
+          "t": "Tige coupée : stries brunes à l’intérieur",
+          "kw": [
+            "vaisseaux bruns",
+            "intérieur brun"
+          ]
+        },
+        "s-gallen": {
+          "t": "Nœuds ou renflements sur les racines",
+          "kw": [
+            "galles",
+            "nœuds",
+            "renflements"
+          ]
+        },
+        "s-wurzel-faul": {
+          "t": "Racines brunes et pourries, presque pas de radicelles",
+          "kw": [
+            "racines pourries",
+            "pourriture des racines"
+          ]
+        },
+        "s-faul": {
+          "t": "Base de la tige sombre, pourrie ou étranglée, elle casse",
+          "kw": [
+            "collet",
+            "base pourrie",
+            "étranglée"
+          ]
+        },
+        "s-bohrloch": {
+          "t": "Trous de foreur dans la tige, sciure",
+          "kw": [
+            "sciure",
+            "trous dans la tige",
+            "foreur"
+          ]
+        },
+        "s-abgefressen": {
+          "t": "Jeunes plantes coupées au ras du sol",
+          "kw": [
+            "coupées",
+            "ras du sol",
+            "sectionnées"
+          ]
+        },
+        "s-parasit": {
+          "t": "Tiges pâles sans feuilles, avec fleurs, sortent du sol à côté de la plante",
+          "kw": [
+            "orobanche",
+            "sans feuilles",
+            "hallouk"
+          ]
+        },
+        "s-faeden": {
+          "t": "Fils jaunes ou orange enlacent les plantes",
+          "kw": [
+            "fils jaunes",
+            "filaments",
+            "cuscute"
+          ]
+        },
+        "t-laeuse": {
+          "t": "Petits pucerons verts ou noirs en colonies",
+          "kw": [
+            "pucerons",
+            "poux"
+          ]
+        },
+        "t-weisse-fliegen": {
+          "t": "Minuscules mouches blanches qui s’envolent quand on secoue",
+          "kw": [
+            "mouches blanches",
+            "aleurodes"
+          ]
+        },
+        "t-thripse": {
+          "t": "Minuscules insectes allongés jaunes ou bruns dans les fleurs",
+          "kw": [
+            "thrips"
+          ]
+        },
+        "t-raupen": {
+          "t": "Chenilles visibles",
+          "kw": [
+            "chenille",
+            "chenilles",
+            "vers"
+          ]
+        },
+        "t-larven": {
+          "t": "Larves vertes ou charançons sur les pointes",
+          "kw": [
+            "larves",
+            "charançon"
+          ]
+        },
+        "t-puppen": {
+          "t": "Pupes brunes comme des graines de lin en bas de la tige",
+          "kw": [
+            "pupes",
+            "graines de lin"
+          ]
+        },
+        "p-kuemmer": {
+          "t": "Les plantes poussent mal, souvent par plaques",
+          "kw": [
+            "chétif",
+            "poussent mal",
+            "rabougri",
+            "par plaques"
+          ]
+        },
+        "p-zwerg": {
+          "t": "Céréales tassées, vert foncé, tiges cassées",
+          "kw": [
+            "tassées",
+            "naines",
+            "tiges cassées"
+          ]
+        }
+      },
+      "gruppen": {
+        "blatt": {
+          "name": "Feuilles"
+        },
+        "frucht": {
+          "name": "Fruits, tubercules, épis"
+        },
+        "staengel": {
+          "name": "Tiges et racines"
+        },
+        "tiere": {
+          "name": "Insectes visibles"
+        },
+        "pflanze": {
+          "name": "Plante entière"
+        }
+      },
+      "arten": {
+        "pilz": "Champignon",
+        "bakterie": "Bactérie",
+        "virus": "Virus",
+        "schaedling": "Ravageur",
+        "nematode": "Nématodes",
+        "parasit": "Plante parasite",
+        "mangel": "Carence",
+        "umwelt": "Eau, sel, chaleur"
+      },
+      "onssa": {
+        "text": "Produits chimiques uniquement s’ils sont homologués au Maroc par l’ONSSA pour cette culture. Lisez l’étiquette : dose, délai avant récolte, tenue de protection. Demandez au revendeur le numéro d’homologation ONSSA."
+      },
+      "krankheiten": {
+        "duerrflecken": {
+          "kw": [
+            "alternaria",
+            "alternariose"
+          ],
+          "e": "Commence sur les vieilles feuilles du bas : taches brunes avec des cercles et un bord jaune. Par temps chaud avec rosée, elle monte vers le haut.",
+          "sofort": [
+            "Coupez les feuilles du bas touchées et sortez-les du champ dans un sac, pas au compost.",
+            "N’arrosez plus par-dessus les feuilles."
+          ],
+          "bio": [
+            "Pulvérisez un produit à base de cuivre (autorisé en bio) tous les 7 à 10 jours, plus souvent s’il pleut.",
+            "Produit à base de Bacillus subtilis sur les feuilles saines, en prévention."
+          ],
+          "vor": [
+            "3 ans sans tomate, pomme de terre ni poivron sur ce champ.",
+            "Goutte-à-goutte, gardez les feuilles sèches.",
+            "Fertilisation équilibrée : le manque de potassium affaiblit la plante.",
+            "Enlevez les restes de plantes après la récolte."
+          ],
+          "name": "Alternariose (Alternaria solani)",
+          "chem": [
+            null,
+            null
+          ]
+        },
+        "krautfaeule": {
+          "kw": [
+            "mildiou",
+            "phytophthora"
+          ],
+          "e": "Grandes taches d’aspect mouillé, vert-gris à brunes, avec un duvet blanc sous le bord. Les fruits ont des taches brunes et dures. Par temps frais et humide, le champ brunit en quelques jours.",
+          "sofort": [
+            "Enlevez tout de suite les parties touchées et jetez-les dans des sacs.",
+            "Pomme de terre : en cas de forte attaque, coupez les fanes et récoltez 2 semaines après pour garder les tubercules sains."
+          ],
+          "bio": [
+            "Produit à base de cuivre en prévention et dès les premières taches, tous les 5 à 7 jours par temps humide."
+          ],
+          "vor": [
+            "Semences saines et certifiées.",
+            "Pas d’arrosage par-dessus, arrosez le matin.",
+            "Buttez bien les pommes de terre.",
+            "Ne plantez pas la tomate à côté de la pomme de terre."
+          ],
+          "name": "Mildiou (Phytophthora infestans)",
+          "chem": [
+            null,
+            {
+              "w": "Cymoxanil (avec un produit de contact)"
+            }
+          ]
+        },
+        "tuta": {
+          "kw": [
+            "tuta",
+            "mineuse"
+          ],
+          "e": "De petites chenilles mangent l’intérieur de la feuille : plages transparentes avec excréments noirs, puis trous dans les fruits et les pointes. Un des ravageurs les plus graves de la tomate au Maroc.",
+          "sofort": [
+            "Cueillez les feuilles et fruits touchés, mettez-les dans un sac plastique fermé au soleil, puis jetez-les."
+          ],
+          "bio": [
+            "Pièges à phéromone et pièges à eau (piégeage de masse, environ 20 à 40 par hectare).",
+            "Pulvérisez Bacillus thuringiensis (Bt) le soir, il n’agit que sur les jeunes chenilles.",
+            "En serre, punaises prédatrices (Nesidiocoris)."
+          ],
+          "vor": [
+            "Filets sur toutes les ouvertures de la serre, double porte.",
+            "Pièges dès la plantation pour surveiller.",
+            "Après la récolte, détruisez tout de suite tous les restes de plantes.",
+            "Changez de matière active, sinon Tuta devient résistante."
+          ],
+          "name": "Mineuse de la tomate (Tuta absoluta)",
+          "chem": [
+            null,
+            null
+          ]
+        },
+        "weisse_fliege": {
+          "kw": [
+            "aleurodes",
+            "mouche blanche",
+            "bemisia"
+          ],
+          "e": "Minuscules mouches blanches sous les feuilles qui s’envolent quand on bouge la plante. Les feuilles deviennent collantes et noires. Elles transmettent des virus graves (comme le TYLCV).",
+          "sofort": [
+            "Accrochez des pièges jaunes englués pour voir l’attaque et capturer."
+          ],
+          "bio": [
+            "Savon noir (savon potassique d’huile végétale) ou huile de neem sous les feuilles tous les 5 à 7 jours.",
+            "En serre, auxiliaires (Encarsia, Eretmocerus)."
+          ],
+          "vor": [
+            "Filet anti-insectes (50 mesh) en serre.",
+            "Enlevez les mauvaises herbes autour du champ.",
+            "Achetez seulement des plants propres, sans mouches."
+          ],
+          "name": "Aleurodes (Bemisia, Trialeurodes)",
+          "chem": [
+            null,
+            null
+          ]
+        },
+        "tylcv": {
+          "kw": [
+            "tylcv",
+            "virus",
+            "cuillère"
+          ],
+          "e": "Les jeunes feuilles restent petites, jaunissent et s’enroulent vers le haut comme une cuillère. La plante reste petite et ne donne presque pas de fruits. Transmis par la mouche blanche, pas de traitement.",
+          "sofort": [
+            "Couvrez la plante malade avec un sac, arrachez-la et détruisez-la pour que les mouches ne passent pas aux autres."
+          ],
+          "bio": [
+            "Luttez contre la mouche blanche (voir là-bas), pièges jaunes."
+          ],
+          "vor": [
+            "Variétés résistantes (code TY).",
+            "Filets sur la serre et plants propres.",
+            "Ne plantez pas la tomate juste à côté de vieilles cultures malades."
+          ],
+          "hinweis": "Pas de guérison. Aucun produit n’agit contre le virus lui-même.",
+          "name": "Virus des feuilles jaunes en cuillère (TYLCV)"
+        },
+        "leveillula": {
+          "kw": [
+            "oïdium",
+            "oidium",
+            "leveillula"
+          ],
+          "e": "Taches jaunes sur la feuille, poudre claire dessous. Les feuilles tombent. Fréquent par temps chaud et sec.",
+          "sofort": [
+            "Enlevez les feuilles très touchées."
+          ],
+          "bio": [
+            "Soufre mouillable, pas au-dessus de 30 °C ni aux heures chaudes.",
+            "Bicarbonate de potassium en pulvérisation."
+          ],
+          "vor": [
+            "Ne plantez pas trop serré, aérez bien.",
+            "Assez d’azote, mais pas trop."
+          ],
+          "name": "Oïdium (Leveillula taurica)",
+          "chem": [
+            null,
+            null
+          ]
+        },
+        "echter_mehltau": {
+          "kw": [
+            "oïdium",
+            "oidium",
+            "blanc"
+          ],
+          "e": "Poudre blanche farineuse sur les feuilles, qui s’essuie. Les feuilles jaunissent et sèchent. Apparaît avec des journées chaudes et des nuits fraîches.",
+          "sofort": [
+            "Enlevez les feuilles très touchées et sortez-les du champ."
+          ],
+          "bio": [
+            "Soufre mouillable, pas au-dessus de 30 °C (attention au melon, il peut brûler).",
+            "Bicarbonate de potassium tous les 7 jours."
+          ],
+          "vor": [
+            "Variétés moins sensibles.",
+            "Pas trop serré, enlevez les mauvaises herbes.",
+            "Pas trop d’azote."
+          ],
+          "name": "Oïdium",
+          "chem": [
+            null,
+            null
+          ]
+        },
+        "blattlaeuse": {
+          "kw": [
+            "pucerons",
+            "puceron"
+          ],
+          "e": "Colonies de petits pucerons verts, noirs ou gris sur les pointes et sous les feuilles. Les feuilles frisent et collent. Les pucerons transmettent des virus.",
+          "sofort": [
+            "Coupez les pointes touchées ou aspergez-les avec un jet d’eau fort."
+          ],
+          "bio": [
+            "Savon noir ou huile de neem, 2 à 3 fois à 5 jours d’intervalle.",
+            "Protégez les auxiliaires : coccinelles, chrysopes et syrphes mangent les pucerons.",
+            "Éloignez les fourmis, elles protègent les pucerons."
+          ],
+          "vor": [
+            "Pas trop d’engrais azoté.",
+            "Bande fleurie autour du champ pour les insectes utiles.",
+            "Au début, voile ou filet sur les jeunes plantes."
+          ],
+          "name": "Pucerons",
+          "chem": [
+            null,
+            null
+          ]
+        },
+        "spinnmilben": {
+          "kw": [
+            "acariens",
+            "araignée rouge",
+            "tétranyque"
+          ],
+          "e": "Feuilles piquetées de jaune, puis bronzées et sèches. Sous la feuille, fines toiles et petits points qui bougent. Fort par chaleur et sécheresse.",
+          "sofort": [
+            "Aspergez fort le dessous des feuilles avec de l’eau.",
+            "Enlevez les feuilles très touchées."
+          ],
+          "bio": [
+            "Acariens prédateurs (Phytoseiulus), surtout en fraise et en serre.",
+            "Soufre mouillable (pas au-dessus de 30 °C) ou savon noir."
+          ],
+          "vor": [
+            "Arrosez régulièrement, mouillez les allées contre la poussière.",
+            "Enlevez les mauvaises herbes autour du champ, les acariens y passent l’hiver."
+          ],
+          "name": "Acariens tétranyques",
+          "chem": [
+            null
+          ]
+        },
+        "thripse": {
+          "kw": [
+            "thrips"
+          ],
+          "e": "Plages argentées avec points noirs sur les feuilles, minuscules insectes allongés dans les fleurs. Les fruits se déforment ou deviennent liégeux. Transmet des virus.",
+          "sofort": [
+            "Accrochez des pièges bleus englués."
+          ],
+          "bio": [
+            "Acariens prédateurs (Amblyseius).",
+            "Spinosad (issu d’une bactérie du sol) ou savon noir."
+          ],
+          "vor": [
+            "Enlevez les mauvaises herbes, ne cultivez pas près d’oignons ou de céréales en maturation.",
+            "Filets sur la serre."
+          ],
+          "name": "Thrips",
+          "chem": [
+            null,
+            null
+          ]
+        },
+        "bluetenendfaeule": {
+          "kw": [
+            "nécrose apicale",
+            "cul noir",
+            "calcium"
+          ],
+          "e": "Tache sombre, enfoncée et coriace au bout du fruit. Cause : manque de calcium dans le fruit, souvent à cause d’un arrosage irrégulier, de la chaleur ou du sel.",
+          "sofort": [
+            "Enlevez les fruits touchés, ils mûrissent mal."
+          ],
+          "bio": [
+            "Arrosez régulièrement : mieux vaut un peu chaque jour que beaucoup rarement.",
+            "Calcium foliaire (chlorure ou nitrate de calcium, 3 à 5 g par litre) sur les jeunes fruits."
+          ],
+          "vor": [
+            "Paillez le sol pour qu’il ne sèche pas.",
+            "Pas trop d’azote ni de potassium.",
+            "Avec de l’eau salée : voir « Rendre possible » sous le sel."
+          ],
+          "hinweis": "Pas contagieux. Aucun fongicide n’est nécessaire.",
+          "name": "Nécrose apicale (pourriture apicale)"
+        },
+        "fusarium": {
+          "kw": [
+            "fusarium",
+            "fusariose",
+            "flétrissement"
+          ],
+          "e": "Les plantes fanent d’abord à midi, souvent d’un seul côté, et se redressent la nuit. Les feuilles du bas jaunissent. En coupant la tige en biais, les vaisseaux sont bruns. Le champignon vit des années dans le sol.",
+          "sofort": [
+            "Arrachez les plantes malades avec les racines et sortez-les du champ, ne les enterrez pas sur place.",
+            "Ne donnez pas plus d’eau que nécessaire."
+          ],
+          "bio": [
+            "Trichoderma par le goutte-à-goutte ou dans le trou de plantation pour les nouveaux plants."
+          ],
+          "vor": [
+            "Variétés résistantes ou plants greffés.",
+            "4 à 5 ans sans cette culture.",
+            "En été, solarisation : mouillez le sol et couvrez 6 semaines d’un plastique transparent."
+          ],
+          "hinweis": "Champignon du sol : pulvériser les feuilles ne sert à rien.",
+          "name": "Fusariose vasculaire"
+        },
+        "grauschimmel": {
+          "kw": [
+            "botrytis",
+            "pourriture grise"
+          ],
+          "e": "Moisissure grise poudreuse sur fruits, fleurs ou blessures de la tige. Par temps humide et frais, avec mauvaise aération.",
+          "sofort": [
+            "Enlevez les fruits et parties touchés par temps sec et sortez-les du champ.",
+            "Aérez la serre."
+          ],
+          "bio": [
+            "Produits à base de Bacillus amyloliquefaciens ou Trichoderma en prévention."
+          ],
+          "vor": [
+            "Pas trop serré, pas d’arrosage le soir.",
+            "Fraise sur plastique ou paille, les fruits ne touchent pas le sol mouillé.",
+            "Coupes nettes, évitez les blessures par temps humide."
+          ],
+          "name": "Pourriture grise (Botrytis cinerea)",
+          "chem": [
+            null,
+            null
+          ]
+        },
+        "nematoden": {
+          "kw": [
+            "nématodes",
+            "nematodes",
+            "meloidogyne"
+          ],
+          "e": "Les plantes faiblissent par plaques et fanent à la chaleur. En déterrant une plante, on voit des nœuds et des renflements sur les racines. Fréquent en sol sableux dans le Souss et sous serre.",
+          "sofort": [
+            "Déterrez une plante faible et regardez les racines.",
+            "Envoyez un échantillon de sol de la plaque au laboratoire (INRA ou laboratoire privé)."
+          ],
+          "bio": [
+            "Après la récolte, arrachez et détruisez toutes les racines.",
+            "En été, solarisation (6 semaines de plastique sur sol mouillé).",
+            "Beaucoup de compost ou de fumier, cela renforce les ennemis des nématodes.",
+            "Produits biologiques à base de Paecilomyces ou Bacillus firmus."
+          ],
+          "vor": [
+            "Variétés ou porte-greffes résistants (code N ou Mi).",
+            "Rotation avec céréales, oignon ou moutarde en culture intermédiaire.",
+            "Voir « Rendre possible » sous les nématodes."
+          ],
+          "hinweis": "Les nématicides chimiques sont très toxiques : seulement avec un conseiller agricole (ONCA) et homologation ONSSA.",
+          "name": "Nématodes à galles (Meloidogyne)"
+        },
+        "helicoverpa": {
+          "kw": [
+            "helicoverpa",
+            "heliothis",
+            "noctuelle"
+          ],
+          "e": "Chenilles vertes à brunes jusqu’à 4 cm qui font des trous ronds dans les fruits, gousses et épis. Une chenille abîme beaucoup de fruits.",
+          "sofort": [
+            "Ramassez les chenilles et les fruits touchés."
+          ],
+          "bio": [
+            "Bacillus thuringiensis (Bt) quand les chenilles sont jeunes (délai 0 jour).",
+            "Pièges à phéromone pour surveiller dès la floraison."
+          ],
+          "vor": [
+            "Semez le pois chiche en hiver, la floraison passe avant le grand vol des papillons.",
+            "Enfouissez les restes par un labour après la récolte."
+          ],
+          "name": "Noctuelle de la tomate (Helicoverpa armigera)",
+          "chem": [
+            null,
+            null
+          ]
+        },
+        "erdraupen": {
+          "kw": [
+            "vers gris",
+            "agrotis"
+          ],
+          "e": "Les jeunes plantes sont coupées la nuit au ras du sol. Le jour, des chenilles grises enroulées sont sous la terre près de la plante.",
+          "sofort": [
+            "Grattez 3 à 5 cm près des plantes coupées et ramassez les chenilles, de préférence le soir."
+          ],
+          "bio": [
+            "Le soir, appât de son mélangé avec Bacillus thuringiensis."
+          ],
+          "vor": [
+            "Enlevez les mauvaises herbes 2 à 3 semaines avant la plantation, les papillons y pondent.",
+            "Préparez bien le sol avant la plantation."
+          ],
+          "name": "Vers gris (Agrotis)",
+          "chem": [
+            null
+          ]
+        },
+        "kartoffelmotte": {
+          "kw": [
+            "teigne",
+            "phthorimaea"
+          ],
+          "e": "Petites chenilles qui creusent des galeries dans les feuilles et surtout dans les tubercules, avec excréments à l’entrée. Au champ et au stockage.",
+          "sofort": [
+            "Triez et détruisez les tubercules touchés, ne les stockez pas."
+          ],
+          "bio": [
+            "Buttez bien pour qu’aucun tubercule ne soit visible et que le sol ne se fissure pas.",
+            "Pièges à phéromone au champ et au stockage.",
+            "Bacillus thuringiensis sur les feuilles."
+          ],
+          "vor": [
+            "Semence saine, récoltez à temps.",
+            "Ne laissez pas les tubercules récoltés au champ pendant la nuit.",
+            "Stockage frais, propre et fermé par des filets."
+          ],
+          "name": "Teigne de la pomme de terre (Phthorimaea operculella)",
+          "chem": [
+            null
+          ]
+        },
+        "schorf": {
+          "kw": [
+            "gale"
+          ],
+          "e": "Taches rugueuses et liégeuses sur la peau. Le tubercule est sain à l’intérieur mais se vend moins bien. Fréquent en sol calcaire et sec.",
+          "sofort": [
+            "Gardez une humidité régulière, surtout les 6 semaines après le début de la tubérisation."
+          ],
+          "bio": [
+            "Aucun traitement n’est nécessaire ni utile."
+          ],
+          "vor": [
+            "Pas de chaulage récent ni de fumier frais juste avant la pomme de terre.",
+            "Sulfate d’ammonium plutôt qu’urée, il baisse un peu le pH.",
+            "Variétés moins sensibles, 3 à 4 ans sans pomme de terre."
+          ],
+          "hinweis": "Les tubercules se mangent. Seule la peau est touchée.",
+          "name": "Gale commune (Streptomyces)"
+        },
+        "zw_falscher_mehltau": {
+          "kw": [
+            "mildiou",
+            "peronospora"
+          ],
+          "e": "Taches pâles allongées sur les feuilles avec un duvet gris-violet le matin. Les feuilles cassent et meurent. Par temps frais et humide.",
+          "sofort": [
+            "Enlevez les plantes très touchées.",
+            "Arrosez le matin plutôt que le soir."
+          ],
+          "bio": [
+            "Produit à base de cuivre avec un mouillant, car les feuilles d’oignon sont lisses."
+          ],
+          "vor": [
+            "Bulbilles et semences saines.",
+            "3 à 4 ans sans oignon, lignes dans le sens du vent, pas trop serré."
+          ],
+          "name": "Mildiou de l’oignon (Peronospora destructor)",
+          "chem": [
+            null,
+            {
+              "w": "Metalaxyl-M (avec un produit de contact)"
+            }
+          ]
+        },
+        "purpurflecken": {
+          "kw": [
+            "alternaria",
+            "tache pourpre"
+          ],
+          "e": "Taches ovales violet-brun avec cercles et bord jaune sur les feuilles. Souvent après des dégâts de thrips.",
+          "sofort": [
+            "Enlevez les feuilles touchées et luttez contre les thrips."
+          ],
+          "bio": [
+            "Produit à base de cuivre avec un mouillant."
+          ],
+          "vor": [
+            "Rotation, pas trop d’azote.",
+            "Pas d’arrosage par-dessus."
+          ],
+          "name": "Alternariose de l’oignon (Alternaria porri)",
+          "chem": [
+            null,
+            null
+          ]
+        },
+        "phytophthora_capsici": {
+          "kw": [
+            "phytophthora"
+          ],
+          "e": "Les plantes fanent tout d’un coup, la base de la tige devient sombre et étranglée. Après de l’eau stagnante ou de fortes pluies, souvent dans les creux.",
+          "sofort": [
+            "Enlevez les plantes malades.",
+            "Réduisez l’eau tout de suite et évacuez l’eau stagnante."
+          ],
+          "bio": [
+            "Trichoderma par le goutte-à-goutte."
+          ],
+          "vor": [
+            "Plantez sur billons ou planches surélevées.",
+            "Goutte-à-goutte, jamais d’eau au pied de la tige.",
+            "3 ans sans cette culture."
+          ],
+          "name": "Phytophthora capsici",
+          "chem": [
+            {
+              "w": "Metalaxyl-M (par le goutte-à-goutte)"
+            }
+          ]
+        },
+        "kuerbis_falscher_mehltau": {
+          "kw": [
+            "mildiou"
+          ],
+          "e": "Taches jaunes anguleuses entre les nervures, duvet gris-violet dessous. Les feuilles brunissent vite.",
+          "sofort": [
+            "Enlevez les feuilles touchées, pas d’arrosage par-dessus."
+          ],
+          "bio": [
+            "Produit à base de cuivre tous les 7 jours par temps humide."
+          ],
+          "vor": [
+            "Goutte-à-goutte, bonne aération, variétés moins sensibles."
+          ],
+          "name": "Mildiou des cucurbitacées (Pseudoperonospora cubensis)",
+          "chem": [
+            null,
+            {
+              "w": "Cymoxanil (avec un produit de contact)"
+            }
+          ]
+        },
+        "mosaikvirus": {
+          "kw": [
+            "mosaïque",
+            "virus"
+          ],
+          "e": "Feuilles marbrées vert clair et vert foncé, déformées ; fruits tachés ou bosselés. Transmis par les pucerons, pas de traitement.",
+          "sofort": [
+            "Arrachez les plantes malades et sortez-les du champ.",
+            "Après avoir touché des plantes malades, lavez-vous les mains et les outils."
+          ],
+          "bio": [
+            "Luttez contre les pucerons (voir là-bas)."
+          ],
+          "vor": [
+            "Variétés résistantes.",
+            "Au début, voile ou filet sur les jeunes plantes.",
+            "Enlevez les mauvaises herbes, les virus y vivent."
+          ],
+          "hinweis": "Pas de guérison. Aucun produit n’agit contre le virus lui-même.",
+          "name": "Viroses (CMV, ZYMV, WMV)"
+        },
+        "wurzelfaeule": {
+          "kw": [
+            "pourriture racinaire",
+            "racines pourries"
+          ],
+          "e": "Les plantes faiblissent et fanent, les racines sont brunes et pourries, presque sans radicelles. Souvent avec eau stagnante ou sol tassé.",
+          "sofort": [
+            "Réduisez l’eau et évacuez l’eau stagnante.",
+            "Enlevez les plantes mortes."
+          ],
+          "bio": [
+            "Trichoderma dans le trou de plantation ou par le goutte-à-goutte."
+          ],
+          "vor": [
+            "Plantez sur billons, ameublissez le sol, drainez.",
+            "Plants sains et rotation."
+          ],
+          "name": "Pourriture racinaire"
+        },
+        "karotte_alternaria": {
+          "kw": [
+            "alternaria",
+            "alternariose"
+          ],
+          "e": "Petites taches brun foncé avec bord jaune sur les vieilles feuilles, puis le feuillage semble brûlé. Les fanes cassent à la récolte.",
+          "sofort": [
+            "Pas d’arrosage par-dessus."
+          ],
+          "bio": [
+            "Produit à base de cuivre."
+          ],
+          "vor": [
+            "Semences saines ou traitées, 3 ans sans carotte.",
+            "Enfouissez les restes de plantes par un labour."
+          ],
+          "name": "Alternariose de la carotte (Alternaria dauci)",
+          "chem": [
+            null,
+            null
+          ]
+        },
+        "rost": {
+          "kw": [
+            "rouille"
+          ],
+          "e": "Petites pustules jaunes, orange ou couleur rouille sur les feuilles, qui laissent de la poudre sur la main. Rouille jaune en stries par temps frais, rouille brune dispersée par temps doux.",
+          "sofort": [
+            "Contrôlez depuis la feuille du haut : si les 2 feuilles supérieures sont touchées, un traitement vaut la peine."
+          ],
+          "bio": [
+            "Pas de produit bio efficace. Le plus important est le choix de la variété."
+          ],
+          "vor": [
+            "Variétés résistantes (demandez à l’ONCA la liste des variétés INRA).",
+            "Enlevez les repousses de céréales et les herbes des bordures.",
+            "Ne semez pas trop serré ni trop tôt."
+          ],
+          "hinweis": "Un traitement n’est utile que jusqu’à la floraison.",
+          "name": "Rouille",
+          "chem": [
+            null,
+            null
+          ]
+        },
+        "septoria": {
+          "kw": [
+            "septoriose",
+            "septoria"
+          ],
+          "e": "Taches brunes allongées avec de minuscules points noirs, d’abord sur les feuilles du bas. Après un hiver pluvieux, c’est la maladie la plus importante du blé au Maroc.",
+          "sofort": [
+            "Contrôlez si les feuilles du haut sont touchées."
+          ],
+          "bio": [
+            "Pas de produit bio efficace."
+          ],
+          "vor": [
+            "Pas de blé sur blé, enfouissez les restes.",
+            "Variétés tolérantes (INRA).",
+            "Ne semez pas trop tôt ni trop serré."
+          ],
+          "name": "Septoriose (Zymoseptoria tritici)",
+          "chem": [
+            null,
+            null
+          ]
+        },
+        "netzflecken": {
+          "kw": [
+            "helminthosporiose"
+          ],
+          "e": "Taches brunes en fin réseau ou en longues stries, souvent avec un bord jaune.",
+          "sofort": [
+            "Contrôlez la force de l’attaque sur les feuilles du haut."
+          ],
+          "bio": [
+            "Pas de produit bio efficace."
+          ],
+          "vor": [
+            "Semences certifiées et traitées.",
+            "Pas d’orge sur orge, enfouissez les restes."
+          ],
+          "name": "Helminthosporiose (Pyrenophora teres)",
+          "chem": [
+            null
+          ]
+        },
+        "getreide_mehltau": {
+          "kw": [
+            "oïdium",
+            "oidium"
+          ],
+          "e": "Coussinets blancs comme du coton sur feuilles et tiges, puis petits points noirs. Dans les céréales denses et trop fumées en azote.",
+          "sofort": [
+            "Contrôlez si les feuilles du haut sont touchées."
+          ],
+          "bio": [
+            "Soufre mouillable au début de l’attaque."
+          ],
+          "vor": [
+            "Pas trop d’azote, pas de semis trop dense.",
+            "Variétés moins sensibles."
+          ],
+          "name": "Oïdium des céréales (Blumeria graminis)",
+          "chem": [
+            null
+          ]
+        },
+        "flugbrand": {
+          "kw": [
+            "charbon",
+            "carie"
+          ],
+          "e": "Au lieu des grains, poudre noire dans l’épi, ou grains qui sentent le poisson. Se transmet par les semences.",
+          "sofort": [
+            "Coupez les épis touchés avant que la poudre ne vole et sortez-les du champ.",
+            "Ne gardez pas de semence de ce champ."
+          ],
+          "bio": [
+            "Aucun traitement possible dans la culture en place."
+          ],
+          "vor": [
+            "Achetez des semences certifiées et traitées (le FDA subventionne les semences certifiées)."
+          ],
+          "hinweis": "Pas de traitement au champ, la protection passe par la semence.",
+          "name": "Charbon et carie"
+        },
+        "hessenfliege": {
+          "kw": [
+            "cécidomyie",
+            "cecidomyie",
+            "mayetiola"
+          ],
+          "e": "Les jeunes plantes restent petites et vert foncé, les grandes tiges cassent au-dessus du sol. En bas de la tige, des pupes brunes comme des graines de lin. Un des ravageurs les plus importants des céréales au Maroc.",
+          "sofort": [
+            "Arrachez quelques plantes et cherchez les pupes en bas de la tige pour être sûr."
+          ],
+          "bio": [
+            "Pas de produit efficace dans la culture en place."
+          ],
+          "vor": [
+            "Variétés de blé résistantes de l’INRA (demandez la liste à l’ONCA).",
+            "Enfouissez les restes après la récolte, enlevez les repousses.",
+            "Rotation avec des légumineuses."
+          ],
+          "hinweis": "Pulvériser ne sert presque à rien : les larves sont protégées dans la tige.",
+          "name": "Cécidomyie destructive (Mayetiola destructor)"
+        },
+        "stengelbohrer": {
+          "kw": [
+            "sésamie",
+            "sesamie",
+            "pyrale",
+            "foreur"
+          ],
+          "e": "Trous dans la tige avec de la sciure, les tiges cassent et les épis tombent. Les chenilles vivent à l’intérieur.",
+          "sofort": [
+            "Enlevez et détruisez les plantes très touchées."
+          ],
+          "bio": [
+            "Lâchers de Trichogramma au vol des papillons.",
+            "Bacillus thuringiensis tant que les chenilles mangent à l’extérieur."
+          ],
+          "vor": [
+            "Broyez les restes après la récolte et enfouissez-les profondément.",
+            "Ne semez pas trop tard."
+          ],
+          "name": "Sésamie et pyrale du maïs",
+          "chem": [
+            null
+          ]
+        },
+        "ascochyta": {
+          "kw": [
+            "ascochyta",
+            "anthracnose"
+          ],
+          "e": "Taches brunes avec cercles et points noirs sur feuilles, tiges et gousses. Les tiges cassent, des plaques entières meurent. Avec la pluie en hiver et au printemps.",
+          "sofort": [
+            "Enlevez tôt les foyers d’attaque."
+          ],
+          "bio": [
+            "Pas de produit bio sûr et efficace."
+          ],
+          "vor": [
+            "Variétés résistantes de l’INRA pour le semis d’hiver.",
+            "Semences certifiées et saines.",
+            "3 à 4 ans sans pois chiche."
+          ],
+          "name": "Anthracnose du pois chiche (Ascochyta rabiei)",
+          "chem": [
+            null
+          ]
+        },
+        "minierfliege": {
+          "kw": [
+            "mineuse",
+            "liriomyza"
+          ],
+          "e": "Fines galeries claires et sinueuses dans les feuilles. Gros dégâts seulement s’il y a beaucoup de galeries.",
+          "sofort": [
+            "Enlevez les feuilles très touchées."
+          ],
+          "bio": [
+            "Pièges jaunes.",
+            "Protégez les guêpes utiles, ne pulvérisez pas sans besoin."
+          ],
+          "vor": [
+            "Semez le pois chiche tôt.",
+            "Enlevez les mauvaises herbes."
+          ],
+          "name": "Mouche mineuse (Liriomyza)",
+          "chem": [
+            null
+          ]
+        },
+        "schokoflecken": {
+          "kw": [
+            "chocolat",
+            "botrytis"
+          ],
+          "e": "Nombreux petits points brun chocolat sur feuilles et tiges, qui se rejoignent en grandes taches par temps humide.",
+          "sofort": [
+            "Par temps humide, contrôlez la culture tous les quelques jours."
+          ],
+          "bio": [
+            "Pas de produit bio sûr et efficace."
+          ],
+          "vor": [
+            "Pas trop serré, bonne alimentation en potassium et phosphore.",
+            "Rotation, enfouissez les restes."
+          ],
+          "name": "Botrytis de la fève (Botrytis fabae)",
+          "chem": [
+            null
+          ]
+        },
+        "sommerwurz": {
+          "kw": [
+            "orobanche",
+            "hallouk"
+          ],
+          "e": "Tiges pâles jaune-brun ou violettes, sans feuilles vertes, qui sortent du sol près des plantes. Elles sucent les racines. Très répandue dans la fève au Maroc.",
+          "sofort": [
+            "Arrachez l’orobanche avant la floraison et brûlez-la, sinon chaque plante donne des centaines de milliers de graines."
+          ],
+          "bio": [
+            "Arrachez-la à la main régulièrement tant qu’elle est petite."
+          ],
+          "vor": [
+            "Variétés tolérantes de l’INRA (fève).",
+            "Semez un peu plus tard.",
+            "5 ans ou plus sans plantes hôtes.",
+            "Tomate : solarisation en été.",
+            "Pas de fumier ni de machines venant de champs infestés."
+          ],
+          "hinweis": "Lutte chimique uniquement avec un conseiller agricole.",
+          "name": "Orobanche"
+        },
+        "luzerneruessler": {
+          "kw": [
+            "charançon",
+            "charancon",
+            "hypera"
+          ],
+          "e": "Larves vertes avec une ligne blanche sur le dos qui mangent les pointes et les feuilles jusqu’au squelette.",
+          "sofort": [
+            "Avancez la coupe si la luzerne est presque prête. Cela enlève la plupart des larves."
+          ],
+          "bio": [
+            "Protégez les insectes utiles, pas de pulvérisation préventive."
+          ],
+          "vor": [
+            "Coupez à temps.",
+            "Contrôlez la culture chaque semaine au printemps."
+          ],
+          "name": "Charançon de la luzerne (Hypera)",
+          "chem": [
+            {
+              "h": "Délai jusqu’à la coupe ou l’alimentation du bétail."
+            }
+          ]
+        },
+        "seide": {
+          "kw": [
+            "cuscute",
+            "cuscuta",
+            "fils jaunes"
+          ],
+          "e": "Fils fins jaunes ou orange, sans feuilles, qui s’enroulent autour des plantes et s’étendent en cercles.",
+          "sofort": [
+            "Coupez profondément les zones touchées et brûlez fils et plantes avant que la cuscute ne fleurisse."
+          ],
+          "bio": [
+            "Contrôlez les foyers chaque semaine et enlevez-les tout de suite."
+          ],
+          "vor": [
+            "Uniquement des semences certifiées et propres.",
+            "Nettoyez les machines après des champs infestés."
+          ],
+          "name": "Cuscute"
+        },
+        "eisenmangel": {
+          "kw": [
+            "fer",
+            "chlorose",
+            "jaunissement"
+          ],
+          "e": "Les jeunes feuilles deviennent jaune clair, les nervures restent vertes. Typique des sols calcaires avec un pH au-dessus de 7,5, fréquents au Maroc.",
+          "sofort": [
+            "Fer chélaté (type EDDHA, qui agit en sol calcaire) par le goutte-à-goutte ou en engrais foliaire."
+          ],
+          "bio": [
+            "Beaucoup de compost ou de fumier.",
+            "Sulfate d’ammonium plutôt qu’urée."
+          ],
+          "vor": [
+            "Évitez l’eau stagnante, elle aggrave la chlorose.",
+            "Augmentez la matière organique du sol."
+          ],
+          "hinweis": "Pas contagieux. Aucun fongicide n’est nécessaire.",
+          "name": "Chlorose ferrique"
+        },
+        "stickstoffmangel": {
+          "kw": [
+            "azote",
+            "carence"
+          ],
+          "e": "Toute la plante est vert clair, les feuilles du bas jaunissent de façon régulière, sans taches. Elle pousse lentement.",
+          "sofort": [
+            "Avancez le prochain apport d’azote du plan de fertilisation."
+          ],
+          "bio": [
+            "Fumier bien décomposé ou compost."
+          ],
+          "vor": [
+            "Suivez le plan de fertilisation du calendrier, mettez des légumineuses dans la rotation."
+          ],
+          "hinweis": "Pas contagieux.",
+          "name": "Carence en azote"
+        },
+        "salzschaden": {
+          "kw": [
+            "sel",
+            "salé",
+            "salinité"
+          ],
+          "e": "Les bords des feuilles deviennent bruns et secs, la plante reste petite. Parfois une croûte blanche sur le sol.",
+          "sofort": [
+            "Arrosez une fois abondamment pour laver le sel de la zone des racines."
+          ],
+          "bio": [
+            "Arrosez plus souvent et régulièrement, ne laissez pas le sol sécher.",
+            "Le paillage et le fumier améliorent le sol."
+          ],
+          "vor": [
+            "Voir « Rendre possible » sous le sel : mélanger l’eau, goutte-à-goutte, cultures qui supportent le sel."
+          ],
+          "hinweis": "Pas contagieux.",
+          "name": "Stress salin"
+        },
+        "wassermangel": {
+          "kw": [
+            "soif",
+            "chaleur",
+            "sécheresse",
+            "chergui"
+          ],
+          "e": "Les plantes fanent aux heures chaudes, les feuilles s’enroulent, les bords brunissent. Le matin elles se redressent s’il y a assez d’eau dans le sol.",
+          "sofort": [
+            "Vérifiez avec le doigt à 10 cm de profondeur si le sol est sec. Puis arrosez tôt le matin."
+          ],
+          "bio": [
+            "Paillez le sol.",
+            "Avec le chergui (vent chaud), filet d’ombrage ou brise-vent."
+          ],
+          "vor": [
+            "Adaptez la quantité d’eau à la culture (voir « Que planter ? »)."
+          ],
+          "hinweis": "Pas contagieux. Si la plante fane alors que le sol est mouillé, pensez au fusarium, au phytophthora ou aux nématodes.",
+          "name": "Stress hydrique"
+        }
+      }
+    }
+  }
+}
