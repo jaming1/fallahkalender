@@ -1,0 +1,85 @@
+{
+  "_hinweis": "Stand der Recherche: 08.11.2026. 'geprueft': true = aus einer genannten Quelle übernommen; false = bitte vor Gebrauch prüfen. Sätze ändern sich – vor jedem Antrag beim Guichet unique bestätigen lassen.",
+  "stand": "08.11.2026",
+  "grundsatz": "Hier stehen nur zinsfreie Hilfen: staatliche Zuschüsse, die nicht zurückgezahlt werden, kostenlose Beratung und Analysen, Kooperativen. Banken (auch partizipative), Kredite, Mikrokredite und Versicherungen sind bewusst nicht aufgeführt.",
+  "quellen": {
+    "cagor": {"name": "CAGOR – Aides FDA, Édition 2026", "url": "https://cagor.net/aides-fda/"},
+    "agrimaroc": {"name": "AgriMaroc – Subvention goutte-à-goutte 2026", "url": "https://www.agrimaroc.ma/irrigation-goutte-a-goutte-au-maroc-comment-obtenir-la-subvention-de-letat-en-2026/"},
+    "fnh-gue": {"name": "FNH – Plateforme électronique des subventions", "url": "https://fnh.ma/article/actualite-economique/subventions-agricoles-le-ministere-lance-une-plateforme-electronique-dediee-au-depot-des-dossiers"},
+    "le360-moutmir": {"name": "Le360 – Al Moutmir, analyses de sols gratuites", "url": "https://fr.le360.ma/economie/programme-al-moutmir-groupe-ocp-pour-les-agriculteurs-aux-petites-parcelles-des-analyses-de-sols-227014/"},
+    "fnh-puits": {"name": "FNH – Creusement de puits", "url": "https://fnh.ma/article/actualite-economique/creusement-de-puits-un-casse-tete-pour-les-exploitants-agricoles"},
+    "fnh-ada": {"name": "FNH – Plateforme ADA pour jeunes entrepreneurs", "url": "https://fnh.ma/article/actualite-entreprises/ada-plateforme-entrepreneurs"},
+    "agrimaroc-phyto": {"name": "AgriMaroc – Index phytosanitaire ONSSA", "url": "https://www.agrimaroc.ma/index-phytosanitaire-maroc"},
+    "mwn-odco": {"name": "Morocco World News – ODCO und Kooperativen", "url": "https://www.moroccoworldnews.com/2026/04/288136/odco-makes-first-appearance-at-siam-in-support-of-agricultural-cooperatives/"}
+  },
+  "foerderungen": [
+    {"id": "tropf", "titel": "Tropfbewässerung (irrigation localisée)", "geprueft": true, "quelle": "agrimaroc",
+     "saetze": ["Kleinbetrieb oder Gemeinschaftsprojekt: bis 100 %, höchstens 38.000 DH je ha", "Betrieb über 5 bis 20 ha: bis 75 %, höchstens 28.500 DH je ha", "Betrieb über 20 ha: bis 60 %, höchstens 23.000 DH je ha"],
+     "hinweis": "Gilt nach Erlass 1323.22 bis 31.12.2027 oder bis 350.000 ha erreicht sind. Bezahlt wird nach den echten Kosten, nicht pauschal."},
+    {"id": "becken", "titel": "Wasserbecken zur Speicherung", "geprueft": true, "quelle": "agrimaroc",
+     "saetze": ["Zusammen mit Tropfbewässerung: bis 12.000 DH je ha (Kleinbetrieb), 9.000 DH (5–20 ha), 7.000 DH (über 20 ha)", "Gemeinschaftsprojekte: 50 DH je m³"]},
+    {"id": "complement", "titel": "Ergänzende Bewässerung (irrigation de complément)", "geprueft": true, "quelle": "cagor",
+     "saetze": ["Einzelbetrieb bis 20 ha: 75 %, höchstens 21.000 DH je ha", "Über 20 ha: 60 %, höchstens 16.000 DH je ha", "Gemeinschaftsprojekt: 100 %, höchstens 34.000 DH je ha"]},
+    {"id": "solar", "titel": "Solarpumpe (Pilotprogramm)", "geprueft": true, "quelle": "cagor",
+     "saetze": ["Ersetzt Pumpen mit Butangas bei Tropfbewässerung", "Eine Förderung je Betrieb", "Voraussetzung: laufende Tropfbewässerung und Wasserzähler mit Verbrauchsheft"],
+     "hinweis": "Satz und Betrag stehen nicht in der Quelle – beim Guichet unique erfragen."},
+    {"id": "serre", "titel": "Gewächshaus und Netze", "geprueft": true, "quelle": "cagor",
+     "saetze": ["Gewächshaus: 25 %, z. B. höchstens 27 DH je m² bei Metallgerüst", "Insektenschutznetze im Gewächshaus: 35 %, höchstens 12.000 DH je ha", "Hagelnetze über Obstbäumen: 40 %, höchstens 50.000 DH je ha"]},
+    {"id": "geraete", "titel": "Landmaschinen", "geprueft": true, "quelle": "cagor",
+     "saetze": ["Traktor: 30 % (z. B. 52.000 DH für 2-Rad-Antrieb unter 50 PS)", "Reihensämaschine: 50 %, höchstens 45.000 DH", "Gezogene Feldspritze: 50 %, höchstens 42.000 DH"]},
+    {"id": "pflanzung", "titel": "Baumpflanzungen", "geprueft": true, "quelle": "cagor",
+     "saetze": ["Dattelpalme verdichten oder erneuern: 100 % der Pflanzen", "Dattelpalme neu: 70 %, höchstens 35.000 DH je ha", "Olive mit Tropf: bis 5.000 DH je ha", "Arganbaum ohne Bewässerung: 80 %, höchstens 6.000 DH je ha", "Apfel 60 % (höchstens 17.000 DH je ha), Walnuss bis 10.000 DH je ha"]},
+    {"id": "saatgut", "titel": "Zertifiziertes Saatgut", "geprueft": true, "quelle": "cagor",
+     "saetze": ["Wird beim Händler verbilligt verkauft, z. B. 255 DH je Doppelzentner bei Weichweizen, 395 DH bei Linsen"]},
+    {"id": "analyse", "titel": "Laboranalysen (Boden, Wasser, Pflanze)", "geprueft": true, "quelle": "cagor",
+     "saetze": ["50 % der Kosten"], "hinweis": "Kostenlose Bodenanalysen gibt es außerdem bei Al Moutmir (siehe unten)."},
+    {"id": "bio", "titel": "Bio-Anbau", "geprueft": true, "quelle": "cagor",
+     "saetze": ["70 bis 90 % je nach Fläche, höchstens 10.000 bis 40.000 DH im Jahr"]},
+    {"id": "jugend", "titel": "Junge Landwirte auf Kollektivland", "geprueft": true, "quelle": "cagor",
+     "saetze": ["Investitionshilfe nach Übertragung des Landes (Melkisation); Antrag innerhalb von 12 Monaten"], "hinweis": "Begleitung für junge Gründer zusätzlich über die ADA (siehe Stellen)."},
+    {"id": "brunnen", "titel": "Brunnen und Bohrungen", "geprueft": true, "quelle": "fnh-puits",
+     "saetze": ["Kein Zuschuss für den Brunnen selbst", "Genehmigung der Wasserbehörde (Agence du Bassin Hydraulique) ist Pflicht – auch als Voraussetzung für jede Bewässerungsförderung"]}
+  ],
+  "ablauf": {
+    "quelle": "agrimaroc",
+    "schritte": [
+      {"t": "Vorab-Genehmigung beantragen", "d": "Beim Guichet unique deiner DPA oder deines ORMVA, auf Papier und elektronisch. Wichtig: vorher nichts kaufen und nicht anfangen, sonst gibt es keine Förderung. Die Empfangsbestätigung aufbewahren."},
+      {"t": "Umsetzen wie genehmigt", "d": "Arbeiten genau nach dem genehmigten Plan ausführen, Rechnungen nach Bauteilen aufschlüsseln lassen."},
+      {"t": "Zuschuss beantragen", "d": "Innerhalb von 24 Monaten nach der Genehmigung (Gemeinschaftsprojekte 30 Monate) mit Originalrechnungen und Zahlungsnachweisen. Verlängerung nur, wenn sie vor Ablauf beantragt wird."},
+      {"t": "Auszahlung", "d": "Der Zuschuss kommt nach der Umsetzung. Das Geld muss vorher selbst aufgebracht werden – ohne Kredit z. B. mit Ersparnissen oder gemeinsam in einer Kooperative."}
+    ],
+    "unterlagen": [
+      "Ausweis (bei Kooperative/Firma: Statuten, Registerauszug, Protokoll der letzten Versammlung)",
+      "Nachweis über das Land; bei Pacht noch mindestens 6 Jahre Restlaufzeit",
+      "Wasser: Genehmigung für Brunnen bzw. Entnahme, im Bewässerungsgebiet Bestätigung des ORMVA",
+      "Technische Studie: Wasserbedarf, Plan, Kostenvoranschläge je Bauteil",
+      "Material nach Norm NM 12.1.100-2007 mit Prüfberichten (nicht älter als 2 Jahre)",
+      "Nach der Umsetzung: Antrag, Originalrechnungen, Zahlungsnachweise"
+    ],
+    "online": {"name": "Elektronischer Schalter des FDA (GUE)", "url": "https://fda.agriculture.gov.ma/gue", "quelle": "fnh-gue", "hinweis": "Antrag online stellen; die Papierfassung wird zusätzlich verlangt."}
+  },
+  "stellen": [
+    {"id": "dpa", "name": "Direction Provinciale de l'Agriculture (DPA)", "aufgabe": "Guichet unique in jeder Provinz: Förderanträge, Bescheinigungen, Auskunft zu allen Programmen. Erste Anlaufstelle außerhalb der Bewässerungsgebiete.", "kosten": "kostenlos", "web": "https://www.agriculture.gov.ma", "geprueft": false},
+    {"id": "ormva", "name": "Office Régional de Mise en Valeur Agricole (ORMVA)", "aufgabe": "In den großen Bewässerungsgebieten statt der DPA zuständig: Förderanträge, Wasserzuteilung, Bescheinigungen.", "kosten": "kostenlos", "geprueft": true, "quelle": "cagor"},
+    {"id": "onca", "name": "Office National du Conseil Agricole (ONCA)", "aufgabe": "Kostenlose Beratung durch Agrarberater in den Beratungszentren (Centres de Conseil Agricole): Anbau, Düngung, Pflanzenschutz, Förderanträge.", "kosten": "kostenlos", "geprueft": false},
+    {"id": "onssa", "name": "ONSSA (Lebensmittel- und Pflanzenschutzbehörde)", "aufgabe": "Liste der zugelassenen Pflanzenschutzmittel (Index phytosanitaire), Kontrolle von Saatgut und Pflanzen, Meldung von Schädlingen.", "kosten": "kostenlos", "web": "https://www.onssa.gov.ma", "geprueft": true, "quelle": "agrimaroc-phyto"},
+    {"id": "abh", "name": "Agence du Bassin Hydraulique (ABH)", "aufgabe": "Genehmigung für Brunnen, Bohrungen und Wasserentnahme. Ohne Genehmigung keine Förderung und Strafen möglich.", "kosten": "Gebühren möglich", "geprueft": true, "quelle": "fnh-puits"},
+    {"id": "inra", "name": "INRA Maroc (Agrarforschung)", "aufgabe": "Angepasste Sorten für Marokko, Forschung, Labore für Boden- und Pflanzenanalysen.", "kosten": "Analysen kostenpflichtig (50 % FDA-Zuschuss)", "geprueft": false},
+    {"id": "ada", "name": "Agence pour le Développement Agricole (ADA)", "aufgabe": "Programme von Génération Green, Begleitung junger Landwirte und Gründer bei Projekten.", "kosten": "kostenlos", "web": "https://chababagri.ada.gov.ma", "geprueft": true, "quelle": "fnh-ada"},
+    {"id": "odco", "name": "Office du Développement de la Coopération (ODCO)", "aufgabe": "Hilft beim Gründen und Führen einer Kooperative. Gemeinsam lassen sich Maschinen, Becken und Vermarktung zinsfrei teilen und größere Förderprojekte (bis 100 %) beantragen.", "kosten": "kostenlos", "geprueft": true, "quelle": "mwn-odco"},
+    {"id": "moutmir", "name": "Al Moutmir (Programm der OCP-Gruppe)", "aufgabe": "Kostenlose Bodenanalysen mit mobilen Laboren zu Saisonbeginn, vor allem für kleine Betriebe; Demonstrationsfelder; Beratungs-App „@tmar“.", "kosten": "kostenlos", "web": "https://apps.apple.com/app/id1486308134", "geprueft": true, "quelle": "le360-moutmir"}
+  ],
+  "regionen": {
+    "gharb": {"stellen": ["ORMVA du Gharb (Kénitra)", "ORMVA du Loukkos (Ksar El Kébir)", "ORMVA des Doukkala (El Jadida)", "Sonst: DPA deiner Provinz"]},
+    "saiss": {"stellen": ["DPA Meknès oder Fès (Saïss)", "ORMVA du Tadla (Fquih Ben Salah)", "ORMVA de la Moulouya (Berkane)"]},
+    "atlas": {"stellen": ["DPA deiner Provinz (z. B. Ifrane, Khénifra, Midelt, Azilal)"]},
+    "souss": {"stellen": ["ORMVA du Souss-Massa (Agadir)", "ORMVA du Haouz (Marrakech)", "Sonst: DPA deiner Provinz"]},
+    "oase": {"stellen": ["ORMVA de Ouarzazate", "ORMVA du Tafilalet (Errachidia)", "Sonst: DPA deiner Provinz"]}
+  },
+  "kontakte": [
+    {"name": "Direction Régionale de l'Agriculture Oriental", "tel": "05 36 70 20 18", "quelle": "cagor"},
+    {"name": "DPA Oujda", "tel": "05 36 68 49 02", "quelle": "cagor"},
+    {"name": "DPA Nador", "tel": "05 36 60 64 13", "quelle": "cagor"},
+    {"name": "ORMVA de la Moulouya", "tel": "05 36 61 34 68", "quelle": "cagor"}
+  ]
+}

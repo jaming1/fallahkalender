@@ -1,0 +1,528 @@
+{
+  "_quelle": "Allgemeine agronomische Praxis (FAO, Beratungsliteratur). Aufwand: 1 leicht, 2 mittel, 3 aufwendig, 4 sehr aufwendig. 'foerderung' verweist auf eine ID in hilfe.json.",
+  "probleme": {
+    "saison": {
+      "titel": "Pflanzzeit passt nicht",
+      "massnahmen": [
+        {
+          "a": 1,
+          "t": "Auf die richtige Pflanzzeit warten",
+          "d": "Kostenlos und sicher. Bis dahin eine passende Kultur oder Gründüngung (z. B. Ackerbohne) säen.",
+          "k": "keine",
+          "z": "sofort planbar"
+        },
+        {
+          "a": 2,
+          "t": "Jungpflanzen vorziehen",
+          "d": "In Töpfen unter Schutz vorziehen und erst bei passendem Wetter auspflanzen. Spart 3–6 Wochen.",
+          "k": "gering",
+          "z": "eine Saison",
+          "bild": "massnahme:jungpflanzen"
+        },
+        {
+          "a": 3,
+          "t": "Folientunnel oder Vlies",
+          "d": "Niedrige Tunnel schützen vor Kälte und Wind und verlängern die Saison.",
+          "k": "mittel",
+          "z": "eine Saison",
+          "bild": "massnahme:folientunnel"
+        },
+        {
+          "a": 4,
+          "t": "Gewächshaus",
+          "d": "Ganzjährig möglich, aber teuer und braucht Erfahrung mit Klima und Krankheiten.",
+          "k": "hoch",
+          "z": "dauerhaft",
+          "foerderung": "serre",
+          "bild": "massnahme:gewaechshaus"
+        }
+      ],
+      "bild": "problem:saison"
+    },
+    "ph-hoch": {
+      "titel": "Boden-pH zu hoch (kalkig)",
+      "massnahmen": [
+        {
+          "a": 1,
+          "t": "Sauer wirkende Dünger nehmen",
+          "d": "Z. B. Ammoniumsulfat oder Monoammoniumphosphat statt Kalkammonsalpeter. Wirkt direkt an den Wurzeln.",
+          "k": "keine Mehrkosten",
+          "z": "sofort",
+          "bild": "duenger:map"
+        },
+        {
+          "a": 1,
+          "t": "Wasser leicht ansäuern",
+          "d": "Bei Tropfbewässerung etwas Phosphor- oder Salpetersäure über den Düngertank. Senkt den pH an der Wurzel und schützt die Tropfer.",
+          "k": "gering",
+          "z": "sofort"
+        },
+        {
+          "a": 2,
+          "t": "Eisen und Zink als Chelat geben",
+          "d": "Gegen gelbe Blätter bei hohem pH (z. B. Fe-EDDHA).",
+          "k": "gering bis mittel",
+          "z": "wenige Tage"
+        },
+        {
+          "a": 2,
+          "t": "Mist oder Kompost einarbeiten",
+          "d": "20–30 Tonnen je ha. Puffert den pH und verbessert den Boden.",
+          "k": "mittel",
+          "z": "1–3 Jahre",
+          "bild": "massnahme:mist"
+        },
+        {
+          "a": 3,
+          "t": "Elementaren Schwefel streuen",
+          "d": "Senkt den pH langsam. Auf stark kalkhaltigen Böden kaum wirksam und teuer. Vorher Kalkgehalt messen lassen.",
+          "k": "mittel bis hoch",
+          "z": "6–12 Monate",
+          "bild": "massnahme:schwefel"
+        },
+        {
+          "a": 4,
+          "t": "In Beeten mit Substrat anbauen",
+          "d": "Für empfindliche Kulturen wie Erdbeere: Anbau in Säcken oder Rinnen mit Substrat.",
+          "k": "hoch",
+          "z": "dauerhaft",
+          "bild": "massnahme:beete"
+        }
+      ],
+      "bild": "problem:ph-hoch"
+    },
+    "ph-niedrig": {
+      "titel": "Boden-pH zu niedrig (sauer)",
+      "massnahmen": [
+        {
+          "a": 1,
+          "t": "Kalk streuen",
+          "d": "Kohlensaurer Kalk oder Dolomit nach Bodenanalyse, am besten im Herbst.",
+          "k": "gering",
+          "z": "3–6 Monate",
+          "bild": "massnahme:kalk"
+        },
+        {
+          "a": 2,
+          "t": "Mist oder Kompost einarbeiten",
+          "d": "Puffert den pH und liefert Nährstoffe.",
+          "k": "mittel",
+          "z": "1–3 Jahre",
+          "bild": "massnahme:mist"
+        }
+      ],
+      "bild": "problem:ph-niedrig"
+    },
+    "salz-wasser": {
+      "titel": "Wasser ist zu salzig",
+      "massnahmen": [
+        {
+          "a": 1,
+          "t": "Öfter und weniger gießen",
+          "d": "Der Boden darf nie austrocknen, sonst steigt das Salz an der Wurzel. Lieber täglich kleine Gaben.",
+          "k": "keine",
+          "z": "sofort"
+        },
+        {
+          "a": 1,
+          "t": "Mulch auf den Boden",
+          "d": "Stroh oder Folie bremst die Verdunstung, so reichert sich weniger Salz an.",
+          "k": "gering",
+          "z": "sofort",
+          "bild": "massnahme:mulch"
+        },
+        {
+          "a": 2,
+          "t": "Salz auswaschen",
+          "d": "Etwa 10–20 % mehr Wasser geben als die Pflanze braucht, oder nach der Ernte einmal kräftig wässern. Nur wenn der Boden gut abläuft.",
+          "k": "gering (Wasser)",
+          "z": "eine Saison",
+          "bild": "massnahme:auswaschen"
+        },
+        {
+          "a": 2,
+          "t": "Auf Tropfbewässerung umstellen",
+          "d": "Hält den Boden an der Wurzel gleichmäßig feucht und verdünnt das Salz. Der Staat zahlt einen großen Teil.",
+          "k": "mittel (gefördert)",
+          "z": "sofort nach Einbau",
+          "foerderung": "tropf",
+          "bild": "massnahme:tropf"
+        },
+        {
+          "a": 3,
+          "t": "Wasser mischen",
+          "d": "Salziges Brunnenwasser mit Regenwasser aus einem Becken oder besserem Wasser mischen.",
+          "k": "mittel bis hoch",
+          "z": "dauerhaft",
+          "foerderung": "becken"
+        },
+        {
+          "a": 3,
+          "t": "Salzverträgliche Sorten oder veredelte Pflanzen",
+          "d": "Beim Saatguthändler nach salztoleranten Sorten fragen; bei Tomate und Melone helfen veredelte Pflanzen.",
+          "k": "mittel",
+          "z": "nächste Pflanzung",
+          "bild": "massnahme:veredelt"
+        },
+        {
+          "a": 4,
+          "t": "Wasser entsalzen",
+          "d": "Kleine Entsalzungsanlage. Sehr teuer, braucht Strom und eine Lösung für das Salzwasser.",
+          "k": "sehr hoch",
+          "z": "dauerhaft",
+          "bild": "massnahme:entsalzen"
+        }
+      ],
+      "bild": "problem:salz-wasser"
+    },
+    "salz-boden": {
+      "titel": "Boden ist zu salzig",
+      "massnahmen": [
+        {
+          "a": 1,
+          "t": "Salzverträgliche Kultur vorschalten",
+          "d": "Gerste oder Luzerne vertragen viel Salz und verbessern den Boden.",
+          "k": "keine",
+          "z": "eine Saison",
+          "bild": "kultur:gerste"
+        },
+        {
+          "a": 2,
+          "t": "Salz auswaschen",
+          "d": "Vor dem Pflanzen kräftig wässern, damit das Salz nach unten geht.",
+          "k": "gering (Wasser)",
+          "z": "einige Wochen",
+          "bild": "massnahme:auswaschen"
+        },
+        {
+          "a": 2,
+          "t": "Gips streuen",
+          "d": "Hilft bei viel Natrium im Boden (Bodenanalyse: ESP/SAR). Etwa 2–5 Tonnen je ha nach Analyse.",
+          "k": "mittel",
+          "z": "eine Saison",
+          "bild": "massnahme:gips"
+        },
+        {
+          "a": 3,
+          "t": "Auf Dämmen pflanzen",
+          "d": "Salz sammelt sich oben auf dem Damm, die Pflanze sitzt an der Flanke.",
+          "k": "gering bis mittel",
+          "z": "sofort",
+          "bild": "massnahme:daemme"
+        },
+        {
+          "a": 4,
+          "t": "Drainage legen",
+          "d": "Wenn das Wasser nicht abläuft, kann Salz nur mit Drainage dauerhaft weg.",
+          "k": "hoch",
+          "z": "dauerhaft",
+          "bild": "massnahme:drainage"
+        }
+      ],
+      "bild": "problem:salz-boden"
+    },
+    "wasser-knapp": {
+      "titel": "Zu wenig Wasser",
+      "massnahmen": [
+        {
+          "a": 1,
+          "t": "Fläche verkleinern",
+          "d": "Nur so viel anbauen, wie das Wasser schafft. Die App zeigt die mögliche Fläche bei jeder Kultur.",
+          "k": "keine",
+          "z": "sofort"
+        },
+        {
+          "a": 1,
+          "t": "In der kühleren Jahreszeit pflanzen",
+          "d": "Im Herbst und Winter verdunstet viel weniger Wasser.",
+          "k": "keine",
+          "z": "nächste Saison"
+        },
+        {
+          "a": 1,
+          "t": "Abends oder früh morgens bewässern",
+          "d": "Weniger Verdunstung als mittags.",
+          "k": "keine",
+          "z": "sofort",
+          "bild": "massnahme:bewaesserung"
+        },
+        {
+          "a": 2,
+          "t": "Mulch oder Folie",
+          "d": "Spart etwa 20–30 % Wasser und hält Unkraut fern.",
+          "k": "gering",
+          "z": "sofort",
+          "bild": "massnahme:mulch"
+        },
+        {
+          "a": 2,
+          "t": "Auf Tropfbewässerung umstellen",
+          "d": "Spart gegenüber Furche oft 30–50 % Wasser. Der Staat zahlt einen großen Teil.",
+          "k": "mittel (gefördert)",
+          "z": "sofort nach Einbau",
+          "foerderung": "tropf",
+          "bild": "massnahme:tropf"
+        },
+        {
+          "a": 3,
+          "t": "Wasserbecken bauen",
+          "d": "Wasser nachts oder bei Regen speichern, tagsüber gezielt nutzen.",
+          "k": "mittel bis hoch (gefördert)",
+          "z": "dauerhaft",
+          "foerderung": "becken",
+          "bild": "massnahme:wasserbecken"
+        },
+        {
+          "a": 3,
+          "t": "Solarpumpe",
+          "d": "Billiger im Betrieb als Gas oder Diesel, erlaubt längere Pumpzeiten.",
+          "k": "hoch (Pilotförderung)",
+          "z": "dauerhaft",
+          "foerderung": "solar",
+          "bild": "massnahme:solarpumpe"
+        },
+        {
+          "a": 4,
+          "t": "Neuen Brunnen bohren",
+          "d": "Nur mit Genehmigung der Wasserbehörde (Agence du Bassin Hydraulique). Ohne Genehmigung drohen Strafen und keine Förderung.",
+          "k": "sehr hoch",
+          "z": "Monate",
+          "foerderung": "brunnen",
+          "bild": "massnahme:brunnen"
+        }
+      ],
+      "bild": "problem:wasser-knapp"
+    },
+    "regen-fehlt": {
+      "titel": "Regen reicht nicht",
+      "massnahmen": [
+        {
+          "a": 1,
+          "t": "Regenfeste Kultur wählen",
+          "d": "Gerste, Hartweizen, Kichererbse und Ackerbohne kommen am ehesten mit Regen aus.",
+          "k": "keine",
+          "z": "sofort",
+          "bild": "kultur:hartweizen"
+        },
+        {
+          "a": 2,
+          "t": "Ergänzende Bewässerung",
+          "d": "Wenige Gaben in kritischen Phasen (Blüte, Kornfüllung) verdoppeln oft den Ertrag.",
+          "k": "mittel (gefördert)",
+          "z": "nächste Saison",
+          "foerderung": "complement",
+          "bild": "massnahme:bewaesserung"
+        },
+        {
+          "a": 3,
+          "t": "Bewässerung aufbauen",
+          "d": "Wasserquelle, Becken und Tropfsystem mit Förderung planen.",
+          "k": "hoch (gefördert)",
+          "z": "dauerhaft",
+          "foerderung": "tropf",
+          "bild": "massnahme:bewaesserung"
+        }
+      ],
+      "bild": "problem:regen-fehlt"
+    },
+    "boden-ton": {
+      "titel": "Schwerer Tonboden",
+      "massnahmen": [
+        {
+          "a": 1,
+          "t": "Auf Dämmen oder Beeten pflanzen",
+          "d": "Wasser läuft ab, Wurzeln und Knollen bekommen Luft.",
+          "k": "gering",
+          "z": "sofort",
+          "bild": "massnahme:daemme"
+        },
+        {
+          "a": 1,
+          "t": "Nur bei passender Feuchte bearbeiten",
+          "d": "Nasser Ton verdichtet, trockener wird steinhart.",
+          "k": "keine",
+          "z": "sofort"
+        },
+        {
+          "a": 2,
+          "t": "Kompost und Mist einarbeiten",
+          "d": "Macht den Boden über Jahre lockerer.",
+          "k": "mittel",
+          "z": "1–3 Jahre",
+          "bild": "massnahme:kompost"
+        },
+        {
+          "a": 3,
+          "t": "Tiefenlockerung oder Drainage",
+          "d": "Bei Staunässe den Untergrund lockern oder Drainage legen.",
+          "k": "hoch",
+          "z": "dauerhaft",
+          "bild": "massnahme:drainage"
+        }
+      ],
+      "bild": "problem:boden-ton"
+    },
+    "boden-sand": {
+      "titel": "Leichter Sandboden",
+      "massnahmen": [
+        {
+          "a": 1,
+          "t": "Dünger in kleinen Gaben über das Wasser",
+          "d": "Sand hält Nährstoffe schlecht, deshalb wenig und oft düngen.",
+          "k": "keine Mehrkosten",
+          "z": "sofort",
+          "bild": "duenger:harnstoff"
+        },
+        {
+          "a": 2,
+          "t": "Kompost und Mist einarbeiten",
+          "d": "Speichert Wasser und Nährstoffe.",
+          "k": "mittel",
+          "z": "1–3 Jahre",
+          "bild": "massnahme:kompost"
+        },
+        {
+          "a": 2,
+          "t": "Tropfbewässerung",
+          "d": "Verhindert, dass Wasser ungenutzt versickert.",
+          "k": "mittel (gefördert)",
+          "z": "sofort nach Einbau",
+          "foerderung": "tropf",
+          "bild": "massnahme:tropf"
+        }
+      ],
+      "bild": "problem:boden-sand"
+    },
+    "fruchtfolge": {
+      "titel": "Gleiche Pflanzenfamilie stand zu kurz vorher hier",
+      "massnahmen": [
+        {
+          "a": 1,
+          "t": "Auf einem anderen Feld oder Teilstück anbauen",
+          "d": "Am einfachsten: die Kultur wandert, die Krankheiten im Boden bleiben zurück.",
+          "k": "keine",
+          "z": "sofort"
+        },
+        {
+          "a": 1,
+          "t": "Dazwischen eine andere Familie anbauen",
+          "d": "Z. B. Getreide oder Hülsenfrüchte, bis die Pause erreicht ist.",
+          "k": "keine",
+          "z": "1–3 Jahre"
+        },
+        {
+          "a": 2,
+          "t": "Boden in der Sonne entseuchen (Solarisation)",
+          "d": "Im Sommer feuchten Boden 4–6 Wochen mit klarer Folie abdecken. Tötet viele Pilze, Nematoden und Unkrautsamen.",
+          "k": "gering bis mittel",
+          "z": "6 Wochen im Sommer",
+          "bild": "massnahme:solarisation"
+        },
+        {
+          "a": 3,
+          "t": "Resistente Sorten oder veredelte Pflanzen",
+          "d": "Beim Händler nach Resistenzen fragen; veredelte Tomaten und Melonen sind gegen Bodenkrankheiten robuster.",
+          "k": "mittel",
+          "z": "nächste Pflanzung",
+          "bild": "massnahme:veredelt"
+        }
+      ],
+      "bild": "problem:fruchtfolge"
+    },
+    "nematoden": {
+      "titel": "Wurzelälchen (Nematoden) im Boden",
+      "massnahmen": [
+        {
+          "a": 1,
+          "t": "Nicht anfällige Kultur wählen",
+          "d": "Getreide, Zwiebel und Luzerne leiden kaum.",
+          "k": "keine",
+          "z": "sofort"
+        },
+        {
+          "a": 2,
+          "t": "Solarisation im Sommer",
+          "d": "Feuchten Boden 4–6 Wochen mit klarer Folie abdecken.",
+          "k": "gering bis mittel",
+          "z": "6 Wochen im Sommer",
+          "bild": "massnahme:solarisation"
+        },
+        {
+          "a": 2,
+          "t": "Viel organisches Material",
+          "d": "Mist, Kompost und Gründüngung stärken die Gegenspieler der Nematoden.",
+          "k": "mittel",
+          "z": "1–2 Jahre",
+          "bild": "massnahme:kompost"
+        },
+        {
+          "a": 3,
+          "t": "Resistente Sorten oder veredelte Pflanzen",
+          "d": "Bei Tomate auf Resistenz gegen Wurzelgallen-Nematoden (Kennung „N“ bzw. Mi-Gen) achten.",
+          "k": "mittel",
+          "z": "nächste Pflanzung",
+          "bild": "massnahme:veredelt"
+        }
+      ],
+      "bild": "problem:nematoden"
+    },
+    "welke": {
+      "titel": "Welkekrankheiten aus dem Boden",
+      "massnahmen": [
+        {
+          "a": 1,
+          "t": "Längere Pause für anfällige Familien",
+          "d": "Nachtschatten- und Kürbisgewächse mindestens 3–4 Jahre fernhalten.",
+          "k": "keine",
+          "z": "Jahre"
+        },
+        {
+          "a": 2,
+          "t": "Solarisation im Sommer",
+          "d": "Wirkt gegen viele Welkepilze.",
+          "k": "gering bis mittel",
+          "z": "6 Wochen im Sommer",
+          "bild": "massnahme:solarisation"
+        },
+        {
+          "a": 3,
+          "t": "Resistente Sorten oder veredelte Pflanzen",
+          "d": "Auf Resistenzangaben „V“ und „F“ (Verticillium, Fusarium) achten.",
+          "k": "mittel",
+          "z": "nächste Pflanzung",
+          "bild": "massnahme:veredelt"
+        }
+      ],
+      "bild": "problem:welke"
+    },
+    "kalk": {
+      "titel": "Viel Kalk im Boden",
+      "massnahmen": [
+        {
+          "a": 1,
+          "t": "Sauer wirkende Dünger",
+          "d": "Ammoniumsulfat oder MAP statt kalkhaltiger Dünger.",
+          "k": "keine Mehrkosten",
+          "z": "sofort",
+          "bild": "duenger:map"
+        },
+        {
+          "a": 2,
+          "t": "Eisen als Chelat geben",
+          "d": "Gegen gelbe Blätter (Fe-EDDHA über Tropf oder Blatt).",
+          "k": "gering bis mittel",
+          "z": "wenige Tage"
+        },
+        {
+          "a": 2,
+          "t": "Kartoffel: gleichmäßig feucht halten",
+          "d": "Schorf tritt vor allem bei Trockenheit während der Knollenbildung auf; schorftolerante Sorten wählen.",
+          "k": "keine",
+          "z": "sofort",
+          "bild": "kultur:kartoffel"
+        }
+      ],
+      "bild": "problem:kalk"
+    }
+  }
+}

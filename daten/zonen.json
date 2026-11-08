@@ -1,0 +1,20 @@
+{
+  "_quelle": "Vereinfachte Klimazonen Marokkos, Richtwerte. Regen = wirksamer Niederschlag in mm je Anbausaison.",
+  "zonen": [
+    {"id": "gharb", "name": "Küste Nord / Gharb", "beispiele": "Tanger, Larache, Kenitra, Rabat, El Jadida", "frostMonate": [], "hitzeMonate": [8], "regenWinter": 300, "regenSommer": 60},
+    {"id": "saiss", "name": "Saïss / Mittelland", "beispiele": "Fès, Meknès, Béni Mellal, Oujda", "frostMonate": [12, 1, 2], "hitzeMonate": [7, 8], "regenWinter": 250, "regenSommer": 50},
+    {"id": "atlas", "name": "Atlas und Vorland", "beispiele": "Ifrane, Azrou, Khénifra, Midelt, Azilal", "frostMonate": [11, 12, 1, 2, 3, 4], "hitzeMonate": [], "regenWinter": 300, "regenSommer": 90},
+    {"id": "souss", "name": "Souss / Haouz / Süden", "beispiele": "Agadir, Taroudant, Marrakech, Essaouira", "frostMonate": [], "hitzeMonate": [7, 8], "regenWinter": 120, "regenSommer": 10},
+    {"id": "oase", "name": "Oasen / Präsahara", "beispiele": "Errachidia, Ouarzazate, Zagora, Tata, Figuig", "frostMonate": [12, 1], "hitzeMonate": [6, 7, 8, 9], "regenWinter": 30, "regenSommer": 5}
+  ],
+  "orte": [
+    ["Tanger", 35.76, -5.83, "gharb"], ["Larache", 35.19, -6.15, "gharb"], ["Kenitra", 34.26, -6.58, "gharb"],
+    ["Rabat", 34.02, -6.84, "gharb"], ["Casablanca", 33.57, -7.59, "gharb"], ["El Jadida", 33.25, -8.5, "gharb"],
+    ["Fès", 34.03, -5.0, "saiss"], ["Meknès", 33.89, -5.55, "saiss"], ["Béni Mellal", 32.34, -6.36, "saiss"],
+    ["Oujda", 34.68, -1.91, "saiss"], ["Taza", 34.21, -4.01, "saiss"],
+    ["Ifrane", 33.53, -5.11, "atlas"], ["Khénifra", 32.94, -5.67, "atlas"], ["Midelt", 32.68, -4.74, "atlas"], ["Azilal", 31.96, -6.57, "atlas"],
+    ["Agadir", 30.42, -9.6, "souss"], ["Taroudant", 30.47, -8.88, "souss"], ["Marrakech", 31.63, -8.0, "souss"], ["Essaouira", 31.5, -9.77, "souss"],
+    ["Errachidia", 31.93, -4.42, "oase"], ["Ouarzazate", 30.92, -6.9, "oase"], ["Zagora", 30.33, -5.84, "oase"],
+    ["Tata", 29.74, -7.97, "oase"], ["Figuig", 32.1, -1.23, "oase"], ["Guelmim", 28.99, -10.06, "oase"]
+  ]
+}
