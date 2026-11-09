@@ -20,6 +20,7 @@ async function zuBreit(page) {
 }
 
 async function feldAusfuellen(page) {
+  if (!(await page.locator('#ansicht-feld').isVisible())) await page.click('.reiter-knopf[data-ansicht=feld]');
   await page.fill('input[name=name]', 'Bir 1');
   await page.selectOption('#zone-wahl', 'souss');
   await page.fill('input[name=flaeche]', '1');
@@ -86,8 +87,27 @@ async function ablauf(browser, code, name, vp, scheme, voll) {
     if (richtung !== 'rtl') fehlt(`${tag}: Absatz nicht rechtsläufig`);
   }
 
+  if (!(await page.locator('#ansicht-heute').isVisible())) fehlt(`${tag}: App startet nicht mit „Heute“`);
   await feldAusfuellen(page);
   await page.screenshot({ path: `${OUT}/feld-${tag}.png`, fullPage: true });
+  // Startseite mit Region: Wetter, Saat, Bäume/Tiere, Tipp, Neuigkeiten; dann Maschinen
+  await page.click('.reiter-knopf[data-ansicht=heute]');
+  await page.waitForSelector('#heute-inhalt .wetter-tage li', { timeout: 5000 }).catch(() => fehlt(`${tag}: Heute ohne Wetter`));
+  if (!(await page.locator('#heute-inhalt .heute').count())) fehlt(`${tag}: Heute ohne Bauernkalender`);
+  if (!(await page.locator('#heute-inhalt .jahr-liste li').count())) fehlt(`${tag}: Heute ohne Bäume/Tiere`);
+  if (!(await page.locator('#h-tipp').count())) fehlt(`${tag}: kein Tipp des Tages`);
+  if (!(await page.locator('.neu-liste li').count())) fehlt(`${tag}: keine Neuigkeiten`);
+  if (await zuBreit(page)) fehlt(`${tag}: horizontales Scrollen Heute`);
+  await page.screenshot({ path: `${OUT}/heute-${tag}.png`, fullPage: true });
+  await textPruefen(page, `${tag} Heute`);
+  await page.locator('.tipp .knopf-zweit').last().click();
+  await page.waitForSelector('#maschinen-inhalt .maschine');
+  if ((await page.locator('#maschinen-inhalt .maschine').count()) !== 12) fehlt(`${tag}: nicht 12 Maschinen`);
+  await page.locator('#maschinen-inhalt details.maschine').first().locator('summary').click();
+  if (await zuBreit(page)) fehlt(`${tag}: horizontales Scrollen Maschinen`);
+  await page.screenshot({ path: `${OUT}/maschinen-${tag}.png`, fullPage: true });
+  await textPruefen(page, `${tag} Maschinen`);
+  await page.click('.reiter-knopf[data-ansicht=feld]');
   await textPruefen(page, `${tag} Feld`);
   if (await zuBreit(page)) fehlt(`${tag}: horizontales Scrollen Feld`);
 
@@ -127,6 +147,8 @@ async function ablauf(browser, code, name, vp, scheme, voll) {
   if (!(await page.locator('.heute .ar').count())) fehlt(`${tag}: Fellah-Datum fehlt`);
   await page.locator('.aufgabe input').first().check();
   await page.reload();
+  await page.waitForSelector('#heute-inhalt .heute');
+  await page.click('.reiter-knopf[data-ansicht=kalender]');
   await page.waitForSelector('.aufgabe');
   if (!(await page.locator('.aufgabe input').first().isChecked())) fehlt(`${tag}: Abhaken nicht gespeichert`);
   if ((await page.locator('.tagebuch li').count()) !== 1) fehlt(`${tag}: Abhaken steht nicht im Feldtagebuch`);
@@ -134,8 +156,8 @@ async function ablauf(browser, code, name, vp, scheme, voll) {
   await page.click('#tagebuch-form button[type=submit]');
   if ((await page.locator('.tagebuch li').count()) !== 2) fehlt(`${tag}: Notiz nicht im Feldtagebuch`);
   await page.locator('.duengeplan summary').click();
-  await page.waitForSelector('.wetter-tage li', { timeout: 5000 }).catch(() => fehlt(`${tag}: Wetter fehlt`));
-  if ((await page.locator('.wetter-tage li').count()) !== 7) fehlt(`${tag}: nicht 7 Wettertage`);
+  await page.waitForSelector('#kalender .wetter-tage li', { timeout: 5000 }).catch(() => fehlt(`${tag}: Wetter fehlt`));
+  if ((await page.locator('#kalender .wetter-tage li').count()) !== 7) fehlt(`${tag}: nicht 7 Wettertage`);
   if (!(await page.locator('.warnung.w-rot').count())) fehlt(`${tag}: keine rote Wetterwarnung`);
   if ((await page.locator('.wg-tabelle tbody tr').count()) !== 6) fehlt(`${tag}: Tabelle „Was geht“ unvollständig`);
   if (!(await page.locator('.krank-liste li').count())) fehlt(`${tag}: keine Krankheitswarnung nach Wetter`);
@@ -226,6 +248,7 @@ async function handyApp(browser) {
   if ((await page.inputValue('input[name=name]')) !== 'Bir 1') fehlt('Wechsel zum ersten Feld klappt nicht');
   if ((await page.inputValue('select[name=vj0]')) !== 'tomate') fehlt('Felddaten nach Wechsel falsch');
   // Sicherung herunterladen
+  await page.click('.reiter-knopf[data-ansicht=feld]');
   const [laden] = await Promise.all([page.waitForEvent('download'), page.click('#sicher-export')]);
   const datei = path.join(OUT, '..', 'sicherung-test.json');
   await laden.saveAs(datei);
@@ -284,7 +307,7 @@ async function eigeneKi(browser) {
     page.on('pageerror', (e) => fehler.push(`ki ${code}: ${e}`));
     await page.goto(URL);
     await page.waitForFunction(() => document.querySelectorAll('#zone-wahl option').length > 1);
-    const knopf = page.locator('#ansicht-feld .titel-zeile .vorlesen');
+    const knopf = page.locator('#ansicht-heute .titel-zeile .vorlesen');
     if (!(await knopf.count())) fehlt(`ki ${code}: kein Vorlese-Knopf mit eigener Stimme`);
     else {
       await knopf.click();

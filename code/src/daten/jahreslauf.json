@@ -1,0 +1,597 @@
+{
+ "_quelle": "Allgemeine Praxis für Marokko (Beratungsliteratur, FAO). Monate 1–12. wetter: trocken = kein Regen heute und morgen; kein_frost; spritzen = ruhig und trocken; warm = über 15 °C ohne Regen und Wind.",
+ "baeume": [
+  {
+   "id": "olive_ernte",
+   "gruppe": "olive",
+   "monate": [
+    10,
+    11,
+    12,
+    1
+   ],
+   "wetter": "trocken",
+   "zeichen": "j-olive",
+   "t": "Oliven ernten",
+   "d": "Wenn etwa die Hälfte der Früchte dunkel ist. Netze unter den Baum legen, mit der Hand oder einem Kamm abstreifen. Nicht mit Stöcken schlagen: das bricht die jungen Triebe, die nächstes Jahr tragen. Innerhalb von 24 Stunden zur Mühle bringen."
+  },
+  {
+   "id": "olive_schnitt",
+   "gruppe": "olive",
+   "monate": [
+    1,
+    2,
+    3
+   ],
+   "wetter": "trocken",
+   "zeichen": "j-schere",
+   "t": "Olivenbäume schneiden",
+   "d": "Nach der Ernte und vor der Blüte, an einem trockenen Tag. Tote, kranke und nach innen wachsende Äste entfernen, die Mitte offen halten. Höchstens ein Viertel der Krone pro Jahr."
+  },
+  {
+   "id": "olive_kupfer",
+   "gruppe": "olive",
+   "monate": [
+    2,
+    3,
+    11
+   ],
+   "wetter": "spritzen",
+   "zeichen": "t-befall",
+   "t": "Oliven: Kupfer nach Schnitt und Regen",
+   "d": "Nach dem Schnitt und vor den Herbstregen Kupfer spritzen. Das schützt die Schnittwunden und gegen die Pfauenaugen-Krankheit (runde dunkle Flecken auf den Blättern)."
+  },
+  {
+   "id": "zitrus_ernte",
+   "gruppe": "zitrus",
+   "monate": [
+    11,
+    12,
+    1,
+    2,
+    3
+   ],
+   "wetter": "trocken",
+   "zeichen": "j-zitrus",
+   "t": "Zitrusfrüchte ernten",
+   "d": "Mit der Schere schneiden, den Stiel kurz lassen, nicht abreißen. Nur trockene Früchte ernten, nasse faulen im Lager."
+  },
+  {
+   "id": "zitrus_schnitt",
+   "gruppe": "zitrus",
+   "monate": [
+    3,
+    4
+   ],
+   "wetter": "kein_frost",
+   "zeichen": "j-schere",
+   "t": "Zitrus leicht schneiden",
+   "d": "Nach der Ernte, wenn kein Frost mehr kommt. Nur tote Äste und senkrechte Wasserschosse entfernen. Zitrus trägt außen an der Krone, daher nicht stark schneiden."
+  },
+  {
+   "id": "zitrus_duengen",
+   "gruppe": "zitrus",
+   "monate": [
+    2,
+    5,
+    9
+   ],
+   "wetter": null,
+   "zeichen": "t-duenger",
+   "t": "Zitrus düngen",
+   "d": "Stickstoff in drei Gaben über das Jahr: Ende Winter, Ende Frühling, Ende Sommer. Am besten in kleinen Mengen über die Tropfbewässerung."
+  },
+  {
+   "id": "mandel_schnitt",
+   "gruppe": "mandel",
+   "monate": [
+    12,
+    1
+   ],
+   "wetter": "trocken",
+   "zeichen": "j-schere",
+   "t": "Mandelbäume schneiden",
+   "d": "In der Winterruhe, vor der Blüte. Offene Vasenform mit 3 bis 4 Hauptästen erhalten, Äste in der Mitte und tote Zweige entfernen."
+  },
+  {
+   "id": "mandel_bluete",
+   "gruppe": "mandel",
+   "monate": [
+    1,
+    2,
+    3
+   ],
+   "wetter": null,
+   "zeichen": "j-mandel",
+   "t": "Mandelblüte schützen",
+   "d": "Bei Frostgefahr am Abend bewässern: feuchter Boden gibt nachts Wärme ab. Während der Blüte nicht spritzen, damit die Bienen bestäuben können."
+  },
+  {
+   "id": "mandel_ernte",
+   "gruppe": "mandel",
+   "monate": [
+    8,
+    9
+   ],
+   "wetter": "trocken",
+   "zeichen": "t-ernte",
+   "t": "Mandeln ernten",
+   "d": "Wenn die grüne Außenschale aufplatzt. Planen auslegen, Äste schütteln, Mandeln schälen und einige Tage in der Sonne trocknen."
+  },
+  {
+   "id": "dattel_bestaeuben",
+   "gruppe": "dattel",
+   "monate": [
+    3,
+    4
+   ],
+   "wetter": "trocken",
+   "zeichen": "j-palme",
+   "t": "Dattelpalmen bestäuben",
+   "d": "Sobald sich die weiblichen Blütenstände öffnen: einige Stränge männlicher Blüten hineinbinden. An einem trockenen Tag, Regen wäscht den Pollen ab."
+  },
+  {
+   "id": "dattel_ernte",
+   "gruppe": "dattel",
+   "monate": [
+    9,
+    10,
+    11
+   ],
+   "wetter": "trocken",
+   "zeichen": "j-palme",
+   "t": "Datteln schützen und ernten",
+   "d": "Fruchtstände in Netze hüllen gegen Vögel und Fallobst. Ernten, wenn die Früchte weich und braun werden, und luftig trocknen."
+  },
+  {
+   "id": "rebe_schnitt",
+   "gruppe": "rebe",
+   "monate": [
+    1,
+    2
+   ],
+   "wetter": "kein_frost",
+   "zeichen": "j-rebe",
+   "t": "Reben schneiden",
+   "d": "In der Saftruhe, vor dem Austrieb. An jedem Arm 2 Zapfen mit je 2 Augen stehen lassen, altes und dünnes Holz entfernen."
+  },
+  {
+   "id": "rebe_schwefel",
+   "gruppe": "rebe",
+   "monate": [
+    4,
+    5,
+    6
+   ],
+   "wetter": "spritzen",
+   "zeichen": "t-befall",
+   "t": "Reben: Schwefel gegen Mehltau",
+   "d": "Ab dem Austrieb alle 10 bis 14 Tage Schwefel stäuben. Nicht über 30 °C, sonst verbrennen die Blätter."
+  },
+  {
+   "id": "feige_ernte",
+   "gruppe": "feige",
+   "monate": [
+    7,
+    8,
+    9
+   ],
+   "wetter": null,
+   "zeichen": "j-feige",
+   "t": "Feigen ernten",
+   "d": "Früh am Morgen pflücken, solange es kühl ist. Reife Feigen hängen weich nach unten. Schnell verkaufen oder trocknen."
+  },
+  {
+   "id": "argan_sammeln",
+   "gruppe": "argan",
+   "monate": [
+    6,
+    7,
+    8
+   ],
+   "wetter": null,
+   "zeichen": "j-olive",
+   "t": "Arganfrüchte sammeln",
+   "d": "Reife Früchte fallen von selbst. Täglich unter den Bäumen aufsammeln und in der Sonne trocknen, bevor sie geschält werden."
+  },
+  {
+   "id": "baum_pflanzen",
+   "gruppe": "allgemein",
+   "monate": [
+    11,
+    12,
+    1,
+    2
+   ],
+   "wetter": "kein_frost",
+   "zeichen": "j-jungbaum",
+   "t": "Neue Bäume pflanzen",
+   "d": "In der Winterruhe pflanzen. Loch 60 × 60 cm, Kompost unten einmischen, die Veredlungsstelle bleibt über dem Boden. Pfahl setzen und gut angießen."
+  },
+  {
+   "id": "baum_sommer",
+   "gruppe": "allgemein",
+   "monate": [
+    6,
+    7,
+    8,
+    9
+   ],
+   "wetter": null,
+   "zeichen": "t-wasser",
+   "t": "Junge Bäume durch den Sommer bringen",
+   "d": "Einmal pro Woche tief gießen statt täglich wenig. Baumscheibe mulchen, Stamm mit Kalk weißen gegen Sonnenbrand."
+  }
+ ],
+ "tiere": [
+  {
+   "id": "schafe_lammzeit",
+   "tier": "schafe",
+   "monate": [
+    10,
+    11,
+    12,
+    1
+   ],
+   "wetter": null,
+   "zeichen": "j-schaf",
+   "t": "Lammzeit",
+   "d": "Trockener Stall ohne Zugluft. Das Lamm muss in der ersten Stunde Biestmilch trinken. Nabel mit Jod desinfizieren."
+  },
+  {
+   "id": "schafe_scheren",
+   "tier": "schafe",
+   "monate": [
+    4,
+    5
+   ],
+   "wetter": "trocken",
+   "zeichen": "j-schaf",
+   "t": "Schafe scheren",
+   "d": "Vor der Sommerhitze und an einem trockenen Tag. Nasse Wolle nicht scheren und nicht lagern."
+  },
+  {
+   "id": "schafe_entwurmen",
+   "tier": "schafe",
+   "monate": [
+    3,
+    4,
+    9,
+    10
+   ],
+   "wetter": null,
+   "zeichen": "j-schaf",
+   "t": "Gegen Würmer behandeln",
+   "d": "Vor und nach der Weidesaison. Mittel und Menge mit dem Tierarzt absprechen, Wartezeit für Milch und Fleisch beachten."
+  },
+  {
+   "id": "weide_winter",
+   "tier": "schafe",
+   "monate": [
+    12,
+    1,
+    2
+   ],
+   "wetter": null,
+   "zeichen": "j-schaf",
+   "t": "Futter für den Winter prüfen",
+   "d": "Vorrat an Stroh, Heu und Gerste zählen. Nasse Weide nach Regen schonen, damit das Gras nachwächst."
+  },
+  {
+   "id": "rinder_sommer",
+   "tier": "rinder",
+   "monate": [
+    6,
+    7,
+    8,
+    9
+   ],
+   "wetter": null,
+   "zeichen": "j-rind",
+   "t": "Rinder im Sommer",
+   "d": "Schatten und immer frisches Wasser, eine Kuh trinkt an heißen Tagen über 80 Liter. Füttern und melken in den kühlen Stunden."
+  },
+  {
+   "id": "gefluegel_winter",
+   "tier": "gefluegel",
+   "monate": [
+    11,
+    12,
+    1,
+    2
+   ],
+   "wetter": null,
+   "zeichen": "j-huhn",
+   "t": "Hühner im Winter",
+   "d": "Stall dicht gegen Zugluft, aber gelüftet. Einstreu trocken halten, nasse Einstreu bringt Krankheiten."
+  },
+  {
+   "id": "gefluegel_sommer",
+   "tier": "gefluegel",
+   "monate": [
+    6,
+    7,
+    8,
+    9
+   ],
+   "wetter": null,
+   "zeichen": "j-huhn",
+   "t": "Hühner im Sommer",
+   "d": "Wasser kühl und sauber, mehrmals am Tag auffüllen. Stall beschatten, Futter am frühen Morgen geben."
+  },
+  {
+   "id": "bienen_fruehjahr",
+   "tier": "bienen",
+   "monate": [
+    2,
+    3,
+    4
+   ],
+   "wetter": "warm",
+   "zeichen": "j-biene",
+   "t": "Bienen im Frühjahr kontrollieren",
+   "d": "Nur an warmen, windstillen Tagen über 15 °C öffnen. Königin, Brut und Futter prüfen. Auf Schwarmzellen achten."
+  },
+  {
+   "id": "bienen_honig",
+   "tier": "bienen",
+   "monate": [
+    5,
+    6
+   ],
+   "wetter": "warm",
+   "zeichen": "j-biene",
+   "t": "Honig ernten",
+   "d": "Nur verdeckelte Waben nehmen. Genug Honig für das Volk lassen, vor allem vor dem Sommer."
+  },
+  {
+   "id": "bienen_sommer",
+   "tier": "bienen",
+   "monate": [
+    7,
+    8
+   ],
+   "wetter": null,
+   "zeichen": "j-biene",
+   "t": "Bienen im Sommer",
+   "d": "Wasserstelle in der Nähe mit Steinen zum Landen. Stöcke beschatten, nicht in der Mittagshitze öffnen."
+  },
+  {
+   "id": "bienen_winter",
+   "tier": "bienen",
+   "monate": [
+    11,
+    12,
+    1
+   ],
+   "wetter": null,
+   "zeichen": "j-biene",
+   "t": "Bienen im Winter",
+   "d": "Stöcke geschlossen lassen. Fluglöcher frei halten, Stöcke gegen Wind beschweren."
+  }
+ ],
+ "tipps": [
+  {
+   "id": "tipp_olivenschnitt",
+   "monate": [
+    12,
+    1,
+    2,
+    3
+   ],
+   "zeichen": "j-olive",
+   "t": "So schneidest du einen Olivenbaum",
+   "schritte": [
+    "Schere und Säge schärfen und mit Bleichwasser reinigen.",
+    "Zuerst tote, kranke und gebrochene Äste ganz am Ansatz entfernen.",
+    "Äste, die nach innen oder steil nach oben wachsen, wegnehmen: die Mitte soll offen sein, Licht muss hinein.",
+    "Triebe am Stamm und an der Wurzel entfernen.",
+    "Nicht mehr als ein Viertel der Krone pro Jahr.",
+    "Schnitte glatt und schräg, dicht am Astring. Danach an einem trockenen Tag Kupfer spritzen."
+   ]
+  },
+  {
+   "id": "tipp_mandelschnitt",
+   "monate": [
+    12,
+    1
+   ],
+   "zeichen": "j-mandel",
+   "t": "So schneidest du einen Mandelbaum",
+   "schritte": [
+    "In der Winterruhe schneiden, wenn keine Blätter mehr am Baum sind.",
+    "3 bis 4 kräftige Hauptäste wie eine offene Vase stehen lassen.",
+    "Äste in der Mitte und sich kreuzende Äste entfernen.",
+    "Tote Zweige und Fruchtmumien abschneiden und vom Feld bringen.",
+    "Junge Seitentriebe tragen die Blüten: nicht alle wegschneiden."
+   ]
+  },
+  {
+   "id": "tipp_rebschnitt",
+   "monate": [
+    1,
+    2
+   ],
+   "zeichen": "j-rebe",
+   "t": "So schneidest du Reben",
+   "schritte": [
+    "Schneiden, wenn die Rebe ruht und kein Frost mehr droht.",
+    "Auf jedem Arm den besten Trieb vom letzten Jahr suchen.",
+    "Ihn auf 2 Augen kürzen (Zapfen), alle anderen Triebe am Ansatz entfernen.",
+    "Altes, dickes Holz alle paar Jahre durch einen jungen Trieb ersetzen.",
+    "Schnittholz vom Feld bringen, es trägt Krankheiten."
+   ]
+  },
+  {
+   "id": "tipp_zitrusschnitt",
+   "monate": [
+    3,
+    4
+   ],
+   "zeichen": "j-zitrus",
+   "t": "So pflegst du Zitrusbäume nach der Ernte",
+   "schritte": [
+    "Nur leicht schneiden: Zitrus trägt außen.",
+    "Tote Äste und senkrechte Wasserschosse entfernen.",
+    "Äste, die den Boden berühren, kürzen: so kommen keine Ameisen und Krankheiten hoch.",
+    "Stamm weiß kalken gegen Sonnenbrand.",
+    "Danach düngen und gleichmäßig bewässern."
+   ]
+  },
+  {
+   "id": "tipp_baumpflanzen",
+   "monate": [
+    11,
+    12,
+    1,
+    2
+   ],
+   "zeichen": "j-jungbaum",
+   "t": "So pflanzt du einen Obstbaum",
+   "schritte": [
+    "Loch 60 × 60 × 60 cm graben, obere und untere Erde getrennt legen.",
+    "Unten Kompost mit Erde mischen.",
+    "Baum so tief setzen, dass die Veredlungsstelle eine Hand breit über dem Boden bleibt.",
+    "Pfahl auf der Windseite einschlagen und locker anbinden.",
+    "Gießrand formen und mit 20 Litern angießen."
+   ]
+  },
+  {
+   "id": "tipp_kompost",
+   "monate": [
+    9,
+    10,
+    11
+   ],
+   "zeichen": "t-duenger",
+   "t": "So legst du Kompost an",
+   "schritte": [
+    "Schattigen Platz wählen, Haufen etwa 1,5 m breit.",
+    "Schichten: grünes Material (Blätter, Gemüsereste), braunes Material (Stroh, trockene Blätter) und Mist.",
+    "Feucht halten wie ein ausgedrückter Schwamm.",
+    "Alle 3 bis 4 Wochen umsetzen.",
+    "Nach 3 bis 4 Monaten ist er dunkel und riecht nach Waldboden: fertig."
+   ]
+  },
+  {
+   "id": "tipp_mulch",
+   "monate": [
+    5,
+    6,
+    7
+   ],
+   "zeichen": "e-trocken",
+   "t": "Mulch spart Wasser",
+   "schritte": [
+    "Nach dem Gießen Stroh, trockenes Gras oder Pflanzenreste 5 bis 10 cm dick auslegen.",
+    "Einen Fingerbreit Abstand zum Stängel lassen.",
+    "Der Boden bleibt kühler und verliert bis zu einem Drittel weniger Wasser.",
+    "Unkraut wächst kaum durch."
+   ]
+  },
+  {
+   "id": "tipp_tropf",
+   "monate": [
+    1,
+    4,
+    7,
+    10
+   ],
+   "zeichen": "t-wasser",
+   "t": "Tropfbewässerung sauber halten",
+   "schritte": [
+    "Filter jede Woche öffnen und auswaschen.",
+    "Einmal im Monat die Enden der Leitungen öffnen und spülen, bis klares Wasser kommt.",
+    "Tropfer prüfen: wo die Pflanzen welken, ist oft ein Tropfer verstopft.",
+    "Bei kalkhaltigem Wasser die Leitungen ab und zu mit etwas Säure spülen (nach Angabe des Händlers)."
+   ]
+  },
+  {
+   "id": "tipp_saatgut",
+   "monate": [
+    6,
+    7,
+    8
+   ],
+   "zeichen": "t-saat",
+   "t": "Eigenes Saatgut aufheben",
+   "schritte": [
+    "Nur von den gesündesten und kräftigsten Pflanzen nehmen.",
+    "Früchte ganz ausreifen lassen.",
+    "Samen im Schatten gut trocknen.",
+    "In Gläsern oder Papiertüten kühl und dunkel lagern, mit Namen und Jahr beschriften.",
+    "Hybrid-Sorten (F1) bringen keine gleichen Pflanzen: nur feste Sorten verwenden."
+   ]
+  },
+  {
+   "id": "tipp_solarisation",
+   "monate": [
+    7,
+    8
+   ],
+   "zeichen": "e-trocken",
+   "t": "Boden mit der Sonne entseuchen",
+   "schritte": [
+    "Im Hochsommer das Beet lockern und gründlich wässern.",
+    "Mit klarer, dünner Folie dicht abdecken, Ränder mit Erde beschweren.",
+    "4 bis 6 Wochen liegen lassen.",
+    "Die Hitze tötet Nematoden, Pilze und viele Unkrautsamen.",
+    "Danach nicht tief umgraben, sonst kommen Samen wieder hoch."
+   ]
+  },
+  {
+   "id": "tipp_regenwasser",
+   "monate": [
+    9,
+    10,
+    11
+   ],
+   "zeichen": "w-regen",
+   "t": "Regenwasser sammeln",
+   "schritte": [
+    "Becken und Matfia vor den ersten Regen reinigen.",
+    "Zuläufe von Laub und Erde frei machen.",
+    "Den ersten Regen nach dem Sommer an der Zisterne vorbeileiten: er bringt Staub mit.",
+    "Becken abdecken gegen Verdunstung und Mücken."
+   ]
+  },
+  {
+   "id": "tipp_lammzeit",
+   "monate": [
+    10,
+    11,
+    12,
+    1
+   ],
+   "zeichen": "j-schaf",
+   "t": "Gute Lammzeit",
+   "schritte": [
+    "Einige Wochen vor dem Lammen die Mutterschafe besser füttern.",
+    "Eine trockene, saubere Lammbucht ohne Zugluft vorbereiten.",
+    "Nach der Geburt prüfen, ob das Lamm in der ersten Stunde trinkt.",
+    "Nabel mit Jod tauchen.",
+    "Schwache Lämmer warm halten und Biestmilch mit der Flasche geben."
+   ]
+  }
+ ],
+ "neu": [
+  {
+   "id": "neu_wetter",
+   "datum": "2026-11-09",
+   "t": "Neu: Wetter mit Warnungen",
+   "d": "Im Kalender und auf dieser Seite: Vorhersage für 7 Tage, Warnungen mit Tun und Lassen, welche Arbeit an welchem Tag passt, Krankheitsrisiko und Regenradar."
+  },
+  {
+   "id": "neu_fotos",
+   "datum": "2026-11-09",
+   "t": "Neu: Fotos groß ansehen",
+   "d": "Jedes Foto antippen, dann füllt es den Bildschirm. Beim Befall steht dein eigenes Foto zum Vergleich darunter."
+  },
+  {
+   "id": "neu_start",
+   "datum": "2026-11-08",
+   "t": "Die App ist da",
+   "d": "Fallahkalender läuft auf dem Handy, auch ohne Internet. Schreib uns, was fehlt oder was besser werden soll."
+  }
+ ]
+}

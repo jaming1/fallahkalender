@@ -1,0 +1,301 @@
+{
+ "_quelle": "Allgemeine Praxis und Herstellerangaben, vereinfacht. Werte sind Richtwerte; Bedienungsanleitung und Beratung gehen vor.",
+ "maschinen": [
+  {
+   "id": "traktor",
+   "monate": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "zeichen": "m-traktor",
+   "name": "Traktor",
+   "wozu": "Zieht und treibt die Geräte an: Pflug, Egge, Sämaschine, Spritze, Anhänger.",
+   "einstellungen": [
+    "Zapfwelle auf 540 Umdrehungen pro Minute für die meisten Geräte.",
+    "Reifendruck auf dem Feld niedriger (etwa 0,8–1,2 bar) als auf der Straße: weniger Bodendruck.",
+    "Gewichte vorne, wenn schwere Geräte hinten hängen."
+   ],
+   "wann": "Das ganze Jahr. Vor jeder Saison Öl, Filter, Luftfilter und Reifen prüfen.",
+   "achtung": [
+    "Am Hang nie quer fahren, immer mit Überrollbügel und Gurt.",
+    "Zapfwelle nur mit Schutz; vor dem Absteigen Motor aus.",
+    "Keine Kinder auf dem Traktor."
+   ]
+  },
+  {
+   "id": "scheibenpflug",
+   "monate": [
+    9,
+    10,
+    11,
+    12
+   ],
+   "zeichen": "m-scheibenpflug",
+   "name": "Scheibenpflug",
+   "wozu": "Wendet den Boden und arbeitet Stoppeln und Unkraut ein. Gut für harte, steinige Böden.",
+   "einstellungen": [
+    "Tiefe 20–30 cm, je nach Kultur.",
+    "Scheibenwinkel größer = tiefer und mehr Zug.",
+    "Nach dem Einstellen 20 m fahren und Tiefe messen."
+   ],
+   "wann": "Nach den ersten Herbstregen, wenn der Boden feucht ist, aber nicht klebt.",
+   "achtung": [
+    "Nicht jedes Jahr in gleicher Tiefe pflügen, sonst bildet sich eine harte Sohle.",
+    "Am Hang quer zum Gefälle arbeiten, das bremst die Erosion.",
+    "Nasser Boden wird verdichtet: lieber einige Tage warten."
+   ]
+  },
+  {
+   "id": "scheibenegge",
+   "monate": [
+    9,
+    10,
+    11,
+    12,
+    1
+   ],
+   "zeichen": "m-scheibenegge",
+   "name": "Scheibenegge (Cover-crop)",
+   "wozu": "Zerkleinert Schollen und Pflanzenreste, bereitet das Saatbett vor. In Marokko das häufigste Gerät.",
+   "einstellungen": [
+    "Arbeitstiefe 10–15 cm.",
+    "Fahrgeschwindigkeit 6–8 km/h.",
+    "Hintere Scheibenreihe gegen die vordere winkeln für ebenes Feld."
+   ],
+   "wann": "Vor der Aussaat, auf abgetrocknetem Boden.",
+   "achtung": [
+    "Zu viele Durchgänge machen den Boden staubig: er verschlämmt beim nächsten Regen.",
+    "Lager regelmäßig abschmieren.",
+    "Nicht auf nassem Boden fahren."
+   ]
+  },
+  {
+   "id": "grubber",
+   "monate": [
+    2,
+    3,
+    9,
+    10
+   ],
+   "zeichen": "m-grubber",
+   "name": "Grubber",
+   "wozu": "Lockert den Boden, ohne ihn zu wenden. Schont das Bodenleben und spart Wasser und Diesel.",
+   "einstellungen": [
+    "Tiefe 15–25 cm.",
+    "Zinkenabstand 25–35 cm.",
+    "Gänsefußschare für Unkraut, schmale Schare zum Lockern."
+   ],
+   "wann": "Nach der Ernte und vor der Saat, auch statt Pflug.",
+   "achtung": [
+    "Bei Steinen auf Federsicherung achten.",
+    "Abgenutzte Schare rechtzeitig wechseln.",
+    "Tiefer lockern bringt nur etwas, wenn der Boden trocken genug ist."
+   ]
+  },
+  {
+   "id": "saemaschine",
+   "monate": [
+    10,
+    11,
+    12
+   ],
+   "zeichen": "m-saemaschine",
+   "name": "Sämaschine für Getreide",
+   "wozu": "Legt die Körner in Reihen, gleich tief und gleichmäßig. Spart Saatgut gegenüber Breitsaat von Hand.",
+   "einstellungen": [
+    "Weizen etwa 120–160 kg/ha, Gerste 100–140 kg/ha.",
+    "Saattiefe 3–5 cm.",
+    "Abdrehprobe: Rad 50 Mal drehen, Körner wiegen, auf die Fläche umrechnen."
+   ],
+   "wann": "Nach ausreichendem Regen, Oktober bis Dezember.",
+   "achtung": [
+    "Saatgut vorher reinigen, Steinchen verstopfen die Schare.",
+    "Säschare und Rohre prüfen, ob alle säen.",
+    "Nach der Saat Maschine leeren: Restsaat zieht Feuchtigkeit und Mäuse an."
+   ]
+  },
+  {
+   "id": "direktsaat",
+   "monate": [
+    10,
+    11,
+    12
+   ],
+   "zeichen": "m-direktsaat",
+   "name": "Direktsaatmaschine",
+   "wozu": "Sät direkt in die Stoppeln, ohne vorher zu pflügen. Spart Wasser, Zeit und Diesel und schützt vor Erosion.",
+   "einstellungen": [
+    "Saatmenge wie bei normaler Sämaschine.",
+    "Schneidscheiben scharf halten, Tiefe 3–5 cm.",
+    "Druck der Andruckrollen an den Boden anpassen."
+   ],
+   "wann": "Zur normalen Saatzeit nach Regen; Unkraut vorher bekämpfen.",
+   "achtung": [
+    "Oft über Kooperativen oder Programme ausleihbar.",
+    "Stroh gleichmäßig verteilt lassen, Haufen stören die Saat.",
+    "Die ersten Jahre Ertrag vergleichen und geduldig sein."
+   ]
+  },
+  {
+   "id": "duengerstreuer",
+   "monate": [
+    11,
+    12,
+    1,
+    2,
+    3
+   ],
+   "zeichen": "m-duengerstreuer",
+   "name": "Düngerstreuer",
+   "wozu": "Verteilt Körnerdünger gleichmäßig über die Fläche.",
+   "einstellungen": [
+    "Streubreite und Fahrspuren abstimmen (z. B. 12 m).",
+    "Menge in kg/ha nach Düngeplan, mit Abdrehprobe prüfen.",
+    "Gleichmäßige Fahrgeschwindigkeit."
+   ],
+   "wann": "Grunddüngung vor der Saat, Stickstoff als Kopfdüngung im Winter und Frühjahr.",
+   "achtung": [
+    "Nicht vor Starkregen und nicht bei Wind streuen.",
+    "Nach Gebrauch waschen: Dünger frisst Metall.",
+    "Handschuhe tragen."
+   ]
+  },
+  {
+   "id": "spritze",
+   "monate": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    9,
+    10
+   ],
+   "zeichen": "m-spritze",
+   "name": "Spritze (Rücken- oder Anbauspritze)",
+   "wozu": "Bringt Pflanzenschutzmittel und Blattdünger aus.",
+   "einstellungen": [
+    "Druck 2–4 bar, je nach Düse.",
+    "Wassermenge 200–400 l/ha; vorher mit klarem Wasser auslitern.",
+    "Düsenhöhe etwa 50 cm über den Pflanzen."
+   ],
+   "wann": "An ruhigen, trockenen Tagen, früh morgens oder abends.",
+   "achtung": [
+    "Schutzkleidung, Handschuhe und Maske; nicht essen oder rauchen.",
+    "Wind unter 15 km/h, kein Regen in den nächsten Stunden.",
+    "Wartezeit bis zur Ernte einhalten, Reste nie in Brunnen oder Bäche."
+   ]
+  },
+  {
+   "id": "motorhacke",
+   "monate": [
+    2,
+    3,
+    4,
+    9,
+    10
+   ],
+   "zeichen": "m-motorhacke",
+   "name": "Motorhacke / Fräse",
+   "wozu": "Lockert und mischt den Boden auf kleinen Flächen und zwischen Reihen im Gemüse.",
+   "einstellungen": [
+    "Tiefe mit dem Sporn einstellen, 10–20 cm.",
+    "Langsam fahren für feine Krümel, schneller für grobe.",
+    "Hackmesser vor jedem Einsatz auf festen Sitz prüfen."
+   ],
+   "wann": "Vor dem Pflanzen und zum Unkrauthacken zwischen den Reihen.",
+   "achtung": [
+    "Nicht auf nassem Boden, und nicht zu oft: Fräsen zerstört die Krümel.",
+    "Feste Schuhe, nie rückwärts auf die Füße zu.",
+    "Motor aus, bevor Unkraut von den Messern entfernt wird."
+   ]
+  },
+  {
+   "id": "maehdrescher",
+   "monate": [
+    5,
+    6,
+    7
+   ],
+   "zeichen": "m-maehdrescher",
+   "name": "Mähdrescher",
+   "wozu": "Schneidet und drischt Getreide in einem Arbeitsgang. Meist gemietet oder über Lohnunternehmer.",
+   "einstellungen": [
+    "Schnitthöhe 10–20 cm, höher bei Lager.",
+    "Trommeldrehzahl und Korbabstand je Getreideart (Gerste anders als Weizen).",
+    "Reinigung und Gebläse so, dass wenig Körner hinten rausfallen."
+   ],
+   "wann": "Wenn das Korn hart ist und sich nicht mehr mit dem Fingernagel eindrücken lässt (unter 14 % Feuchte).",
+   "achtung": [
+    "Verluste hinter der Maschine zählen: mehr als 30–40 Körner pro Quadratmeter ist zu viel.",
+    "Nicht bei Tau oder nach Regen dreschen.",
+    "Brandgefahr: Feuerlöscher mitführen, nicht rauchen."
+   ]
+  },
+  {
+   "id": "pumpe",
+   "monate": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "zeichen": "m-pumpe",
+   "name": "Pumpe und Solarpumpe",
+   "wozu": "Fördert Wasser aus Brunnen, Becken oder Fluss zur Bewässerung.",
+   "einstellungen": [
+    "Förderhöhe (Brunnentiefe + Höhe + Leitungsverlust) muss zur Pumpe passen.",
+    "Durchfluss in m³/h nach Fläche und Tropfern wählen.",
+    "Solarpumpe: Paneele nach Süden, Neigung etwa 30°, sauber halten."
+   ],
+   "wann": "Das ganze Jahr nach Bewässerungsplan; im Sommer am meisten.",
+   "achtung": [
+    "Nie trocken laufen lassen: Wasserstand im Brunnen prüfen.",
+    "Ansaugfilter und Sieb regelmäßig reinigen.",
+    "Bohrungen nur mit Genehmigung (Agence du Bassin Hydraulique)."
+   ]
+  },
+  {
+   "id": "baumschere",
+   "monate": [
+    12,
+    1,
+    2,
+    3,
+    4
+   ],
+   "zeichen": "m-baumschere",
+   "name": "Baumschere, Astschere und Säge",
+   "wozu": "Für den Schnitt von Obstbäumen und Reben: Schere bis 2 cm, Astschere bis 4 cm, Säge für dickere Äste.",
+   "einstellungen": [
+    "Bypass-Schere (zwei Klingen aneinander vorbei) für saubere Schnitte.",
+    "Klingen scharf und leicht geölt.",
+    "Säge mit Zahnung auf Zug für frisches Holz."
+   ],
+   "wann": "In der Schnittzeit der jeweiligen Baumart, meist Winter und Frühjahr.",
+   "achtung": [
+    "Zwischen kranken und gesunden Bäumen die Klingen mit Bleichwasser reinigen.",
+    "Dicke Äste in drei Schnitten absägen, damit die Rinde nicht einreißt.",
+    "Handschuhe tragen, nie zu sich hin schneiden."
+   ]
+  }
+ ]
+}

@@ -32,6 +32,8 @@ Die App ist eine installierbare Web-App (PWA) und läuft nach dem ersten Öffnen
 Neue Versionen lädt die App beim nächsten Öffnen im Hintergrund; ab dem übernächsten Öffnen sind sie sichtbar. Bei größeren Änderungen `VERSION` in `code/src/sw.js` erhöhen.
 
 ## Benutzen
+- **Heute** (Startseite): Wetter der Woche, Fellah-Datum und Nawʾ, was jetzt bei Gemüse, Bäumen und Tieren ansteht (mit „heute passend / heute nicht“ nach Wetter), Tipp des Tages, Neuigkeiten.
+- **Maschinen und Werkzeug** (über „Hilfe“ oder den Tipp des Tages): 12 Maschinen mit Bild, Zweck, Einstellungen, Einsatzzeit und Warnhinweisen.
 - **Mein Feld:** Region, Fläche, Wasser, Boden und Vorgeschichte eintragen. Alles wird sofort auf dem Gerät gespeichert.
 - **Was passt?:** Rangliste der 15 Kulturen mit Begründung. Antippen zeigt alle Gründe.
 - **Machbar machen:** Bei jeder Kultur mit Problemen stehen Maßnahmen vom einfachsten zum schwierigsten, mit Kosten und Förderhinweis.
@@ -43,14 +45,14 @@ Neue Versionen lädt die App beim nächsten Öffnen im Hintergrund; ab dem über
 - **Feldtagebuch** (unten im Kalender): abgehakte Aufgaben und gemeldeter Befall stehen automatisch drin, eigene Notizen kommen dazu. „Saison beendet“ trägt die Kultur als Vorjahr ins Feld ein und schließt den Plan.
 - **Drucken:** im Kalender „Plan drucken“ (oder als PDF speichern). Knöpfe und Menüs fallen dabei weg, alle Abschnitte werden aufgeklappt.
 - **Sicherung:** unten in „Mein Feld“ alles in eine Datei speichern und auf einem anderen Gerät wiederherstellen.
-- Tastatur: Alt+1 bis Alt+5 wechselt die Ansicht, Strg/Cmd+Enter zeigt die Empfehlung.
+- Tastatur: Alt+1 bis Alt+6 wechselt die Ansicht, Strg/Cmd+Enter zeigt die Empfehlung.
 
 ## Tests
 - Rechenlogik: `cd code && node --test tests/*.test.mjs`
 - Oberfläche mit Screenshots (braucht Playwright): `node code/tests/ui.test.cjs` → Bilder in `code/tests/screenshots/` (Arabisch und Französisch: Handy/PC, hell/dunkel, Druckansicht; Darija und Tamazight: Kurzrunde; dazu mehrere Felder, Übernahme alter Daten, Sicherung und Offline-Start)
 
 ## Daten erweitern
-Kulturen in `code/src/daten/kulturen.json`, Klimazonen und Orte in `code/src/daten/zonen.json`, Maßnahmen in `massnahmen.json`, Anbaudaten und Nährstoffbedarf in `anbau.json`, Anwāʾ und Abschnitte in `fellah.json`, Krankheiten und Symptome in `krankheiten.json`, Förderungen und Stellen in `hilfe.json` (mit Quelle und Prüfmarke), Fotos in `bilder.json`.
+Kulturen in `code/src/daten/kulturen.json`, Klimazonen und Orte in `code/src/daten/zonen.json`, Maßnahmen in `massnahmen.json`, Anbaudaten und Nährstoffbedarf in `anbau.json`, Anwāʾ und Abschnitte in `fellah.json`, Krankheiten und Symptome in `krankheiten.json`, Förderungen und Stellen in `hilfe.json` (mit Quelle und Prüfmarke), Fotos in `bilder.json`, Jahresarbeiten (Bäume, Tiere, Tipps, Neuigkeiten) in `jahreslauf.json`, Maschinen in `maschinen.json`.
 
 Texte und Übersetzungen: `code/src/sprachen/ar.json`, `fr.json`, `dar.json`, `zgh.json` (Teil `ui` = Oberfläche, Teil `daten` = übersetzte Fachdaten nach ID).
 

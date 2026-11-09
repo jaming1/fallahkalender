@@ -487,7 +487,41 @@
     "w.regnet.titel": "Pluie prévue : environ {mm} mm",
     "w.regnet.tun1": "Suspendre l’irrigation ces jours-là et économiser l’eau.",
     "w.regnet.tun2": "Après la pluie, surveiller les maladies fongiques.",
-    "w.regnet.lassen1": "Ne pas traiter la veille : la pluie lessive le produit."
+    "w.regnet.lassen1": "Ne pas traiter la veille : la pluie lessive le produit.",
+    "nav.heute": "Aujourd’hui",
+    "h.titel": "Aujourd’hui",
+    "h.wetter": "La météo de la semaine",
+    "h.wetter.mehr": "Toute la météo et les travaux par jour",
+    "h.jetzt": "À faire maintenant : {monat}",
+    "h.saeen": "À semer ou planter dans votre région",
+    "h.saeen.ohneZone": "Choisissez votre région pour voir ce qui se sème maintenant.",
+    "h.saeen.keine": "Ce mois-ci, aucune des cultures de l’application ne se plante dans votre région.",
+    "h.saeen.knopf": "Voir ce qui convient à mon champ",
+    "h.grund": "Attention aujourd’hui : {grund}.",
+    "h.g.regen": "pluie",
+    "h.g.frost": "gel",
+    "h.g.wind": "vent fort",
+    "h.g.kalt": "trop froid",
+    "h.g.hitze": "forte chaleur",
+    "h.baeume": "Arbres et vergers",
+    "h.tiere": "Animaux",
+    "h.heuteNicht": "pas aujourd’hui ({grund})",
+    "h.heuteGut": "aujourd’hui c’est bien",
+    "h.tier.hitze": "Chaud aujourd’hui (jusqu’à {t} °C) : animaux à l’ombre, remplir l’eau deux fois, pâturer tôt le matin et le soir, pas de transport.",
+    "h.tier.kalt": "Froid cette nuit (jusqu’à {t} °C) : animaux à l’abri, litière sèche, protéger les jeunes.",
+    "h.tier.wind": "Tempête : fixer portes et toits, lester les ruches.",
+    "h.tier.regen": "Pluie : animaux sous abri, garder le fourrage au sec, ménager le pâturage mouillé.",
+    "h.tipp": "Conseil du jour",
+    "h.maschinen.knopf": "Machines et outils",
+    "h.neu": "Nouveautés",
+    "ma.titel": "Machines et outils",
+    "ma.einleitung": "À quoi sert chaque machine, comment la régler, quand l’utiliser et à quoi faire attention. Les valeurs sont indicatives : la notice et le conseiller passent avant.",
+    "ma.einstellen": "Réglages",
+    "ma.wann": "Quand",
+    "ma.achtung": "Attention",
+    "ma.jetzt": "Utiles maintenant ({monat})",
+    "ma.alle": "Autres machines",
+    "ma.hinweis": "Beaucoup de machines peuvent être louées auprès des coopératives ou de prestataires."
   },
   "daten": {
     "kulturen": {
@@ -2925,6 +2959,442 @@
           ],
           "hinweis": "Pas contagieux. Si la plante fane alors que le sol est mouillé, pensez au fusarium, au phytophthora ou aux nématodes.",
           "name": "Stress hydrique"
+        }
+      }
+    },
+    "jahreslauf": {
+      "baeume": {
+        "olive_ernte": {
+          "t": "Récolter les olives",
+          "d": "Quand environ la moitié des fruits est noire. Étendre des filets sous l’arbre, cueillir à la main ou au peigne. Ne pas gauler avec des bâtons : cela casse les jeunes rameaux qui porteront l’an prochain. Porter au moulin en moins de 24 heures."
+        },
+        "olive_schnitt": {
+          "t": "Tailler les oliviers",
+          "d": "Après la récolte et avant la floraison, par temps sec. Enlever le bois mort, malade et les branches qui poussent vers l’intérieur ; garder le centre ouvert. Au plus un quart de la couronne par an."
+        },
+        "olive_kupfer": {
+          "t": "Oliviers : cuivre après taille et pluie",
+          "d": "Après la taille et avant les pluies d’automne, traiter au cuivre. Cela protège les plaies de taille et contre l’œil de paon (taches rondes sombres sur les feuilles)."
+        },
+        "zitrus_ernte": {
+          "t": "Récolter les agrumes",
+          "d": "Couper au sécateur en laissant un pédoncule court, ne pas arracher. Récolter seulement des fruits secs : les fruits mouillés pourrissent en stock."
+        },
+        "zitrus_schnitt": {
+          "t": "Tailler légèrement les agrumes",
+          "d": "Après la récolte, quand le gel n’est plus à craindre. Enlever seulement le bois mort et les gourmands verticaux. Les agrumes produisent à l’extérieur de la couronne : tailler peu."
+        },
+        "zitrus_duengen": {
+          "t": "Fertiliser les agrumes",
+          "d": "L’azote en trois apports par an : fin d’hiver, fin de printemps, fin d’été. Idéalement en petites doses par le goutte-à-goutte."
+        },
+        "mandel_schnitt": {
+          "t": "Tailler les amandiers",
+          "d": "Pendant le repos hivernal, avant la floraison. Garder une forme en gobelet avec 3 à 4 charpentières, enlever le bois du centre et le bois mort."
+        },
+        "mandel_bluete": {
+          "t": "Protéger la floraison des amandiers",
+          "d": "En cas de risque de gel, irriguer le soir : un sol humide rend de la chaleur la nuit. Ne pas traiter pendant la floraison pour laisser les abeilles polliniser."
+        },
+        "mandel_ernte": {
+          "t": "Récolter les amandes",
+          "d": "Quand le brou vert s’ouvre. Étendre des bâches, secouer les branches, décortiquer et sécher quelques jours au soleil."
+        },
+        "dattel_bestaeuben": {
+          "t": "Polliniser les palmiers dattiers",
+          "d": "Dès l’ouverture des inflorescences femelles, y attacher quelques épillets de fleurs mâles. Par temps sec : la pluie lave le pollen."
+        },
+        "dattel_ernte": {
+          "t": "Protéger et récolter les dattes",
+          "d": "Envelopper les régimes dans des filets contre les oiseaux et les chutes. Récolter quand les fruits deviennent mous et bruns, sécher à l’air."
+        },
+        "rebe_schnitt": {
+          "t": "Tailler la vigne",
+          "d": "Pendant le repos de la sève, avant le débourrement. Laisser sur chaque bras 2 coursons à 2 yeux, enlever le vieux bois et le bois fin."
+        },
+        "rebe_schwefel": {
+          "t": "Vigne : soufre contre l’oïdium",
+          "d": "Dès le débourrement, poudrer du soufre tous les 10 à 14 jours. Pas au-dessus de 30 °C, sinon les feuilles brûlent."
+        },
+        "feige_ernte": {
+          "t": "Récolter les figues",
+          "d": "Cueillir tôt le matin, au frais. Les figues mûres pendent, molles. Vendre vite ou sécher."
+        },
+        "argan_sammeln": {
+          "t": "Ramasser les fruits d’arganier",
+          "d": "Les fruits mûrs tombent seuls. Les ramasser chaque jour sous les arbres et les sécher au soleil avant de les dépulper."
+        },
+        "baum_pflanzen": {
+          "t": "Planter de nouveaux arbres",
+          "d": "Planter pendant le repos hivernal. Trou de 60 × 60 cm, mélanger du compost au fond, le point de greffe reste au-dessus du sol. Poser un tuteur et bien arroser."
+        },
+        "baum_sommer": {
+          "t": "Aider les jeunes arbres à passer l’été",
+          "d": "Arroser profondément une fois par semaine plutôt qu’un peu chaque jour. Pailler au pied, blanchir le tronc à la chaux contre les coups de soleil."
+        }
+      },
+      "tiere": {
+        "schafe_lammzeit": {
+          "t": "Agnelage",
+          "d": "Bergerie sèche et sans courant d’air. L’agneau doit boire le colostrum dans la première heure. Désinfecter le nombril à l’iode."
+        },
+        "schafe_scheren": {
+          "t": "Tondre les moutons",
+          "d": "Avant les chaleurs, par temps sec. Ne pas tondre ni stocker de laine mouillée."
+        },
+        "schafe_entwurmen": {
+          "t": "Vermifuger",
+          "d": "Avant et après la saison de pâturage. Choisir le produit et la dose avec le vétérinaire, respecter le délai d’attente pour le lait et la viande."
+        },
+        "weide_winter": {
+          "t": "Vérifier le fourrage d’hiver",
+          "d": "Compter les réserves de paille, de foin et d’orge. Ménager les pâturages détrempés après la pluie pour que l’herbe repousse."
+        },
+        "rinder_sommer": {
+          "t": "Les bovins en été",
+          "d": "De l’ombre et toujours de l’eau fraîche : une vache boit plus de 80 litres par jour de chaleur. Nourrir et traire aux heures fraîches."
+        },
+        "gefluegel_winter": {
+          "t": "Les poules en hiver",
+          "d": "Poulailler sans courant d’air mais aéré. Garder la litière sèche : une litière humide amène des maladies."
+        },
+        "gefluegel_sommer": {
+          "t": "Les poules en été",
+          "d": "Eau fraîche et propre, à remplir plusieurs fois par jour. Ombrer le poulailler, nourrir tôt le matin."
+        },
+        "bienen_fruehjahr": {
+          "t": "Contrôler les ruches au printemps",
+          "d": "Ouvrir seulement par temps chaud et calme, au-dessus de 15 °C. Vérifier la reine, le couvain et les réserves. Surveiller les cellules d’essaimage."
+        },
+        "bienen_honig": {
+          "t": "Récolter le miel",
+          "d": "Prendre seulement les cadres operculés. Laisser assez de miel à la colonie, surtout avant l’été."
+        },
+        "bienen_sommer": {
+          "t": "Les abeilles en été",
+          "d": "Un point d’eau proche avec des pierres pour se poser. Ombrer les ruches, ne pas ouvrir aux heures chaudes."
+        },
+        "bienen_winter": {
+          "t": "Les abeilles en hiver",
+          "d": "Laisser les ruches fermées. Garder les trous de vol dégagés, lester les ruches contre le vent."
+        }
+      },
+      "tipps": {
+        "tipp_olivenschnitt": {
+          "t": "Comment tailler un olivier",
+          "schritte": [
+            "Affûter sécateur et scie, les nettoyer à l’eau de Javel.",
+            "Enlever d’abord le bois mort, malade et cassé, à la base.",
+            "Supprimer les branches qui poussent vers l’intérieur ou à la verticale : le centre doit rester ouvert à la lumière.",
+            "Enlever les rejets sur le tronc et au pied.",
+            "Pas plus d’un quart de la couronne par an.",
+            "Coupes nettes et en biais, près de l’empattement. Puis traiter au cuivre par temps sec."
+          ]
+        },
+        "tipp_mandelschnitt": {
+          "t": "Comment tailler un amandier",
+          "schritte": [
+            "Tailler pendant le repos hivernal, quand l’arbre n’a plus de feuilles.",
+            "Garder 3 à 4 charpentières solides en forme de gobelet ouvert.",
+            "Enlever les branches du centre et celles qui se croisent.",
+            "Couper le bois mort et les fruits momifiés, les sortir du champ.",
+            "Les jeunes rameaux portent les fleurs : ne pas tous les couper."
+          ]
+        },
+        "tipp_rebschnitt": {
+          "t": "Comment tailler la vigne",
+          "schritte": [
+            "Tailler quand la vigne est au repos et que le gel n’est plus à craindre.",
+            "Sur chaque bras, choisir le meilleur sarment de l’an passé.",
+            "Le raccourcir à 2 yeux (courson), enlever les autres sarments à la base.",
+            "Remplacer tous les quelques ans le vieux bois par un jeune rameau.",
+            "Sortir les sarments du champ : ils portent des maladies."
+          ]
+        },
+        "tipp_zitrusschnitt": {
+          "t": "Soigner les agrumes après la récolte",
+          "schritte": [
+            "Tailler peu : les agrumes produisent à l’extérieur.",
+            "Enlever le bois mort et les gourmands verticaux.",
+            "Raccourcir les branches qui touchent le sol : fourmis et maladies montent moins.",
+            "Blanchir le tronc à la chaux contre le soleil.",
+            "Ensuite fertiliser et irriguer régulièrement."
+          ]
+        },
+        "tipp_baumpflanzen": {
+          "t": "Comment planter un arbre fruitier",
+          "schritte": [
+            "Creuser un trou de 60 × 60 × 60 cm, séparer la terre du dessus et du dessous.",
+            "Mélanger du compost à la terre au fond.",
+            "Planter de sorte que le point de greffe reste une main au-dessus du sol.",
+            "Planter un tuteur côté vent et attacher sans serrer.",
+            "Former une cuvette et arroser avec 20 litres."
+          ]
+        },
+        "tipp_kompost": {
+          "t": "Comment faire du compost",
+          "schritte": [
+            "Choisir un endroit ombragé, tas d’environ 1,5 m de large.",
+            "Alterner : matière verte (feuilles, restes de légumes), matière brune (paille, feuilles sèches) et fumier.",
+            "Garder humide comme une éponge essorée.",
+            "Retourner toutes les 3 à 4 semaines.",
+            "Après 3 à 4 mois, il est sombre et sent le sous-bois : il est mûr."
+          ]
+        },
+        "tipp_mulch": {
+          "t": "Le paillage économise l’eau",
+          "schritte": [
+            "Après l’arrosage, étaler 5 à 10 cm de paille, d’herbe sèche ou de résidus.",
+            "Laisser un doigt d’écart avec la tige.",
+            "Le sol reste plus frais et perd jusqu’à un tiers d’eau en moins.",
+            "Les mauvaises herbes passent à peine."
+          ]
+        },
+        "tipp_tropf": {
+          "t": "Entretenir le goutte-à-goutte",
+          "schritte": [
+            "Ouvrir et laver le filtre chaque semaine.",
+            "Une fois par mois, ouvrir les fins de lignes et rincer jusqu’à ce que l’eau soit claire.",
+            "Vérifier les goutteurs : là où les plantes fanent, un goutteur est souvent bouché.",
+            "Avec une eau calcaire, rincer de temps en temps avec un peu d’acide (selon le fournisseur)."
+          ]
+        },
+        "tipp_saatgut": {
+          "t": "Garder ses propres semences",
+          "schritte": [
+            "Prendre seulement sur les plantes les plus saines et vigoureuses.",
+            "Laisser les fruits mûrir complètement.",
+            "Bien sécher les graines à l’ombre.",
+            "Conserver au frais et à l’obscurité en bocaux ou sachets papier, avec nom et année.",
+            "Les hybrides (F1) ne redonnent pas les mêmes plantes : utiliser des variétés fixées."
+          ]
+        },
+        "tipp_solarisation": {
+          "t": "Désinfecter le sol au soleil",
+          "schritte": [
+            "En plein été, ameublir la planche et bien arroser.",
+            "Couvrir avec un film plastique transparent et fin, bords enterrés.",
+            "Laisser 4 à 6 semaines.",
+            "La chaleur tue nématodes, champignons et beaucoup de graines d’adventices.",
+            "Ensuite ne pas labourer en profondeur, sinon les graines remontent."
+          ]
+        },
+        "tipp_regenwasser": {
+          "t": "Récupérer l’eau de pluie",
+          "schritte": [
+            "Nettoyer bassins et citernes (matfia) avant les premières pluies.",
+            "Dégager les rigoles d’amenée des feuilles et de la terre.",
+            "Détourner la première pluie après l’été : elle apporte la poussière.",
+            "Couvrir les bassins contre l’évaporation et les moustiques."
+          ]
+        },
+        "tipp_lammzeit": {
+          "t": "Réussir l’agnelage",
+          "schritte": [
+            "Quelques semaines avant, mieux nourrir les brebis.",
+            "Préparer une case d’agnelage sèche, propre et sans courant d’air.",
+            "Après la naissance, vérifier que l’agneau tète dans la première heure.",
+            "Tremper le nombril dans l’iode.",
+            "Garder au chaud les agneaux faibles et leur donner le colostrum au biberon."
+          ]
+        }
+      },
+      "neu": {
+        "neu_wetter": {
+          "t": "Nouveau : météo avec alertes",
+          "d": "Dans le calendrier et sur cette page : prévisions sur 7 jours, alertes avec à faire et à éviter, quel travail quel jour, risque de maladies et radar de pluie."
+        },
+        "neu_fotos": {
+          "t": "Nouveau : photos en grand",
+          "d": "Touchez une photo pour l’afficher en plein écran. Pour les ravageurs, votre photo s’affiche dessous pour comparer."
+        },
+        "neu_start": {
+          "t": "L’application est là",
+          "d": "Fallahkalender fonctionne sur le téléphone, même sans Internet. Dites-nous ce qui manque ou ce qu’il faut améliorer."
+        }
+      }
+    },
+    "maschinen": {
+      "maschinen": {
+        "traktor": {
+          "name": "Tracteur",
+          "wozu": "Tire et entraîne les outils : charrue, pulvériseur, semoir, pulvérisateur, remorque.",
+          "einstellungen": [
+            "Prise de force à 540 tours par minute pour la plupart des outils.",
+            "Pression des pneus plus basse au champ (environ 0,8–1,2 bar) que sur route : moins de tassement.",
+            "Masses à l’avant quand un outil lourd est attelé à l’arrière."
+          ],
+          "wann": "Toute l’année. Avant chaque saison : huile, filtres, filtre à air et pneus.",
+          "achtung": [
+            "Jamais en travers d’une pente ; toujours arceau et ceinture.",
+            "Prise de force uniquement avec protection ; couper le moteur avant de descendre.",
+            "Pas d’enfants sur le tracteur."
+          ]
+        },
+        "scheibenpflug": {
+          "name": "Charrue à disques",
+          "wozu": "Retourne le sol, enfouit chaumes et mauvaises herbes. Adaptée aux sols durs et caillouteux.",
+          "einstellungen": [
+            "Profondeur 20–30 cm selon la culture.",
+            "Angle des disques plus grand = plus profond et plus de traction.",
+            "Après réglage, rouler 20 m et mesurer la profondeur."
+          ],
+          "wann": "Après les premières pluies d’automne, sol humide mais pas collant.",
+          "achtung": [
+            "Ne pas labourer chaque année à la même profondeur : une semelle dure se forme.",
+            "Sur pente, travailler en travers de la pente contre l’érosion.",
+            "Un sol mouillé se tasse : mieux vaut attendre quelques jours."
+          ]
+        },
+        "scheibenegge": {
+          "name": "Pulvériseur à disques (cover-crop)",
+          "wozu": "Brise les mottes et les résidus, prépare le lit de semence. L’outil le plus courant au Maroc.",
+          "einstellungen": [
+            "Profondeur de travail 10–15 cm.",
+            "Vitesse 6–8 km/h.",
+            "Régler l’angle des trains avant et arrière pour un sol plat."
+          ],
+          "wann": "Avant le semis, sur sol ressuyé.",
+          "achtung": [
+            "Trop de passages rendent le sol poudreux : il se tasse à la pluie suivante.",
+            "Graisser les paliers régulièrement.",
+            "Ne pas passer sur sol mouillé."
+          ]
+        },
+        "grubber": {
+          "name": "Cultivateur à dents (chisel)",
+          "wozu": "Ameublit le sol sans le retourner. Préserve la vie du sol, économise eau et gazole.",
+          "einstellungen": [
+            "Profondeur 15–25 cm.",
+            "Écartement des dents 25–35 cm.",
+            "Socs pattes d’oie contre les adventices, socs étroits pour ameublir."
+          ],
+          "wann": "Après la récolte et avant le semis, aussi à la place de la charrue.",
+          "achtung": [
+            "Avec des cailloux, vérifier les sécurités à ressort.",
+            "Changer à temps les socs usés.",
+            "Ameublir en profondeur n’est utile que si le sol est assez sec."
+          ]
+        },
+        "saemaschine": {
+          "name": "Semoir à céréales",
+          "wozu": "Dépose les grains en lignes, à profondeur régulière. Économise la semence par rapport au semis à la volée.",
+          "einstellungen": [
+            "Blé environ 120–160 kg/ha, orge 100–140 kg/ha.",
+            "Profondeur 3–5 cm.",
+            "Essai de débit : tourner la roue 50 fois, peser les grains, ramener à l’hectare."
+          ],
+          "wann": "Après une pluie suffisante, d’octobre à décembre.",
+          "achtung": [
+            "Nettoyer la semence : les petits cailloux bouchent les socs.",
+            "Vérifier que tous les socs et tubes sèment.",
+            "Vider le semoir après le semis : le reste attire humidité et souris."
+          ]
+        },
+        "direktsaat": {
+          "name": "Semoir de semis direct",
+          "wozu": "Sème directement dans les chaumes, sans labour. Économise eau, temps et gazole, protège contre l’érosion.",
+          "einstellungen": [
+            "Dose de semis comme un semoir classique.",
+            "Garder les disques ouvreurs affûtés, profondeur 3–5 cm.",
+            "Adapter la pression des roues plombeuses au sol."
+          ],
+          "wann": "À la date normale de semis après la pluie ; maîtriser les adventices avant.",
+          "achtung": [
+            "Souvent disponible via les coopératives ou des programmes.",
+            "Laisser la paille bien répartie : les tas gênent le semis.",
+            "Comparer les rendements les premières années, avec patience."
+          ]
+        },
+        "duengerstreuer": {
+          "name": "Épandeur d’engrais",
+          "wozu": "Répartit l’engrais granulé de façon régulière sur la parcelle.",
+          "einstellungen": [
+            "Accorder largeur d’épandage et passages (par ex. 12 m).",
+            "Dose en kg/ha selon le plan de fumure, vérifiée par un essai.",
+            "Vitesse d’avancement constante."
+          ],
+          "wann": "Fumure de fond avant semis, azote en couverture en hiver et au printemps.",
+          "achtung": [
+            "Pas avant de fortes pluies ni par vent.",
+            "Laver après usage : l’engrais ronge le métal.",
+            "Porter des gants."
+          ]
+        },
+        "spritze": {
+          "name": "Pulvérisateur (à dos ou porté)",
+          "wozu": "Applique les produits de traitement et les engrais foliaires.",
+          "einstellungen": [
+            "Pression 2–4 bar selon la buse.",
+            "Volume 200–400 l/ha ; étalonner d’abord à l’eau claire.",
+            "Buses à environ 50 cm au-dessus des plantes."
+          ],
+          "wann": "Par temps calme et sec, tôt le matin ou le soir.",
+          "achtung": [
+            "Vêtements de protection, gants et masque ; ne pas manger ni fumer.",
+            "Vent sous 15 km/h, pas de pluie dans les heures qui suivent.",
+            "Respecter le délai avant récolte ; jamais de restes dans un puits ou un oued."
+          ]
+        },
+        "motorhacke": {
+          "name": "Motobineuse / fraise",
+          "wozu": "Ameublit et mélange le sol sur petites surfaces et entre les rangs de légumes.",
+          "einstellungen": [
+            "Régler la profondeur avec l’éperon, 10–20 cm.",
+            "Lent pour une terre fine, plus vite pour une terre grossière.",
+            "Vérifier avant chaque usage que les couteaux sont bien serrés."
+          ],
+          "wann": "Avant la plantation et pour désherber entre les rangs.",
+          "achtung": [
+            "Pas sur sol mouillé, et pas trop souvent : la fraise détruit la structure.",
+            "Chaussures solides, ne jamais reculer vers ses pieds.",
+            "Couper le moteur avant de dégager les herbes des couteaux."
+          ]
+        },
+        "maehdrescher": {
+          "name": "Moissonneuse-batteuse",
+          "wozu": "Coupe et bat les céréales en un seul passage. Souvent louée ou via un prestataire.",
+          "einstellungen": [
+            "Hauteur de coupe 10–20 cm, plus haut si la céréale est versée.",
+            "Vitesse du batteur et écartement du contre-batteur selon la céréale (orge différente du blé).",
+            "Nettoyage et ventilation réglés pour peu de grains perdus à l’arrière."
+          ],
+          "wann": "Quand le grain est dur et ne se marque plus à l’ongle (moins de 14 % d’humidité).",
+          "achtung": [
+            "Compter les pertes derrière la machine : plus de 30–40 grains par m² c’est trop.",
+            "Ne pas moissonner avec la rosée ou après la pluie.",
+            "Risque d’incendie : extincteur à bord, ne pas fumer."
+          ]
+        },
+        "pumpe": {
+          "name": "Pompe et pompe solaire",
+          "wozu": "Remonte l’eau du puits, du bassin ou de l’oued pour l’irrigation.",
+          "einstellungen": [
+            "La hauteur manométrique (profondeur + dénivelé + pertes) doit convenir à la pompe.",
+            "Débit en m³/h selon la surface et les goutteurs.",
+            "Pompe solaire : panneaux plein sud, inclinaison environ 30°, toujours propres."
+          ],
+          "wann": "Toute l’année selon le plan d’irrigation ; surtout en été.",
+          "achtung": [
+            "Ne jamais faire tourner à sec : surveiller le niveau du puits.",
+            "Nettoyer régulièrement la crépine et le filtre d’aspiration.",
+            "Forages seulement avec autorisation (Agence du Bassin Hydraulique)."
+          ]
+        },
+        "baumschere": {
+          "name": "Sécateur, ébrancheur et scie",
+          "wozu": "Pour tailler arbres fruitiers et vigne : sécateur jusqu’à 2 cm, ébrancheur jusqu’à 4 cm, scie au-delà.",
+          "einstellungen": [
+            "Sécateur à lames croisantes pour des coupes nettes.",
+            "Lames affûtées et légèrement huilées.",
+            "Scie à denture tirante pour le bois vert."
+          ],
+          "wann": "À la période de taille de chaque espèce, surtout en hiver et au printemps.",
+          "achtung": [
+            "Désinfecter les lames à l’eau de Javel entre arbres malades et sains.",
+            "Scier les grosses branches en trois coupes pour ne pas arracher l’écorce.",
+            "Porter des gants, ne jamais couper vers soi."
+          ]
         }
       }
     }

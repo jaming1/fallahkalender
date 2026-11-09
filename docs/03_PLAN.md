@@ -25,6 +25,8 @@ Sieben **Meilensteine**. Jeder liefert eine Version, die du im Browser öffnen u
 | MS4 | **Handy-App + offline + mehrere Felder** | App aufs Handy legen, ohne Netz nutzbar; mehrere Felder; Feldtagebuch; Plan drucken | S2–S5, K4 | ✅ | 08.11.2026 |
 | MS5 | **Eigener KI-Server: Bilddiagnose + Stimmen** | Ollama-Bildmodell und Darija-/Tamazight-Stimme auf deinem Mac testen; App schickt Foto bzw. Text an deinen Server; dazu freie Fotos überall in der App | S1, S7 | ✅ (Test auf dem Mac) | 08.11.2026 |
 | MS6 | **Sprachen + Vorlesen** (vorgezogen) | Deutsch raus; Arabisch, Französisch, Darija, Tamazight; Vorlese-Knopf überall | M23, M24 | ✅ | 08.11.2026 |
+| Z1 | **Wetter** (Wunsch) | 7-Tage-Vorhersage, Warnungen mit Tun/Lassen, Arbeit je Tag, Krankheitsrisiko, Regenradar | K | ✅ | 09.11.2026 |
+| Z2 | **Startseite „Heute“ + Maschinen** (Wunsch) | Wetter, Bauernkalender, Gemüse/Bäume/Tiere jetzt, Tipp des Tages, Neuigkeiten; Rubrik mit 12 Maschinen | K | ✅ | 09.11.2026 |
 
 Status: ⏳ offen · 🔄 in Arbeit · ✅ fertig · ⛔ blockiert
 
