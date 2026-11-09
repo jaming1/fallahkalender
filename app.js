@@ -7,6 +7,7 @@ import { diagnose, kontrollTermine, kulturenVon, letzterEinsatz } from './diagno
 import { t, zahl, datum, monatJahr, monatName, setzeSprache, sprache, info, ueberlagere, SPRACHEN, STANDARD } from './i18n.js';
 import { vorleseKnopf, vorlesenStoppen } from './vorlesen.js';
 import { kiStatus, bildPruefen } from './ki.js';
+import { wetterLaden, tageAus, wetterZeichen, warnungen, planAbgleich, stundenRegen, wasGeht, krankheitsRisiken, RADAR_INDEX, kachel } from './wetter.js';
 
 // Mehrere Felder: jedes Feld hat eigene Schlüssel „fallahkalender.<id>.<teil>“, die Liste steht in SPEICHER_FELDER.
 const SPEICHER_FELDER = 'fallahkalender.felder';
@@ -639,6 +640,12 @@ function zeigeKalender(feld) {
   ziel.replaceChildren(heuteKarte());
   const plan = lesen(SPEICHER_PLAN);
   const kultur = plan && daten.kulturen.find((k) => k.id === plan.kultur);
+  const offen = [];
+  if (kultur) {
+    const erl = plan.erledigt ?? {};
+    for (const x of aufgaben(kultur.id, plan.start, feld, daten).liste) if (!erl[x.id]) offen.push(x);
+  }
+  ziel.append(wetterTeil(feld, kultur, offen));
   const befall = befallTeil();
   if (!kultur) {
     if (befall) ziel.append(befall);
@@ -765,6 +772,229 @@ function zeigeKalender(feld) {
   }
   ziel.append(listeEl);
   ziel.append(tagebuchTeil());
+}
+
+// ---------- Wetter ----------
+const SPEICHER_WETTER = 'fallahkalender.wetter';
+const WETTER_FRISCH = 3 * 60 * 60 * 1000; // 3 Stunden
+
+// Standort: GPS des Feldes, sonst erster Ort der gewählten Region
+function wetterOrt(feld) {
+  const g = lesen(SPEICHER);
+  if (g?.lat && g?.lon) {
+    const n = zoneAusKoordinaten(g.lat, g.lon, daten.orte);
+    return { lat: g.lat, lon: g.lon, name: n?.ort ?? '' };
+  }
+  const o = daten.orte.find((x) => x[3] === feld?.zone);
+  return o ? { lat: o[1], lon: o[2], name: o[0] } : null;
+}
+
+const wochentag = (iso) => t(`w.wt.${new Date(`${iso}T12:00:00Z`).getUTCDay()}`);
+const tagKurz = (iso) => `${wochentag(iso)} ${Number(iso.slice(8, 10))}`;
+const grad = (x) => `\u2066${zahl(Math.round(x), 0)}°\u2069`;
+
+function wetterTeil(feld, kultur, offen) {
+  const box = el('section', { class: 'hilfe-teil wetter', 'aria-labelledby': 'h-wetter' });
+  const ort = wetterOrt(feld);
+  box.append(el('h2', { id: 'h-wetter' }, zeichen('wt-wolkig', 'bz'), ' ', t('w.titel'), ort?.name ? ` · ${ort.name}` : ''));
+  if (!ort) {
+    const knopf = el('button', { type: 'button', class: 'link-knopf' }, t('w.ort.knopf'));
+    knopf.addEventListener('click', () => zeigeAnsicht('feld', true));
+    box.append(el('div', { class: 'karte' }, el('p', {}, t('w.keinOrt')), knopf));
+    return box;
+  }
+  const inhalt = el('div', { class: 'wetter-inhalt' }, el('p', { class: 'meta' }, t('w.laedt')));
+  box.append(inhalt);
+  const alt = lesen(SPEICHER_WETTER);
+  const passt = alt && Math.abs(alt.lat - ort.lat) < 0.01 && Math.abs(alt.lon - ort.lon) < 0.01;
+  const zeigen = (eintrag, offline) => inhalt.replaceChildren(...wetterInhalt(eintrag, offline, kultur, offen));
+  if (passt && Date.now() - alt.zeit < WETTER_FRISCH) { zeigen(alt, false); return box; }
+  if (passt) zeigen(alt, true);
+  wetterLaden(ort.lat, ort.lon).then((json) => {
+    const eintrag = { zeit: Date.now(), lat: ort.lat, lon: ort.lon, json };
+    schreiben(SPEICHER_WETTER, eintrag);
+    if (box.isConnected) zeigen(eintrag, false);
+  }).catch(() => {
+    if (!passt) inhalt.replaceChildren(el('p', { class: 'meta' }, t('w.fehler')));
+  });
+  return box;
+}
+
+// Tabelle: welche Arbeit an welchem Tag (✓ / nur früh oder abends / ✗)
+function wasGehtTeil(tage) {
+  const kopf = el('tr', {}, el('th', { scope: 'col' }, ''));
+  for (const d of tage) kopf.append(el('th', { scope: 'col' }, wochentag(d.datum)));
+  const tb = el('tbody');
+  const MARKE = { ja: '✓', frueh: '●', nein: '✗' };
+  for (const z of wasGeht(tage)) {
+    const tr = el('tr', {}, el('th', { scope: 'row' }, zeichen(z.zeichen, 'bz'), el('span', {}, t(`w.tg.${z.art}`))));
+    z.tage.forEach((w, i) => tr.append(el('td', { class: `wg-${w}`, title: `${tagKurz(tage[i].datum)}: ${t(`w.wg.${w}`)}` }, el('span', { 'aria-hidden': 'true' }, MARKE[w]), el('span', { class: 'nur-vorlesen' }, t(`w.wg.${w}`)))));
+    tb.append(tr);
+  }
+  return el('div', { class: 'karte was-geht' },
+    el('h3', {}, t('w.wg.titel')),
+    el('div', { class: 'tabelle-rahmen' }, el('table', { class: 'wg-tabelle' }, el('thead', {}, kopf), tb)),
+    el('p', { class: 'klein wg-legende' }, el('span', { class: 'wg-ja' }, '✓'), ` ${t('w.wg.ja')}  `, el('span', { class: 'wg-frueh' }, '●'), ` ${t('w.wg.frueh')}  `, el('span', { class: 'wg-nein' }, '✗'), ` ${t('w.wg.nein')}`));
+}
+
+// Regen der nächsten 48 Stunden als Balken + Regenradar
+function regenTeil(json, offline) {
+  const stunden = stundenRegen(json).filter((h) => new Date(h.zeit) >= new Date(Date.now() - 3600e3)).slice(0, 48);
+  const karte = el('div', { class: 'karte regen-karte' }, el('h3', {}, zeichen('wt-regen', 'bz'), ' ', t('w.regen.titel')));
+  const summe = stunden.reduce((s, h) => s + h.mm, 0);
+  if (stunden.length) {
+    const max = Math.max(1, ...stunden.map((h) => h.mm));
+    const balken = el('div', { class: 'regen-balken', role: 'img', 'aria-label': summe >= 0.5 ? t('w.regen.summe', { mm: zahl(Math.round(summe), 0) }) : t('w.regen.keiner') });
+    stunden.forEach((h, i) => {
+      const b = el('span', { class: 'rb', title: `${h.zeit.slice(11, 16)} · ${zahl(h.mm, 1)} mm` });
+      b.style.setProperty('--h', `${Math.min(100, (h.mm / max) * 100)}%`);
+      if (h.mm >= 0.1) b.classList.add('nass');
+      if (h.zeit.endsWith('T00:00')) b.classList.add('mitternacht');
+      balken.append(b);
+      if (i % 6 === 0) b.dataset.uhr = h.zeit.slice(11, 13);
+    });
+    karte.append(balken, el('p', { class: 'meta' }, summe >= 0.5 ? t('w.regen.summe', { mm: zahl(Math.round(summe), 0) }) : t('w.regen.keiner')));
+  }
+  if (!offline) karte.append(radarTeil());
+  return karte;
+}
+
+function radarTeil() {
+  const ort = wetterOrt(formularLesen());
+  const rahmen = el('div', { class: 'radar' });
+  const knopf = el('button', { type: 'button', class: 'knopf-zweit' }, zeichen('wt-regen', 'bz'), ' ', t('w.radar.knopf'));
+  const box = el('div', {}, knopf);
+  if (!ort) return box;
+  knopf.addEventListener('click', async () => {
+    knopf.remove();
+    box.append(el('p', { class: 'meta' }, t('w.laedt')));
+    try {
+      const idx = await (await fetch(RADAR_INDEX, { cache: 'no-store' })).json();
+      const bilder = [...(idx.radar?.past ?? []), ...(idx.radar?.nowcast ?? [])];
+      if (!bilder.length) throw new Error('leer');
+      const z = 7;
+      const k = kachel(ort.lat, ort.lon, z);
+      const x0 = Math.floor(k.x) - 1; const y0 = Math.floor(k.y) - 1;
+      const grund = el('div', { class: 'radar-gitter' });
+      const regen = el('div', { class: 'radar-gitter oben' });
+      const ebenen = [];
+      for (let dy = 0; dy < 3; dy++) for (let dx = 0; dx < 3; dx++) {
+        grund.append(el('img', { src: `https://tile.openstreetmap.org/${z}/${x0 + dx}/${y0 + dy}.png`, alt: '', loading: 'lazy' }));
+        const r = el('img', { alt: '' });
+        ebenen.push([r, x0 + dx, y0 + dy]);
+        regen.append(r);
+      }
+      const punkt = el('span', { class: 'radar-punkt' });
+      punkt.style.left = `${((k.x - x0) / 3) * 100}%`;
+      punkt.style.top = `${((k.y - y0) / 3) * 100}%`;
+      const zeit = el('p', { class: 'radar-zeit' });
+      rahmen.append(grund, regen, punkt);
+      box.replaceChildren(rahmen, zeit, el('p', { class: 'klein' }, t('w.radar.hinweis'), ' ',
+        el('a', { href: 'https://www.rainviewer.com/', target: '_blank', rel: 'noopener noreferrer' }, 'RainViewer'), ' · © ',
+        el('a', { href: 'https://www.openstreetmap.org/copyright', target: '_blank', rel: 'noopener noreferrer' }, 'OpenStreetMap')));
+      let i = Math.max(0, bilder.length - 1 - (idx.radar?.nowcast?.length ?? 0));
+      const zeige = (n) => {
+        const b = bilder[n];
+        for (const [img, x, y] of ebenen) img.src = `${idx.host}${b.path}/256/${z}/${x}/${y}/2/1_1.png`;
+        zeit.textContent = new Date(b.time * 1000).toLocaleTimeString(info().locale, { numberingSystem: 'latn', hour: '2-digit', minute: '2-digit' });
+      };
+      zeige(i);
+      // Ablauf der letzten Bilder, solange die Karte sichtbar ist
+      const lauf = setInterval(() => {
+        if (!rahmen.isConnected) { clearInterval(lauf); return; }
+        i = (i + 1) % bilder.length; zeige(i);
+      }, 900);
+    } catch {
+      box.replaceChildren(el('p', { class: 'meta' }, t('w.radar.fehler')));
+    }
+  });
+  return box;
+}
+
+// Krankheiten und Schädlinge, die das kommende Wetter fördert
+function krankheitTeil(tage, kultur) {
+  const kat = daten.krank;
+  const karte = el('div', { class: 'karte krank-wetter' }, el('h3', {}, zeichen('wt-pilz', 'bz'), ' ', t('w.k.titel')));
+  if (!kultur) { karte.append(el('p', { class: 'meta' }, t('w.k.ohnePlan'))); return karte; }
+  const alleIds = daten.kulturen.map((k) => k.id);
+  const risiken = krankheitsRisiken(tage, kat.krankheiten, (kr) => kulturenVon(kr, kat, alleIds).has(kultur.id));
+  if (!risiken.length) { karte.append(el('p', {}, t('w.k.keine', { kultur: kultur.name }))); return karte; }
+  karte.append(el('p', { class: 'meta' }, t('w.k.einleitung', { kultur: kultur.name })));
+  const ul = el('ul', { class: 'krank-liste' });
+  for (const r of risiken.slice(0, 6)) {
+    const kr = kat.krankheiten.find((x) => x.id === r.id);
+    const zeichenIds = Object.entries(kr.s).sort((a, b) => b[1] - a[1]).slice(0, 2).map(([id]) => kat.symptome.find((s) => s.id === id)?.t).filter(Boolean);
+    ul.append(el('li', { class: `risiko-${r.stufe}` },
+      foto(`krankheit:${kr.id}`, kr.name, true) || zeichen('g-pflanze', 'bz gross'),
+      el('div', {},
+        el('p', { class: 'kw-name' }, el('strong', {}, kr.name), ' ', el('span', { class: `marke risiko-${r.stufe}` }, t(`w.k.${r.stufe}`))),
+        el('p', { class: 'meta' }, t(`w.lage.${r.lage}`), ' · ', r.tage.map(tagKurz).join(t('komma'))),
+        zeichenIds.length ? el('p', {}, el('strong', {}, t('w.k.achten')), ' ', zeichenIds.join(t('komma'))) : null,
+        el('p', {}, el('strong', {}, t('w.k.kontrolle')), ' ', t(`w.kontrolle.${r.lage}`)))));
+  }
+  karte.append(ul, befallKnopf(kultur.id));
+  return karte;
+}
+
+function wetterInhalt(eintrag, offline, kultur, offen) {
+  const heute = heuteIso();
+  const tage = tageAus(eintrag.json).filter((d) => d.datum >= heute);
+  const teile = [];
+  if (offline) teile.push(el('p', { class: 'hinweis-klein' }, t('w.offline', { datum: datum(new Date(eintrag.zeit).toISOString().slice(0, 10)) })));
+  const c = eintrag.json?.current;
+  if (c && !offline) {
+    teile.push(el('div', { class: 'wetter-jetzt' }, zeichen(wetterZeichen(c.weather_code ?? 0), 'bz gross'),
+      el('span', { class: 'wj-temp' }, grad(c.temperature_2m ?? 0)),
+      el('span', { class: 'meta' }, t('w.jetzt', { f: zahl(Math.round(c.relative_humidity_2m ?? 0), 0), w: zahl(Math.round(c.wind_speed_10m ?? 0), 0) }))));
+  }
+  // 7 Tage als Bildleiste
+  const leiste = el('ol', { class: 'wetter-tage' });
+  for (const d of tage) {
+    leiste.append(el('li', { class: d.datum === heute ? 'heute-tag' : '' },
+      el('span', { class: 'wt-tag' }, d.datum === heute ? t('w.heute') : wochentag(d.datum)),
+      zeichen(wetterZeichen(d.code), 'bz'),
+      el('span', { class: 'wt-max' }, d.tmax === null ? '–' : grad(d.tmax)),
+      el('span', { class: 'wt-min' }, d.tmin === null ? '–' : grad(d.tmin)),
+      d.regen >= 0.5 ? el('span', { class: 'wt-regen' }, `\u2066${zahl(Math.round(d.regen), 0)} mm\u2069`) : el('span', { class: 'wt-regen leer' }, '·')));
+  }
+  teile.push(leiste);
+  const frostEmpfindlich = Boolean(kultur?.frost);
+  // Eigene Aufgaben
+  if (kultur && offen.length) {
+    const abgleich = planAbgleich(offen.filter((x) => tage.some((d) => d.datum === x.datum)), tage, frostEmpfindlich);
+    const ul = el('ul', { class: 'w-plan' });
+    for (const a of abgleich) {
+      ul.append(el('li', {}, zeichen(`t-${a.aufgabe.typ}`, 'bz'),
+        el('span', {}, el('strong', {}, a.aufgabe.titel), ` · ${tagKurz(a.aufgabe.datum)}: ${t(`w.grund.${a.grund}`)}. `,
+          a.neu ? t('w.plan.besser', { tag: tagKurz(a.neu) }) : t('w.plan.warten'))));
+    }
+    const kommende = offen.filter((x) => tage.some((d) => d.datum === x.datum));
+    if (kommende.length) {
+      teile.push(el('div', { class: 'karte w-plan-karte' }, el('h3', {}, t('w.plan.titel')),
+        abgleich.length ? ul : el('p', {}, t('w.plan.passt', { n: zahl(kommende.length, 0) }))));
+    }
+  }
+  const liste = warnungen(tage, { frostEmpfindlich });
+  if (!liste.some((w) => w.stufe !== 'gruen')) teile.push(el('p', { class: 'wetter-ruhig' }, zeichen('wt-gut', 'bz'), t('w.ruhig')));
+  for (const w of liste) {
+    const tun = el('ul', { class: 'w-tun' });
+    for (let i = 1; i <= w.tun; i++) tun.append(el('li', {}, t(`w.${w.id}.tun${i}`)));
+    const lassen = el('ul', { class: 'w-lassen' });
+    for (let i = 1; i <= w.lassen; i++) lassen.append(el('li', {}, t(`w.${w.id}.lassen${i}`)));
+    const tageText = w.tage.length ? w.tage.map(tagKurz).join(t('komma')) : t('w.woche');
+    teile.push(el('div', { class: `warnung w-${w.stufe}` },
+      el('div', { class: 'w-kopf' }, zeichen(w.zeichen, 'bz gross'),
+        el('div', {}, el('h3', {}, t(`w.${w.id}.titel`, Object.fromEntries(Object.entries(w.werte).map(([k, v]) => [k, zahl(v, 0)])))),
+          el('p', { class: 'meta' }, tageText))),
+      w.tun ? el('div', { class: 'w-block' }, el('p', { class: 'w-marke tun' }, '✓ ', t('w.tun')), tun) : null,
+      w.lassen ? el('div', { class: 'w-block' }, el('p', { class: 'w-marke lassen' }, '✗ ', t('w.lassen')), lassen) : null));
+  }
+  teile.push(wasGehtTeil(tage));
+  teile.push(regenTeil(eintrag.json, offline));
+  teile.push(krankheitTeil(tage, kultur));
+  teile.push(el('p', { class: 'klein' }, t('w.stand', { zeit: new Date(eintrag.zeit).toLocaleString(info().locale, { numberingSystem: 'latn', hour: '2-digit', minute: '2-digit', day: 'numeric', month: 'numeric' }) }), ' · ',
+    el('a', { href: 'https://open-meteo.com/', target: '_blank', rel: 'noopener noreferrer' }, t('w.quelle'))));
+  return teile;
 }
 
 // ---------- Befall erkennen ----------

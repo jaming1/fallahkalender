@@ -427,3 +427,66 @@ img.mini-bild, .foto img, .foto-vorschau img, img.fall-foto { cursor: zoom-in; }
 .bg-flaeche.zoom .bg-bild { display: block; }
 .bg-flaeche.zoom .bg-bild img { max-width: none; max-height: none; width: 250%; }
 .wahl label > span .mini-bild { position: relative; z-index: 1; }
+
+/* Wetter */
+.nur-vorlesen { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+.wetter h2 { display: flex; align-items: center; gap: 0.4rem; flex-wrap: wrap; }
+.wetter h3 { display: flex; align-items: center; gap: 0.4rem; }
+.wetter .bz.gross { width: 52px; height: 52px; flex: none; }
+.wetter-jetzt { display: flex; align-items: center; gap: 0.75rem; flex-wrap: wrap; margin: 0.25rem 0 0.75rem; }
+.wj-temp { font-size: 2rem; font-weight: 750; }
+.wetter-tage { list-style: none; margin: 0 0 0.75rem; padding: 0; display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: 0.3rem; }
+.wetter-tage li { background: var(--flaeche); border: 1px solid var(--linie); border-radius: 12px; padding: 0.4rem 0.15rem; display: flex; flex-direction: column; align-items: center; gap: 0.1rem; font-size: 0.85rem; text-align: center; }
+.wetter-tage li.heute-tag { border-color: var(--feld); box-shadow: inset 0 0 0 1px var(--feld); }
+.wetter-tage .bz { width: 34px; height: 34px; }
+.wt-tag { font-weight: 650; }
+.wt-max { font-weight: 700; }
+.wt-min { color: var(--tinte-leise); }
+.wt-regen { color: #2f7fc4; font-size: 0.75rem; }
+.wt-regen.leer { color: transparent; }
+.wetter-ruhig { display: flex; align-items: center; gap: 0.5rem; font-weight: 600; }
+.warnung { border-radius: var(--radius); padding: 0.8rem 0.9rem; margin: 0 0 0.75rem; background: var(--flaeche); border: 1px solid var(--linie); border-inline-start-width: 6px; }
+.warnung.w-rot { border-inline-start-color: var(--s-nein); }
+.warnung.w-gelb { border-inline-start-color: var(--s-einge); }
+.warnung.w-gruen { border-inline-start-color: var(--s-sehr-gut); }
+.w-kopf { display: flex; gap: 0.75rem; align-items: center; }
+.w-kopf h3 { margin: 0; font-size: 1.05rem; }
+.w-block { margin-top: 0.5rem; }
+.w-marke { margin: 0; font-weight: 750; }
+.w-marke.tun { color: var(--s-sehr-gut); }
+.w-marke.lassen { color: var(--s-nein); }
+.w-tun, .w-lassen { margin: 0.2rem 0 0; padding-inline-start: 1.3rem; }
+.w-plan { list-style: none; padding: 0; margin: 0; }
+.w-plan li { display: flex; gap: 0.6rem; align-items: flex-start; padding: 0.4rem 0; border-bottom: 1px solid var(--linie); }
+.w-plan li:last-child { border-bottom: 0; }
+.wg-tabelle { border-collapse: collapse; width: 100%; font-size: 0.85rem; }
+.wg-tabelle th, .wg-tabelle td { padding: 0.3rem 0.2rem; text-align: center; border-bottom: 1px solid var(--linie); }
+.wg-tabelle { table-layout: fixed; }
+.wg-tabelle th[scope=row] { text-align: start; width: 5.6rem; font-size: 0.78rem; line-height: 1.2; }
+.wg-tabelle th[scope=row] span { display: block; }
+.wg-tabelle thead th { font-size: 0.72rem; overflow: hidden; text-overflow: ellipsis; }
+.wg-tabelle th[scope=row] .bz { width: 24px; height: 24px; display: block; }
+.wg-tabelle td { font-size: 1.1rem; font-weight: 800; }
+.wg-tabelle td.wg-frueh { font-size: 0.95rem; }
+.wg-ja { color: var(--s-sehr-gut); }
+.wg-frueh { color: var(--s-einge); }
+.wg-nein { color: var(--s-nein); }
+.wg-legende span { font-weight: 800; }
+.regen-balken { display: flex; align-items: flex-end; gap: 1px; height: 70px; border-bottom: 1px solid var(--linie); margin: 0.5rem 0 1.2rem; position: relative; }
+.rb { flex: 1; height: max(2px, var(--h)); background: var(--flaeche-2); border-radius: 2px 2px 0 0; position: relative; }
+.rb.nass { background: #2f7fc4; }
+.rb.mitternacht { box-shadow: -1px 0 0 var(--tinte-leise); }
+.rb[data-uhr]::after { content: attr(data-uhr); position: absolute; top: 100%; inset-inline-start: 0; font-size: 0.65rem; color: var(--tinte-leise); margin-top: 2px; }
+.radar { position: relative; width: 100%; max-width: 480px; aspect-ratio: 1; overflow: hidden; border-radius: 12px; border: 1px solid var(--linie); margin-top: 0.5rem; direction: ltr; }
+.radar-gitter { position: absolute; inset: 0; display: grid; grid-template-columns: repeat(3, 1fr); }
+.radar-gitter img { width: 100%; height: 100%; display: block; }
+.radar-gitter.oben img { opacity: 0.8; }
+.radar-punkt { position: absolute; width: 14px; height: 14px; margin: -7px 0 0 -7px; border-radius: 50%; background: #d8452f; border: 3px solid #fff; box-shadow: 0 0 0 1px #000; }
+.radar-zeit { font-weight: 700; margin: 0.3rem 0 0; }
+.krank-liste { list-style: none; padding: 0; margin: 0.5rem 0; }
+.krank-liste li { display: flex; gap: 0.75rem; align-items: flex-start; padding: 0.6rem 0; border-bottom: 1px solid var(--linie); }
+.krank-liste li p { margin: 0.1rem 0; }
+.krank-liste .mini-bild { width: 72px; height: 72px; }
+.marke.risiko-hoch { background: var(--s-nein); color: #fff; }
+.marke.risiko-mittel { background: var(--s-einge); color: #fff; }
+@media print { .radar, .regen-balken { display: none; } }
