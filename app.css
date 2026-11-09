@@ -408,3 +408,22 @@ html[lang="zgh"] :is(p, li, h2, h3, dd, dt, td, th, summary, label, span) { unic
 .zone-bild .foto img { max-width: 320px; }
 @media print { .bilder-reihe, .zone-bild, .schritte .foto { display: none; } }
 .problem-titel .bz.gross { width: 48px; height: 48px; flex: none; }
+
+/* Foto groß ansehen */
+img.mini-bild, .foto img, .foto-vorschau img, img.fall-foto { cursor: zoom-in; }
+.bild-gross { width: 100vw; height: 100dvh; max-width: none; max-height: none; margin: 0; padding: 0; border: 0; background: #000; color: #fff; }
+.bild-gross::backdrop { background: rgb(0 0 0 / 0.9); }
+.bild-gross[open] { display: flex; flex-direction: column; }
+.bg-leiste { display: flex; justify-content: flex-end; gap: 0.5rem; padding: 0.5rem; padding-top: max(0.5rem, env(safe-area-inset-top)); }
+.bg-knopf { width: 52px; height: 52px; border-radius: 50%; border: 0; background: rgb(255 255 255 / 0.18); color: #fff; display: grid; place-items: center; cursor: pointer; }
+.bg-knopf:focus-visible { outline: 3px solid #fff; outline-offset: 2px; }
+.bg-knopf svg { width: 28px; height: 28px; fill: none; stroke: currentColor; stroke-width: 2.2; stroke-linecap: round; }
+.bg-flaeche { flex: 1; min-height: 0; display: flex; flex-direction: column; gap: 0.5rem; overflow: auto; touch-action: pan-x pan-y pinch-zoom; }
+.bg-bild { flex: 1; min-height: 0; margin: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; }
+.bg-bild img { max-width: 100%; max-height: 100%; min-height: 0; object-fit: contain; }
+.bg-bild figcaption { font-size: 0.8rem; opacity: 0.8; padding: 0.25rem 0.5rem; text-align: center; }
+@media (orientation: landscape) { .bg-flaeche.zwei { flex-direction: row; } }
+.bg-flaeche.zoom { display: block; }
+.bg-flaeche.zoom .bg-bild { display: block; }
+.bg-flaeche.zoom .bg-bild img { max-width: none; max-height: none; width: 250%; }
+.wahl label > span .mini-bild { position: relative; z-index: 1; }

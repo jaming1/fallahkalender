@@ -377,7 +377,10 @@
     "ki.vermutung": "Cause la plus probable d’après la photo : {name}",
     "ki.fehler": "Impossible d’examiner la photo pour l’instant. Le résultat repose uniquement sur votre choix.",
     "ki.hinweis": "La photo n’est envoyée qu’à votre propre serveur. L’IA peut se tromper : les signes qu’elle voit s’ajoutent à votre choix sans le remplacer.",
-    "hilfe.bilder": "Sources des photos"
+    "hilfe.bilder": "Sources des photos",
+    "bild.schliessen": "Fermer",
+    "bild.zoom": "Agrandir",
+    "bild.deinFoto": "Votre photo"
   },
   "daten": {
     "kulturen": {
