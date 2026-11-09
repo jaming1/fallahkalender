@@ -7,7 +7,7 @@ import { diagnose, kontrollTermine, kulturenVon, letzterEinsatz } from './diagno
 import { t, zahl, datum, monatJahr, monatName, setzeSprache, sprache, info, ueberlagere, SPRACHEN, STANDARD } from './i18n.js';
 import { vorleseKnopf, vorlesenStoppen } from './vorlesen.js';
 import { kiStatus, bildPruefen } from './ki.js';
-import { wetterLaden, tageAus, wetterZeichen, warnungen, planAbgleich, stundenRegen, wasGeht, krankheitsRisiken, RADAR_INDEX, kachel } from './wetter.js';
+import { wetterLaden, tageAus, wetterZeichen, warnungen, planAbgleich, stundenRegen, wasGeht, krankheitsRisiken, RADAR_INDEX, kachel, GRENZE } from './wetter.js';
 
 // Mehrere Felder: jedes Feld hat eigene Schlüssel „fallahkalender.<id>.<teil>“, die Liste steht in SPEICHER_FELDER.
 const SPEICHER_FELDER = 'fallahkalender.felder';
@@ -146,7 +146,7 @@ function felderStart() {
   $('#feld-neu').addEventListener('click', () => {
     const id = `f${Date.now().toString(36)}`;
     schreiben(SPEICHER_FELDER, { aktiv: id, liste: [...felder.liste, { id, name: '' }] });
-    schreiben(SPEICHER_ANSICHT, 'feld');
+    schreiben(SPEICHER_ANSICHT, 'feld-neu');
     window.location.reload();
   });
   $('#feld-loeschen').addEventListener('click', () => {
@@ -156,7 +156,7 @@ function felderStart() {
     const rest = felder.liste.filter((f) => f.id !== felder.aktiv);
     if (rest.length) schreiben(SPEICHER_FELDER, { aktiv: rest[0].id, liste: rest });
     else entfernen(SPEICHER_FELDER);
-    schreiben(SPEICHER_ANSICHT, 'feld');
+    schreiben(SPEICHER_ANSICHT, 'feld-neu');
     window.location.reload();
   });
 }
@@ -317,7 +317,7 @@ async function json(url) {
 }
 
 async function ladeDaten(code) {
-  const dateien = ['kulturen', 'zonen', 'massnahmen', 'hilfe', 'anbau', 'fellah', 'krankheiten'];
+  const dateien = ['kulturen', 'zonen', 'massnahmen', 'hilfe', 'anbau', 'fellah', 'krankheiten', 'jahreslauf', 'maschinen'];
   // Darija und Tamazight liegen über dem Arabischen: was noch nicht übersetzt ist, erscheint auf Arabisch.
   const kette = [SPRACHEN[code]?.basis, code].filter(Boolean);
   const [basis, ...sprachDateien] = await Promise.all([
@@ -329,7 +329,7 @@ async function ladeDaten(code) {
   for (const spr of sprachDateien) { d = ueberlagere(d, spr.daten ?? {}); ui = { ...ui, ...spr.ui }; }
   setzeSprache(code, ui);
   bilder = await json('daten/bilder.json').catch(() => ({}));
-  return { kulturen: d.kulturen.kulturen, familien: d.kulturen.familien, zonen: d.zonen.zonen, orte: d.zonen.orte, massnahmen: d.massnahmen, hilfe: d.hilfe, anbau: d.anbau, fellah: d.fellah, krank: d.krankheiten };
+  return { kulturen: d.kulturen.kulturen, familien: d.kulturen.familien, zonen: d.zonen.zonen, orte: d.zonen.orte, massnahmen: d.massnahmen, hilfe: d.hilfe, anbau: d.anbau, fellah: d.fellah, krank: d.krankheiten, jahr: d.jahreslauf, maschinen: d.maschinen.maschinen };
 }
 
 // Statische Texte im HTML füllen
@@ -461,6 +461,8 @@ function zeigeAnsicht(name, fokus = false) {
     if (aktiv) knopf.setAttribute('aria-current', 'page'); else knopf.removeAttribute('aria-current');
   }
   for (const a of document.querySelectorAll('.ansicht')) a.hidden = a.id !== `ansicht-${name}`;
+  if (name === 'heute') zeigeHeute(formularLesen());
+  if (name === 'maschinen') zeigeMaschinen();
   if (name === 'empfehlung') zeigeErgebnis(formularLesen());
   if (name === 'hilfe') zeigeHilfe(formularLesen());
   if (name === 'kalender') zeigeKalender(formularLesen());
@@ -805,19 +807,22 @@ function wetterTeil(feld, kultur, offen) {
   }
   const inhalt = el('div', { class: 'wetter-inhalt' }, el('p', { class: 'meta' }, t('w.laedt')));
   box.append(inhalt);
+  wetterHolen(ort, box, (eintrag, offline) => inhalt.replaceChildren(...wetterInhalt(eintrag, offline, kultur, offen)),
+    () => inhalt.replaceChildren(el('p', { class: 'meta' }, t('w.fehler'))));
+  return box;
+}
+
+// Vorhersage aus dem Speicher (frisch: 3 Stunden) oder aus dem Netz. zeigen(eintrag, offline) kann zweimal kommen.
+function wetterHolen(ort, box, zeigen, fehler) {
   const alt = lesen(SPEICHER_WETTER);
   const passt = alt && Math.abs(alt.lat - ort.lat) < 0.01 && Math.abs(alt.lon - ort.lon) < 0.01;
-  const zeigen = (eintrag, offline) => inhalt.replaceChildren(...wetterInhalt(eintrag, offline, kultur, offen));
-  if (passt && Date.now() - alt.zeit < WETTER_FRISCH) { zeigen(alt, false); return box; }
+  if (passt && Date.now() - alt.zeit < WETTER_FRISCH) { zeigen(alt, false); return; }
   if (passt) zeigen(alt, true);
   wetterLaden(ort.lat, ort.lon).then((json) => {
     const eintrag = { zeit: Date.now(), lat: ort.lat, lon: ort.lon, json };
     schreiben(SPEICHER_WETTER, eintrag);
     if (box.isConnected) zeigen(eintrag, false);
-  }).catch(() => {
-    if (!passt) inhalt.replaceChildren(el('p', { class: 'meta' }, t('w.fehler')));
-  });
-  return box;
+  }).catch(() => { if (!passt) fehler(); });
 }
 
 // Tabelle: welche Arbeit an welchem Tag (✓ / nur früh oder abends / ✗)
@@ -995,6 +1000,187 @@ function wetterInhalt(eintrag, offline, kultur, offen) {
   teile.push(el('p', { class: 'klein' }, t('w.stand', { zeit: new Date(eintrag.zeit).toLocaleString(info().locale, { numberingSystem: 'latn', hour: '2-digit', minute: '2-digit', day: 'numeric', month: 'numeric' }) }), ' · ',
     el('a', { href: 'https://open-meteo.com/', target: '_blank', rel: 'noopener noreferrer' }, t('w.quelle'))));
   return teile;
+}
+
+// ---------- Heute (Startseite) ----------
+const monatHeute = () => Number(heuteIso().slice(5, 7));
+const tagDesJahres = () => { const h = heuteIso(); return Math.floor((Date.parse(h) - Date.parse(`${h.slice(0, 4)}-01-01`)) / 864e5); };
+
+// Passt das Wetter heute für eine Arbeit? → null (passt) oder Grund
+function wetterHindernis(bed, heute, morgen) {
+  if (!bed || !heute) return null;
+  if (bed === 'trocken' && (heute.regen >= 1 || (morgen && morgen.regen >= 5))) return 'regen';
+  if ((bed === 'kein_frost' || bed === 'trocken') && heute.tmin !== null && heute.tmin <= GRENZE.frost) return 'frost';
+  if (bed === 'spritzen' && (heute.regen >= 1 || heute.wind >= GRENZE.spritzWind)) return heute.regen >= 1 ? 'regen' : 'wind';
+  if (bed === 'warm' && ((heute.tmax ?? 20) < 15 || heute.regen >= 1 || heute.wind >= 25)) return heute.regen >= 1 ? 'regen' : (heute.tmax ?? 20) < 15 ? 'kalt' : 'wind';
+  if (heute.boeen >= GRENZE.sturm) return 'wind';
+  return null;
+}
+
+function zeigeHeute(feld) {
+  const ziel = $('#heute-inhalt');
+  ziel.replaceChildren(heuteKarte());
+  const ort = wetterOrt(feld);
+  const wetterBox = el('section', { class: 'hilfe-teil', 'aria-labelledby': 'h-hw' }, el('h2', { id: 'h-hw' }, zeichen('wt-wolkig', 'bz'), ' ', t('h.wetter'), ort?.name ? ` · ${ort.name}` : ''));
+  const jetzt = el('section', { class: 'hilfe-teil', 'aria-labelledby': 'h-jetzt' });
+  ziel.append(wetterBox, jetzt);
+  const jetztFuellen = (tage) => jetzt.replaceChildren(el('h2', { id: 'h-jetzt' }, t('h.jetzt', { monat: monatName(monatHeute()) })), ...jetztDran(feld, tage));
+  jetztFuellen([]);
+  if (!ort) {
+    const knopf = el('button', { type: 'button', class: 'link-knopf' }, t('w.ort.knopf'));
+    knopf.addEventListener('click', () => zeigeAnsicht('feld', true));
+    wetterBox.append(el('div', { class: 'karte' }, el('p', {}, t('w.keinOrt')), knopf));
+  } else {
+    const inhalt = el('div', {}, el('p', { class: 'meta' }, t('w.laedt')));
+    wetterBox.append(inhalt);
+    wetterHolen(ort, wetterBox, (eintrag, offline) => {
+      const tage = tageAus(eintrag.json).filter((d) => d.datum >= heuteIso());
+      inhalt.replaceChildren(...heuteWetter(eintrag, offline, tage));
+      jetztFuellen(tage);
+    }, () => inhalt.replaceChildren(el('p', { class: 'meta' }, t('w.fehler'))));
+  }
+  ziel.append(tippDesTages(), neuigkeiten());
+}
+
+function heuteWetter(eintrag, offline, tage) {
+  const teile = [];
+  if (offline) teile.push(el('p', { class: 'hinweis-klein' }, t('w.offline', { datum: datum(new Date(eintrag.zeit).toISOString().slice(0, 10)) })));
+  const leiste = el('ol', { class: 'wetter-tage' });
+  for (const d of tage) {
+    leiste.append(el('li', { class: d.datum === heuteIso() ? 'heute-tag' : '' },
+      el('span', { class: 'wt-tag' }, d.datum === heuteIso() ? t('w.heute') : wochentag(d.datum)),
+      zeichen(wetterZeichen(d.code), 'bz'),
+      el('span', { class: 'wt-max' }, d.tmax === null ? '–' : grad(d.tmax)),
+      el('span', { class: 'wt-min' }, d.tmin === null ? '–' : grad(d.tmin)),
+      d.regen >= 0.5 ? el('span', { class: 'wt-regen' }, `\u2066${zahl(Math.round(d.regen), 0)} mm\u2069`) : el('span', { class: 'wt-regen leer' }, '·')));
+  }
+  teile.push(leiste);
+  const plan = lesen(SPEICHER_PLAN);
+  const kultur = plan && daten.kulturen.find((k) => k.id === plan.kultur);
+  const ws = warnungen(tage, { frostEmpfindlich: Boolean(kultur?.frost) }).filter((w) => w.stufe !== 'gruen');
+  for (const w of ws.slice(0, 2)) {
+    teile.push(el('div', { class: `warnung kurz w-${w.stufe}` }, el('div', { class: 'w-kopf' }, zeichen(w.zeichen, 'bz gross'),
+      el('div', {}, el('h3', {}, t(`w.${w.id}.titel`, Object.fromEntries(Object.entries(w.werte).map(([k, v]) => [k, zahl(v, 0)])))),
+        el('p', { class: 'meta' }, w.tage.length ? w.tage.map(tagKurz).join(t('komma')) : t('w.woche')),
+        el('p', {}, '✓ ', t(`w.${w.id}.tun1`)), w.lassen ? el('p', {}, '✗ ', t(`w.${w.id}.lassen1`)) : null))));
+  }
+  if (!ws.length) teile.push(el('p', { class: 'wetter-ruhig' }, zeichen('wt-gut', 'bz'), t('w.ruhig')));
+  const mehr = el('button', { type: 'button', class: 'link-knopf' }, t('h.wetter.mehr'));
+  mehr.addEventListener('click', () => { zeigeAnsicht('kalender', true); setTimeout(() => $('#h-wetter')?.scrollIntoView({ block: 'start' }), 50); });
+  teile.push(mehr);
+  return teile;
+}
+
+// Was jetzt ansteht: Gemüse für die Region, Bäume, Tiere – mit dem Wetter von heute
+function jetztDran(feld, tage) {
+  const m = monatHeute();
+  const heute = tage[0]; const morgen = tage[1];
+  const teile = [];
+  // Gemüse und Feldkulturen
+  const gemuese = el('div', { class: 'karte' }, el('h3', {}, zeichen('t-saat', 'bz'), ' ', t('h.saeen')));
+  if (!feld.zone) {
+    const knopf = el('button', { type: 'button', class: 'link-knopf' }, t('w.ort.knopf'));
+    knopf.addEventListener('click', () => zeigeAnsicht('feld', true));
+    gemuese.append(el('p', { class: 'meta' }, t('h.saeen.ohneZone')), knopf);
+  } else {
+    const passend = daten.kulturen.filter((k) => k.pflanzen?.[feld.zone]?.includes(m));
+    if (!passend.length) gemuese.append(el('p', {}, t('h.saeen.keine')));
+    const kacheln = el('ul', { class: 'kultur-kacheln' });
+    for (const k of passend) kacheln.append(el('li', {}, foto(`kultur:${k.id}`, k.name, true) || zeichen('t-saat', 'bz gross'), el('span', {}, k.name)));
+    if (passend.length) gemuese.append(kacheln);
+    const hin = heute && wetterHindernis('kein_frost', heute, morgen) ? t('h.grund', { grund: t(`h.g.${wetterHindernis('kein_frost', heute, morgen)}`) }) : '';
+    if (hin) gemuese.append(el('p', { class: 'h-hinweis' }, hin));
+    const knopf = el('button', { type: 'button', class: 'knopf-zweit' }, t('h.saeen.knopf'));
+    knopf.addEventListener('click', () => zeigeAnsicht('empfehlung', true));
+    if (passend.length) gemuese.append(knopf);
+  }
+  teile.push(gemuese);
+  // Bäume und Tiere
+  for (const [teil, titel, zeichenId] of [['baeume', 'h.baeume', 'j-olive'], ['tiere', 'h.tiere', 'j-schaf']]) {
+    const liste = daten.jahr[teil].filter((x) => x.monate.includes(m));
+    if (!liste.length) continue;
+    const karte = el('div', { class: 'karte' }, el('h3', {}, zeichen(zeichenId, 'bz'), ' ', t(titel)));
+    if (teil === 'tiere' && heute) {
+      const w = tierWetter(heute);
+      if (w) karte.append(el('div', { class: 'warnung kurz w-gelb' }, el('div', { class: 'w-kopf' }, zeichen(w.zeichen, 'bz gross'), el('p', {}, w.text))));
+    }
+    const ul = el('ul', { class: 'jahr-liste' });
+    for (const x of liste) {
+      const grund = wetterHindernis(x.wetter, heute, morgen);
+      const marke = !heute || !x.wetter ? null
+        : grund ? el('span', { class: 'marke risiko-hoch' }, '✗ ', t('h.heuteNicht', { grund: t(`h.g.${grund}`) }))
+          : el('span', { class: 'marke h-gut' }, '✓ ', t('h.heuteGut'));
+      ul.append(el('li', {}, zeichen(x.zeichen, 'bz gross'), el('div', {}, el('p', {}, el('strong', {}, x.t), ' ', marke), el('p', { class: 'meta' }, x.d))));
+    }
+    karte.append(ul);
+    teile.push(karte);
+  }
+  return teile;
+}
+
+function tierWetter(d) {
+  if ((d.tmax ?? 0) >= 32) return { zeichen: 'wt-hitze', text: t('h.tier.hitze', { t: zahl(Math.round(d.tmax), 0) }) };
+  if (d.tmin !== null && d.tmin <= 5) return { zeichen: 'wt-frost', text: t('h.tier.kalt', { t: zahl(Math.round(d.tmin), 0) }) };
+  if (d.boeen >= GRENZE.sturm) return { zeichen: 'wt-wind', text: t('h.tier.wind') };
+  if (d.regen >= 5) return { zeichen: 'wt-regen', text: t('h.tier.regen') };
+  return null;
+}
+
+// Tipp des Tages: abwechselnd Arbeit der Saison und eine Maschine der Saison
+function tippDesTages() {
+  const m = monatHeute(); const n = tagDesJahres();
+  const tipps = daten.jahr.tipps.filter((x) => x.monate.includes(m));
+  const maschinen = daten.maschinen.filter((x) => x.monate.includes(m) && x.monate.length < 12);
+  const box = el('section', { class: 'hilfe-teil tipp', 'aria-labelledby': 'h-tipp' }, el('h2', { id: 'h-tipp' }, t('h.tipp')));
+  if (n % 2 === 1 && maschinen.length) {
+    const ma = maschinen[Math.floor(n / 2) % maschinen.length];
+    box.append(maschineKarte(ma, true));
+  } else if (tipps.length) {
+    const tp = tipps[Math.floor(n / 2) % tipps.length];
+    const ol = el('ol', { class: 'tipp-schritte' });
+    tp.schritte.forEach((x) => ol.append(el('li', {}, x)));
+    box.append(el('div', { class: 'karte' }, el('div', { class: 'w-kopf' }, zeichen(tp.zeichen, 'bz riesig'), el('h3', {}, tp.t)), ol));
+  }
+  const knopf = el('button', { type: 'button', class: 'knopf-zweit' }, zeichen('m-traktor', 'bz breit'), ' ', t('h.maschinen.knopf'));
+  knopf.addEventListener('click', () => zeigeAnsicht('maschinen', true));
+  box.append(knopf);
+  return box;
+}
+
+function neuigkeiten() {
+  const box = el('section', { class: 'hilfe-teil', 'aria-labelledby': 'h-neu' }, el('h2', { id: 'h-neu' }, t('h.neu')));
+  const ul = el('ul', { class: 'neu-liste' });
+  for (const x of [...daten.jahr.neu].sort((a, b) => b.datum.localeCompare(a.datum)).slice(0, 3)) {
+    ul.append(el('li', {}, el('p', {}, el('strong', {}, x.t), ' ', el('span', { class: 'meta' }, datum(x.datum))), el('p', {}, x.d)));
+  }
+  box.append(ul);
+  return box;
+}
+
+// ---------- Maschinen und Werkzeug ----------
+function maschineKarte(ma, offen = false) {
+  const liste = (xs) => { const ul = el('ul'); xs.forEach((x) => ul.append(el('li', {}, x))); return ul; };
+  const inhalt = el('div', { class: 'ma-inhalt' },
+    el('p', {}, ma.wozu),
+    el('h4', {}, zeichen('t-pflege', 'bz klein'), ' ', t('ma.einstellen')), liste(ma.einstellungen),
+    el('h4', {}, zeichen('t-kontrolle', 'bz klein'), ' ', t('ma.wann')), el('p', {}, ma.wann),
+    el('h4', { class: 'ma-achtung' }, '⚠ ', t('ma.achtung')), liste(ma.achtung));
+  const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+  svg.setAttribute('class', 'ma-bild'); svg.setAttribute('viewBox', '0 0 96 64'); svg.setAttribute('aria-hidden', 'true');
+  const use = document.createElementNS('http://www.w3.org/2000/svg', 'use'); use.setAttribute('href', `assets/zeichen.svg#${ma.zeichen}`); svg.append(use);
+  if (offen) return el('div', { class: 'karte maschine' }, el('div', { class: 'ma-kopf' }, svg, el('h3', {}, ma.name)), inhalt);
+  return el('details', { class: 'karte maschine', id: `ma-${ma.id}` }, el('summary', {}, el('span', { class: 'ma-kopf' }, svg, el('strong', {}, ma.name))), inhalt);
+}
+
+function zeigeMaschinen() {
+  const ziel = $('#maschinen-inhalt');
+  const m = monatHeute();
+  const jetzt = daten.maschinen.filter((x) => x.monate.includes(m) && x.monate.length < 12);
+  const rest = daten.maschinen.filter((x) => !jetzt.includes(x));
+  ziel.replaceChildren(
+    el('h2', {}, t('ma.jetzt', { monat: monatName(m) })), ...jetzt.map((x) => maschineKarte(x)),
+    el('h2', {}, t('ma.alle')), ...rest.map((x) => maschineKarte(x)),
+    el('p', { class: 'klein' }, t('ma.hinweis')));
 }
 
 // ---------- Befall erkennen ----------
@@ -1439,7 +1625,8 @@ async function start() {
   $('#gps-knopf').addEventListener('click', standortErmitteln);
   befallStart();
   for (const k of document.querySelectorAll('.reiter-knopf')) k.addEventListener('click', () => zeigeAnsicht(k.dataset.ansicht, true));
-  const tasten = { 1: 'feld', 2: 'empfehlung', 3: 'kalender', 4: 'befall', 5: 'hilfe' };
+  for (const k of document.querySelectorAll('[data-gehe]')) k.addEventListener('click', () => zeigeAnsicht(k.dataset.gehe, true));
+  const tasten = { 1: 'heute', 2: 'feld', 3: 'empfehlung', 4: 'kalender', 5: 'befall', 6: 'hilfe' };
   document.addEventListener('keydown', (ev) => {
     if (ev.altKey && tasten[ev.key]) zeigeAnsicht(tasten[ev.key], true);
     if ((ev.ctrlKey || ev.metaKey) && ev.key === 'Enter') form.requestSubmit();
@@ -1449,8 +1636,9 @@ async function start() {
     if (s && !s.querySelector('.vl-hinweis')) s.append(el('p', { class: 'klein vl-hinweis', role: 'status' }, t('vorlesen.keineStimme')));
   });
 
+  // Die App öffnet immer mit „Heute“; nur nach Feldwechsel oder neuem Feld direkt bei „Mein Feld“
   const letzte = lesen(SPEICHER_ANSICHT);
-  zeigeAnsicht(['empfehlung', 'kalender', 'befall', 'hilfe'].includes(letzte) ? letzte : 'feld');
+  zeigeAnsicht(letzte === 'feld-neu' ? 'feld' : 'heute');
 }
 
 start();

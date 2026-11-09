@@ -1,12 +1,12 @@
 // Fallahkalender – Service Worker: macht die App offline nutzbar.
 // Alles wird beim Installieren in den Speicher gelegt. Danach kommt jede Datei sofort aus dem Speicher
 // und wird im Hintergrund neu geholt, damit Änderungen beim nächsten Öffnen da sind.
-const VERSION = 'fk-5.3.0';
+const VERSION = 'fk-5.4.0';
 const DATEIEN = [
   './', 'index.html', 'app.css', 'app.js', 'manifest.webmanifest',
   'datum.js', 'diagnose.js', 'engine.js', 'fellah.js', 'i18n.js', 'ki.js', 'plan.js', 'vorlesen.js', 'wetter.js',
   'assets/icon.svg', 'assets/zeichen.svg', 'assets/icon-192.png', 'assets/icon-512.png', 'assets/icon-maskable-512.png', 'assets/apple-touch-icon.png',
-  'daten/anbau.json', 'daten/bilder.json', 'daten/fellah.json', 'daten/hilfe.json', 'daten/krankheiten.json', 'daten/kulturen.json', 'daten/massnahmen.json', 'daten/zonen.json',
+  'daten/anbau.json', 'daten/bilder.json', 'daten/fellah.json', 'daten/hilfe.json', 'daten/jahreslauf.json', 'daten/maschinen.json', 'daten/krankheiten.json', 'daten/kulturen.json', 'daten/massnahmen.json', 'daten/zonen.json',
   'sprachen/ar.json', 'sprachen/dar.json', 'sprachen/fr.json', 'sprachen/zgh.json'
 ];
 

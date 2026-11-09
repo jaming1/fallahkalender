@@ -33,6 +33,10 @@
   </header>
 
   <nav class="reiter" data-t-aria="nav.aria">
+    <button type="button" class="reiter-knopf" data-ansicht="heute" aria-controls="ansicht-heute">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="11" r="4"/><path d="M12 2v2M12 18v2M3 11h2M19 11h2M5.6 4.6l1.4 1.4M17 16l1.4 1.4M18.4 4.6L17 6M7 16l-1.4 1.4M3 22h18"/></svg>
+      <span data-t="nav.heute"></span>
+    </button>
     <button type="button" class="reiter-knopf" data-ansicht="feld" aria-controls="ansicht-feld">
       <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 18h18M5 14h14M7 10h10M9 6h6"/></svg>
       <span data-t="nav.feld"></span>
@@ -57,6 +61,17 @@
 
   <main>
     <noscript><p class="hinweis-box">المرجو تفعيل JavaScript. · Merci d’activer JavaScript.</p></noscript>
+
+    <section id="ansicht-heute" class="ansicht" aria-labelledby="t-heute" hidden>
+      <div class="titel-zeile"><h1 id="t-heute" data-t="h.titel"></h1></div>
+      <div id="heute-inhalt"></div>
+    </section>
+
+    <section id="ansicht-maschinen" class="ansicht" aria-labelledby="t-maschinen" hidden>
+      <div class="titel-zeile"><h1 id="t-maschinen" data-t="ma.titel"></h1></div>
+      <p class="einleitung" data-t="ma.einleitung"></p>
+      <div id="maschinen-inhalt"></div>
+    </section>
 
     <section id="ansicht-feld" class="ansicht" aria-labelledby="t-feld">
       <div class="titel-zeile"><h1 id="t-feld" data-t="feld.titel"></h1></div>
@@ -298,6 +313,7 @@
     <section id="ansicht-hilfe" class="ansicht" aria-labelledby="t-hilfe" hidden>
       <div class="titel-zeile"><h1 id="t-hilfe" data-t="hilfe.titel"></h1></div>
       <div id="hilfe"></div>
+      <button type="button" class="knopf-zweit" data-gehe="maschinen" data-t="h.maschinen.knopf"></button>
     </section>
   </main>
 
