@@ -388,7 +388,8 @@
     "Triebe am Stamm und an der Wurzel entfernen.",
     "Nicht mehr als ein Viertel der Krone pro Jahr.",
     "Schnitte glatt und schräg, dicht am Astring. Danach an einem trockenen Tag Kupfer spritzen."
-   ]
+   ],
+   "bild": "jahr:olive_schnitt"
   },
   {
    "id": "tipp_mandelschnitt",
@@ -404,7 +405,8 @@
     "Äste in der Mitte und sich kreuzende Äste entfernen.",
     "Tote Zweige und Fruchtmumien abschneiden und vom Feld bringen.",
     "Junge Seitentriebe tragen die Blüten: nicht alle wegschneiden."
-   ]
+   ],
+   "bild": "jahr:mandel_schnitt"
   },
   {
    "id": "tipp_rebschnitt",
@@ -420,7 +422,8 @@
     "Ihn auf 2 Augen kürzen (Zapfen), alle anderen Triebe am Ansatz entfernen.",
     "Altes, dickes Holz alle paar Jahre durch einen jungen Trieb ersetzen.",
     "Schnittholz vom Feld bringen, es trägt Krankheiten."
-   ]
+   ],
+   "bild": "jahr:rebe_schnitt"
   },
   {
    "id": "tipp_zitrusschnitt",
@@ -436,7 +439,8 @@
     "Äste, die den Boden berühren, kürzen: so kommen keine Ameisen und Krankheiten hoch.",
     "Stamm weiß kalken gegen Sonnenbrand.",
     "Danach düngen und gleichmäßig bewässern."
-   ]
+   ],
+   "bild": "jahr:zitrus_schnitt"
   },
   {
    "id": "tipp_baumpflanzen",
@@ -454,7 +458,8 @@
     "Baum so tief setzen, dass die Veredlungsstelle eine Hand breit über dem Boden bleibt.",
     "Pfahl auf der Windseite einschlagen und locker anbinden.",
     "Gießrand formen und mit 20 Litern angießen."
-   ]
+   ],
+   "bild": "jahr:baum_pflanzen"
   },
   {
    "id": "tipp_kompost",
@@ -571,7 +576,8 @@
     "Nach der Geburt prüfen, ob das Lamm in der ersten Stunde trinkt.",
     "Nabel mit Jod tauchen.",
     "Schwache Lämmer warm halten und Biestmilch mit der Flasche geben."
-   ]
+   ],
+   "bild": "jahr:schafe_lammzeit"
   }
  ],
  "neu": [
