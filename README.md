@@ -37,6 +37,7 @@ Neue Versionen lädt die App beim nächsten Öffnen im Hintergrund; ab dem über
 - **Machbar machen:** Bei jeder Kultur mit Problemen stehen Maßnahmen vom einfachsten zum schwierigsten, mit Kosten und Förderhinweis.
 - **Hilfe & Förderung:** Ansprechpartner für deine Region, Ablauf eines Förderantrags, FDA-Sätze, zuständige Stellen. Nur zinsfreie Hilfen.
 - **Kalender:** Bei einer Kultur „in den Kalender“ tippen. Es entsteht ein Plan vom Boden bis zur Ernte mit Düngemengen für deine Fläche, Aufgaben zum Abhaken, Fellah-Datum und Nawʾ bei jeder Aufgabe.
+- **Wetter** (oben im Kalender): Vorhersage für 7 Tage am Ort des Feldes (GPS oder Region), Warnungen mit „Tun“ und „Lassen“, welche Arbeit an welchem Tag passt, Abgleich mit deinen Aufgaben, Krankheitsrisiko nach Wetter, Regen der nächsten 48 Stunden und Regenradar. Braucht Internet; ohne Netz erscheint der letzte Stand. Quellen: Open-Meteo (frei für nicht-kommerzielle Nutzung), RainViewer, OpenStreetMap.
 - **Befall:** Kultur wählen, Symptome antippen, beschreiben, Foto. Die App nennt mögliche Ursachen mit Maßnahmen (zuerst biologisch, chemisch nur mit ONSSA-Zulassung und Wartezeit) und legt Nachkontrollen in den Kalender.
 - **Mehrere Felder:** oben in „Mein Feld“ ein Feld wählen oder „Neues Feld“ anlegen. Plan, Befall und Tagebuch gehören jeweils zum Feld.
 - **Feldtagebuch** (unten im Kalender): abgehakte Aufgaben und gemeldeter Befall stehen automatisch drin, eigene Notizen kommen dazu. „Saison beendet“ trägt die Kultur als Vorjahr ins Feld ein und schließt den Plan.

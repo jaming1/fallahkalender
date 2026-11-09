@@ -46,6 +46,25 @@ async function textPruefen(page, wo) {
   if (deutsch) fehlt(`${wo}: deutscher Text „${deutsch[0]}“`);
 }
 
+// Wetter und Radar ohne Netz: feste Vorhersage ab heute (Regen, Hitze, Wind, feucht-warm)
+const PNG = Buffer.from('iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8z8BQDwAEhQGAhKmMIQAAAABJRU5ErkJggg==', 'base64');
+function wetterAntwort() {
+  const tage = Array.from({ length: 7 }, (_, i) => new Date(Date.now() + i * 864e5).toISOString().slice(0, 10));
+  const stunden = Array.from({ length: 48 }, (_, i) => new Date(Date.now() + i * 36e5).toISOString().slice(0, 13) + ':00');
+  return {
+    current: { temperature_2m: 27.4, relative_humidity_2m: 71, weather_code: 2, wind_speed_10m: 12 },
+    hourly: { time: stunden, precipitation: stunden.map((_, i) => (i > 20 && i < 30 ? 1.5 : 0)), precipitation_probability: stunden.map(() => 60) },
+    daily: { time: tage, weather_code: [2, 61, 63, 0, 0, 1, 3], temperature_2m_max: [27, 26, 25, 36, 37, 38, 30], temperature_2m_min: [14, 16, 15, 20, 22, 23, 18],
+      precipitation_sum: [0, 6, 24, 0, 0, 0, 0], precipitation_probability_max: [10, 80, 95, 0, 0, 0, 10], wind_speed_10m_max: [10, 18, 25, 12, 10, 14, 30],
+      wind_gusts_10m_max: [20, 35, 65, 25, 22, 28, 50], et0_fao_evapotranspiration: [4, 2, 1, 7, 7, 8, 6], relative_humidity_2m_mean: [60, 88, 92, 40, 35, 30, 50] },
+  };
+}
+async function wetterNachbilden(ctx) {
+  await ctx.route('https://api.open-meteo.com/**', (r) => r.fulfill({ json: wetterAntwort(), headers: { 'access-control-allow-origin': '*' } }));
+  await ctx.route('https://api.rainviewer.com/**', (r) => r.fulfill({ json: { host: 'https://tilecache.rainviewer.com', radar: { past: [{ time: 1762650000, path: '/v2/radar/1' }, { time: 1762650600, path: '/v2/radar/2' }], nowcast: [] } }, headers: { 'access-control-allow-origin': '*' } }));
+  await ctx.route(/tile\.openstreetmap\.org|tilecache\.rainviewer\.com/, (r) => r.fulfill({ body: PNG, contentType: 'image/png' }));
+}
+
 async function ablauf(browser, code, name, vp, scheme, voll) {
   const spr = sprache(code);
   const basis = spr.daten.hilfe ? spr : sprache('ar');
@@ -115,6 +134,14 @@ async function ablauf(browser, code, name, vp, scheme, voll) {
   await page.click('#tagebuch-form button[type=submit]');
   if ((await page.locator('.tagebuch li').count()) !== 2) fehlt(`${tag}: Notiz nicht im Feldtagebuch`);
   await page.locator('.duengeplan summary').click();
+  await page.waitForSelector('.wetter-tage li', { timeout: 5000 }).catch(() => fehlt(`${tag}: Wetter fehlt`));
+  if ((await page.locator('.wetter-tage li').count()) !== 7) fehlt(`${tag}: nicht 7 Wettertage`);
+  if (!(await page.locator('.warnung.w-rot').count())) fehlt(`${tag}: keine rote Wetterwarnung`);
+  if ((await page.locator('.wg-tabelle tbody tr').count()) !== 6) fehlt(`${tag}: Tabelle „Was geht“ unvollständig`);
+  if (!(await page.locator('.krank-liste li').count())) fehlt(`${tag}: keine Krankheitswarnung nach Wetter`);
+  await page.locator('.regen-karte .knopf-zweit').click();
+  await page.waitForSelector('.radar img', { timeout: 5000 }).catch(() => fehlt(`${tag}: Regenradar fehlt`));
+  await page.locator('.wetter').screenshot({ path: `${OUT}/wetter-${tag}.png` });
   await page.screenshot({ path: `${OUT}/kalender-${tag}.png`, fullPage: true });
   if (name === 'handy' && scheme === 'light') {
     await page.emulateMedia({ media: 'print' });
@@ -227,7 +254,7 @@ async function handyApp(browser) {
   // Falsche Datei wird abgelehnt
   fs.writeFileSync(datei, '{"etwas":"anderes"}');
   await p2.setInputFiles('#sicher-import', datei);
-  if (!(await p2.textContent('#sicher-status'))) fehlt('Falsche Sicherungsdatei nicht gemeldet');
+  await p2.waitForFunction(() => document.querySelector('#sicher-status').textContent, null, { timeout: 5000 }).catch(() => fehlt('Falsche Sicherungsdatei nicht gemeldet'));
   fs.unlinkSync(datei);
   // Manifest gültig
   const m = await (await p2.request.get(URL + 'manifest.webmanifest')).json();
@@ -302,6 +329,8 @@ async function eigeneKi(browser) {
   const srv = spawn('python3', [path.join(__dirname, '..', 'server', 'server.py'), '--port', String(PORT)], { stdio: 'ignore', env: { ...process.env, FK_OLLAMA: 'http://127.0.0.1:9', FK_STIMMEN: '/nicht/da.json', FK_LEISE: '1' } });
   await new Promise((r) => setTimeout(r, 800));
   const browser = await chromium.launch();
+  const neu = browser.newContext.bind(browser);
+  browser.newContext = async (o) => { const c = await neu(o); await wetterNachbilden(c); return c; };
   const fehler = [];
   const geraete = [['handy', { width: 390, height: 844 }], ['pc', { width: 1440, height: 900 }]];
   try {
