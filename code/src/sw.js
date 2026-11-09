@@ -1,7 +1,7 @@
 // Fallahkalender – Service Worker: macht die App offline nutzbar.
 // Alles wird beim Installieren in den Speicher gelegt. Danach kommt jede Datei sofort aus dem Speicher
 // und wird im Hintergrund neu geholt, damit Änderungen beim nächsten Öffnen da sind.
-const VERSION = 'fk-5.4.0';
+const VERSION = 'fk-5.5.0';
 const DATEIEN = [
   './', 'index.html', 'app.css', 'app.js', 'manifest.webmanifest',
   'datum.js', 'diagnose.js', 'engine.js', 'fellah.js', 'i18n.js', 'ki.js', 'plan.js', 'vorlesen.js', 'wetter.js',

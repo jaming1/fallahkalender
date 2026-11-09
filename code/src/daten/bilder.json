@@ -1,4 +1,116 @@
 {
+ "ding:beregnung": {
+  "datei": "assets/bilder/ding_beregnung.jpg",
+  "autor": "Slaunger",
+  "lizenz": "CC BY-SA 3.0",
+  "seite": "https://commons.wikimedia.org/wiki/File:Travelling_irrigation_sprinkler_2_2014-05-29.jpg",
+  "breite": 480,
+  "hoehe": 272
+ },
+ "ding:blatt": {
+  "datei": "assets/bilder/ding_blatt.jpg",
+  "autor": "Wolan268",
+  "lizenz": "CC0",
+  "seite": "https://commons.wikimedia.org/wiki/File:Tomato_septoria_leaf_spot_3028.jpg",
+  "breite": 480,
+  "hoehe": 270
+ },
+ "ding:feucht": {
+  "datei": "assets/bilder/ding_feucht.jpg",
+  "autor": "Aditi 1102",
+  "lizenz": "CC BY-SA 4.0",
+  "seite": "https://commons.wikimedia.org/wiki/File:Morning_dew_on_a_leaf.jpg",
+  "breite": 480,
+  "hoehe": 447
+ },
+ "ding:frucht": {
+  "datei": "assets/bilder/ding_frucht.jpg",
+  "autor": "George Chernilevsky",
+  "lizenz": "CC BY 4.0",
+  "seite": "https://commons.wikimedia.org/wiki/File:Tomato_plant_2026_G3.jpg",
+  "breite": 480,
+  "hoehe": 343
+ },
+ "ding:furche": {
+  "datei": "assets/bilder/ding_furche.jpg",
+  "autor": "Narek75",
+  "lizenz": "CC BY-SA 4.0",
+  "seite": "https://commons.wikimedia.org/wiki/File:Furrow_Irrigation_in_Armenia_002.jpg",
+  "breite": 480,
+  "hoehe": 320
+ },
+ "ding:lehm": {
+  "datei": "assets/bilder/ding_lehm.jpg",
+  "autor": "David Medcalf",
+  "lizenz": "CC BY-SA 2.0",
+  "seite": "https://commons.wikimedia.org/wiki/File:Cheshire_loam_-_geograph.org.uk_-_166444.jpg",
+  "breite": 480,
+  "hoehe": 360
+ },
+ "ding:pflanze": {
+  "datei": "assets/bilder/ding_pflanze.jpg",
+  "autor": "Nitishpusta",
+  "lizenz": "CC BY-SA 4.0",
+  "seite": "https://commons.wikimedia.org/wiki/File:Cabbage_plant_in_early_stage.jpg",
+  "breite": 480,
+  "hoehe": 360
+ },
+ "ding:regen": {
+  "datei": "assets/bilder/ding_regen.jpg",
+  "autor": "James T M Towill",
+  "lizenz": "CC BY-SA 2.0",
+  "seite": "https://commons.wikimedia.org/wiki/File:Wheat_Under_A_Cloudy_Sky_-_geograph.org.uk_-_3065876.jpg",
+  "breite": 480,
+  "hoehe": 360
+ },
+ "ding:salz": {
+  "datei": "assets/bilder/ding_salz.jpg",
+  "autor": "James St. John",
+  "lizenz": "CC BY 2.0",
+  "seite": "https://commons.wikimedia.org/wiki/File:Halite_in_storm_wave_splash_pool_(Green_Cay,_offshore_San_Salvador_Island,_Bahamas)_7_(16029532291).jpg",
+  "breite": 480,
+  "hoehe": 319
+ },
+ "ding:sand": {
+  "datei": "assets/bilder/ding_sand.jpg",
+  "autor": "Yesa050907",
+  "lizenz": "CC0",
+  "seite": "https://commons.wikimedia.org/wiki/File:Sandy_soil_surface.jpg",
+  "breite": 480,
+  "hoehe": 276
+ },
+ "ding:tiere": {
+  "datei": "assets/bilder/krankheit_blattlaeuse.jpg",
+  "autor": "Sanjay Acharya",
+  "lizenz": "CC BY-SA 4.0",
+  "seite": "https://commons.wikimedia.org/wiki/File:Aphids_on_Kale_leaf.jpg",
+  "breite": 480,
+  "hoehe": 321
+ },
+ "ding:ton": {
+  "datei": "assets/bilder/ding_ton.jpg",
+  "autor": "Soil Science",
+  "lizenz": "CC BY 2.0",
+  "seite": "https://commons.wikimedia.org/wiki/File:Soil_material_containing_Sand,_silt,_clay.jpg",
+  "breite": 480,
+  "hoehe": 320
+ },
+ "ding:trocken": {
+  "datei": "assets/bilder/ding_trocken.jpg",
+  "autor": "Friedrich Haag",
+  "lizenz": "CC BY-SA 4.0",
+  "seite": "https://commons.wikimedia.org/wiki/File:Klimawandel_003_2016_06_06.jpg",
+  "breite": 480,
+  "hoehe": 320
+ },
+ "ding:unkraut": {
+  "datei": "assets/bilder/ding_unkraut.jpg",
+  "autor": "Kenneth Allen",
+  "lizenz": "CC BY-SA 2.0",
+  "seite": "https://commons.wikimedia.org/wiki/File:Field_with_weeds,_Rosnamuck_-_geograph.org.uk_-_7260953.jpg",
+  "breite": 480,
+  "hoehe": 321
+ },
  "duenger:harnstoff": {
   "datei": "assets/bilder/duenger_harnstoff.jpg",
   "autor": "LHcheM",
@@ -37,6 +149,230 @@
   "lizenz": "CC BY-SA 3.0",
   "seite": "https://commons.wikimedia.org/wiki/File:Tripelsuperfosfaat_(triple_phosphate).jpg",
   "breite": 419,
+  "hoehe": 480
+ },
+ "jahr:argan_sammeln": {
+  "datei": "assets/bilder/jahr_argan_sammeln.jpg",
+  "autor": "RoubinakiM",
+  "lizenz": "CC BY-SA 4.0",
+  "seite": "https://commons.wikimedia.org/wiki/File:Argan_paste_making_in_Morocco.jpg",
+  "breite": 480,
+  "hoehe": 360
+ },
+ "jahr:baum_pflanzen": {
+  "datei": "assets/bilder/jahr_baum_pflanzen.jpg",
+  "autor": "National Park Service",
+  "lizenz": "Public domain",
+  "seite": "https://commons.wikimedia.org/wiki/File:Planter_preparing_a_hole_for_planting_(d7ca0b79-155d-451f-6790-861e95dd36ff).JPG",
+  "breite": 480,
+  "hoehe": 318
+ },
+ "jahr:baum_sommer": {
+  "datei": "assets/bilder/jahr_baum_sommer.jpg",
+  "autor": "Joshua Tree National Park",
+  "lizenz": "Public domain",
+  "seite": "https://commons.wikimedia.org/wiki/File:Vegetation_crew_watering_young_plants_(51192918444).jpg",
+  "breite": 480,
+  "hoehe": 321
+ },
+ "jahr:bienen_fruehjahr": {
+  "datei": "assets/bilder/jahr_bienen_fruehjahr.jpg",
+  "autor": "shawn caza @ http://www.beekeeping.isgood.ca",
+  "lizenz": "CC BY-SA 3.0",
+  "seite": "https://commons.wikimedia.org/wiki/File:Top-bar_brood_comb_from_a_warre_hive.jpg",
+  "breite": 480,
+  "hoehe": 360
+ },
+ "jahr:bienen_honig": {
+  "datei": "assets/bilder/jahr_bienen_honig.jpg",
+  "autor": "Wikimedia Commons",
+  "lizenz": "CC BY-SA 3.0",
+  "seite": "https://commons.wikimedia.org/wiki/File:Fork-Beekeeping.jpg",
+  "breite": 480,
+  "hoehe": 480
+ },
+ "jahr:bienen_sommer": {
+  "datei": "assets/bilder/jahr_bienen_sommer.jpg",
+  "autor": "Siggi Weide",
+  "lizenz": "CC BY-SA 3.0 de",
+  "seite": "https://commons.wikimedia.org/wiki/File:Honey_bee_drinks_sugar_water.jpg",
+  "breite": 480,
+  "hoehe": 360
+ },
+ "jahr:bienen_winter": {
+  "datei": "assets/bilder/jahr_bienen_winter.jpg",
+  "autor": "Abraham",
+  "lizenz": "CC BY 4.0",
+  "seite": "https://commons.wikimedia.org/wiki/File:20240119_beehives_winter_Franciscan_garden_Katowice_Panewniki_01.jpg",
+  "breite": 480,
+  "hoehe": 360
+ },
+ "jahr:dattel_bestaeuben": {
+  "datei": "assets/bilder/jahr_dattel_bestaeuben.jpg",
+  "autor": "Ahmed1251985",
+  "lizenz": "CC BY-SA 4.0",
+  "seite": "https://commons.wikimedia.org/wiki/File:A_pollinated_date_palm_female_inflorescence_(close-up).jpg",
+  "breite": 480,
+  "hoehe": 270
+ },
+ "jahr:dattel_ernte": {
+  "datei": "assets/bilder/jahr_dattel_ernte.jpg",
+  "autor": "Tanya Thomas, U.S. Army",
+  "lizenz": "Public domain",
+  "seite": "https://commons.wikimedia.org/wiki/File:Dates_on_date_palm_get_harvested.jpg",
+  "breite": 326,
+  "hoehe": 480
+ },
+ "jahr:feige_ernte": {
+  "datei": "assets/bilder/jahr_feige_ernte.jpg",
+  "autor": "Stefan Thiesen",
+  "lizenz": "CC BY-SA 3.0",
+  "seite": "https://commons.wikimedia.org/wiki/File:Ripe_fig_fruit_on_tree_(Ficus_Carica)_in_Southern_France.JPG",
+  "breite": 480,
+  "hoehe": 360
+ },
+ "jahr:gefluegel_sommer": {
+  "datei": "assets/bilder/jahr_gefluegel_sommer.jpg",
+  "autor": "Geoffrey McKim from Bloomington, IN, USA",
+  "lizenz": "CC BY-SA 2.0",
+  "seite": "https://commons.wikimedia.org/wiki/File:Chickens_seeking_shade.jpg",
+  "breite": 480,
+  "hoehe": 320
+ },
+ "jahr:gefluegel_winter": {
+  "datei": "assets/bilder/jahr_gefluegel_winter.jpg",
+  "autor": "furtwangl from West Seattle",
+  "lizenz": "CC BY 2.0",
+  "seite": "https://commons.wikimedia.org/wiki/File:Seattle_Chicken_Coop_and_2_Hens.jpg",
+  "breite": 357,
+  "hoehe": 480
+ },
+ "jahr:mandel_bluete": {
+  "datei": "assets/bilder/jahr_mandel_bluete.jpg",
+  "autor": "Chemipanda",
+  "lizenz": "CC BY-SA 4.0",
+  "seite": "https://commons.wikimedia.org/wiki/File:Almond_Blossom,_Meymand,_Iran.jpg",
+  "breite": 480,
+  "hoehe": 320
+ },
+ "jahr:mandel_ernte": {
+  "datei": "assets/bilder/jahr_mandel_ernte.jpg",
+  "autor": "Davidbena",
+  "lizenz": "CC BY-SA 4.0",
+  "seite": "https://commons.wikimedia.org/wiki/File:Harvest_of_almonds.jpg",
+  "breite": 480,
+  "hoehe": 320
+ },
+ "jahr:mandel_schnitt": {
+  "datei": "assets/bilder/jahr_mandel_schnitt.jpg",
+  "autor": "Joanbanjo",
+  "lizenz": "CC BY-SA 3.0",
+  "seite": "https://commons.wikimedia.org/wiki/File:Camp_d%27ametllers_florits,_Gata_de_Gorgos.JPG",
+  "breite": 480,
+  "hoehe": 298
+ },
+ "jahr:olive_ernte": {
+  "datei": "assets/bilder/jahr_olive_ernte.jpg",
+  "autor": "ECH-CHAFI ALI",
+  "lizenz": "CC BY-SA 4.0",
+  "seite": "https://commons.wikimedia.org/wiki/File:Olive_picking-morocco-tawnat-azour.jpg",
+  "breite": 480,
+  "hoehe": 360
+ },
+ "jahr:olive_kupfer": {
+  "datei": "assets/bilder/jahr_olive_kupfer.jpg",
+  "autor": "No machine-readable author provided. Eric.Coffinet~commonswiki assumed (based on…",
+  "lizenz": "Public domain",
+  "seite": "https://commons.wikimedia.org/wiki/File:Spilocaea_oleagina.jpg",
+  "breite": 480,
+  "hoehe": 360
+ },
+ "jahr:olive_schnitt": {
+  "datei": "assets/bilder/jahr_olive_schnitt.jpg",
+  "autor": "Ian Alexander",
+  "lizenz": "CC BY-SA 4.0",
+  "seite": "https://commons.wikimedia.org/wiki/File:Olive_Grove_prunings_in_neat_rows._Ostuni,_Puglia.jpg",
+  "breite": 480,
+  "hoehe": 360
+ },
+ "jahr:rebe_schnitt": {
+  "datei": "assets/bilder/jahr_rebe_schnitt.jpg",
+  "autor": "Mark Smith",
+  "lizenz": "CC BY 2.0",
+  "seite": "https://commons.wikimedia.org/wiki/File:Winter_pruning_grapevines_at_Stefano_Lubiana.jpg",
+  "breite": 480,
+  "hoehe": 319
+ },
+ "jahr:rebe_schwefel": {
+  "datei": "assets/bilder/jahr_rebe_schwefel.jpg",
+  "autor": "Olivier Lemoine (Photographe viticole : https://Photo-Terroir.fr)",
+  "lizenz": "CC BY-SA 4.0",
+  "seite": "https://commons.wikimedia.org/wiki/File:Oidium_vigne.jpg",
+  "breite": 360,
+  "hoehe": 480
+ },
+ "jahr:rinder_sommer": {
+  "datei": "assets/bilder/jahr_rinder_sommer.jpg",
+  "autor": "pam fray",
+  "lizenz": "CC BY-SA 2.0",
+  "seite": "https://commons.wikimedia.org/wiki/File:Herd_of_cattle_sheltering_under_the_shade_of_a_tree,_Torry_Hill_-_geograph.org.uk_-_6559929.jpg",
+  "breite": 480,
+  "hoehe": 345
+ },
+ "jahr:schafe_entwurmen": {
+  "datei": "assets/bilder/jahr_schafe_entwurmen.jpg",
+  "autor": "Cgoodwin",
+  "lizenz": "CC BY 3.0",
+  "seite": "https://commons.wikimedia.org/wiki/File:Sheep_drenching_(cropped).JPG",
+  "breite": 480,
+  "hoehe": 360
+ },
+ "jahr:schafe_lammzeit": {
+  "datei": "assets/bilder/jahr_schafe_lammzeit.jpg",
+  "autor": "Neil Theasby",
+  "lizenz": "CC BY-SA 2.0",
+  "seite": "https://commons.wikimedia.org/wiki/File:Ewe_and_newborn_lamb_at_Cregneash_-_geograph.org.uk_-_4880932.jpg",
+  "breite": 480,
+  "hoehe": 358
+ },
+ "jahr:schafe_scheren": {
+  "datei": "assets/bilder/jahr_schafe_scheren.jpg",
+  "autor": "Stephen and Helen Jones",
+  "lizenz": "CC BY-SA 4.0",
+  "seite": "https://commons.wikimedia.org/wiki/File:Sheep_Shearing_-_Dorset_County_Show_2025_-_54788781321.jpg",
+  "breite": 480,
+  "hoehe": 320
+ },
+ "jahr:weide_winter": {
+  "datei": "assets/bilder/jahr_weide_winter.jpg",
+  "autor": "John Haynes",
+  "lizenz": "CC BY-SA 2.0",
+  "seite": "https://commons.wikimedia.org/wiki/File:Big_bale_feeder_with_roof_-_geograph.org.uk_-_1657880.jpg",
+  "breite": 480,
+  "hoehe": 330
+ },
+ "jahr:zitrus_duengen": {
+  "datei": "assets/bilder/jahr_zitrus_duengen.jpg",
+  "autor": "Zeynel Cebeci",
+  "lizenz": "CC BY-SA 4.0",
+  "seite": "https://commons.wikimedia.org/wiki/File:Citrus_orchard_in_Adana_01.jpg",
+  "breite": 480,
+  "hoehe": 320
+ },
+ "jahr:zitrus_ernte": {
+  "datei": "assets/bilder/jahr_zitrus_ernte.jpg",
+  "autor": "Doaa Adel",
+  "lizenz": "CC BY-SA 4.0",
+  "seite": "https://commons.wikimedia.org/wiki/File:Orange_harvest_1.jpg",
+  "breite": 480,
+  "hoehe": 320
+ },
+ "jahr:zitrus_schnitt": {
+  "datei": "assets/bilder/maschine_baumschere.jpg",
+  "autor": "KoS",
+  "lizenz": "Public domain",
+  "seite": "https://commons.wikimedia.org/wiki/File:Secateur_ouvert.jpg",
+  "breite": 429,
   "hoehe": 480
  },
  "krankheit:ascochyta": {
@@ -446,6 +782,102 @@
   "seite": "https://commons.wikimedia.org/wiki/File:Harvested_vegetables(Onions).jpg",
   "breite": 480,
   "hoehe": 288
+ },
+ "maschine:baumschere": {
+  "datei": "assets/bilder/maschine_baumschere.jpg",
+  "autor": "KoS",
+  "lizenz": "Public domain",
+  "seite": "https://commons.wikimedia.org/wiki/File:Secateur_ouvert.jpg",
+  "breite": 429,
+  "hoehe": 480
+ },
+ "maschine:direktsaat": {
+  "datei": "assets/bilder/maschine_direktsaat.jpg",
+  "autor": "USDA NRCS South Dakota",
+  "lizenz": "Public domain",
+  "seite": "https://commons.wikimedia.org/wiki/File:No-till_farming_system_in_Brookings,_Co.,_SD_(13873991983).jpg",
+  "breite": 480,
+  "hoehe": 270
+ },
+ "maschine:duengerstreuer": {
+  "datei": "assets/bilder/maschine_duengerstreuer.jpg",
+  "autor": "Tim Sheerman-Chase",
+  "lizenz": "CC BY 2.0",
+  "seite": "https://commons.wikimedia.org/wiki/File:Ford_Tractor_with_Cavallo_pxt_490_Fertilizer_Spreader.jpg",
+  "breite": 480,
+  "hoehe": 360
+ },
+ "maschine:grubber": {
+  "datei": "assets/bilder/maschine_grubber.jpg",
+  "autor": "Michael Trolove",
+  "lizenz": "CC BY-SA 2.0",
+  "seite": "https://commons.wikimedia.org/wiki/File:Seedbed_Preparations_on_the_Huntingdonshire_Wolds_-_geograph.org.uk_-_999304.jpg",
+  "breite": 480,
+  "hoehe": 360
+ },
+ "maschine:maehdrescher": {
+  "datei": "assets/bilder/maschine_maehdrescher.jpg",
+  "autor": "Dan Kollmann",
+  "lizenz": "CC BY-SA 3.0",
+  "seite": "https://commons.wikimedia.org/wiki/File:Combine_in_wheat_field.jpg",
+  "breite": 480,
+  "hoehe": 320
+ },
+ "maschine:motorhacke": {
+  "datei": "assets/bilder/maschine_motorhacke.jpg",
+  "autor": "Green",
+  "lizenz": "CC BY-SA 3.0",
+  "seite": "https://commons.wikimedia.org/wiki/File:Rotary_tiller_compact.jpg",
+  "breite": 480,
+  "hoehe": 360
+ },
+ "maschine:pumpe": {
+  "datei": "assets/bilder/maschine_pumpe.jpg",
+  "autor": "SMMIMAGES",
+  "lizenz": "CC BY-SA 4.0",
+  "seite": "https://commons.wikimedia.org/wiki/File:SOLAR_POWER_IRRIGATION_RICE_FARMING.jpg",
+  "breite": 480,
+  "hoehe": 321
+ },
+ "maschine:saemaschine": {
+  "datei": "assets/bilder/maschine_saemaschine.jpg",
+  "autor": "Acroterion",
+  "lizenz": "CC BY-SA 4.0",
+  "seite": "https://commons.wikimedia.org/wiki/File:Oliver_seed_drill_MD1.jpg",
+  "breite": 480,
+  "hoehe": 342
+ },
+ "maschine:scheibenegge": {
+  "datei": "assets/bilder/maschine_scheibenegge.jpg",
+  "autor": "Evelyn Simak",
+  "lizenz": "CC BY-SA 2.0",
+  "seite": "https://commons.wikimedia.org/wiki/File:Cultivated_field_north_of_Illington_Road_-_geograph.org.uk_-_1758939.jpg",
+  "breite": 480,
+  "hoehe": 360
+ },
+ "maschine:scheibenpflug": {
+  "datei": "assets/bilder/maschine_scheibenpflug.jpg",
+  "autor": "Dick Rochester",
+  "lizenz": "CC BY-SA 2.0",
+  "seite": "https://commons.wikimedia.org/wiki/File:Disc_harrow_on_M%C3%B6ja.jpg",
+  "breite": 480,
+  "hoehe": 322
+ },
+ "maschine:spritze": {
+  "datei": "assets/bilder/maschine_spritze.jpg",
+  "autor": "Authorpost031",
+  "lizenz": "CC BY-SA 4.0",
+  "seite": "https://commons.wikimedia.org/wiki/File:PEST_CONTROL.jpg",
+  "breite": 480,
+  "hoehe": 361
+ },
+ "maschine:traktor": {
+  "datei": "assets/bilder/maschine_traktor.jpg",
+  "autor": "PtiBzh",
+  "lizenz": "CC0",
+  "seite": "https://commons.wikimedia.org/wiki/File:Tractor_fertilizing_a_field_in_Brittany.jpg",
+  "breite": 480,
+  "hoehe": 360
  },
  "massnahme:auswaschen": {
   "datei": "assets/bilder/massnahme_auswaschen.jpg",
@@ -900,6 +1332,54 @@
   "autor": "Schlaghecken Josef",
   "lizenz": "CC BY-SA 4.0",
   "seite": "https://commons.wikimedia.org/wiki/File:Gr%C3%BCnkohl_Kohlmottenschildlaus-Aleyrodes_proletella-JS-2.jpg",
+  "breite": 480,
+  "hoehe": 360
+ },
+ "tipp:kompost": {
+  "datei": "assets/bilder/tipp_kompost.jpg",
+  "autor": "Photograph © Andrew Dunn, http://www.andrewdunnphoto.com",
+  "lizenz": "CC BY-SA 4.0",
+  "seite": "https://commons.wikimedia.org/wiki/File:Compost_Heap.jpg",
+  "breite": 404,
+  "hoehe": 480
+ },
+ "tipp:mulch": {
+  "datei": "assets/bilder/tipp_mulch.jpg",
+  "autor": "USDAgov",
+  "lizenz": "Public domain",
+  "seite": "https://commons.wikimedia.org/wiki/File:2016_People%27s_Garden_Planting_(20160405-AMS-LSC-0808).jpg",
+  "breite": 465,
+  "hoehe": 480
+ },
+ "tipp:regenwasser": {
+  "datei": "assets/bilder/tipp_regenwasser.jpg",
+  "autor": "SuSanA Secretariat",
+  "lizenz": "CC BY 2.0",
+  "seite": "https://commons.wikimedia.org/wiki/File:Rainwater_harvesting_tank_(5981896147).jpg",
+  "breite": 480,
+  "hoehe": 360
+ },
+ "tipp:saatgut": {
+  "datei": "assets/bilder/tipp_saatgut.jpg",
+  "autor": "Elmer Centeno Guevarra",
+  "lizenz": "CC BY-SA 4.0",
+  "seite": "https://commons.wikimedia.org/wiki/File:SEED_AND_PLANT_LIBRARY_IN_PROMOTING_FOOD_DIVERSITY_AT_OHMG_PANGASINAN.jpg",
+  "breite": 480,
+  "hoehe": 270
+ },
+ "tipp:solarisation": {
+  "datei": "assets/bilder/tipp_solarisation.jpg",
+  "autor": "Hayan Alhasan",
+  "lizenz": "CC BY-SA 4.0",
+  "seite": "https://commons.wikimedia.org/wiki/File:Strawberry_field_using_black_mulch_in_Umm_Haratayn_al-Gharbiyah,_Homs.jpg",
+  "breite": 480,
+  "hoehe": 360
+ },
+ "tipp:tropf": {
+  "datei": "assets/bilder/tipp_tropf.jpg",
+  "autor": "Borisshin",
+  "lizenz": "CC BY-SA 4.0",
+  "seite": "https://commons.wikimedia.org/wiki/File:Button_dripper.JPG",
   "breite": 480,
   "hoehe": 360
  },

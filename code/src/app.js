@@ -54,6 +54,20 @@ function foto(schluessel, alt, klein = false) {
     el('figcaption', { dir: 'ltr' }, `${b.autor} · `, el('a', { href: b.seite, target: '_blank', rel: 'noopener noreferrer' }, b.lizenz)));
 }
 
+// Auswahl-Chips im Formular: Zeichnung gegen echtes Foto tauschen, wo eines da ist
+function chipFotos() {
+  for (const svg of document.querySelectorAll('.chip > svg.bz[data-bild]')) {
+    const f = foto(svg.dataset.bild, '', true);
+    if (f) { f.className = 'chip-foto'; svg.replaceWith(f); }
+  }
+}
+
+// Echtes Foto als Vorschau, sonst gezeichnetes Bildzeichen (Zeichnung nur, wenn kein Foto da ist)
+function bildOder(schluessel, zeichenId, klasse = 'bz gross') {
+  for (const k of [schluessel].flat()) { const f = k && foto(k, '', true); if (f) return f; }
+  return zeichenId ? zeichen(zeichenId, klasse) : null;
+}
+
 // Reihe kleiner Fotos (z. B. Düngersäcke); leer = nichts anzeigen
 function bilderReihe(schluessel) {
   const imgs = schluessel.map((k) => foto(k, '', true)).filter(Boolean);
@@ -568,6 +582,7 @@ function zeigeErgebnis(feld) {
 
 // ---------- Machbar machen ----------
 // Ohne Foto: gezeichnetes Bildzeichen für das Problem
+const PROBLEM_BILD = { 'salz-wasser': 'ding:salz', 'salz-boden': 'ding:salz', 'boden-sand': 'ding:sand', 'boden-ton': 'ding:ton', kalk: 'ding:lehm' };
 const PROBLEM_ZEICHEN = { saison: 't-saat', 'salz-wasser': 'p-salz', 'salz-boden': 'p-salz', 'boden-sand': 'b-sand', 'boden-ton': 'b-ton', fruchtfolge: 't-saat', kalk: 'b-lehm', nematoden: 'p-nematoden', welke: 'p-welke' };
 
 function machbarBlock(e) {
@@ -597,7 +612,7 @@ function machbarBlock(e) {
       ol.append(li);
     }
     const pb = daten.massnahmen.probleme[p.key]?.bild;
-    block.append(el('div', { class: 'problem' }, el('p', { class: 'problem-titel' }, (pb && foto(pb, '', true)) || (PROBLEM_ZEICHEN[p.key] ? zeichen(PROBLEM_ZEICHEN[p.key], 'bz gross') : null), p.titel), ol));
+    block.append(el('div', { class: 'problem' }, el('p', { class: 'problem-titel' }, (pb && foto(pb, '', true)) || (PROBLEM_ZEICHEN[p.key] ? bildOder(PROBLEM_BILD[p.key], PROBLEM_ZEICHEN[p.key]) : null), p.titel), ol));
   }
   return block;
 }
@@ -1110,7 +1125,7 @@ function jetztDran(feld, tage) {
       const marke = !heute || !x.wetter ? null
         : grund ? el('span', { class: 'marke risiko-hoch' }, '✗ ', t('h.heuteNicht', { grund: t(`h.g.${grund}`) }))
           : el('span', { class: 'marke h-gut' }, '✓ ', t('h.heuteGut'));
-      ul.append(el('li', {}, zeichen(x.zeichen, 'bz gross'), el('div', {}, el('p', {}, el('strong', {}, x.t), ' ', marke), el('p', { class: 'meta' }, x.d))));
+      ul.append(el('li', {}, bildOder(`jahr:${x.id}`, x.zeichen), el('div', {}, el('p', {}, el('strong', {}, x.t), ' ', marke), el('p', { class: 'meta' }, x.d))));
     }
     karte.append(ul);
     teile.push(karte);
@@ -1139,7 +1154,7 @@ function tippDesTages() {
     const tp = tipps[Math.floor(n / 2) % tipps.length];
     const ol = el('ol', { class: 'tipp-schritte' });
     tp.schritte.forEach((x) => ol.append(el('li', {}, x)));
-    box.append(el('div', { class: 'karte' }, el('div', { class: 'w-kopf' }, zeichen(tp.zeichen, 'bz riesig'), el('h3', {}, tp.t)), ol));
+    box.append(el('div', { class: 'karte' }, el('div', { class: 'w-kopf tipp-kopf' }, bildOder([tp.bild, `tipp:${tp.id.replace(/^tipp_/, '')}`], tp.zeichen, 'bz riesig'), el('h3', {}, tp.t)), ol));
   }
   const knopf = el('button', { type: 'button', class: 'knopf-zweit' }, zeichen('m-traktor', 'bz breit'), ' ', t('h.maschinen.knopf'));
   knopf.addEventListener('click', () => zeigeAnsicht('maschinen', true));
@@ -1165,9 +1180,13 @@ function maschineKarte(ma, offen = false) {
     el('h4', {}, zeichen('t-pflege', 'bz klein'), ' ', t('ma.einstellen')), liste(ma.einstellungen),
     el('h4', {}, zeichen('t-kontrolle', 'bz klein'), ' ', t('ma.wann')), el('p', {}, ma.wann),
     el('h4', { class: 'ma-achtung' }, '⚠ ', t('ma.achtung')), liste(ma.achtung));
-  const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+  let svg = foto(`maschine:${ma.id}`, '', true);
+  if (svg) svg.classList.add('ma-foto');
+  else {
+  svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
   svg.setAttribute('class', 'ma-bild'); svg.setAttribute('viewBox', '0 0 96 64'); svg.setAttribute('aria-hidden', 'true');
   const use = document.createElementNS('http://www.w3.org/2000/svg', 'use'); use.setAttribute('href', `assets/zeichen.svg#${ma.zeichen}`); svg.append(use);
+  }
   if (offen) return el('div', { class: 'karte maschine' }, el('div', { class: 'ma-kopf' }, svg, el('h3', {}, ma.name)), inhalt);
   return el('details', { class: 'karte maschine', id: `ma-${ma.id}` }, el('summary', {}, el('span', { class: 'ma-kopf' }, svg, el('strong', {}, ma.name))), inhalt);
 }
@@ -1242,7 +1261,7 @@ function symptomeZeigen() {
       cb.checked = gewaehlt.has(s.id);
       wahl.append(el('label', {}, cb, el('span', {}, foto(`symptom:${s.id}`, '', true), s.t)));
     }
-    ziel.append(el('div', { class: 'symptom-gruppe', role: 'group', 'aria-label': g.name }, el('h3', {}, zeichen(`g-${g.id}`), g.name), wahl));
+    ziel.append(el('div', { class: 'symptom-gruppe', role: 'group', 'aria-label': g.name }, el('h3', {}, bildOder(`ding:${g.id}`, `g-${g.id}`, 'bz'), g.name), wahl));
   }
 }
 
@@ -1604,6 +1623,7 @@ async function start() {
   }
   ki = await kiStatus();
   bildGrossStart();
+  chipFotos();
   texteSetzen();
   auswahlFuellen();
   felderStart();

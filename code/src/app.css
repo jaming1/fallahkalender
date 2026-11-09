@@ -517,3 +517,11 @@ img.mini-bild, .foto img, .foto-vorschau img, img.fall-foto { cursor: zoom-in; }
 .ma-inhalt ul { margin: 0.2rem 0; padding-inline-start: 1.3rem; }
 .ma-achtung { color: var(--s-nein); }
 #maschinen-inhalt h2 { margin-top: 1.2rem; }
+/* Echte Fotos statt Zeichnungen */
+.chip .chip-foto { width: 56px; height: 56px; object-fit: cover; border-radius: 8px; flex: none; }
+.jahr-liste .mini-bild { width: 72px; height: 72px; border-radius: 10px; }
+.tipp-kopf .mini-bild { width: 96px; height: 96px; border-radius: 12px; }
+.ma-kopf .ma-foto { width: 112px; height: 84px; border-radius: 10px; }
+.symptom-gruppe h3 .mini-bild { width: 40px; height: 40px; vertical-align: middle; margin-inline-end: 0.4rem; }
+.problem-titel .mini-bild { margin-inline-end: 0.5rem; }
+
