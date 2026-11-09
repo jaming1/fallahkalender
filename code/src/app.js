@@ -47,7 +47,7 @@ function zeichen(id, klasse = 'bz') {
 function foto(schluessel, alt, klein = false) {
   const b = bilder[schluessel];
   if (!b) return null;
-  const img = el('img', { src: b.datei, alt: klein ? '' : alt, loading: 'lazy', decoding: 'async', width: b.breite ?? 480, height: b.hoehe ?? 360 });
+  const img = el('img', { src: b.datei, alt: klein ? '' : alt, loading: 'lazy', decoding: 'async', width: b.breite ?? 480, height: b.hoehe ?? 360, 'data-gross': schluessel });
   if (klein) { img.className = 'mini-bild'; return img; }
   return el('figure', { class: 'foto' }, img,
     el('figcaption', { dir: 'ltr' }, `${b.autor} · `, el('a', { href: b.seite, target: '_blank', rel: 'noopener noreferrer' }, b.lizenz)));
@@ -68,6 +68,45 @@ function schreiben(schluessel, wert) {
 
 function entfernen(schluessel) {
   try { localStorage.removeItem(schluessel); } catch { /* egal */ }
+}
+
+// ---------- Foto groß ansehen ----------
+// Jedes Foto antippen: bildschirmfüllend, Lupe vergrößert weiter. Im Befall steht das eigene Foto zum Vergleich daneben.
+function bildGrossZeigen(quelle) {
+  const dlg = $('#bild-gross');
+  const flaeche = $('#bg-flaeche');
+  flaeche.classList.remove('zoom');
+  const teile = [];
+  const schluessel = quelle.dataset.gross;
+  const b = schluessel ? bilder[schluessel] : null;
+  const gross = el('img', { src: b ? (b.gross || b.datei) : quelle.src, alt: quelle.alt || '' });
+  if (b?.gross) gross.addEventListener('error', () => { gross.src = b.datei; }, { once: true });
+  teile.push(el('figure', { class: 'bg-bild' }, gross,
+    b ? el('figcaption', { dir: 'ltr' }, `${b.autor} · ${b.lizenz}`) : null));
+  const eigenes = befallFoto && !$('#ansicht-befall').hidden && quelle.src !== befallFoto;
+  if (eigenes) teile.push(el('figure', { class: 'bg-bild' }, el('img', { src: befallFoto, alt: t('bild.deinFoto') }), el('figcaption', {}, t('bild.deinFoto'))));
+  flaeche.classList.toggle('zwei', Boolean(eigenes));
+  flaeche.replaceChildren(...teile);
+  if (typeof dlg.showModal === 'function') dlg.showModal(); else dlg.setAttribute('open', '');
+  $('#bg-zu').focus();
+}
+
+function bildGrossStart() {
+  const dlg = $('#bild-gross');
+  const zu = () => { if (typeof dlg.close === 'function') dlg.close(); else dlg.removeAttribute('open'); };
+  $('#bg-zu').addEventListener('click', zu);
+  $('#bg-zoom').addEventListener('click', () => $('#bg-flaeche').classList.toggle('zoom'));
+  $('#bg-flaeche').addEventListener('dblclick', () => $('#bg-flaeche').classList.toggle('zoom'));
+  // Tipp neben das Bild schließt
+  dlg.addEventListener('click', (ev) => { if (ev.target === dlg || ev.target.id === 'bg-flaeche') zu(); });
+  // Abfangen, bevor Auswahlfeld oder Aufklapper reagieren
+  document.addEventListener('click', (ev) => {
+    const img = ev.target.closest?.('img.mini-bild, .foto img, .foto-vorschau img, img.fall-foto');
+    if (!img || dlg.contains(img)) return;
+    ev.preventDefault();
+    ev.stopPropagation();
+    bildGrossZeigen(img);
+  }, true);
 }
 
 // ---------- Felder ----------
@@ -1148,6 +1187,7 @@ async function start() {
     return;
   }
   ki = await kiStatus();
+  bildGrossStart();
   texteSetzen();
   auswahlFuellen();
   felderStart();
